@@ -1,0 +1,128 @@
+8.2193 	INFO 	Loaded monitor calibration from ['2026_09_03 20:22']
+8.2342 	WARNING 	User requested fullscreen with size [1152  720], but screen is actually [2880, 1800]. Using actual size
+8.3816 	INFO 	Using renderer 'Intel(R) Arc(TM) Graphics' for graphics
+8.3816 	INFO 	OpenGL version supported by driver is 4..
+8.4793 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002401704F700>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002401704F760>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([-1, -1, -1]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000024017154760>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([2880, 1800]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+8.4794 	EXP 	window1: backgroundImage = ''
+8.4794 	EXP 	window1: backgroundFit = 'none'
+8.8504 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+8.8504 	EXP 	window1: recordFrameIntervals = False
+8.9718 	EXP 	window1: recordFrameIntervals = True
+9.0943 	EXP 	Screen (0) actual frame rate measured at 90.10Hz
+9.0945 	EXP 	window1: recordFrameIntervals = False
+9.2948 	INFO 	keyboard.Keyboard is using ptb backend.
+9.2949 	INFO 	keyboard.Keyboard is using ptb backend.
+9.2950 	INFO 	keyboard.Keyboard is using ptb backend.
+9.2950 	INFO 	keyboard.Keyboard is using ptb backend.
+9.2950 	INFO 	keyboard.Keyboard is using ptb backend.
+9.2950 	EXP 	testing1: status = STARTED
+9.7870 	INFO 	Importing items...
+9.7957 	EXP 	Imported likert_items.xlsx as conditions, 5 conditions, 4 params
+9.7957 	INFO 	Using default values for the following headers: ['index', 'itemColor', 'itemWidth', 'ticks', 'tickLabels', 'font', 'responseWidth', 'responseColor', 'markerColor', 'index', 'itemColor', 'itemWidth', 'ticks', 'tickLabels', 'font', 'responseWidth', 'responseColor', 'markerColor', 'index', 'itemColor', 'itemWidth', 'ticks', 'tickLabels', 'font', 'responseWidth', 'responseColor', 'markerColor', 'index', 'itemColor', 'itemWidth', 'ticks', 'tickLabels', 'font', 'responseWidth', 'responseColor', 'markerColor', 'index', 'itemColor', 'itemWidth', 'ticks', 'tickLabels', 'font', 'responseWidth', 'responseColor', 'markerColor']
+9.7965 	WARNING 	Form currently only formats correctly using height units. Please change the units in Experiment Settings to 'height'
+9.7966 	INFO 	Setting layout of Form: likertForm.
+9.7966 	EXP 	Question text: I would want to watch more videos like this.
+10.1024 	INFO 	Adding response to Form type: rating, layout: horiz, options: [1, 2, 3, 4, 5]
+10.2548 	EXP 	Question text: The speaker was easy to understand.
+10.2620 	INFO 	Adding response to Form type: rating, layout: horiz, options: [1, 2, 3, 4, 5]
+10.3091 	EXP 	Question text: The video held my attention throughout.
+10.3308 	INFO 	Adding response to Form type: rating, layout: horiz, options: [1, 2, 3, 4, 5]
+10.3768 	EXP 	Question text: The pacing of the video felt appropriate.
+10.4009 	INFO 	Adding response to Form type: rating, layout: horiz, options: [1, 2, 3, 4, 5]
+10.4467 	EXP 	Question text: I found the content engaging.
+10.4534 	INFO 	Adding response to Form type: rating, layout: horiz, options: [1, 2, 3, 4, 5]
+10.5061 	INFO 	Layout set for Form: likertForm.
+10.5198 	EXP 	Created likertForm = <psychopy.visual.form.Form object at 0x000002401EED74F0>
+0.0068 	EXP 	intro_text: autoLog = True
+0.0068 	EXP 	instruction_header: autoLog = True
+0.0068 	EXP 	instruction_text: autoLog = True
+0.0068 	EXP 	warning_header: autoLog = True
+0.0068 	EXP 	warning_text: autoLog = True
+0.0068 	EXP 	textbox: autoLog = True
+0.0068 	EXP 	unnamed Form: autoLog = True
+0.0068 	EXP 	likertForm: name = 'likertForm'
+0.0068 	EXP 	likertForm: depth = 0
+0.0068 	EXP 	likertForm: fillColor = <class 'numpy.ndarray'>
+0.0068 	EXP 	likertForm: borderColor = <class 'numpy.ndarray'>
+0.0068 	EXP 	likertForm: fillColor = [0.89, 0.89, 0.89]
+0.0068 	EXP 	likertForm: borderColor = <class 'numpy.ndarray'>
+0.0185 	INFO 	Keyboard events cleared
+0.0184 	EXP 	intro_text: autoDraw = True
+1.2772 	DATA 	Keypress: space
+1.3027 	EXP 	Device response: <KeyPress from None: t=1.2760444000014104, value=space, duration=None>
+1.3113 	INFO 	Keyboard events cleared
+1.3113 	EXP 	intro_text: autoDraw = False
+1.3113 	EXP 	instruction_header: autoDraw = True
+1.3113 	EXP 	instruction_text: autoDraw = True
+1.3961 	EXP 	Device response: <KeyPress from None: t=1.2760444000014104, value=space, duration=0.11009499998181127>
+2.1518 	EXP 	Device response: <KeyPress from None: t=2.1516333000035957, value=space, duration=None>
+2.1554 	DATA 	Keypress: space
+2.1625 	INFO 	Keyboard events cleared
+2.1625 	EXP 	instruction_header: autoDraw = False
+2.1625 	EXP 	instruction_text: autoDraw = False
+2.1625 	EXP 	warning_header: autoDraw = True
+2.1625 	EXP 	warning_text: autoDraw = True
+2.2629 	EXP 	Device response: <KeyPress from None: t=2.1516333000035957, value=space, duration=0.10188089997973293>
+3.2001 	DATA 	Keypress: space
+3.2079 	EXP 	Device response: <KeyPress from None: t=3.199771499988856, value=space, duration=None>
+3.2199 	INFO 	Keyboard events cleared
+3.2198 	EXP 	warning_header: autoDraw = False
+3.2198 	EXP 	warning_text: autoDraw = False
+3.2198 	EXP 	textbox: autoDraw = True
+3.2968 	EXP 	Device response: <KeyPress from None: t=3.199771499988856, value=space, duration=0.0962545000074897>
+4.0522 	EXP 	Device response: <KeyPress from None: t=4.051164000004064, value=space, duration=None>
+4.0531 	DATA 	Keypress: space
+4.1533 	EXP 	textbox: autoDraw = False
+4.1533 	EXP 	likertForm: autoDraw = True
+4.2487 	EXP 	Device response: <KeyPress from None: t=4.051164000004064, value=space, duration=0.10293649998493493>
+6.6524 	DATA 	Mouse: Left button down, pos=(800,159)
+6.7638 	DATA 	Mouse:  Left button up, pos=(780,174)
+7.0189 	DATA 	Mouse: Left button down, pos=(513,733)
+7.2385 	DATA 	Mouse:  Left button up, pos=(0,1017)
+7.4650 	DATA 	Mouse: Left button down, pos=(255,1717)
+7.7127 	DATA 	Mouse:  Left button up, pos=(0,1751)
+7.8144 	DATA 	Mouse: Left button down, pos=(0,1800)
+7.9687 	DATA 	Mouse:  Left button up, pos=(0,581)
+8.1252 	DATA 	Mouse: Left button down, pos=(0,504)
+8.2112 	DATA 	Mouse:  Left button up, pos=(0,504)
+8.2858 	DATA 	Mouse: Left button down, pos=(0,504)
+8.3845 	DATA 	Mouse:  Left button up, pos=(0,504)
+8.4366 	DATA 	Mouse: Left button down, pos=(0,504)
+8.5578 	DATA 	Mouse:  Left button up, pos=(0,504)
+8.5986 	DATA 	Mouse: Left button down, pos=(0,504)
+8.7139 	DATA 	Mouse:  Left button up, pos=(0,504)
+8.7592 	DATA 	Mouse: Left button down, pos=(0,504)
+8.8700 	DATA 	Mouse:  Left button up, pos=(0,504)
+8.9206 	DATA 	Mouse: Left button down, pos=(0,504)
+8.9953 	DATA 	Mouse:  Left button up, pos=(0,504)
+9.0760 	DATA 	Mouse: Left button down, pos=(0,504)
+9.1533 	DATA 	Mouse:  Left button up, pos=(0,504)
+9.2241 	DATA 	Mouse: Left button down, pos=(0,504)
+9.2816 	DATA 	Mouse:  Left button up, pos=(0,504)
+11.2592 	DATA 	Mouse: Left button down, pos=(2879,1)
+11.4141 	DATA 	Mouse:  Left button up, pos=(2879,10)
+11.5479 	DATA 	Mouse: Left button down, pos=(2873,296)
+12.2158 	DATA 	Mouse:  Left button up, pos=(1502,1601)
+12.3997 	DATA 	Mouse: Left button down, pos=(1257,1732)
+12.5923 	DATA 	Mouse:  Left button up, pos=(0,1528)
+13.3461 	DATA 	Mouse: Left button down, pos=(585,1714)
+13.5140 	DATA 	Mouse:  Left button up, pos=(570,1773)
+13.6512 	DATA 	Mouse: Left button down, pos=(551,1800)
+13.8451 	DATA 	Mouse:  Left button up, pos=(479,1800)
+13.9731 	DATA 	Mouse: Left button down, pos=(413,1800)
+14.2253 	DATA 	Mouse:  Left button up, pos=(330,1342)
+14.3761 	DATA 	Mouse: Left button down, pos=(320,1312)
+14.5016 	DATA 	Mouse:  Left button up, pos=(297,1210)
+22.7791 	DATA 	Keypress: escape
+22.7905 	EXP 	Device response: <KeyPress from None: t=22.778043600003002, value=escape, duration=None>
+22.8944 	EXP 	Device response: <KeyPress from None: t=22.778043600003002, value=escape, duration=0.04868069998337887>
+22.8944 	EXP 	testing1: status = STOPPED
+22.9070 	EXP 	likertForm: autoDraw = False
+22.9072 	EXP 	testing1: status = STOPPED
+22.9179 	INFO 	saved data to 'C:\\SPPA\\CMKL\\Animation_Project\\Summer\\Experiment_Workflows\\Testing1\\data\\205452_testing1_2026-09-18_13h37.11.469.csv'
+22.9277 	INFO 	saved data to C:\SPPA\CMKL\Animation_Project\Summer\Experiment_Workflows\Testing1\data\205452_testing1_2026-09-18_13h37.11.469.psydat
+23.2555 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+23.3342 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+23.3343 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+23.3343 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+23.3343 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.

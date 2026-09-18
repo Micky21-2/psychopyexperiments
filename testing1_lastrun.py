@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2025.1.1),
-    on September 18, 2026, at 13:06
+    on September 18, 2026, at 13:48
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -509,6 +509,20 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "quizending" ---
     
     # --- Initialize components for Routine "likert" ---
+    likertText = visual.TextStim(win=win, name='likertText',
+        text='',
+        font='Times New Roman',
+        pos=(0, 0), draggable=False, height=0.1, wrapWidth=None, ori=0.0, 
+        color='white', colorSpace='rgb', opacity=None, 
+        languageStyle='LTR',
+        depth=0.0);
+    slider = visual.Slider(win=win, name='slider',
+        startValue=None, size=(1.0, 0.1), pos=(0, -0.4), units=win.units,
+        labels=('Strongly Disgree', 'Disgree', 'Neutral', 'Agree', 'Strongly Agree'), ticks=(1, 2, 3, 4, 5), granularity=1.0,
+        style='rating', styleTweaks=(), opacity=None,
+        labelColor='LightGray', markerColor='Red', lineColor='White', colorSpace='rgb',
+        font='Noto Sans', labelHeight=0.05,
+        flip=False, ori=0.0, depth=-1, readOnly=False)
     
     # --- Initialize components for Routine "end" ---
     
@@ -1396,87 +1410,192 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # the Routine "quizending" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
-    # --- Prepare to start Routine "likert" ---
-    # create an object to store info about Routine likert
-    likert = data.Routine(
-        name='likert',
-        components=[],
+    # set up handler to look after randomisation of conditions etc
+    likertLoop = data.TrialHandler2(
+        name='likertLoop',
+        nReps=1.0, 
+        method='random', 
+        extraInfo=expInfo, 
+        originPath=-1, 
+        trialList=data.importConditions('likert_items.xlsx'), 
+        seed=None, 
     )
-    likert.status = NOT_STARTED
-    continueRoutine = True
-    # update component parameters for each repeat
-    # store start times for likert
-    likert.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
-    likert.tStart = globalClock.getTime(format='float')
-    likert.status = STARTED
-    thisExp.addData('likert.started', likert.tStart)
-    likert.maxDuration = None
-    # keep track of which components have finished
-    likertComponents = likert.components
-    for thisComponent in likert.components:
-        thisComponent.tStart = None
-        thisComponent.tStop = None
-        thisComponent.tStartRefresh = None
-        thisComponent.tStopRefresh = None
-        if hasattr(thisComponent, 'status'):
-            thisComponent.status = NOT_STARTED
-    # reset timers
-    t = 0
-    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    frameN = -1
+    thisExp.addLoop(likertLoop)  # add the loop to the experiment
+    thisLikertLoop = likertLoop.trialList[0]  # so we can initialise stimuli with some values
+    # abbreviate parameter names if possible (e.g. rgb = thisLikertLoop.rgb)
+    if thisLikertLoop != None:
+        for paramName in thisLikertLoop:
+            globals()[paramName] = thisLikertLoop[paramName]
+    if thisSession is not None:
+        # if running in a Session with a Liaison client, send data up to now
+        thisSession.sendExperimentData()
     
-    # --- Run Routine "likert" ---
-    likert.forceEnded = routineForceEnded = not continueRoutine
-    while continueRoutine:
-        # get current time
-        t = routineTimer.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
-        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-        # update/draw components on each frame
+    for thisLikertLoop in likertLoop:
+        likertLoop.status = STARTED
+        if hasattr(thisLikertLoop, 'status'):
+            thisLikertLoop.status = STARTED
+        currentLoop = likertLoop
+        thisExp.timestampOnFlip(win, 'thisRow.t', format=globalClock.format)
+        if thisSession is not None:
+            # if running in a Session with a Liaison client, send data up to now
+            thisSession.sendExperimentData()
+        # abbreviate parameter names if possible (e.g. rgb = thisLikertLoop.rgb)
+        if thisLikertLoop != None:
+            for paramName in thisLikertLoop:
+                globals()[paramName] = thisLikertLoop[paramName]
         
-        # check for quit (typically the Esc key)
-        if defaultKeyboard.getKeys(keyList=["escape"]):
-            thisExp.status = FINISHED
-        if thisExp.status == FINISHED or endExpNow:
-            endExperiment(thisExp, win=win)
-            return
-        # pause experiment here if requested
-        if thisExp.status == PAUSED:
+        # --- Prepare to start Routine "likert" ---
+        # create an object to store info about Routine likert
+        likert = data.Routine(
+            name='likert',
+            components=[likertText, slider],
+        )
+        likert.status = NOT_STARTED
+        continueRoutine = True
+        # update component parameters for each repeat
+        likertText.setText(itemText)
+        slider.reset()
+        # store start times for likert
+        likert.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
+        likert.tStart = globalClock.getTime(format='float')
+        likert.status = STARTED
+        thisExp.addData('likert.started', likert.tStart)
+        likert.maxDuration = None
+        # keep track of which components have finished
+        likertComponents = likert.components
+        for thisComponent in likert.components:
+            thisComponent.tStart = None
+            thisComponent.tStop = None
+            thisComponent.tStartRefresh = None
+            thisComponent.tStopRefresh = None
+            if hasattr(thisComponent, 'status'):
+                thisComponent.status = NOT_STARTED
+        # reset timers
+        t = 0
+        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+        frameN = -1
+        
+        # --- Run Routine "likert" ---
+        likert.forceEnded = routineForceEnded = not continueRoutine
+        while continueRoutine:
+            # if trial has changed, end Routine now
+            if hasattr(thisLikertLoop, 'status') and thisLikertLoop.status == STOPPING:
+                continueRoutine = False
+            # get current time
+            t = routineTimer.getTime()
+            tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+            # update/draw components on each frame
+            
+            # *likertText* updates
+            
+            # if likertText is starting this frame...
+            if likertText.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                likertText.frameNStart = frameN  # exact frame index
+                likertText.tStart = t  # local t and not account for scr refresh
+                likertText.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(likertText, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'likertText.started')
+                # update status
+                likertText.status = STARTED
+                likertText.setAutoDraw(True)
+            
+            # if likertText is active this frame...
+            if likertText.status == STARTED:
+                # update params
+                pass
+            
+            # *slider* updates
+            
+            # if slider is starting this frame...
+            if slider.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                slider.frameNStart = frameN  # exact frame index
+                slider.tStart = t  # local t and not account for scr refresh
+                slider.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(slider, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'slider.started')
+                # update status
+                slider.status = STARTED
+                slider.setAutoDraw(True)
+            
+            # if slider is active this frame...
+            if slider.status == STARTED:
+                # update params
+                pass
+            
+            # Check slider for response to end Routine
+            if slider.getRating() is not None and slider.status == STARTED:
+                continueRoutine = False
+            
+            # check for quit (typically the Esc key)
+            if defaultKeyboard.getKeys(keyList=["escape"]):
+                thisExp.status = FINISHED
+            if thisExp.status == FINISHED or endExpNow:
+                endExperiment(thisExp, win=win)
+                return
+            # pause experiment here if requested
+            if thisExp.status == PAUSED:
+                pauseExperiment(
+                    thisExp=thisExp, 
+                    win=win, 
+                    timers=[routineTimer, globalClock], 
+                    currentRoutine=likert,
+                )
+                # skip the frame we paused on
+                continue
+            
+            # check if all components have finished
+            if not continueRoutine:  # a component has requested a forced-end of Routine
+                likert.forceEnded = routineForceEnded = True
+                break
+            continueRoutine = False  # will revert to True if at least one component still running
+            for thisComponent in likert.components:
+                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                    continueRoutine = True
+                    break  # at least one component has not yet finished
+            
+            # refresh the screen
+            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                win.flip()
+        
+        # --- Ending Routine "likert" ---
+        for thisComponent in likert.components:
+            if hasattr(thisComponent, "setAutoDraw"):
+                thisComponent.setAutoDraw(False)
+        # store stop times for likert
+        likert.tStop = globalClock.getTime(format='float')
+        likert.tStopRefresh = tThisFlipGlobal
+        thisExp.addData('likert.stopped', likert.tStop)
+        likertLoop.addData('slider.response', slider.getRating())
+        likertLoop.addData('slider.rt', slider.getRT())
+        # the Routine "likert" was not non-slip safe, so reset the non-slip timer
+        routineTimer.reset()
+        # mark thisLikertLoop as finished
+        if hasattr(thisLikertLoop, 'status'):
+            thisLikertLoop.status = FINISHED
+        # if awaiting a pause, pause now
+        if likertLoop.status == PAUSED:
+            thisExp.status = PAUSED
             pauseExperiment(
                 thisExp=thisExp, 
                 win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=likert,
+                timers=[globalClock], 
             )
-            # skip the frame we paused on
-            continue
+            # once done pausing, restore running status
+            likertLoop.status = STARTED
+        thisExp.nextEntry()
         
-        # check if all components have finished
-        if not continueRoutine:  # a component has requested a forced-end of Routine
-            likert.forceEnded = routineForceEnded = True
-            break
-        continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in likert.components:
-            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                continueRoutine = True
-                break  # at least one component has not yet finished
-        
-        # refresh the screen
-        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-            win.flip()
+    # completed 1.0 repeats of 'likertLoop'
+    likertLoop.status = FINISHED
     
-    # --- Ending Routine "likert" ---
-    for thisComponent in likert.components:
-        if hasattr(thisComponent, "setAutoDraw"):
-            thisComponent.setAutoDraw(False)
-    # store stop times for likert
-    likert.tStop = globalClock.getTime(format='float')
-    likert.tStopRefresh = tThisFlipGlobal
-    thisExp.addData('likert.stopped', likert.tStop)
-    thisExp.nextEntry()
-    # the Routine "likert" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset()
+    if thisSession is not None:
+        # if running in a Session with a Liaison client, send data up to now
+        thisSession.sendExperimentData()
     
     # --- Prepare to start Routine "end" ---
     # create an object to store info about Routine end

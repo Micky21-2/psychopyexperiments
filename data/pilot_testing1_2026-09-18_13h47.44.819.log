@@ -1,0 +1,363 @@
+7.9413 	DEBUG 	Fullscreen settings ignored as running in pilot mode.
+7.9425 	INFO 	Loaded monitor calibration from ['2026_09_03 20:22']
+8.0536 	INFO 	Using renderer 'Intel(R) Arc(TM) Graphics' for graphics
+8.0536 	INFO 	OpenGL version supported by driver is 4..
+8.0788 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002A99D7FB2B0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002A99D7FB310>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([-1, -1, -1]), colorSpace='rgb', depthBits=8, fullscr=False, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000002A99D8EF190>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(1040.0), np.float64(600.0)], screen=0, size=array([800, 600]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+8.0788 	EXP 	window1: backgroundImage = ''
+8.0789 	EXP 	window1: backgroundFit = 'none'
+8.0951 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.1060 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.1182 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.1286 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.1408 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.1514 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.1625 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.1733 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.1843 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.1950 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.2060 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.2166 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.2270 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.2376 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.2481 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.2590 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.2704 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.2804 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.2916 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.3027 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.3140 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.3143 	DEBUG 	Uploading Texture Font fontname to graphics card
+8.3306 	DEBUG 	Upload of Texture Font fontname complete
+8.3462 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.3586 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.3699 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.3701 	DEBUG 	Uploading Texture Font fontname to graphics card
+8.3753 	DEBUG 	Upload of Texture Font fontname complete
+8.3771 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+8.3771 	EXP 	window1: recordFrameIntervals = False
+8.4922 	EXP 	window1: recordFrameIntervals = True
+8.6150 	EXP 	Screen (0) actual frame rate measured at 89.58Hz
+8.6150 	EXP 	window1: recordFrameIntervals = False
+8.6338 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.6430 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.6528 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.6636 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.6740 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.6847 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.6961 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.7066 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.7177 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.7281 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.7285 	DEBUG 	Uploading Texture Font fontname to graphics card
+8.7292 	DEBUG 	Upload of Texture Font fontname complete
+8.9111 	INFO 	keyboard.Keyboard is using ptb backend.
+8.9113 	INFO 	keyboard.Keyboard is using ptb backend.
+8.9114 	INFO 	keyboard.Keyboard is using ptb backend.
+8.9114 	INFO 	keyboard.Keyboard is using ptb backend.
+8.9115 	INFO 	keyboard.Keyboard is using ptb backend.
+8.9115 	EXP 	testing1: status = STARTED
+8.9183 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9193 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9203 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9214 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9225 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9244 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9251 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9259 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9269 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9280 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9289 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9299 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9309 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9320 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9331 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9350 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9368 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9378 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9388 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9397 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9408 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9421 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9433 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9446 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9469 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9481 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9491 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9502 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9514 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9527 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9540 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9554 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9583 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9596 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9611 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9620 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9634 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9643 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9655 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9669 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9692 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9705 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9708 	DEBUG 	Uploading Texture Font fontname to graphics card
+8.9730 	DEBUG 	Upload of Texture Font fontname complete
+8.9834 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9848 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9862 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9878 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9892 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9918 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9930 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9941 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9954 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+8.9957 	DEBUG 	Uploading Texture Font fontname to graphics card
+9.0012 	DEBUG 	Upload of Texture Font fontname complete
+9.0082 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.0099 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.0116 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.0141 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.0148 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.0155 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.0170 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.0179 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.0181 	DEBUG 	Uploading Texture Font fontname to graphics card
+9.0207 	DEBUG 	Upload of Texture Font fontname complete
+9.0275 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.0285 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.0295 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.0308 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.0322 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.0329 	DEBUG 	Uploading Texture Font fontname to graphics card
+9.0356 	DEBUG 	Upload of Texture Font fontname complete
+9.0452 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.0484 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.0499 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.0520 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.0540 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.0556 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.0586 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.0604 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.0606 	DEBUG 	Uploading Texture Font fontname to graphics card
+9.0700 	DEBUG 	Upload of Texture Font fontname complete
+9.0776 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.0801 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.0814 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.0822 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.0829 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.0846 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.0859 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.0869 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.0871 	DEBUG 	Uploading Texture Font fontname to graphics card
+9.0931 	DEBUG 	Upload of Texture Font fontname complete
+9.0981 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.1001 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.1013 	DEBUG 	Uploading Texture Font fontname to graphics card
+9.1086 	DEBUG 	Upload of Texture Font fontname complete
+9.1179 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.1191 	DEBUG 	Uploading Texture Font fontname to graphics card
+9.1261 	DEBUG 	Upload of Texture Font fontname complete
+9.1530 	EXP 	Created likertText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='likertText', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='norm', win=Window(...), wrapWidth=1)
+9.1823 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.1934 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.2046 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.2144 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.2250 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.2361 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.2463 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.2570 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.2673 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.2797 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.2896 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.2997 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.3097 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.3222 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.3327 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.3331 	DEBUG 	Uploading Texture Font fontname to graphics card
+9.3382 	DEBUG 	Upload of Texture Font fontname complete
+9.3529 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.3634 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.3778 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.3878 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.3881 	DEBUG 	Uploading Texture Font fontname to graphics card
+9.3974 	DEBUG 	Upload of Texture Font fontname complete
+9.4205 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.4310 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.4423 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.4425 	DEBUG 	Uploading Texture Font fontname to graphics card
+9.4486 	DEBUG 	Upload of Texture Font fontname complete
+9.4686 	DEBUG 	TextBox2 loaded 1 chars with 0 blanks and 1 valid
+9.4688 	DEBUG 	Uploading Texture Font fontname to graphics card
+9.4775 	DEBUG 	Upload of Texture Font fontname complete
+9.5093 	EXP 	Created slider = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-1, fillColor=None, flip=False, font='Noto Sans', granularity=1.0, labelColor=None, labelHeight=np.float64(0.05), labelWrapWidth=None, labels=tuple(...), lineColor=None, markerColor=None, name='slider', opacity=None, ori=0.0, pos=array([ 0. , -0.4]), readOnly=False, self=UNKNOWN, size=array([1. , 0.1]), startValue=None, style='rating', styleTweaks=[], ticks=array([1, 2, 3, 4, 5]), units='norm', win=Window(...))
+0.0070 	EXP 	intro_text: autoLog = True
+0.0070 	EXP 	instruction_header: autoLog = True
+0.0070 	EXP 	instruction_text: autoLog = True
+0.0070 	EXP 	warning_header: autoLog = True
+0.0070 	EXP 	warning_text: autoLog = True
+0.0070 	EXP 	textbox: autoLog = True
+0.0070 	EXP 	slider: autoLog = True
+0.0070 	EXP 	slider: styleTweaks = []
+0.0070 	EXP 	slider: styleTweaks = []
+0.0070 	EXP 	slider: styleTweaks = []
+0.0070 	EXP 	slider: styleTweaks = []
+0.0070 	EXP 	slider: contrast = 1.0
+0.0070 	EXP 	slider: markerPos = None
+0.0070 	EXP 	slider: autoLog = True
+0.0165 	INFO 	Keyboard events cleared
+0.0165 	EXP 	intro_text: autoDraw = True
+1.2674 	EXP 	Device response: <KeyPress from None: t=1.2576374000054784, value=space, duration=None>
+1.2717 	DATA 	Keypress: space
+1.2827 	INFO 	Keyboard events cleared
+1.2826 	EXP 	intro_text: autoDraw = False
+1.2826 	EXP 	instruction_header: autoDraw = True
+1.2826 	EXP 	instruction_text: autoDraw = True
+1.3401 	EXP 	Device response: <KeyPress from None: t=1.2576374000054784, value=space, duration=0.08171119997859932>
+2.3864 	EXP 	Device response: <KeyPress from None: t=2.384278000012273, value=space, duration=None>
+2.3910 	DATA 	Keypress: space
+2.4051 	INFO 	Keyboard events cleared
+2.4050 	EXP 	instruction_header: autoDraw = False
+2.4050 	EXP 	instruction_text: autoDraw = False
+2.4050 	EXP 	warning_header: autoDraw = True
+2.4050 	EXP 	warning_text: autoDraw = True
+2.4522 	EXP 	Device response: <KeyPress from None: t=2.384278000012273, value=space, duration=0.060964099975535646>
+3.1739 	EXP 	Device response: <KeyPress from None: t=3.167761899996549, value=space, duration=None>
+3.1778 	DATA 	Keypress: space
+3.1832 	INFO 	Keyboard events cleared
+3.1831 	EXP 	warning_header: autoDraw = False
+3.1831 	EXP 	warning_text: autoDraw = False
+3.1831 	EXP 	textbox: autoDraw = True
+3.2527 	EXP 	Device response: <KeyPress from None: t=3.167761899996549, value=space, duration=0.07341829998767935>
+4.0111 	EXP 	Device response: <KeyPress from None: t=4.004285200004233, value=space, duration=None>
+4.0166 	DEBUG 	Read excel file with openpyxl: likert_items.xlsx
+4.0169 	EXP 	Imported likert_items.xlsx as conditions, 5 conditions, 4 params
+4.0171 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'itemText': 'The speaker was easy to understand.', 'type': 'rating', 'options': '1,2,3,4,5', 'layout': 'horiz', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+4.0748 	EXP 	Device response: <KeyPress from None: t=4.004285200004233, value=space, duration=0.06966059998376295>
+4.0763 	DATA 	Keypress: space
+4.0932 	EXP 	textbox: autoDraw = False
+4.0932 	EXP 	likertText: height = np.float64(0.05)
+4.0932 	EXP 	likertText: height = np.float64(0.05)
+4.0932 	EXP 	likertText: height = np.float64(0.05)
+4.0932 	EXP 	likertText: text = 'The speaker was easy to understand.'
+4.0932 	EXP 	slider: markerPos = None
+4.0932 	EXP 	slider: markerPos = None
+4.0932 	EXP 	likertText: autoDraw = True
+4.0932 	EXP 	slider: autoDraw = True
+8.4330 	DATA 	Mouse: Left button down, pos=(395,185)
+8.4490 	EXP 	slider: markerPos = np.float64(2.95)
+8.4600 	EXP 	slider: markerPos = np.float64(2.95)
+8.4716 	EXP 	slider: markerPos = np.float64(2.95)
+8.4824 	EXP 	slider: markerPos = np.float64(2.95)
+8.4938 	EXP 	slider: markerPos = np.float64(2.95)
+8.5046 	EXP 	slider: markerPos = np.float64(2.95)
+8.5158 	EXP 	slider: markerPos = np.float64(2.95)
+8.5271 	EXP 	slider: markerPos = np.float64(2.95)
+8.5378 	EXP 	slider: markerPos = np.float64(2.95)
+8.5490 	EXP 	slider: markerPos = np.float64(2.95)
+8.5607 	EXP 	slider: markerPos = np.float64(2.95)
+8.5625 	DATA 	Mouse:  Left button up, pos=(395,186)
+8.5712 	EXP 	slider: markerPos = 3.0
+8.5728 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'itemText': 'The video held my attention throughout.', 'type': 'rating', 'options': '1,2,3,4,5', 'layout': 'horiz', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+8.5931 	EXP 	likertText: autoDraw = False
+8.5931 	EXP 	slider: autoDraw = False
+8.5931 	EXP 	likertText: height = np.float64(0.05)
+8.5931 	EXP 	likertText: height = np.float64(0.05)
+8.5931 	EXP 	likertText: height = np.float64(0.05)
+8.5931 	EXP 	likertText: text = 'The video held my attention throughout.'
+8.5931 	EXP 	slider: markerPos = None
+8.5931 	EXP 	slider: markerPos = None
+8.5931 	EXP 	likertText: autoDraw = True
+8.5931 	EXP 	slider: autoDraw = True
+9.6660 	DATA 	Mouse: Left button down, pos=(396,186)
+9.6821 	EXP 	slider: markerPos = np.float64(2.96)
+9.6933 	EXP 	slider: markerPos = np.float64(2.96)
+9.7046 	EXP 	slider: markerPos = np.float64(2.96)
+9.7154 	EXP 	slider: markerPos = np.float64(2.96)
+9.7269 	EXP 	slider: markerPos = np.float64(2.96)
+9.7381 	EXP 	slider: markerPos = np.float64(2.96)
+9.7490 	EXP 	slider: markerPos = np.float64(2.96)
+9.7602 	EXP 	slider: markerPos = np.float64(2.96)
+9.7714 	EXP 	slider: markerPos = np.float64(2.96)
+9.7742 	DATA 	Mouse:  Left button up, pos=(396,186)
+9.7823 	EXP 	slider: markerPos = 3.0
+9.7837 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'itemText': 'I found the content engaging.', 'type': 'rating', 'options': '1,2,3,4,5', 'layout': 'horiz', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+9.8046 	EXP 	likertText: autoDraw = False
+9.8046 	EXP 	slider: autoDraw = False
+9.8046 	EXP 	likertText: height = np.float64(0.05)
+9.8046 	EXP 	likertText: height = np.float64(0.05)
+9.8046 	EXP 	likertText: height = np.float64(0.05)
+9.8046 	EXP 	likertText: text = 'I found the content engaging.'
+9.8046 	EXP 	slider: markerPos = None
+9.8046 	EXP 	slider: markerPos = None
+9.8046 	EXP 	likertText: autoDraw = True
+9.8046 	EXP 	slider: autoDraw = True
+10.5728 	DATA 	Mouse: Left button down, pos=(396,186)
+10.5822 	EXP 	slider: markerPos = np.float64(2.96)
+10.5934 	EXP 	slider: markerPos = np.float64(2.96)
+10.6043 	EXP 	slider: markerPos = np.float64(2.96)
+10.6154 	EXP 	slider: markerPos = np.float64(2.96)
+10.6268 	EXP 	slider: markerPos = np.float64(2.96)
+10.6375 	EXP 	slider: markerPos = np.float64(2.96)
+10.6492 	EXP 	slider: markerPos = np.float64(2.96)
+10.6603 	EXP 	slider: markerPos = np.float64(2.96)
+10.6820 	EXP 	slider: markerPos = np.float64(2.96)
+10.6838 	DATA 	Mouse:  Left button up, pos=(396,186)
+10.6936 	EXP 	slider: markerPos = 3.0
+10.6958 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'itemText': 'The pacing of the video felt appropriate.', 'type': 'rating', 'options': '1,2,3,4,5', 'layout': 'horiz', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+10.7152 	EXP 	likertText: autoDraw = False
+10.7152 	EXP 	slider: autoDraw = False
+10.7152 	EXP 	likertText: height = np.float64(0.05)
+10.7152 	EXP 	likertText: height = np.float64(0.05)
+10.7152 	EXP 	likertText: height = np.float64(0.05)
+10.7152 	EXP 	likertText: text = 'The pacing of the video felt appropriate.'
+10.7152 	EXP 	slider: markerPos = None
+10.7152 	EXP 	slider: markerPos = None
+10.7152 	EXP 	likertText: autoDraw = True
+10.7152 	EXP 	slider: autoDraw = True
+12.5437 	DATA 	Mouse: Left button down, pos=(401,194)
+12.5601 	EXP 	slider: markerPos = np.float64(3.01)
+12.5712 	EXP 	slider: markerPos = np.float64(3.01)
+12.5820 	EXP 	slider: markerPos = np.float64(3.01)
+12.5932 	EXP 	slider: markerPos = np.float64(3.01)
+12.6042 	EXP 	slider: markerPos = np.float64(3.01)
+12.6155 	EXP 	slider: markerPos = np.float64(3.01)
+12.6266 	EXP 	slider: markerPos = np.float64(3.01)
+12.6381 	EXP 	slider: markerPos = np.float64(3.01)
+12.6496 	EXP 	slider: markerPos = np.float64(3.01)
+12.6586 	DATA 	Mouse:  Left button up, pos=(401,194)
+12.6708 	EXP 	slider: markerPos = np.float64(3.01)
+12.6825 	EXP 	slider: markerPos = 3.0
+12.6841 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'itemText': 'I would want to watch more videos like this.', 'type': 'rating', 'options': '1,2,3,4,5', 'layout': 'horiz', 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+12.7040 	EXP 	likertText: autoDraw = False
+12.7040 	EXP 	slider: autoDraw = False
+12.7040 	EXP 	likertText: height = np.float64(0.05)
+12.7040 	EXP 	likertText: height = np.float64(0.05)
+12.7040 	EXP 	likertText: height = np.float64(0.05)
+12.7040 	EXP 	likertText: text = 'I would want to watch more videos like this.'
+12.7040 	EXP 	slider: markerPos = None
+12.7040 	EXP 	slider: markerPos = None
+12.7040 	EXP 	likertText: autoDraw = True
+12.7040 	EXP 	slider: autoDraw = True
+13.4177 	DATA 	Mouse: Left button down, pos=(401,194)
+13.4274 	EXP 	slider: markerPos = np.float64(3.01)
+13.4382 	EXP 	slider: markerPos = np.float64(3.01)
+13.4496 	EXP 	slider: markerPos = np.float64(3.01)
+13.4603 	EXP 	slider: markerPos = np.float64(3.01)
+13.4717 	EXP 	slider: markerPos = np.float64(3.01)
+13.4826 	EXP 	slider: markerPos = np.float64(3.01)
+13.4948 	EXP 	slider: markerPos = np.float64(3.01)
+13.5047 	EXP 	slider: markerPos = np.float64(3.01)
+13.5163 	EXP 	slider: markerPos = np.float64(3.01)
+13.5269 	EXP 	slider: markerPos = np.float64(3.01)
+13.5348 	DATA 	Mouse:  Left button up, pos=(401,194)
+13.5382 	EXP 	slider: markerPos = np.float64(3.01)
+13.5490 	EXP 	slider: markerPos = 3.0
+13.5600 	EXP 	likertText: autoDraw = False
+13.5600 	EXP 	slider: autoDraw = False
+13.5613 	EXP 	testing1: status = STOPPED
+13.5669 	INFO 	saved data to 'C:\\SPPA\\CMKL\\Animation_Project\\Summer\\Experiment_Workflows\\Testing1\\data\\pilot_testing1_2026-09-18_13h47.44.819.csv'
+13.5693 	INFO 	saved data to C:\SPPA\CMKL\Animation_Project\Summer\Experiment_Workflows\Testing1\data\pilot_testing1_2026-09-18_13h47.44.819.psydat
+13.8310 	DEBUG 	Saving data for testing1 ExperimentHandler
+13.8366 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+13.9263 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+13.9263 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+13.9264 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+13.9264 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
