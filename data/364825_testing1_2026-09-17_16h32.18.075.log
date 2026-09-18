@@ -1,0 +1,46 @@
+5.0452 	INFO 	Loaded monitor calibration from ['2026_09_03 20:22']
+5.0564 	WARNING 	User requested fullscreen with size [1152  720], but screen is actually [2880, 1800]. Using actual size
+6.6787 	INFO 	Using renderer 'Intel(R) Arc(TM) Graphics' for graphics
+6.6787 	INFO 	OpenGL version supported by driver is 4..
+6.7165 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001DBDF39D270>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001DBDF39D2D0>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([-1, -1, -1]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001DBDF4A8FD0>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([2880, 1800]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+6.7167 	EXP 	window1: backgroundImage = ''
+6.7167 	EXP 	window1: backgroundFit = 'none'
+7.0627 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+7.0628 	EXP 	window1: recordFrameIntervals = False
+7.1632 	EXP 	window1: recordFrameIntervals = True
+7.2862 	EXP 	Screen (0) actual frame rate measured at 89.48Hz
+7.2862 	EXP 	window1: recordFrameIntervals = False
+7.4684 	INFO 	keyboard.Keyboard is using ptb backend.
+7.4686 	INFO 	keyboard.Keyboard is using ptb backend.
+7.4686 	INFO 	keyboard.Keyboard is using ptb backend.
+7.4686 	INFO 	keyboard.Keyboard is using ptb backend.
+7.4686 	EXP 	testing1: status = STARTED
+7.8438 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.05), italic=False, languageStyle='LTR', name='text_2', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1)
+0.0018 	EXP 	intro_text_welcome: autoLog = True
+0.0018 	EXP 	intro_text: autoLog = True
+0.0018 	EXP 	instruction_header: autoLog = True
+0.0018 	EXP 	instruction_text: autoLog = True
+0.0084 	INFO 	Keyboard events cleared
+0.0083 	EXP 	intro_text_welcome: autoDraw = True
+0.0083 	EXP 	intro_text: autoDraw = True
+20.4784 	EXP 	Device response: <KeyPress from None: t=20.471202299988363, value=space, duration=None>
+20.4819 	DATA 	Keypress: space
+20.4862 	INFO 	Keyboard events cleared
+20.4861 	EXP 	intro_text_welcome: autoDraw = False
+20.4861 	EXP 	intro_text: autoDraw = False
+20.4861 	EXP 	instruction_header: autoDraw = True
+20.4861 	EXP 	instruction_text: autoDraw = True
+20.5643 	EXP 	Device response: <KeyPress from None: t=20.471202299988363, value=space, duration=0.08789029999752529>
+27.4637 	EXP 	Device response: <KeyPress from None: t=27.45949350000592, value=escape, duration=None>
+27.4648 	DATA 	Keypress: escape
+27.6416 	EXP 	Device response: <KeyPress from None: t=27.45949350000592, value=escape, duration=0.17383600000175647>
+27.6417 	EXP 	testing1: status = STOPPED
+27.6522 	EXP 	instruction_header: autoDraw = False
+27.6522 	EXP 	instruction_text: autoDraw = False
+27.6523 	EXP 	testing1: status = STOPPED
+27.6570 	INFO 	saved data to 'C:\\SPPA\\CMKL\\Animation_Project\\Summer\\Experiment_Workflows\\Testing1\\data\\364825_testing1_2026-09-17_16h32.18.075.csv'
+27.6608 	INFO 	saved data to C:\SPPA\CMKL\Animation_Project\Summer\Experiment_Workflows\Testing1\data\364825_testing1_2026-09-17_16h32.18.075.psydat
+29.4595 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+29.4926 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+29.4927 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+29.4927 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.

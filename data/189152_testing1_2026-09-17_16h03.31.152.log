@@ -1,0 +1,104 @@
+6.3059 	INFO 	Loaded monitor calibration from ['2026_09_03 20:22']
+6.3197 	WARNING 	User requested fullscreen with size [1152  720], but screen is actually [2880, 1800]. Using actual size
+8.0299 	INFO 	Using renderer 'Intel(R) Arc(TM) Graphics' for graphics
+8.0300 	INFO 	OpenGL version supported by driver is 4..
+8.0650 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x00000150BC77F100>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x00000150BC77F160>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([-1, -1, -1]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x00000150BC872440>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([2880, 1800]), stencilBits=0, stereo=False, title='PsychoPy', units='degFlatPos', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+8.0652 	EXP 	window1: backgroundImage = ''
+8.0652 	EXP 	window1: backgroundFit = 'none'
+8.4872 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+8.4872 	EXP 	window1: recordFrameIntervals = False
+8.5768 	EXP 	window1: recordFrameIntervals = True
+8.6995 	EXP 	Screen (0) actual frame rate measured at 90.49Hz
+8.6996 	EXP 	window1: recordFrameIntervals = False
+8.8862 	INFO 	keyboard.Keyboard is using ptb backend.
+8.8863 	INFO 	keyboard.Keyboard is using ptb backend.
+8.8864 	INFO 	keyboard.Keyboard is using ptb backend.
+8.8864 	INFO 	keyboard.Keyboard is using ptb backend.
+8.8864 	EXP 	testing1: status = STARTED
+8.9798 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Times New Roman', fontFiles=[], height=np.float64(0.1), italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='degFlatPos', win=Window(...), wrapWidth=2.0)
+8.9952 	EXP 	Created intructText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.05), italic=False, languageStyle='LTR', name='intructText', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='degFlatPos', win=Window(...), wrapWidth=15.0)
+9.0098 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.05), italic=False, languageStyle='LTR', name='text_2', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='degFlatPos', win=Window(...), wrapWidth=15.0)
+0.0054 	INFO 	Keyboard events cleared
+0.0054 	EXP 	text: autoDraw = True
+4.9230 	DATA 	Mouse: wheel shift=(0,1), pos=(182,276)
+5.0231 	DATA 	Mouse: wheel shift=(0,1), pos=(0,1436)
+5.0456 	DATA 	Mouse: wheel shift=(0,1), pos=(0,1451)
+5.0785 	DATA 	Mouse: wheel shift=(0,1), pos=(0,1456)
+5.1228 	DATA 	Mouse: wheel shift=(0,1), pos=(0,1456)
+5.2228 	DATA 	Mouse: wheel shift=(0,-1), pos=(0,1456)
+5.2338 	DATA 	Mouse: wheel shift=(0,-1), pos=(0,1456)
+5.2449 	DATA 	Mouse: wheel shift=(0,-1), pos=(0,1456)
+5.2561 	DATA 	Mouse: wheel shift=(0,-1), pos=(0,1456)
+5.2673 	DATA 	Mouse: wheel shift=(0,-1), pos=(0,1456)
+5.2783 	DATA 	Mouse: wheel shift=(0,-1), pos=(0,1456)
+5.3453 	DATA 	Mouse: wheel shift=(0,1), pos=(1,1456)
+5.3562 	DATA 	Mouse: wheel shift=(0,1), pos=(1,1456)
+5.3676 	DATA 	Mouse: wheel shift=(0,1), pos=(1,1456)
+5.5116 	DATA 	Mouse: wheel shift=(0,-1), pos=(0,1432)
+5.5225 	DATA 	Mouse: wheel shift=(0,-1), pos=(0,1409)
+5.5339 	DATA 	Mouse: wheel shift=(0,-1), pos=(0,1399)
+5.5448 	DATA 	Mouse: wheel shift=(0,-1), pos=(0,1396)
+5.6116 	DATA 	Mouse: wheel shift=(0,1), pos=(0,1396)
+5.6225 	DATA 	Mouse: wheel shift=(0,1), pos=(0,1396)
+5.6338 	DATA 	Mouse: wheel shift=(0,1), pos=(0,1396)
+5.6781 	DATA 	Mouse: wheel shift=(0,1), pos=(0,1396)
+5.7337 	DATA 	Mouse: wheel shift=(0,-1), pos=(0,1394)
+5.7451 	DATA 	Mouse: wheel shift=(0,-1), pos=(0,1394)
+5.7559 	DATA 	Mouse: wheel shift=(0,-1), pos=(0,1393)
+5.7672 	DATA 	Mouse: wheel shift=(0,-1), pos=(0,1393)
+5.8452 	DATA 	Mouse: wheel shift=(0,1), pos=(0,1393)
+5.8562 	DATA 	Mouse: wheel shift=(0,1), pos=(0,1393)
+5.8676 	DATA 	Mouse: wheel shift=(0,1), pos=(0,1393)
+5.9115 	DATA 	Mouse: wheel shift=(0,1), pos=(0,1393)
+5.9670 	DATA 	Mouse: wheel shift=(0,-1), pos=(0,1393)
+5.9785 	DATA 	Mouse: wheel shift=(0,-1), pos=(0,1393)
+5.9893 	DATA 	Mouse: wheel shift=(0,-1), pos=(0,1390)
+6.0118 	DATA 	Mouse: wheel shift=(0,-1), pos=(0,1389)
+6.0227 	DATA 	Mouse: wheel shift=(0,-1), pos=(0,1387)
+6.0672 	DATA 	Mouse: wheel shift=(0,1), pos=(0,1387)
+6.0782 	DATA 	Mouse: wheel shift=(0,1), pos=(0,1387)
+6.1007 	DATA 	Mouse: wheel shift=(0,1), pos=(0,1387)
+6.1118 	DATA 	Mouse: wheel shift=(0,1), pos=(0,1387)
+6.2005 	DATA 	Mouse: wheel shift=(0,-1), pos=(0,1387)
+6.2114 	DATA 	Mouse: wheel shift=(0,-1), pos=(0,1387)
+6.2228 	DATA 	Mouse: wheel shift=(0,-1), pos=(0,1387)
+6.2451 	DATA 	Mouse: wheel shift=(0,-1), pos=(0,1387)
+6.2674 	DATA 	Mouse: wheel shift=(0,-1), pos=(0,1387)
+6.3007 	DATA 	Mouse: wheel shift=(0,1), pos=(0,1387)
+6.3116 	DATA 	Mouse: wheel shift=(0,1), pos=(0,1387)
+6.3225 	DATA 	Mouse: wheel shift=(0,1), pos=(0,1387)
+6.3338 	DATA 	Mouse: wheel shift=(0,1), pos=(0,1387)
+6.4354 	DATA 	Mouse: wheel shift=(0,-1), pos=(0,1382)
+6.4459 	DATA 	Mouse: wheel shift=(0,-1), pos=(0,1376)
+6.4571 	DATA 	Mouse: wheel shift=(0,-1), pos=(0,1360)
+6.4784 	DATA 	Mouse: wheel shift=(0,-1), pos=(0,1354)
+6.5450 	DATA 	Mouse: wheel shift=(0,1), pos=(0,1350)
+6.5563 	DATA 	Mouse: wheel shift=(0,1), pos=(0,1350)
+6.5671 	DATA 	Mouse: wheel shift=(0,1), pos=(0,1350)
+6.6892 	DATA 	Mouse: wheel shift=(0,-1), pos=(0,1345)
+6.7115 	DATA 	Mouse: wheel shift=(0,-1), pos=(0,1345)
+6.7785 	DATA 	Mouse: wheel shift=(0,1), pos=(0,1345)
+6.9115 	DATA 	Mouse: wheel shift=(0,-1), pos=(0,1345)
+6.9340 	DATA 	Mouse: wheel shift=(0,-1), pos=(0,1345)
+9.4693 	EXP 	Device response: <KeyPress from None: t=9.463034899992635, value=space, duration=None>
+9.4707 	DATA 	Keypress: space
+9.4776 	INFO 	Keyboard events cleared
+9.4775 	EXP 	text: autoDraw = False
+9.4775 	EXP 	intructText: autoDraw = True
+9.5778 	EXP 	Device response: <KeyPress from None: t=9.463034899992635, value=space, duration=0.11118740000529215>
+10.1775 	EXP 	Device response: <KeyPress from None: t=10.170029000000795, value=space, duration=None>
+10.1785 	DATA 	Keypress: space
+10.1887 	INFO 	Keyboard events cleared
+10.1886 	EXP 	intructText: autoDraw = False
+10.1886 	EXP 	text_2: autoDraw = True
+10.3223 	EXP 	Device response: <KeyPress from None: t=10.170029000000795, value=space, duration=0.14372130000265315>
+10.6333 	EXP 	Device response: <KeyPress from None: t=10.629700799996499, value=space, duration=None>
+10.6339 	DATA 	Keypress: space
+10.6443 	EXP 	text_2: autoDraw = False
+10.6443 	EXP 	testing1: status = STOPPED
+10.6500 	INFO 	saved data to 'C:\\SPPA\\CMKL\\Animation_Project\\Summer\\Experiment_Workflows\\Testing1\\data\\189152_testing1_2026-09-17_16h03.31.152.csv'
+10.6506 	INFO 	saved data to C:\SPPA\CMKL\Animation_Project\Summer\Experiment_Workflows\Testing1\data\189152_testing1_2026-09-17_16h03.31.152.psydat
+12.4222 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+12.4699 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+12.4699 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+12.4699 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.

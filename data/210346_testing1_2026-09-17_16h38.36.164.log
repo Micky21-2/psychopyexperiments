@@ -1,0 +1,55 @@
+5.3076 	INFO 	Loaded monitor calibration from ['2026_09_03 20:22']
+5.3251 	WARNING 	User requested fullscreen with size [1152  720], but screen is actually [2880, 1800]. Using actual size
+5.4320 	INFO 	Using renderer 'Intel(R) Arc(TM) Graphics' for graphics
+5.4320 	INFO 	OpenGL version supported by driver is 4..
+5.5118 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001D534879CF0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001D534879C90>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([-1, -1, -1]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001D53F646380>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([2880, 1800]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+5.5119 	EXP 	window1: backgroundImage = ''
+5.5120 	EXP 	window1: backgroundFit = 'none'
+5.8291 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+5.8291 	EXP 	window1: recordFrameIntervals = False
+5.9518 	EXP 	window1: recordFrameIntervals = True
+6.0743 	EXP 	Screen (0) actual frame rate measured at 90.09Hz
+6.0745 	EXP 	window1: recordFrameIntervals = False
+6.2603 	INFO 	keyboard.Keyboard is using ptb backend.
+6.2604 	INFO 	keyboard.Keyboard is using ptb backend.
+6.2605 	INFO 	keyboard.Keyboard is using ptb backend.
+6.2605 	INFO 	keyboard.Keyboard is using ptb backend.
+6.2605 	EXP 	testing1: status = STARTED
+0.0090 	EXP 	intro_text_welcome: autoLog = True
+0.0090 	EXP 	intro_text: autoLog = True
+0.0090 	EXP 	instruction_header: autoLog = True
+0.0090 	EXP 	instruction_text: autoLog = True
+0.0090 	EXP 	warning_header: autoLog = True
+0.0090 	EXP 	warning_text: autoLog = True
+0.0196 	INFO 	Keyboard events cleared
+0.0196 	EXP 	intro_text_welcome: autoDraw = True
+0.0196 	EXP 	intro_text: autoDraw = True
+4.4585 	DATA 	Keypress: space
+4.4688 	EXP 	Device response: <KeyPress from None: t=4.457073199999286, value=space, duration=None>
+4.4764 	INFO 	Keyboard events cleared
+4.4763 	EXP 	intro_text_welcome: autoDraw = False
+4.4763 	EXP 	intro_text: autoDraw = False
+4.4763 	EXP 	instruction_header: autoDraw = True
+4.4763 	EXP 	instruction_text: autoDraw = True
+4.5311 	EXP 	Device response: <KeyPress from None: t=4.457073199999286, value=space, duration=0.0636921999976039>
+11.4086 	EXP 	Device response: <KeyPress from None: t=11.406661099987105, value=space, duration=None>
+11.4120 	DATA 	Keypress: space
+11.4192 	INFO 	Keyboard events cleared
+11.4191 	EXP 	instruction_header: autoDraw = False
+11.4191 	EXP 	instruction_text: autoDraw = False
+11.4191 	EXP 	warning_header: autoDraw = True
+11.4191 	EXP 	warning_text: autoDraw = True
+11.5418 	EXP 	Device response: <KeyPress from None: t=11.406661099987105, value=space, duration=0.12454509999952279>
+18.9086 	EXP 	Device response: <KeyPress from None: t=18.90440079997643, value=escape, duration=None>
+18.9101 	DATA 	Keypress: escape
+18.9973 	EXP 	Device response: <KeyPress from None: t=18.90440079997643, value=escape, duration=0.08560770002077334>
+18.9974 	EXP 	testing1: status = STOPPED
+19.0079 	EXP 	warning_header: autoDraw = False
+19.0079 	EXP 	warning_text: autoDraw = False
+19.0082 	EXP 	testing1: status = STOPPED
+19.0282 	INFO 	saved data to 'C:\\SPPA\\CMKL\\Animation_Project\\Summer\\Experiment_Workflows\\Testing1\\data\\210346_testing1_2026-09-17_16h38.36.164.csv'
+19.0453 	INFO 	saved data to C:\SPPA\CMKL\Animation_Project\Summer\Experiment_Workflows\Testing1\data\210346_testing1_2026-09-17_16h38.36.164.psydat
+19.2853 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+19.2938 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+19.2939 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+19.2939 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.

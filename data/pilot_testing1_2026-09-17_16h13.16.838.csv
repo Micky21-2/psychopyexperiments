@@ -1,0 +1,20 @@
+﻿thisRow.t,notes,intro.started,textbox.started,introresp.started,intro.stopped,textbox.text,introresp.keys,introresp.rt,introresp.duration,instructions.started,intructText.started,instruct_resp.started,instructions.stopped,instruct_resp.keys,instruct_resp.rt,instruct_resp.duration,warning.started,text_2.started,warning_resp.started,warning.stopped,warning_resp.keys,warning_resp.rt,warning_resp.duration,video.started,video.stopped,quizinstruction.started,quizinstruction.stopped,quiz.started,quiz.stopped,quizending.started,quizending.stopped,likert.started,likert.stopped,end.started,end.stopped,participant,session,date,expName,expVersion,psychopyVersion,frameRate,expStart,
+,,0.015402299992274493,0.0319073999999091,0.0319073999999091,20.289460300002247,"Welcome to this research study on educational video content.
+
+(This study will take approximately 30 minutes to complete.)
+
+Your responses will be kept confidential and used for research 
+purposes only. No personally identifying information will be shared 
+in any publication resulting from this research.
+
+By continuing, you confirm that you agree to participate in this study.
+
+Press 'SPACE'  to continue.ok",space,20.24854209998739,None,,,,,,,,,,,,,,,,,,,,,,,,,,,pilot,001,2026-09-17_16h13.16.838,testing1,,2025.1.1,89.6340064267952,2026-09-17 16h13.20.053120 +0700,
+,,,,,,,,,,20.289501799998106,20.29860219999682,20.29860219999682,21.546140999998897,space,1.2377845000009984,None,,,,,,,,,,,,,,,,,,,,pilot,001,2026-09-17_16h13.16.838,testing1,,2025.1.1,89.6340064267952,2026-09-17 16h13.20.053120 +0700,
+,,,,,,,,,,,,,,,,,21.546186599996872,21.565038800006732,21.565038800006732,21.88944430000265,space,0.31773840001551434,None,,,,,,,,,,,,,pilot,001,2026-09-17_16h13.16.838,testing1,,2025.1.1,89.6340064267952,2026-09-17 16h13.20.053120 +0700,
+,,,,,,,,,,,,,,,,,,,,,,,,21.889478800003417,21.889506800012896,,,,,,,,,,,pilot,001,2026-09-17_16h13.16.838,testing1,,2025.1.1,89.6340064267952,2026-09-17 16h13.20.053120 +0700,
+,,,,,,,,,,,,,,,,,,,,,,,,,,21.889520800003083,21.889545100013493,,,,,,,,,pilot,001,2026-09-17_16h13.16.838,testing1,,2025.1.1,89.6340064267952,2026-09-17 16h13.20.053120 +0700,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,21.88955849999911,21.889583100011805,,,,,,,pilot,001,2026-09-17_16h13.16.838,testing1,,2025.1.1,89.6340064267952,2026-09-17 16h13.20.053120 +0700,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,21.889596099994378,21.88961760001257,,,,,pilot,001,2026-09-17_16h13.16.838,testing1,,2025.1.1,89.6340064267952,2026-09-17 16h13.20.053120 +0700,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,21.889682900015032,21.889793000009377,,,pilot,001,2026-09-17_16h13.16.838,testing1,,2025.1.1,89.6340064267952,2026-09-17 16h13.20.053120 +0700,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,21.88980659999652,21.8898288999917,pilot,001,2026-09-17_16h13.16.838,testing1,,2025.1.1,89.6340064267952,2026-09-17 16h13.20.053120 +0700,

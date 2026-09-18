@@ -1,0 +1,44 @@
+11.1892 	INFO 	Loaded monitor calibration from ['2026_09_03 20:22']
+11.2016 	WARNING 	User requested fullscreen with size [1152  720], but screen is actually [2880, 1800]. Using actual size
+12.7501 	INFO 	Using renderer 'Intel(R) Arc(TM) Graphics' for graphics
+12.7501 	INFO 	OpenGL version supported by driver is 4..
+12.7796 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001C7070E9CF0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001C7070E9C90>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([-1, -1, -1]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001C710FE6440>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([2880, 1800]), stencilBits=0, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+12.7797 	EXP 	window1: backgroundImage = ''
+12.7797 	EXP 	window1: backgroundFit = 'none'
+13.1952 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+13.1952 	EXP 	window1: recordFrameIntervals = False
+13.2876 	EXP 	window1: recordFrameIntervals = True
+13.4104 	EXP 	Screen (0) actual frame rate measured at 89.94Hz
+13.4105 	EXP 	window1: recordFrameIntervals = False
+13.5888 	INFO 	keyboard.Keyboard is using ptb backend.
+13.5889 	INFO 	keyboard.Keyboard is using ptb backend.
+13.5890 	INFO 	keyboard.Keyboard is using ptb backend.
+13.5890 	INFO 	keyboard.Keyboard is using ptb backend.
+13.5890 	EXP 	testing1: status = STARTED
+13.7007 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Times New Roman', fontFiles=[], height=np.float64(0.1), italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=2.0)
+13.7126 	EXP 	Created intructText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.05), italic=False, languageStyle='LTR', name='intructText', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1)
+13.7258 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.05), italic=False, languageStyle='LTR', name='text_2', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1)
+0.0053 	INFO 	Keyboard events cleared
+0.0053 	EXP 	text: autoDraw = True
+7.1432 	EXP 	Device response: <KeyPress from None: t=7.134112300002016, value=space, duration=None>
+7.1446 	DATA 	Keypress: space
+7.1510 	INFO 	Keyboard events cleared
+7.1510 	EXP 	text: autoDraw = False
+7.1510 	EXP 	intructText: autoDraw = True
+7.2625 	EXP 	Device response: <KeyPress from None: t=7.134112300002016, value=space, duration=0.12104890000773594>
+9.0286 	EXP 	Device response: <KeyPress from None: t=9.022708700009389, value=space, duration=None>
+9.0310 	DATA 	Keypress: space
+9.0395 	INFO 	Keyboard events cleared
+9.0394 	EXP 	intructText: autoDraw = False
+9.0394 	EXP 	text_2: autoDraw = True
+9.1407 	EXP 	Device response: <KeyPress from None: t=9.022708700009389, value=space, duration=0.11017909998190589>
+9.5508 	EXP 	Device response: <KeyPress from None: t=9.54324140000972, value=space, duration=None>
+9.5519 	DATA 	Keypress: space
+9.5614 	EXP 	text_2: autoDraw = False
+9.5617 	EXP 	testing1: status = STOPPED
+9.5735 	INFO 	saved data to 'C:\\SPPA\\CMKL\\Animation_Project\\Summer\\Experiment_Workflows\\Testing1\\data\\046702_testing1_2026-09-17_16h04.05.426.csv'
+9.5774 	INFO 	saved data to C:\SPPA\CMKL\Animation_Project\Summer\Experiment_Workflows\Testing1\data\046702_testing1_2026-09-17_16h04.05.426.psydat
+11.3634 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+11.3709 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+11.3709 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+11.3709 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.

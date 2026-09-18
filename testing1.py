@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2025.1.1),
-    on September 17, 2026, at 16:45
+    on September 17, 2026, at 16:14
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -133,7 +133,7 @@ def setupData(expInfo, dataDir=None):
     thisExp = data.ExperimentHandler(
         name=expName, version=expVersion,
         extraInfo=expInfo, runtimeInfo=None,
-        originPath='C:\\SPPA\\CMKL\\Animation_Project\\Summer\\Experiment_Workflows\\Testing1\\testing1_lastrun.py',
+        originPath='C:\\SPPA\\CMKL\\Animation_Project\\Summer\\Experiment_Workflows\\Testing1\\testing1.py',
         savePickle=True, saveWideText=True,
         dataFileName=dataDir + os.sep + filename, sortColumns='time'
     )
@@ -389,92 +389,42 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # Start Code - component code to be run after the window creation
     
     # --- Initialize components for Routine "intro" ---
-    intro_text = visual.TextBox2(
+    textbox = visual.TextBox2(
          win, text="Welcome to this research study on educational video content.\n\n(This study will take approximately 30 minutes to complete.)\n\nYour responses will be kept confidential and used for research \npurposes only. No personally identifying information will be shared \nin any publication resulting from this research.\n\nBy continuing, you confirm that you agree to participate in this study.\n\nPress 'SPACE'  to continue.", placeholder='Type here...', font='Times New Roman',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.1,
-         size=(1.85, 0.5), borderWidth=2.0,
+         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.05,
+         size=(0.5, 0.5), borderWidth=2.0,
          color='white', colorSpace='rgb',
          opacity=None,
          bold=False, italic=False,
          lineSpacing=1.0, speechPoint=None,
-         padding=0.0, alignment='center-left',
+         padding=0.0, alignment='top-left',
          anchor='center', overflow='visible',
          fillColor=None, borderColor=None,
          flipHoriz=False, flipVert=False, languageStyle='LTR',
          editable=False,
-         name='intro_text',
+         name='textbox',
          depth=0, autoLog=True,
     )
     introresp = keyboard.Keyboard(deviceName='introresp')
     
     # --- Initialize components for Routine "instructions" ---
-    instruction_header = visual.TextBox2(
-         win, text='Instructions', placeholder='Type here...', font='Times New Roman',
-         ori=0.0, pos=(0, 0.65), draggable=False,      letterHeight=0.15,
-         size=(1.85, 0.5), borderWidth=2.0,
-         color='white', colorSpace='rgb',
-         opacity=None,
-         bold=True, italic=False,
-         lineSpacing=1.0, speechPoint=None,
-         padding=0.0, alignment='center',
-         anchor='center', overflow='visible',
-         fillColor=None, borderColor=None,
-         flipHoriz=False, flipVert=False, languageStyle='LTR',
-         editable=False,
-         name='instruction_header',
-         depth=0, autoLog=True,
-    )
-    instruction_text = visual.TextBox2(
-         win, text="In this study, you will:\n\n1. Watch a short educational video\n2. Answer a series of questions about what you watched\n3. Answer a few questions about your experience\n\nPress 'SPACE' to continue.", placeholder='Type here...', font='Times New Roman',
-         ori=0.0, pos=(0, -0.05), draggable=False,      letterHeight=0.1,
-         size=(1.85, 0.5), borderWidth=2.0,
-         color='white', colorSpace='rgb',
-         opacity=None,
-         bold=False, italic=False,
-         lineSpacing=1.0, speechPoint=None,
-         padding=0.0, alignment='center-left',
-         anchor='center', overflow='visible',
-         fillColor=None, borderColor=None,
-         flipHoriz=False, flipVert=False, languageStyle='LTR',
-         editable=False,
-         name='instruction_text',
-         depth=-1, autoLog=True,
-    )
+    intructText = visual.TextStim(win=win, name='intructText',
+        text="In this study, you will:\n\n1. Watch a short educational video\n2. Answer a series of questions about what you watched\n3. Answer a few questions about your experience\n\nPress 'SPACE' to continue.",
+        font='Times New Roman',
+        pos=(0, 0), draggable=False, height=0.1, wrapWidth=2.0, ori=0.0, 
+        color='white', colorSpace='rgb', opacity=None, 
+        languageStyle='LTR',
+        depth=0.0);
     instruct_resp = keyboard.Keyboard(deviceName='instruct_resp')
     
     # --- Initialize components for Routine "warning" ---
-    warning_header = visual.TextBox2(
-         win, text='IMPORTANT', placeholder='Type here...', font='Times New Roman',
-         ori=0.0, pos=(0, 0.65), draggable=False,      letterHeight=0.15,
-         size=(1.85, 0.5), borderWidth=2.0,
-         color='white', colorSpace='rgb',
-         opacity=None,
-         bold=False, italic=False,
-         lineSpacing=1.0, speechPoint=None,
-         padding=0.0, alignment='center',
-         anchor='center', overflow='visible',
-         fillColor=None, borderColor=None,
-         flipHoriz=False, flipVert=False, languageStyle='LTR',
-         editable=False,
-         name='warning_header',
-         depth=0, autoLog=True,
-    )
-    warning_text = visual.TextBox2(
-         win, text='- You will watch one video in full. Please do not skip, pause, or \n  rewind during playback.\n- Pay close attention, as you will be tested on the content \n  immediately afterward.\n- The video and quiz cannot be repeated once completed.\n- Please do not switch to other tabs, applications, or windows \n  during the video.\n\nPress SPACE when you are ready to begin the video.', placeholder='Type here...', font='Times New Roman',
-         ori=0.0, pos=(0, -0.05), draggable=False,      letterHeight=0.1,
-         size=(1.85, 0.5), borderWidth=2.0,
-         color='white', colorSpace='rgb',
-         opacity=None,
-         bold=False, italic=False,
-         lineSpacing=1.0, speechPoint=None,
-         padding=0.0, alignment='center-left',
-         anchor='center', overflow='visible',
-         fillColor=None, borderColor=None,
-         flipHoriz=False, flipVert=False, languageStyle='LTR',
-         editable=False,
-         name='warning_text',
-         depth=-1, autoLog=True,
-    )
+    text_2 = visual.TextStim(win=win, name='text_2',
+        text='IMPORTANT - Please read carefully:\n\n- You will watch one video in full. Please do not skip, pause, or \n  rewind during playback.\n- Pay close attention, as you will be tested on the content \n  afterward.\n- The video and quiz cannot be repeated once completed.\n- Please do not switch to other tabs, applications, or windows \n  during the video.\n\nPress any key when you are ready to begin the video.',
+        font='Arial',
+        pos=(0, 0), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
+        color='white', colorSpace='rgb', opacity=None, 
+        languageStyle='LTR',
+        depth=0.0);
     warning_resp = keyboard.Keyboard(deviceName='warning_resp')
     
     # --- Initialize components for Routine "video" ---
@@ -521,12 +471,12 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # create an object to store info about Routine intro
     intro = data.Routine(
         name='intro',
-        components=[intro_text, introresp],
+        components=[textbox, introresp],
     )
     intro.status = NOT_STARTED
     continueRoutine = True
     # update component parameters for each repeat
-    intro_text.reset()
+    textbox.reset()
     # create starting attributes for introresp
     introresp.keys = []
     introresp.rt = []
@@ -561,23 +511,23 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
-        # *intro_text* updates
+        # *textbox* updates
         
-        # if intro_text is starting this frame...
-        if intro_text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # if textbox is starting this frame...
+        if textbox.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            intro_text.frameNStart = frameN  # exact frame index
-            intro_text.tStart = t  # local t and not account for scr refresh
-            intro_text.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(intro_text, 'tStartRefresh')  # time at next scr refresh
+            textbox.frameNStart = frameN  # exact frame index
+            textbox.tStart = t  # local t and not account for scr refresh
+            textbox.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(textbox, 'tStartRefresh')  # time at next scr refresh
             # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'intro_text.started')
+            thisExp.timestampOnFlip(win, 'textbox.started')
             # update status
-            intro_text.status = STARTED
-            intro_text.setAutoDraw(True)
+            textbox.status = STARTED
+            textbox.setAutoDraw(True)
         
-        # if intro_text is active this frame...
-        if intro_text.status == STARTED:
+        # if textbox is active this frame...
+        if textbox.status == STARTED:
             # update params
             pass
         
@@ -663,13 +613,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # create an object to store info about Routine instructions
     instructions = data.Routine(
         name='instructions',
-        components=[instruction_header, instruction_text, instruct_resp],
+        components=[intructText, instruct_resp],
     )
     instructions.status = NOT_STARTED
     continueRoutine = True
     # update component parameters for each repeat
-    instruction_header.reset()
-    instruction_text.reset()
     # create starting attributes for instruct_resp
     instruct_resp.keys = []
     instruct_resp.rt = []
@@ -704,43 +652,23 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
-        # *instruction_header* updates
+        # *intructText* updates
         
-        # if instruction_header is starting this frame...
-        if instruction_header.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # if intructText is starting this frame...
+        if intructText.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            instruction_header.frameNStart = frameN  # exact frame index
-            instruction_header.tStart = t  # local t and not account for scr refresh
-            instruction_header.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(instruction_header, 'tStartRefresh')  # time at next scr refresh
+            intructText.frameNStart = frameN  # exact frame index
+            intructText.tStart = t  # local t and not account for scr refresh
+            intructText.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(intructText, 'tStartRefresh')  # time at next scr refresh
             # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'instruction_header.started')
+            thisExp.timestampOnFlip(win, 'intructText.started')
             # update status
-            instruction_header.status = STARTED
-            instruction_header.setAutoDraw(True)
+            intructText.status = STARTED
+            intructText.setAutoDraw(True)
         
-        # if instruction_header is active this frame...
-        if instruction_header.status == STARTED:
-            # update params
-            pass
-        
-        # *instruction_text* updates
-        
-        # if instruction_text is starting this frame...
-        if instruction_text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            instruction_text.frameNStart = frameN  # exact frame index
-            instruction_text.tStart = t  # local t and not account for scr refresh
-            instruction_text.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(instruction_text, 'tStartRefresh')  # time at next scr refresh
-            # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'instruction_text.started')
-            # update status
-            instruction_text.status = STARTED
-            instruction_text.setAutoDraw(True)
-        
-        # if instruction_text is active this frame...
-        if instruction_text.status == STARTED:
+        # if intructText is active this frame...
+        if intructText.status == STARTED:
             # update params
             pass
         
@@ -826,13 +754,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # create an object to store info about Routine warning
     warning = data.Routine(
         name='warning',
-        components=[warning_header, warning_text, warning_resp],
+        components=[text_2, warning_resp],
     )
     warning.status = NOT_STARTED
     continueRoutine = True
     # update component parameters for each repeat
-    warning_header.reset()
-    warning_text.reset()
     # create starting attributes for warning_resp
     warning_resp.keys = []
     warning_resp.rt = []
@@ -867,45 +793,39 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
-        # *warning_header* updates
+        # *text_2* updates
         
-        # if warning_header is starting this frame...
-        if warning_header.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # if text_2 is starting this frame...
+        if text_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            warning_header.frameNStart = frameN  # exact frame index
-            warning_header.tStart = t  # local t and not account for scr refresh
-            warning_header.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(warning_header, 'tStartRefresh')  # time at next scr refresh
+            text_2.frameNStart = frameN  # exact frame index
+            text_2.tStart = t  # local t and not account for scr refresh
+            text_2.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(text_2, 'tStartRefresh')  # time at next scr refresh
             # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'warning_header.started')
+            thisExp.timestampOnFlip(win, 'text_2.started')
             # update status
-            warning_header.status = STARTED
-            warning_header.setAutoDraw(True)
+            text_2.status = STARTED
+            text_2.setAutoDraw(True)
         
-        # if warning_header is active this frame...
-        if warning_header.status == STARTED:
+        # if text_2 is active this frame...
+        if text_2.status == STARTED:
             # update params
             pass
         
-        # *warning_text* updates
-        
-        # if warning_text is starting this frame...
-        if warning_text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            warning_text.frameNStart = frameN  # exact frame index
-            warning_text.tStart = t  # local t and not account for scr refresh
-            warning_text.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(warning_text, 'tStartRefresh')  # time at next scr refresh
-            # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'warning_text.started')
-            # update status
-            warning_text.status = STARTED
-            warning_text.setAutoDraw(True)
-        
-        # if warning_text is active this frame...
-        if warning_text.status == STARTED:
-            # update params
-            pass
+        # if text_2 is stopping this frame...
+        if text_2.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > text_2.tStartRefresh + 1.0-frameTolerance:
+                # keep track of stop time/frame for later
+                text_2.tStop = t  # not accounting for scr refresh
+                text_2.tStopRefresh = tThisFlipGlobal  # on global time
+                text_2.frameNStop = frameN  # exact frame index
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'text_2.stopped')
+                # update status
+                text_2.status = FINISHED
+                text_2.setAutoDraw(False)
         
         # *warning_resp* updates
         waitOnFlip = False

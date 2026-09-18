@@ -1,0 +1,35 @@
+5.9268 	INFO 	Loaded monitor calibration from ['2026_09_03 20:22']
+5.9402 	WARNING 	User requested fullscreen with size [1152  720], but screen is actually [2880, 1800]. Using actual size
+7.7640 	INFO 	Using renderer 'Intel(R) Arc(TM) Graphics' for graphics
+7.7640 	INFO 	OpenGL version supported by driver is 4..
+7.8018 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002EB6BECB100>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002EB6BECB160>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000002EB6BFC2440>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([2880, 1800]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+7.8019 	EXP 	window1: backgroundImage = ''
+7.8019 	EXP 	window1: backgroundFit = 'none'
+9.5767 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+9.5767 	EXP 	window1: recordFrameIntervals = False
+9.9743 	EXP 	window1: recordFrameIntervals = True
+10.1135 	WARNING 	t of last frame was 27.84ms (=1/35)
+10.2744 	EXP 	Screen (0) actual frame rate measured at 90.93Hz
+10.2744 	EXP 	window1: recordFrameIntervals = False
+10.4724 	INFO 	keyboard.Keyboard is using ptb backend.
+10.4726 	INFO 	keyboard.Keyboard is using ptb backend.
+10.4726 	INFO 	keyboard.Keyboard is using ptb backend.
+10.4727 	INFO 	keyboard.Keyboard is using ptb backend.
+10.4727 	EXP 	testing1: status = STARTED
+10.5880 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Times New Roman', fontFiles=[], height=np.float64(0.05), italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1.0)
+10.6153 	EXP 	Created intructText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.05), italic=False, languageStyle='LTR', name='intructText', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+10.6431 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.05), italic=False, languageStyle='LTR', name='text_2', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+1.5940 	INFO 	Keyboard events cleared
+1.5939 	EXP 	text: autoDraw = True
+13.2695 	DATA 	Keypress: escape
+13.3827 	EXP 	Device response: <KeyPress from None: t=13.102680999989389, value=escape, duration=None>
+13.3827 	EXP 	Device response: <KeyPress from None: t=13.102680999989389, value=escape, duration=0.015631699992809445>
+13.3828 	EXP 	testing1: status = STOPPED
+14.8208 	EXP 	text: autoDraw = False
+14.8209 	EXP 	testing1: status = STOPPED
+14.9201 	INFO 	saved data to 'C:\\SPPA\\CMKL\\Animation_Project\\Summer\\Experiment_Workflows\\Testing1\\data\\602355_testing1_2026-09-17_15h53.48.520.csv'
+14.9509 	INFO 	saved data to C:\SPPA\CMKL\Animation_Project\Summer\Experiment_Workflows\Testing1\data\602355_testing1_2026-09-17_15h53.48.520.psydat
+16.7504 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+16.8418 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+16.8418 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+16.8418 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.

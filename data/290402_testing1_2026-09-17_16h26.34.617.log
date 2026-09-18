@@ -1,0 +1,37 @@
+4.6324 	INFO 	Loaded monitor calibration from ['2026_09_03 20:22']
+4.6438 	WARNING 	User requested fullscreen with size [1152  720], but screen is actually [2880, 1800]. Using actual size
+6.2455 	INFO 	Using renderer 'Intel(R) Arc(TM) Graphics' for graphics
+6.2455 	INFO 	OpenGL version supported by driver is 4..
+6.2985 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x00000250BE5F1780>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x00000250BE5F17E0>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([-1, -1, -1]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x00000250BE68FAC0>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([2880, 1800]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+6.2986 	EXP 	window1: backgroundImage = ''
+6.2986 	EXP 	window1: backgroundFit = 'none'
+6.6760 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+6.6760 	EXP 	window1: recordFrameIntervals = False
+6.7728 	EXP 	window1: recordFrameIntervals = True
+6.8955 	EXP 	Screen (0) actual frame rate measured at 90.01Hz
+6.8956 	EXP 	window1: recordFrameIntervals = False
+7.0743 	INFO 	keyboard.Keyboard is using ptb backend.
+7.0744 	INFO 	keyboard.Keyboard is using ptb backend.
+7.0745 	INFO 	keyboard.Keyboard is using ptb backend.
+7.0745 	INFO 	keyboard.Keyboard is using ptb backend.
+7.0745 	EXP 	testing1: status = STARTED
+7.3951 	EXP 	Created intructText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Times New Roman', fontFiles=[], height=np.float64(0.1), italic=False, languageStyle='LTR', name='intructText', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=2.0)
+7.4098 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=np.float64(0.05), italic=False, languageStyle='LTR', name='text_2', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1)
+0.0012 	EXP 	intro_text_welcome: autoLog = True
+0.0012 	EXP 	intro_text: autoLog = True
+0.0072 	INFO 	Keyboard events cleared
+0.0072 	EXP 	intro_text_welcome: autoDraw = True
+0.0072 	EXP 	intro_text: autoDraw = True
+7.1340 	EXP 	Device response: <KeyPress from None: t=7.130141699977685, value=escape, duration=None>
+7.1364 	DATA 	Keypress: escape
+7.2742 	EXP 	Device response: <KeyPress from None: t=7.130141699977685, value=escape, duration=0.13757819999591447>
+7.2743 	EXP 	testing1: status = STOPPED
+7.2847 	EXP 	intro_text_welcome: autoDraw = False
+7.2847 	EXP 	intro_text: autoDraw = False
+7.2848 	EXP 	testing1: status = STOPPED
+7.2872 	INFO 	saved data to 'C:\\SPPA\\CMKL\\Animation_Project\\Summer\\Experiment_Workflows\\Testing1\\data\\290402_testing1_2026-09-17_16h26.34.617.csv'
+7.2885 	INFO 	saved data to C:\SPPA\CMKL\Animation_Project\Summer\Experiment_Workflows\Testing1\data\290402_testing1_2026-09-17_16h26.34.617.psydat
+9.0940 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+9.1942 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+9.1942 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+9.1942 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
