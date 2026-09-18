@@ -1,0 +1,283 @@
+5.9852 	INFO 	Loaded monitor calibration from ['2026_09_03 20:22']
+5.9899 	WARNING 	User requested fullscreen with size [1152  720], but screen is actually [2880, 1800]. Using actual size
+6.0950 	INFO 	Using renderer 'Intel(R) Arc(TM) Graphics' for graphics
+6.0950 	INFO 	OpenGL version supported by driver is 4..
+6.1190 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000022249B5F730>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000022249B5F790>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([-1, -1, -1]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000022249A40730>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([2880, 1800]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+6.1191 	EXP 	window1: backgroundImage = ''
+6.1191 	EXP 	window1: backgroundFit = 'none'
+6.4937 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+6.4937 	EXP 	window1: recordFrameIntervals = False
+6.6101 	EXP 	window1: recordFrameIntervals = True
+6.7338 	EXP 	Screen (0) actual frame rate measured at 89.36Hz
+6.7338 	EXP 	window1: recordFrameIntervals = False
+6.9313 	INFO 	keyboard.Keyboard is using ptb backend.
+6.9314 	INFO 	keyboard.Keyboard is using ptb backend.
+6.9314 	INFO 	keyboard.Keyboard is using ptb backend.
+6.9315 	INFO 	keyboard.Keyboard is using ptb backend.
+6.9315 	INFO 	keyboard.Keyboard is using ptb backend.
+6.9315 	INFO 	keyboard.Keyboard is using ptb backend.
+6.9315 	EXP 	testing1: status = STARTED
+7.4782 	EXP 	Created likertText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Times New Roman', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='likertText', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='norm', win=Window(...), wrapWidth=1)
+7.8268 	EXP 	Created likert_slider = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-1, fillColor=None, flip=False, font='Noto Sans', granularity=1.0, labelColor=None, labelHeight=np.float64(0.05), labelWrapWidth=None, labels=tuple(...), lineColor=None, markerColor=None, name='likert_slider', opacity=None, ori=0.0, pos=array([ 0. , -0.4]), readOnly=False, self=UNKNOWN, size=array([1.4, 0.1]), startValue=None, style='rating', styleTweaks=[], ticks=array([1, 2, 3, 4, 5]), units='norm', win=Window(...))
+7.9528 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Times New Roman', fontFiles=[], height=np.float64(0.1), italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1)
+0.0026 	EXP 	intro_text: autoLog = True
+0.0026 	EXP 	instruction_header: autoLog = True
+0.0026 	EXP 	instruction_text: autoLog = True
+0.0026 	EXP 	warning_header: autoLog = True
+0.0026 	EXP 	warning_text: autoLog = True
+0.0026 	EXP 	textbox: autoLog = True
+0.0026 	EXP 	textbox_2: autoLog = True
+0.0026 	EXP 	likert_slider: autoLog = True
+0.0026 	EXP 	likert_slider: styleTweaks = []
+0.0026 	EXP 	likert_slider: styleTweaks = []
+0.0026 	EXP 	likert_slider: styleTweaks = []
+0.0026 	EXP 	likert_slider: styleTweaks = []
+0.0026 	EXP 	likert_slider: contrast = 1.0
+0.0026 	EXP 	likert_slider: markerPos = None
+0.0026 	EXP 	likert_slider: autoLog = True
+0.0133 	INFO 	Keyboard events cleared
+0.0132 	EXP 	intro_text: autoDraw = True
+0.7269 	EXP 	Device response: <KeyPress from None: t=0.7205602999893017, value=space, duration=None>
+0.7300 	DATA 	Keypress: space
+0.7355 	INFO 	Keyboard events cleared
+0.7355 	EXP 	intro_text: autoDraw = False
+0.7355 	EXP 	instruction_header: autoDraw = True
+0.7355 	EXP 	instruction_text: autoDraw = True
+0.8916 	EXP 	Device response: <KeyPress from None: t=0.7205602999893017, value=space, duration=0.17075230000773445>
+1.1158 	DATA 	Keypress: space
+1.1244 	EXP 	Device response: <KeyPress from None: t=1.114891000004718, value=space, duration=None>
+1.1351 	INFO 	Keyboard events cleared
+1.1350 	EXP 	instruction_header: autoDraw = False
+1.1350 	EXP 	instruction_text: autoDraw = False
+1.1350 	EXP 	warning_header: autoDraw = True
+1.1350 	EXP 	warning_text: autoDraw = True
+1.1692 	EXP 	Device response: <KeyPress from None: t=1.114891000004718, value=space, duration=0.0467159999825526>
+1.2048 	DATA 	Keypress: space
+1.2133 	EXP 	Device response: <KeyPress from None: t=1.2038961999933235, value=space, duration=None>
+1.2242 	INFO 	Keyboard events cleared
+1.2241 	EXP 	warning_header: autoDraw = False
+1.2241 	EXP 	warning_text: autoDraw = False
+1.2241 	EXP 	textbox: autoDraw = True
+1.3021 	EXP 	Device response: <KeyPress from None: t=1.2038961999933235, value=space, duration=0.09128079999936745>
+2.1040 	DATA 	Keypress: space
+2.1132 	EXP 	Device response: <KeyPress from None: t=2.1036692000052426, value=space, duration=None>
+2.1242 	INFO 	Keyboard events cleared
+2.1242 	EXP 	textbox: autoDraw = False
+2.1242 	EXP 	textbox_2: autoDraw = True
+2.2021 	EXP 	Device response: <KeyPress from None: t=2.1036692000052426, value=space, duration=0.08830579998902977>
+3.2275 	DATA 	Keypress: space
+3.2356 	EXP 	Device response: <KeyPress from None: t=3.2257036000082735, value=space, duration=None>
+3.2434 	EXP 	Imported likert_items.xlsx as conditions, 5 conditions, 1 params
+3.2438 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'itemText': 'I found the content engaging.', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+3.2627 	EXP 	textbox_2: autoDraw = False
+3.2627 	EXP 	likertText: height = np.float64(0.1)
+3.2627 	EXP 	likertText: height = np.float64(0.1)
+3.2627 	EXP 	likertText: height = np.float64(0.1)
+3.2627 	EXP 	likertText: text = 'I found the content engaging.'
+3.2627 	EXP 	likert_slider: markerPos = None
+3.2627 	EXP 	likert_slider: markerPos = None
+3.2627 	EXP 	likertText: autoDraw = True
+3.2627 	EXP 	likert_slider: autoDraw = True
+3.2799 	EXP 	Device response: <KeyPress from None: t=3.2257036000082735, value=space, duration=0.048838899994734675>
+5.4360 	DATA 	Mouse: Left button down, pos=(1434,557)
+5.4512 	EXP 	likert_slider: markerPos = np.float64(2.988095238095238)
+5.4645 	EXP 	likert_slider: markerPos = np.float64(2.988095238095238)
+5.4755 	EXP 	likert_slider: markerPos = np.float64(2.988095238095238)
+5.4875 	EXP 	likert_slider: markerPos = np.float64(2.988095238095238)
+5.5016 	EXP 	likert_slider: markerPos = np.float64(2.988095238095238)
+5.5126 	EXP 	likert_slider: markerPos = np.float64(2.988095238095238)
+5.5273 	EXP 	likert_slider: markerPos = np.float64(2.988095238095238)
+5.5362 	EXP 	likert_slider: markerPos = np.float64(2.988095238095238)
+5.5460 	EXP 	likert_slider: markerPos = np.float64(2.988095238095238)
+5.5572 	EXP 	likert_slider: markerPos = np.float64(2.988095238095238)
+5.5685 	EXP 	likert_slider: markerPos = np.float64(2.988095238095238)
+5.5795 	EXP 	likert_slider: markerPos = np.float64(2.988095238095238)
+5.5905 	EXP 	likert_slider: markerPos = np.float64(2.988095238095238)
+5.6015 	EXP 	likert_slider: markerPos = np.float64(2.988095238095238)
+5.6127 	EXP 	likert_slider: markerPos = np.float64(2.988095238095238)
+5.6241 	EXP 	likert_slider: markerPos = np.float64(2.988095238095238)
+5.6349 	EXP 	likert_slider: markerPos = np.float64(2.988095238095238)
+5.6460 	EXP 	likert_slider: markerPos = np.float64(2.988095238095238)
+5.6526 	DATA 	Mouse:  Left button up, pos=(1434,557)
+5.6571 	EXP 	likert_slider: markerPos = np.float64(2.988095238095238)
+5.6682 	EXP 	likert_slider: markerPos = 3.0
+6.2534 	DATA 	Mouse: Left button down, pos=(1434,557)
+6.2733 	EXP 	likert_slider: markerPos = np.float64(2.988095238095238)
+6.2856 	EXP 	likert_slider: markerPos = np.float64(2.988095238095238)
+6.2968 	EXP 	likert_slider: markerPos = np.float64(2.988095238095238)
+6.3057 	EXP 	likert_slider: markerPos = np.float64(2.988095238095238)
+6.3194 	EXP 	likert_slider: markerPos = np.float64(2.988095238095238)
+6.3284 	EXP 	likert_slider: markerPos = np.float64(2.988095238095238)
+6.3423 	EXP 	likert_slider: markerPos = np.float64(2.988095238095238)
+6.3522 	EXP 	likert_slider: markerPos = np.float64(2.988095238095238)
+6.3608 	EXP 	likert_slider: markerPos = np.float64(2.988095238095238)
+6.3724 	EXP 	likert_slider: markerPos = np.float64(2.988095238095238)
+6.3831 	EXP 	likert_slider: markerPos = np.float64(2.988095238095238)
+6.3917 	EXP 	likert_slider: markerPos = np.float64(2.988095238095238)
+6.4025 	EXP 	likert_slider: markerPos = np.float64(2.988095238095238)
+6.4129 	EXP 	likert_slider: markerPos = np.float64(2.988095238095238)
+6.4240 	EXP 	likert_slider: markerPos = np.float64(2.988095238095238)
+6.4350 	EXP 	likert_slider: markerPos = np.float64(2.988095238095238)
+6.4462 	EXP 	likert_slider: markerPos = np.float64(2.988095238095238)
+6.4581 	EXP 	likert_slider: markerPos = np.float64(2.988095238095238)
+6.4692 	EXP 	likert_slider: markerPos = np.float64(2.988095238095238)
+6.4700 	DATA 	Mouse:  Left button up, pos=(1434,557)
+6.4819 	EXP 	likert_slider: markerPos = 3.0
+8.2113 	DATA 	Mouse: Left button down, pos=(2654,192)
+8.2144 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'itemText': 'I would want to watch more videos like this.', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+8.2307 	EXP 	likertText: autoDraw = False
+8.2307 	EXP 	likert_slider: autoDraw = False
+8.2307 	EXP 	likertText: height = np.float64(0.1)
+8.2307 	EXP 	likertText: height = np.float64(0.1)
+8.2307 	EXP 	likertText: height = np.float64(0.1)
+8.2307 	EXP 	likertText: text = 'I would want to watch more videos like this.'
+8.2307 	EXP 	likert_slider: markerPos = None
+8.2307 	EXP 	likert_slider: markerPos = None
+8.2307 	EXP 	likertText: autoDraw = True
+8.2307 	EXP 	likert_slider: autoDraw = True
+8.4317 	DATA 	Mouse:  Left button up, pos=(2654,192)
+10.7080 	DATA 	Mouse: Left button down, pos=(1420,497)
+10.7282 	EXP 	likert_slider: markerPos = np.float64(2.9603174603174605)
+10.7408 	EXP 	likert_slider: markerPos = np.float64(2.9603174603174605)
+10.7501 	EXP 	likert_slider: markerPos = np.float64(2.9603174603174605)
+10.7588 	EXP 	likert_slider: markerPos = np.float64(2.9603174603174605)
+10.7710 	EXP 	likert_slider: markerPos = np.float64(2.9603174603174605)
+10.7806 	EXP 	likert_slider: markerPos = np.float64(2.9603174603174605)
+10.7916 	EXP 	likert_slider: markerPos = np.float64(2.9603174603174605)
+10.8028 	EXP 	likert_slider: markerPos = np.float64(2.9603174603174605)
+10.8152 	EXP 	likert_slider: markerPos = np.float64(2.9603174603174605)
+10.8282 	EXP 	likert_slider: markerPos = np.float64(2.9603174603174605)
+10.8381 	EXP 	likert_slider: markerPos = np.float64(2.9603174603174605)
+10.8468 	EXP 	likert_slider: markerPos = np.float64(2.9603174603174605)
+10.8586 	EXP 	likert_slider: markerPos = np.float64(2.9603174603174605)
+10.8693 	EXP 	likert_slider: markerPos = np.float64(2.9603174603174605)
+10.8794 	EXP 	likert_slider: markerPos = np.float64(2.9603174603174605)
+10.8905 	EXP 	likert_slider: markerPos = np.float64(2.9603174603174605)
+10.9016 	EXP 	likert_slider: markerPos = np.float64(2.9603174603174605)
+10.9127 	EXP 	likert_slider: markerPos = np.float64(2.9603174603174605)
+10.9201 	DATA 	Mouse:  Left button up, pos=(1420,497)
+10.9240 	EXP 	likert_slider: markerPos = np.float64(2.9603174603174605)
+10.9351 	EXP 	likert_slider: markerPos = 3.0
+12.4798 	DATA 	Mouse: Left button down, pos=(2571,187)
+12.4807 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'itemText': 'The video held my attention throughout.', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+12.4944 	EXP 	likertText: autoDraw = False
+12.4944 	EXP 	likert_slider: autoDraw = False
+12.4944 	EXP 	likertText: height = np.float64(0.1)
+12.4944 	EXP 	likertText: height = np.float64(0.1)
+12.4944 	EXP 	likertText: height = np.float64(0.1)
+12.4944 	EXP 	likertText: text = 'The video held my attention throughout.'
+12.4944 	EXP 	likert_slider: markerPos = None
+12.4944 	EXP 	likert_slider: markerPos = None
+12.4944 	EXP 	likertText: autoDraw = True
+12.4944 	EXP 	likert_slider: autoDraw = True
+12.6913 	DATA 	Mouse:  Left button up, pos=(2571,187)
+15.2577 	DATA 	Mouse: Left button down, pos=(951,541)
+15.2686 	EXP 	likert_slider: markerPos = np.float64(2.0297619047619047)
+15.2794 	EXP 	likert_slider: markerPos = np.float64(2.0297619047619047)
+15.2906 	EXP 	likert_slider: markerPos = np.float64(2.0297619047619047)
+15.3014 	EXP 	likert_slider: markerPos = np.float64(2.0297619047619047)
+15.3126 	EXP 	likert_slider: markerPos = np.float64(2.0297619047619047)
+15.3238 	EXP 	likert_slider: markerPos = np.float64(2.0297619047619047)
+15.3349 	EXP 	likert_slider: markerPos = np.float64(2.0297619047619047)
+15.3460 	EXP 	likert_slider: markerPos = np.float64(2.0297619047619047)
+15.3571 	EXP 	likert_slider: markerPos = np.float64(2.0297619047619047)
+15.3682 	EXP 	likert_slider: markerPos = np.float64(2.0297619047619047)
+15.3796 	EXP 	likert_slider: markerPos = np.float64(2.0297619047619047)
+15.3909 	EXP 	likert_slider: markerPos = np.float64(2.0297619047619047)
+15.4015 	EXP 	likert_slider: markerPos = np.float64(2.0297619047619047)
+15.4127 	EXP 	likert_slider: markerPos = np.float64(2.0297619047619047)
+15.4238 	EXP 	likert_slider: markerPos = np.float64(2.0297619047619047)
+15.4349 	EXP 	likert_slider: markerPos = np.float64(2.0297619047619047)
+15.4460 	EXP 	likert_slider: markerPos = np.float64(2.0297619047619047)
+15.4570 	EXP 	likert_slider: markerPos = np.float64(2.0297619047619047)
+15.4681 	EXP 	likert_slider: markerPos = np.float64(2.0297619047619047)
+15.4791 	EXP 	likert_slider: markerPos = np.float64(2.0297619047619047)
+15.4797 	DATA 	Mouse:  Left button up, pos=(951,541)
+15.4903 	EXP 	likert_slider: markerPos = 2.0
+18.8019 	DATA 	Mouse: Left button down, pos=(2580,269)
+18.8026 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'itemText': 'The pacing of the video felt appropriate.', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+18.8160 	EXP 	likertText: autoDraw = False
+18.8160 	EXP 	likert_slider: autoDraw = False
+18.8160 	EXP 	likertText: height = np.float64(0.1)
+18.8160 	EXP 	likertText: height = np.float64(0.1)
+18.8160 	EXP 	likertText: height = np.float64(0.1)
+18.8160 	EXP 	likertText: text = 'The pacing of the video felt appropriate.'
+18.8160 	EXP 	likert_slider: markerPos = None
+18.8160 	EXP 	likert_slider: markerPos = None
+18.8160 	EXP 	likertText: autoDraw = True
+18.8160 	EXP 	likert_slider: autoDraw = True
+19.0383 	DATA 	Mouse:  Left button up, pos=(2580,269)
+21.2406 	DATA 	Mouse: Left button down, pos=(415,561)
+21.2571 	EXP 	likert_slider: markerPos = np.float64(0.966269841269841)
+21.2683 	EXP 	likert_slider: markerPos = np.float64(0.966269841269841)
+21.2794 	EXP 	likert_slider: markerPos = np.float64(0.966269841269841)
+21.2904 	EXP 	likert_slider: markerPos = np.float64(0.966269841269841)
+21.3015 	EXP 	likert_slider: markerPos = np.float64(0.966269841269841)
+21.3124 	EXP 	likert_slider: markerPos = np.float64(0.966269841269841)
+21.3239 	EXP 	likert_slider: markerPos = np.float64(0.966269841269841)
+21.3348 	EXP 	likert_slider: markerPos = np.float64(0.966269841269841)
+21.3461 	EXP 	likert_slider: markerPos = np.float64(0.966269841269841)
+21.3579 	EXP 	likert_slider: markerPos = np.float64(0.966269841269841)
+21.3738 	EXP 	likert_slider: markerPos = np.float64(0.966269841269841)
+21.3861 	EXP 	likert_slider: markerPos = np.float64(0.966269841269841)
+21.3980 	EXP 	likert_slider: markerPos = np.float64(0.966269841269841)
+21.4071 	EXP 	likert_slider: markerPos = np.float64(0.966269841269841)
+21.4190 	EXP 	likert_slider: markerPos = np.float64(0.966269841269841)
+21.4281 	EXP 	likert_slider: markerPos = np.float64(0.966269841269841)
+21.4391 	EXP 	likert_slider: markerPos = np.float64(0.966269841269841)
+21.4470 	EXP 	likert_slider: markerPos = np.float64(0.966269841269841)
+21.4571 	EXP 	likert_slider: markerPos = np.float64(0.966269841269841)
+21.4663 	DATA 	Mouse:  Left button up, pos=(415,561)
+21.4688 	EXP 	likert_slider: markerPos = np.float64(0.966269841269841)
+21.4793 	EXP 	likert_slider: markerPos = 1.0
+22.6584 	DATA 	Mouse: Left button down, pos=(2628,200)
+22.6594 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'itemText': 'The speaker was easy to understand.', 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+22.6726 	EXP 	likertText: autoDraw = False
+22.6726 	EXP 	likert_slider: autoDraw = False
+22.6726 	EXP 	likertText: height = np.float64(0.1)
+22.6726 	EXP 	likertText: height = np.float64(0.1)
+22.6726 	EXP 	likertText: height = np.float64(0.1)
+22.6726 	EXP 	likertText: text = 'The speaker was easy to understand.'
+22.6726 	EXP 	likert_slider: markerPos = None
+22.6726 	EXP 	likert_slider: markerPos = None
+22.6726 	EXP 	likertText: autoDraw = True
+22.6726 	EXP 	likert_slider: autoDraw = True
+22.8910 	DATA 	Mouse:  Left button up, pos=(2628,200)
+26.5300 	DATA 	Mouse: Left button down, pos=(1399,524)
+26.5457 	EXP 	likert_slider: markerPos = np.float64(2.9186507936507935)
+26.5568 	EXP 	likert_slider: markerPos = np.float64(2.9186507936507935)
+26.5681 	EXP 	likert_slider: markerPos = np.float64(2.9186507936507935)
+26.5791 	EXP 	likert_slider: markerPos = np.float64(2.9186507936507935)
+26.5903 	EXP 	likert_slider: markerPos = np.float64(2.9186507936507935)
+26.6034 	EXP 	likert_slider: markerPos = np.float64(2.9186507936507935)
+26.6137 	EXP 	likert_slider: markerPos = np.float64(2.9186507936507935)
+26.6244 	EXP 	likert_slider: markerPos = np.float64(2.9186507936507935)
+26.6352 	EXP 	likert_slider: markerPos = np.float64(2.9186507936507935)
+26.6464 	EXP 	likert_slider: markerPos = np.float64(2.9186507936507935)
+26.6581 	EXP 	likert_slider: markerPos = np.float64(2.9186507936507935)
+26.6685 	EXP 	likert_slider: markerPos = np.float64(2.9186507936507935)
+26.6800 	EXP 	likert_slider: markerPos = np.float64(2.9186507936507935)
+26.6905 	EXP 	likert_slider: markerPos = np.float64(2.9186507936507935)
+26.7017 	EXP 	likert_slider: markerPos = np.float64(2.9186507936507935)
+26.7136 	EXP 	likert_slider: markerPos = np.float64(2.9186507936507935)
+26.7242 	EXP 	likert_slider: markerPos = np.float64(2.9186507936507935)
+26.7346 	EXP 	likert_slider: markerPos = np.float64(2.9186507936507935)
+26.7427 	DATA 	Mouse:  Left button up, pos=(1399,524)
+26.7468 	EXP 	likert_slider: markerPos = np.float64(2.9186507936507935)
+26.7568 	EXP 	likert_slider: markerPos = 3.0
+27.9125 	DATA 	Mouse: Left button down, pos=(2535,176)
+27.9234 	EXP 	likertText: autoDraw = False
+27.9234 	EXP 	likert_slider: autoDraw = False
+27.9234 	EXP 	text: autoDraw = True
+28.1356 	DATA 	Mouse:  Left button up, pos=(2535,176)
+32.9234 	EXP 	text: autoDraw = False
+32.9234 	EXP 	text: autoDraw = False
+32.9236 	EXP 	testing1: status = STOPPED
+32.9318 	INFO 	saved data to 'C:\\SPPA\\CMKL\\Animation_Project\\Summer\\Experiment_Workflows\\Testing1\\data\\190358_testing1_2026-09-18_14h45.20.219.csv'
+32.9331 	INFO 	saved data to C:\SPPA\CMKL\Animation_Project\Summer\Experiment_Workflows\Testing1\data\190358_testing1_2026-09-18_14h45.20.219.psydat
+33.1743 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+33.2297 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+33.2298 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+33.2298 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+33.2298 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+33.2298 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.

@@ -1,0 +1,273 @@
+12.0835 	INFO 	Loaded monitor calibration from ['2026_09_03 20:22']
+12.0965 	WARNING 	User requested fullscreen with size [1152  720], but screen is actually [2880, 1800]. Using actual size
+12.2129 	INFO 	Using renderer 'Intel(R) Arc(TM) Graphics' for graphics
+12.2130 	INFO 	OpenGL version supported by driver is 4..
+12.2915 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001B66DBE30A0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001B66DBE3100>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([-1, -1, -1]), colorSpace='rgb', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001B66DCDB130>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([2880, 1800]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+12.2916 	EXP 	window1: backgroundImage = ''
+12.2916 	EXP 	window1: backgroundFit = 'none'
+12.6419 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+12.6419 	EXP 	window1: recordFrameIntervals = False
+12.7686 	EXP 	window1: recordFrameIntervals = True
+12.8914 	EXP 	Screen (0) actual frame rate measured at 90.05Hz
+12.8916 	EXP 	window1: recordFrameIntervals = False
+13.0838 	INFO 	keyboard.Keyboard is using ptb backend.
+13.0839 	INFO 	keyboard.Keyboard is using ptb backend.
+13.0839 	INFO 	keyboard.Keyboard is using ptb backend.
+13.0839 	INFO 	keyboard.Keyboard is using ptb backend.
+13.0840 	INFO 	keyboard.Keyboard is using ptb backend.
+13.0840 	EXP 	testing1: status = STARTED
+13.6064 	EXP 	Created likertText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Times New Roman', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='likertText', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='norm', win=Window(...), wrapWidth=1)
+13.9747 	EXP 	Created slider = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-1, fillColor=None, flip=False, font='Noto Sans', granularity=1, labelColor=None, labelHeight=np.float64(0.05), labelWrapWidth=None, labels=tuple(...), lineColor=None, markerColor=None, name='slider', opacity=None, ori=0.0, pos=array([ 0. , -0.4]), readOnly=False, self=UNKNOWN, size=array([1.8, 0.1]), startValue=None, style='choice', styleTweaks=[], ticks=array([1, 2, 3, 4, 5]), units='norm', win=Window(...))
+0.0053 	EXP 	intro_text: autoLog = True
+0.0053 	EXP 	instruction_header: autoLog = True
+0.0053 	EXP 	instruction_text: autoLog = True
+0.0053 	EXP 	warning_header: autoLog = True
+0.0053 	EXP 	warning_text: autoLog = True
+0.0053 	EXP 	textbox: autoLog = True
+0.0053 	EXP 	slider: autoLog = True
+0.0053 	EXP 	slider: styleTweaks = []
+0.0053 	EXP 	slider: styleTweaks = []
+0.0053 	EXP 	slider: styleTweaks = []
+0.0053 	EXP 	slider: styleTweaks = []
+0.0053 	EXP 	slider: contrast = 1.0
+0.0053 	EXP 	slider: markerPos = None
+0.0053 	EXP 	slider: autoLog = True
+0.0162 	INFO 	Keyboard events cleared
+0.0161 	EXP 	intro_text: autoDraw = True
+123.0193 	EXP 	Device response: <KeyPress from None: t=123.01351750001777, value=space, duration=None>
+123.0262 	DATA 	Keypress: space
+123.0307 	INFO 	Keyboard events cleared
+123.0306 	EXP 	intro_text: autoDraw = False
+123.0306 	EXP 	instruction_header: autoDraw = True
+123.0306 	EXP 	instruction_text: autoDraw = True
+123.1034 	EXP 	Device response: <KeyPress from None: t=123.01351750001777, value=space, duration=0.08138639997923747>
+123.5815 	EXP 	Device response: <KeyPress from None: t=123.57883760001278, value=space, duration=None>
+123.5881 	DATA 	Keypress: space
+123.5931 	INFO 	Keyboard events cleared
+123.5930 	EXP 	instruction_header: autoDraw = False
+123.5930 	EXP 	instruction_text: autoDraw = False
+123.5930 	EXP 	warning_header: autoDraw = True
+123.5930 	EXP 	warning_text: autoDraw = True
+123.6924 	EXP 	Device response: <KeyPress from None: t=123.57883760001278, value=space, duration=0.10699339999700896>
+124.3056 	DATA 	Keypress: space
+124.3144 	EXP 	Device response: <KeyPress from None: t=124.30487819999689, value=space, duration=None>
+124.3254 	INFO 	Keyboard events cleared
+124.3253 	EXP 	warning_header: autoDraw = False
+124.3253 	EXP 	warning_text: autoDraw = False
+124.3253 	EXP 	textbox: autoDraw = True
+124.4700 	EXP 	Device response: <KeyPress from None: t=124.30487819999689, value=space, duration=0.15525380001054145>
+124.8370 	EXP 	Device response: <KeyPress from None: t=124.82879980001599, value=space, duration=None>
+124.8438 	EXP 	Imported likert_items.xlsx as conditions, 5 conditions, 4 params
+124.8441 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'itemText': 'The speaker was easy to understand.', 'type': 'rating', 'options': '1,2,3,4,5', 'layout': 'horiz', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+124.9057 	DATA 	Keypress: space
+124.9162 	EXP 	textbox: autoDraw = False
+124.9162 	EXP 	likertText: height = np.float64(0.1)
+124.9162 	EXP 	likertText: height = np.float64(0.1)
+124.9162 	EXP 	likertText: height = np.float64(0.1)
+124.9162 	EXP 	likertText: text = 'The speaker was easy to understand.'
+124.9162 	EXP 	slider: markerPos = None
+124.9162 	EXP 	slider: markerPos = None
+124.9162 	EXP 	likertText: autoDraw = True
+124.9162 	EXP 	slider: autoDraw = True
+124.9280 	EXP 	Device response: <KeyPress from None: t=124.82879980001599, value=space, duration=0.09176579999621026>
+131.0049 	DATA 	Mouse: Right button down, pos=(1409,217)
+131.2894 	DATA 	Mouse:  Right button up, pos=(1534,216)
+131.7323 	DATA 	Mouse: Left button down, pos=(1604,214)
+132.5233 	DATA 	Mouse:  Left button up, pos=(2181,78)
+132.8713 	DATA 	Mouse: wheel shift=(0,-1), pos=(1785,1)
+132.9008 	DATA 	Mouse: wheel shift=(0,-1), pos=(1796,1)
+132.9112 	DATA 	Mouse: wheel shift=(0,-1), pos=(1801,1)
+133.7774 	DATA 	Mouse: Left button down, pos=(246,122)
+133.9794 	DATA 	Mouse:  Left button up, pos=(0,1)
+134.2088 	DATA 	Mouse: Left button down, pos=(832,467)
+134.3820 	DATA 	Mouse:  Left button up, pos=(849,384)
+134.4871 	DATA 	Mouse: Left button down, pos=(874,381)
+134.6206 	DATA 	Mouse:  Left button up, pos=(887,381)
+135.0412 	DATA 	Mouse: Left button down, pos=(887,381)
+135.0981 	DATA 	Mouse:  Left button up, pos=(887,381)
+135.1926 	DATA 	Mouse: Left button down, pos=(888,379)
+135.2441 	DATA 	Mouse:  Left button up, pos=(888,379)
+135.4104 	DATA 	Mouse: Left button down, pos=(890,379)
+135.5264 	DATA 	Mouse:  Left button up, pos=(890,379)
+137.9216 	DATA 	Mouse: Left button down, pos=(576,472)
+138.7335 	DATA 	Mouse:  Left button up, pos=(576,472)
+139.4431 	DATA 	Mouse: Left button down, pos=(489,1800)
+139.6305 	DATA 	Mouse:  Left button up, pos=(260,1345)
+139.7037 	DATA 	Mouse: Left button down, pos=(0,819)
+139.8485 	DATA 	Mouse:  Left button up, pos=(0,197)
+139.9038 	DATA 	Mouse: Left button down, pos=(0,197)
+140.0372 	DATA 	Mouse:  Left button up, pos=(2,197)
+140.1147 	DATA 	Mouse: Left button down, pos=(361,237)
+140.1676 	DATA 	Mouse: Right button down, pos=(361,228)
+140.2754 	DATA 	Mouse:  Left button up, pos=(359,228)
+140.3098 	DATA 	Mouse:  Right button up, pos=(359,228)
+140.3545 	DATA 	Mouse: Right button down, pos=(359,228)
+140.5315 	DATA 	Mouse:  Right button up, pos=(356,228)
+140.6036 	DATA 	Mouse: Left button down, pos=(356,228)
+140.7103 	DATA 	Mouse:  Left button up, pos=(356,228)
+140.8753 	DATA 	Mouse: Left button down, pos=(245,1)
+140.8756 	DATA 	Mouse: Right button down, pos=(245,1)
+141.0155 	DATA 	Mouse:  Left button up, pos=(165,198)
+141.0157 	DATA 	Mouse:  Right button up, pos=(165,198)
+141.1029 	DATA 	Mouse: Left button down, pos=(271,427)
+141.4134 	EXP 	slider: markerPos = np.float64(2.037037037037037)
+141.4249 	EXP 	slider: markerPos = np.float64(2.2021604938271606)
+141.4361 	EXP 	slider: markerPos = np.float64(2.308641975308642)
+141.4469 	EXP 	slider: markerPos = np.float64(2.455246913580247)
+141.4583 	EXP 	slider: markerPos = np.float64(2.575617283950617)
+141.4696 	EXP 	slider: markerPos = np.float64(2.6712962962962963)
+141.4806 	EXP 	slider: markerPos = np.float64(2.7222222222222223)
+141.4922 	EXP 	slider: markerPos = np.float64(2.7299382716049383)
+141.5009 	DATA 	Mouse:  Left button up, pos=(1272,632)
+141.5039 	EXP 	slider: markerPos = np.float64(2.7376543209876543)
+141.5140 	EXP 	slider: markerPos = 3
+141.5145 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'itemText': 'The video held my attention throughout.', 'type': 'rating', 'options': '1,2,3,4,5', 'layout': 'horiz', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+141.5287 	EXP 	likertText: autoDraw = False
+141.5287 	EXP 	slider: autoDraw = False
+141.5287 	EXP 	likertText: height = np.float64(0.1)
+141.5287 	EXP 	likertText: height = np.float64(0.1)
+141.5287 	EXP 	likertText: height = np.float64(0.1)
+141.5287 	EXP 	likertText: text = 'The video held my attention throughout.'
+141.5287 	EXP 	slider: markerPos = None
+141.5287 	EXP 	slider: markerPos = None
+141.5287 	EXP 	likertText: autoDraw = True
+141.5287 	EXP 	slider: autoDraw = True
+141.6747 	DATA 	Mouse: Left button down, pos=(1165,1145)
+141.8314 	DATA 	Mouse:  Left button up, pos=(1136,1139)
+142.2702 	DATA 	Mouse: Left button down, pos=(583,997)
+142.4370 	DATA 	Mouse:  Left button up, pos=(283,945)
+142.5254 	DATA 	Mouse: Left button down, pos=(0,729)
+142.6590 	DATA 	Mouse:  Left button up, pos=(0,654)
+142.7372 	DATA 	Mouse: Left button down, pos=(39,586)
+142.7474 	EXP 	slider: markerPos = np.float64(0.8379629629629628)
+142.7584 	EXP 	slider: markerPos = np.float64(0.8456790123456792)
+142.7693 	EXP 	slider: markerPos = np.float64(0.8549382716049383)
+142.7806 	EXP 	slider: markerPos = np.float64(0.867283950617284)
+142.7925 	EXP 	slider: markerPos = np.float64(0.8919753086419755)
+142.8036 	EXP 	slider: markerPos = np.float64(0.9212962962962963)
+142.8147 	EXP 	slider: markerPos = np.float64(0.9521604938271606)
+142.8258 	EXP 	slider: markerPos = np.float64(0.9552469135802468)
+142.8362 	EXP 	slider: markerPos = np.float64(0.9583333333333335)
+142.8473 	EXP 	slider: markerPos = np.float64(0.9583333333333335)
+142.8586 	EXP 	slider: markerPos = np.float64(0.9598765432098766)
+142.8705 	EXP 	slider: markerPos = np.float64(0.9629629629629628)
+142.8815 	EXP 	slider: markerPos = np.float64(0.9691358024691357)
+142.8895 	DATA 	Mouse:  Left button up, pos=(137,179)
+142.8926 	EXP 	slider: markerPos = np.float64(0.9799382716049383)
+142.9033 	EXP 	slider: markerPos = 1
+142.9037 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'itemText': 'I would want to watch more videos like this.', 'type': 'rating', 'options': '1,2,3,4,5', 'layout': 'horiz', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+142.9200 	EXP 	likertText: autoDraw = False
+142.9200 	EXP 	slider: autoDraw = False
+142.9200 	EXP 	likertText: height = np.float64(0.1)
+142.9200 	EXP 	likertText: height = np.float64(0.1)
+142.9200 	EXP 	likertText: height = np.float64(0.1)
+142.9200 	EXP 	likertText: text = 'I would want to watch more videos like this.'
+142.9200 	EXP 	slider: markerPos = None
+142.9200 	EXP 	slider: markerPos = None
+142.9200 	EXP 	likertText: autoDraw = True
+142.9200 	EXP 	slider: autoDraw = True
+142.9206 	DATA 	Mouse: Left button down, pos=(220,168)
+143.0432 	DATA 	Mouse:  Left button up, pos=(252,121)
+143.3752 	DATA 	Mouse: Left button down, pos=(308,120)
+143.8652 	DATA 	Mouse:  Left button up, pos=(416,90)
+143.9930 	DATA 	Mouse: Left button down, pos=(419,90)
+144.1054 	DATA 	Mouse:  Left button up, pos=(544,105)
+144.1602 	DATA 	Mouse: Left button down, pos=(892,105)
+144.3027 	DATA 	Mouse:  Left button up, pos=(930,95)
+144.3699 	DATA 	Mouse: Left button down, pos=(1161,93)
+144.4931 	DATA 	Mouse:  Left button up, pos=(1192,93)
+144.5358 	DATA 	Mouse: Left button down, pos=(1274,93)
+144.6265 	DATA 	Mouse:  Left button up, pos=(1274,93)
+144.6741 	DATA 	Mouse: Left button down, pos=(1274,93)
+144.7967 	DATA 	Mouse:  Left button up, pos=(1298,93)
+144.8206 	DATA 	Mouse: Left button down, pos=(1298,93)
+144.8972 	DATA 	Mouse:  Left button up, pos=(1298,93)
+144.9971 	DATA 	Mouse: Left button down, pos=(1298,93)
+145.0418 	DATA 	Mouse:  Left button up, pos=(1298,93)
+145.2310 	DATA 	Mouse: wheel shift=(0,-1), pos=(1298,93)
+145.3198 	DATA 	Mouse: Middle button down, pos=(1335,102)
+145.4125 	DATA 	Mouse:  Middle button up, pos=(1335,102)
+145.7147 	DATA 	Mouse: Left button down, pos=(1335,102)
+145.8758 	DATA 	Mouse:  Left button up, pos=(1310,93)
+145.9482 	DATA 	Mouse: Left button down, pos=(1310,93)
+146.0425 	DATA 	Mouse:  Left button up, pos=(1310,93)
+146.0809 	DATA 	Mouse: Left button down, pos=(1310,93)
+146.2047 	DATA 	Mouse:  Left button up, pos=(1266,1)
+146.2309 	DATA 	Mouse: Left button down, pos=(1265,1)
+146.4812 	DATA 	Mouse:  Left button up, pos=(1250,1)
+146.5364 	DATA 	Mouse: Left button down, pos=(1238,1)
+146.6261 	DATA 	Mouse:  Left button up, pos=(1231,1)
+146.6813 	DATA 	Mouse: Left button down, pos=(1231,1)
+146.7666 	DATA 	Mouse:  Left button up, pos=(1226,1)
+146.8298 	DATA 	Mouse: Left button down, pos=(1226,1)
+146.9152 	DATA 	Mouse:  Left button up, pos=(1226,1)
+147.0365 	DATA 	Mouse: Left button down, pos=(1137,33)
+147.1035 	DATA 	Mouse:  Left button up, pos=(1135,33)
+147.1043 	DATA 	Mouse: Right button down, pos=(1135,33)
+147.2035 	DATA 	Mouse:  Right button up, pos=(1135,33)
+147.3303 	DATA 	Mouse: Right button down, pos=(1073,26)
+147.4322 	DATA 	Mouse:  Right button up, pos=(1073,26)
+147.8189 	DATA 	Mouse: Right button down, pos=(1073,26)
+147.8597 	DATA 	Mouse:  Right button up, pos=(1073,26)
+147.9591 	DATA 	Mouse: Right button down, pos=(1061,15)
+148.0215 	DATA 	Mouse:  Right button up, pos=(1036,1)
+148.1122 	DATA 	Mouse: Right button down, pos=(1024,1)
+148.1543 	DATA 	Mouse:  Right button up, pos=(1011,1)
+148.9299 	DATA 	Mouse: Left button down, pos=(996,3)
+149.0038 	DATA 	Mouse:  Left button up, pos=(980,6)
+149.0747 	DATA 	Mouse: Left button down, pos=(967,6)
+149.1593 	DATA 	Mouse:  Left button up, pos=(879,29)
+149.3652 	DATA 	Keypress: lwindows
+149.3698 	EXP 	Device response: <KeyPress from None: t=149.36430990000372, value=lwindows, duration=None>
+149.3698 	EXP 	Device response: <KeyPress from None: t=149.36683290000656, value=lshift, duration=None>
+149.3701 	DATA 	Keypress: lshift
+149.5595 	EXP 	Device response: <KeyPress from None: t=149.36430990000372, value=lwindows, duration=0.1873061000078451>
+149.5595 	EXP 	Device response: <KeyPress from None: t=149.36683290000656, value=lshift, duration=0.1906234000052791>
+149.5656 	DATA 	Keypress: s
+149.8362 	DATA 	Mouse: Left button down, pos=(1355,34)
+149.9262 	EXP 	slider: markerPos = np.float64(2.243827160493827)
+149.9357 	EXP 	slider: markerPos = np.float64(2.0540123456790123)
+149.9470 	EXP 	slider: markerPos = np.float64(1.9290123456790123)
+149.9580 	EXP 	slider: markerPos = np.float64(1.728395061728395)
+149.9689 	EXP 	slider: markerPos = np.float64(1.5308641975308641)
+149.9796 	EXP 	slider: markerPos = np.float64(1.3580246913580247)
+149.9908 	EXP 	slider: markerPos = np.float64(1.2114197530864197)
+150.0020 	EXP 	slider: markerPos = np.float64(1.126543209876543)
+150.0133 	EXP 	slider: markerPos = np.float64(1.0)
+150.0243 	EXP 	slider: markerPos = np.float64(0.9166666666666665)
+150.0363 	EXP 	slider: markerPos = np.float64(0.9043209876543208)
+150.0470 	EXP 	slider: markerPos = np.float64(0.9043209876543208)
+150.0491 	DATA 	Mouse:  Left button up, pos=(82,899)
+150.0581 	EXP 	slider: markerPos = 1
+150.0586 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'itemText': 'I found the content engaging.', 'type': 'rating', 'options': '1,2,3,4,5', 'layout': 'horiz', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+150.0707 	EXP 	likertText: autoDraw = False
+150.0707 	EXP 	slider: autoDraw = False
+150.0707 	EXP 	likertText: height = np.float64(0.1)
+150.0707 	EXP 	likertText: height = np.float64(0.1)
+150.0707 	EXP 	likertText: height = np.float64(0.1)
+150.0707 	EXP 	likertText: text = 'I found the content engaging.'
+150.0707 	EXP 	slider: markerPos = None
+150.0707 	EXP 	slider: markerPos = None
+150.0707 	EXP 	likertText: autoDraw = True
+150.0707 	EXP 	slider: autoDraw = True
+154.3356 	EXP 	Device response: <KeyPress from None: t=154.33420710000792, value=lwindows, duration=None>
+154.3368 	DATA 	Keypress: lwindows
+154.3369 	DATA 	Keypress: lshift
+154.3470 	EXP 	Device response: <KeyPress from None: t=154.3365574000054, value=lshift, duration=None>
+154.5338 	DATA 	Keypress: s
+154.5365 	EXP 	Device response: <KeyPress from None: t=154.33420710000792, value=lwindows, duration=0.186671400006162>
+154.5365 	EXP 	Device response: <KeyPress from None: t=154.3365574000054, value=lshift, duration=0.19092079999973066>
+193.0357 	EXP 	Device response: <KeyPress from None: t=193.032881000021, value=escape, duration=None>
+193.0361 	DATA 	Keypress: escape
+193.2470 	EXP 	Device response: <KeyPress from None: t=193.032881000021, value=escape, duration=0.20665479998569936>
+193.2470 	EXP 	testing1: status = STOPPED
+193.2578 	EXP 	likertText: autoDraw = False
+193.2578 	EXP 	slider: autoDraw = False
+193.2579 	EXP 	testing1: status = STOPPED
+193.2628 	INFO 	saved data to 'C:\\SPPA\\CMKL\\Animation_Project\\Summer\\Experiment_Workflows\\Testing1\\data\\micky_testing1_2026-09-18_13h51.25.147.csv'
+193.2638 	INFO 	saved data to C:\SPPA\CMKL\Animation_Project\Summer\Experiment_Workflows\Testing1\data\micky_testing1_2026-09-18_13h51.25.147.psydat
+193.6145 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+193.6416 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+193.6416 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+193.6416 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+193.6416 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2025.1.1),
-    on September 18, 2026, at 13:48
+    on September 18, 2026, at 14:45
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -201,7 +201,7 @@ def setupWindow(expInfo=None, win=None):
         # if not given a window to setup, make one
         win = visual.Window(
             size=_winSize, fullscr=_fullScr, screen=0,
-            winType='pyglet', allowGUI=False, allowStencil=True,
+            winType='pyglet', allowGUI=True, allowStencil=True,
             monitor='testMonitor', color=[-1,-1,-1], colorSpace='rgb',
             backgroundImage='', backgroundFit='none',
             blendMode='avg', useFBO=True,
@@ -286,6 +286,12 @@ def setupDevices(expInfo, thisExp, win):
         quz_instruction_text = deviceManager.addDevice(
             deviceClass='keyboard',
             deviceName='quz_instruction_text',
+        )
+    if deviceManager.getDevice('key_resp_quizending') is None:
+        # initialise key_resp_quizending
+        key_resp_quizending = deviceManager.addDevice(
+            deviceClass='keyboard',
+            deviceName='key_resp_quizending',
         )
     # return True if completed successfully
     return True
@@ -507,6 +513,23 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "quiz" ---
     
     # --- Initialize components for Routine "quizending" ---
+    textbox_2 = visual.TextBox2(
+         win, text="You have completed the quiz.\n\nJust a few more short questions about your experience, and then \nyou'll be finished.\n\nPress 'SPACE' to continue.", placeholder='Type here...', font='Times New Roman',
+         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.1,
+         size=(1.85, 0.5), borderWidth=2.0,
+         color='white', colorSpace='rgb',
+         opacity=None,
+         bold=False, italic=False,
+         lineSpacing=1.0, speechPoint=None,
+         padding=0.0, alignment='center-left',
+         anchor='center', overflow='visible',
+         fillColor=None, borderColor=None,
+         flipHoriz=False, flipVert=False, languageStyle='LTR',
+         editable=False,
+         name='textbox_2',
+         depth=0, autoLog=True,
+    )
+    key_resp_quizending = keyboard.Keyboard(deviceName='key_resp_quizending')
     
     # --- Initialize components for Routine "likert" ---
     likertText = visual.TextStim(win=win, name='likertText',
@@ -516,15 +539,39 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=0.0);
-    slider = visual.Slider(win=win, name='slider',
-        startValue=None, size=(1.0, 0.1), pos=(0, -0.4), units=win.units,
-        labels=('Strongly Disgree', 'Disgree', 'Neutral', 'Agree', 'Strongly Agree'), ticks=(1, 2, 3, 4, 5), granularity=1.0,
+    likert_slider = visual.Slider(win=win, name='likert_slider',
+        startValue=None, size=(1.4, 0.1), pos=(0, -0.4), units=win.units,
+        labels=('Strongly Disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly Agree'), ticks=(1, 2, 3, 4, 5), granularity=1.0,
         style='rating', styleTweaks=(), opacity=None,
         labelColor='LightGray', markerColor='Red', lineColor='White', colorSpace='rgb',
         font='Noto Sans', labelHeight=0.05,
         flip=False, ori=0.0, depth=-1, readOnly=False)
+    nextButton = visual.ButtonStim(win, 
+        text='Next>>', font='Times New Roman',
+        pos=(0.8, -0.75),
+        letterHeight=0.05,
+        size=(0.15, 0.15), 
+        ori=0.0
+        ,borderWidth=0.0,
+        fillColor=[1.0000, 1.0000, 1.0000], borderColor=None,
+        color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb',
+        opacity=None,
+        bold=True, italic=False,
+        padding=None,
+        anchor='center',
+        name='nextButton',
+        depth=-2
+    )
+    nextButton.buttonClock = core.Clock()
     
     # --- Initialize components for Routine "end" ---
+    text = visual.TextStim(win=win, name='text',
+        text='Thank you for participating in this study!\n\nYour responses have been recorded successfully.\n\nThis window will be closed in 5s. ',
+        font='Times New Roman',
+        pos=(0, 0), draggable=False, height=0.1, wrapWidth=None, ori=0.0, 
+        color='white', colorSpace='rgb', opacity=None, 
+        languageStyle='LTR',
+        depth=0.0);
     
     # create some handy timers
     
@@ -1332,11 +1379,16 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # create an object to store info about Routine quizending
     quizending = data.Routine(
         name='quizending',
-        components=[],
+        components=[textbox_2, key_resp_quizending],
     )
     quizending.status = NOT_STARTED
     continueRoutine = True
     # update component parameters for each repeat
+    textbox_2.reset()
+    # create starting attributes for key_resp_quizending
+    key_resp_quizending.keys = []
+    key_resp_quizending.rt = []
+    _key_resp_quizending_allKeys = []
     # store start times for quizending
     quizending.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
     quizending.tStart = globalClock.getTime(format='float')
@@ -1366,6 +1418,54 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
+        
+        # *textbox_2* updates
+        
+        # if textbox_2 is starting this frame...
+        if textbox_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            textbox_2.frameNStart = frameN  # exact frame index
+            textbox_2.tStart = t  # local t and not account for scr refresh
+            textbox_2.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(textbox_2, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'textbox_2.started')
+            # update status
+            textbox_2.status = STARTED
+            textbox_2.setAutoDraw(True)
+        
+        # if textbox_2 is active this frame...
+        if textbox_2.status == STARTED:
+            # update params
+            pass
+        
+        # *key_resp_quizending* updates
+        waitOnFlip = False
+        
+        # if key_resp_quizending is starting this frame...
+        if key_resp_quizending.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            key_resp_quizending.frameNStart = frameN  # exact frame index
+            key_resp_quizending.tStart = t  # local t and not account for scr refresh
+            key_resp_quizending.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(key_resp_quizending, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'key_resp_quizending.started')
+            # update status
+            key_resp_quizending.status = STARTED
+            # keyboard checking is just starting
+            waitOnFlip = True
+            win.callOnFlip(key_resp_quizending.clock.reset)  # t=0 on next screen flip
+            win.callOnFlip(key_resp_quizending.clearEvents, eventType='keyboard')  # clear events on next screen flip
+        if key_resp_quizending.status == STARTED and not waitOnFlip:
+            theseKeys = key_resp_quizending.getKeys(keyList=['space'], ignoreKeys=["escape"], waitRelease=False)
+            _key_resp_quizending_allKeys.extend(theseKeys)
+            if len(_key_resp_quizending_allKeys):
+                key_resp_quizending.keys = _key_resp_quizending_allKeys[-1].name  # just the last key pressed
+                key_resp_quizending.rt = _key_resp_quizending_allKeys[-1].rt
+                key_resp_quizending.duration = _key_resp_quizending_allKeys[-1].duration
+                # a response ends the routine
+                continueRoutine = False
         
         # check for quit (typically the Esc key)
         if defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1406,6 +1506,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     quizending.tStop = globalClock.getTime(format='float')
     quizending.tStopRefresh = tThisFlipGlobal
     thisExp.addData('quizending.stopped', quizending.tStop)
+    # check responses
+    if key_resp_quizending.keys in ['', [], None]:  # No response was made
+        key_resp_quizending.keys = None
+    thisExp.addData('key_resp_quizending.keys',key_resp_quizending.keys)
+    if key_resp_quizending.keys != None:  # we had a response
+        thisExp.addData('key_resp_quizending.rt', key_resp_quizending.rt)
+        thisExp.addData('key_resp_quizending.duration', key_resp_quizending.duration)
     thisExp.nextEntry()
     # the Routine "quizending" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
@@ -1448,13 +1555,15 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         # create an object to store info about Routine likert
         likert = data.Routine(
             name='likert',
-            components=[likertText, slider],
+            components=[likertText, likert_slider, nextButton],
         )
         likert.status = NOT_STARTED
         continueRoutine = True
         # update component parameters for each repeat
         likertText.setText(itemText)
-        slider.reset()
+        likert_slider.reset()
+        # reset nextButton to account for continued clicks & clear times on/off
+        nextButton.reset()
         # store start times for likert
         likert.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
         likert.tStart = globalClock.getTime(format='float')
@@ -1508,29 +1617,62 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 # update params
                 pass
             
-            # *slider* updates
+            # *likert_slider* updates
             
-            # if slider is starting this frame...
-            if slider.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # if likert_slider is starting this frame...
+            if likert_slider.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                 # keep track of start time/frame for later
-                slider.frameNStart = frameN  # exact frame index
-                slider.tStart = t  # local t and not account for scr refresh
-                slider.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(slider, 'tStartRefresh')  # time at next scr refresh
+                likert_slider.frameNStart = frameN  # exact frame index
+                likert_slider.tStart = t  # local t and not account for scr refresh
+                likert_slider.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(likert_slider, 'tStartRefresh')  # time at next scr refresh
                 # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'slider.started')
+                thisExp.timestampOnFlip(win, 'likert_slider.started')
                 # update status
-                slider.status = STARTED
-                slider.setAutoDraw(True)
+                likert_slider.status = STARTED
+                likert_slider.setAutoDraw(True)
             
-            # if slider is active this frame...
-            if slider.status == STARTED:
+            # if likert_slider is active this frame...
+            if likert_slider.status == STARTED:
                 # update params
                 pass
+            # *nextButton* updates
             
-            # Check slider for response to end Routine
-            if slider.getRating() is not None and slider.status == STARTED:
-                continueRoutine = False
+            # if nextButton is starting this frame...
+            if nextButton.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
+                # keep track of start time/frame for later
+                nextButton.frameNStart = frameN  # exact frame index
+                nextButton.tStart = t  # local t and not account for scr refresh
+                nextButton.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(nextButton, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'nextButton.started')
+                # update status
+                nextButton.status = STARTED
+                win.callOnFlip(nextButton.buttonClock.reset)
+                nextButton.setAutoDraw(True)
+            
+            # if nextButton is active this frame...
+            if nextButton.status == STARTED:
+                # update params
+                pass
+                # check whether nextButton has been pressed
+                if nextButton.isClicked:
+                    if not nextButton.wasClicked:
+                        # if this is a new click, store time of first click and clicked until
+                        nextButton.timesOn.append(nextButton.buttonClock.getTime())
+                        nextButton.timesOff.append(nextButton.buttonClock.getTime())
+                    elif len(nextButton.timesOff):
+                        # if click is continuing from last frame, update time of clicked until
+                        nextButton.timesOff[-1] = nextButton.buttonClock.getTime()
+                    if not nextButton.wasClicked:
+                        # end routine when nextButton is clicked
+                        continueRoutine = False
+                    if not nextButton.wasClicked:
+                        # run callback code when nextButton is clicked
+                        pass
+            # take note of whether nextButton was clicked, so that next frame we know if clicks are new
+            nextButton.wasClicked = nextButton.isClicked and nextButton.status == STARTED
             
             # check for quit (typically the Esc key)
             if defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1571,8 +1713,15 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         likert.tStop = globalClock.getTime(format='float')
         likert.tStopRefresh = tThisFlipGlobal
         thisExp.addData('likert.stopped', likert.tStop)
-        likertLoop.addData('slider.response', slider.getRating())
-        likertLoop.addData('slider.rt', slider.getRT())
+        likertLoop.addData('likert_slider.response', likert_slider.getRating())
+        likertLoop.addData('likert_slider.rt', likert_slider.getRT())
+        likertLoop.addData('nextButton.numClicks', nextButton.numClicks)
+        if nextButton.numClicks:
+           likertLoop.addData('nextButton.timesOn', nextButton.timesOn)
+           likertLoop.addData('nextButton.timesOff', nextButton.timesOff)
+        else:
+           likertLoop.addData('nextButton.timesOn', "")
+           likertLoop.addData('nextButton.timesOff', "")
         # the Routine "likert" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         # mark thisLikertLoop as finished
@@ -1601,7 +1750,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # create an object to store info about Routine end
     end = data.Routine(
         name='end',
-        components=[],
+        components=[text],
     )
     end.status = NOT_STARTED
     continueRoutine = True
@@ -1628,13 +1777,47 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Run Routine "end" ---
     end.forceEnded = routineForceEnded = not continueRoutine
-    while continueRoutine:
+    while continueRoutine and routineTimer.getTime() < 5.0:
         # get current time
         t = routineTimer.getTime()
         tThisFlip = win.getFutureFlipTime(clock=routineTimer)
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
+        
+        # *text* updates
+        
+        # if text is starting this frame...
+        if text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            text.frameNStart = frameN  # exact frame index
+            text.tStart = t  # local t and not account for scr refresh
+            text.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(text, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'text.started')
+            # update status
+            text.status = STARTED
+            text.setAutoDraw(True)
+        
+        # if text is active this frame...
+        if text.status == STARTED:
+            # update params
+            pass
+        
+        # if text is stopping this frame...
+        if text.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > text.tStartRefresh + 5-frameTolerance:
+                # keep track of stop time/frame for later
+                text.tStop = t  # not accounting for scr refresh
+                text.tStopRefresh = tThisFlipGlobal  # on global time
+                text.frameNStop = frameN  # exact frame index
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'text.stopped')
+                # update status
+                text.status = FINISHED
+                text.setAutoDraw(False)
         
         # check for quit (typically the Esc key)
         if defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1675,9 +1858,14 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     end.tStop = globalClock.getTime(format='float')
     end.tStopRefresh = tThisFlipGlobal
     thisExp.addData('end.stopped', end.tStop)
+    # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
+    if end.maxDurationReached:
+        routineTimer.addTime(-end.maxDuration)
+    elif end.forceEnded:
+        routineTimer.reset()
+    else:
+        routineTimer.addTime(-5.000000)
     thisExp.nextEntry()
-    # the Routine "end" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset()
     
     # mark experiment as finished
     endExperiment(thisExp, win=win)
