@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2025.1.1),
-    on September 17, 2026, at 16:45
+    on September 18, 2026, at 13:06
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -281,6 +281,12 @@ def setupDevices(expInfo, thisExp, win):
             deviceClass='keyboard',
             deviceName='warning_resp',
         )
+    if deviceManager.getDevice('quz_instruction_text') is None:
+        # initialise quz_instruction_text
+        quz_instruction_text = deviceManager.addDevice(
+            deviceClass='keyboard',
+            deviceName='quz_instruction_text',
+        )
     # return True if completed successfully
     return True
 
@@ -460,8 +466,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          depth=0, autoLog=True,
     )
     warning_text = visual.TextBox2(
-         win, text='- You will watch one video in full. Please do not skip, pause, or \n  rewind during playback.\n- Pay close attention, as you will be tested on the content \n  immediately afterward.\n- The video and quiz cannot be repeated once completed.\n- Please do not switch to other tabs, applications, or windows \n  during the video.\n\nPress SPACE when you are ready to begin the video.', placeholder='Type here...', font='Times New Roman',
-         ori=0.0, pos=(0, -0.05), draggable=False,      letterHeight=0.1,
+         win, text="- You will watch one video in full. Please do not skip, pause, or \n  rewind during playback.\n- Pay close attention, as you will be tested on the content \n  immediately afterward.\n- The video and quiz cannot be repeated once completed.\n- Please do not switch to other tabs, applications, or windows \n  during the video.\n\nPress 'SPACE' when you are ready to begin the video.", placeholder='Type here...', font='Times New Roman',
+         ori=0.0, pos=(0, -0.15), draggable=False,      letterHeight=0.1,
          size=(1.85, 0.5), borderWidth=2.0,
          color='white', colorSpace='rgb',
          opacity=None,
@@ -480,6 +486,23 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "video" ---
     
     # --- Initialize components for Routine "quizinstruction" ---
+    textbox = visual.TextBox2(
+         win, text="Thank you for watching the video.\n\nYou will now answer some questions about what you just watched.\n\nPlease answer based on your own understanding.\n\nBefore the main questions, you will first complete a short sample \nquiz to help you get familiar with how the questions work.\n\nPress 'SPACE' to begin the questions.", placeholder='Type here...', font='Times New Roman',
+         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.1,
+         size=(1.85, 0.5), borderWidth=2.0,
+         color='white', colorSpace='rgb',
+         opacity=None,
+         bold=False, italic=False,
+         lineSpacing=1.0, speechPoint=None,
+         padding=0.0, alignment='center-left',
+         anchor='center', overflow='visible',
+         fillColor=None, borderColor=None,
+         flipHoriz=False, flipVert=False, languageStyle='LTR',
+         editable=False,
+         name='textbox',
+         depth=0, autoLog=True,
+    )
+    quz_instruction_text = keyboard.Keyboard(deviceName='quz_instruction_text')
     
     # --- Initialize components for Routine "quiz" ---
     
@@ -1071,11 +1094,16 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # create an object to store info about Routine quizinstruction
     quizinstruction = data.Routine(
         name='quizinstruction',
-        components=[],
+        components=[textbox, quz_instruction_text],
     )
     quizinstruction.status = NOT_STARTED
     continueRoutine = True
     # update component parameters for each repeat
+    textbox.reset()
+    # create starting attributes for quz_instruction_text
+    quz_instruction_text.keys = []
+    quz_instruction_text.rt = []
+    _quz_instruction_text_allKeys = []
     # store start times for quizinstruction
     quizinstruction.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
     quizinstruction.tStart = globalClock.getTime(format='float')
@@ -1105,6 +1133,54 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
+        
+        # *textbox* updates
+        
+        # if textbox is starting this frame...
+        if textbox.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            textbox.frameNStart = frameN  # exact frame index
+            textbox.tStart = t  # local t and not account for scr refresh
+            textbox.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(textbox, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'textbox.started')
+            # update status
+            textbox.status = STARTED
+            textbox.setAutoDraw(True)
+        
+        # if textbox is active this frame...
+        if textbox.status == STARTED:
+            # update params
+            pass
+        
+        # *quz_instruction_text* updates
+        waitOnFlip = False
+        
+        # if quz_instruction_text is starting this frame...
+        if quz_instruction_text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            quz_instruction_text.frameNStart = frameN  # exact frame index
+            quz_instruction_text.tStart = t  # local t and not account for scr refresh
+            quz_instruction_text.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(quz_instruction_text, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'quz_instruction_text.started')
+            # update status
+            quz_instruction_text.status = STARTED
+            # keyboard checking is just starting
+            waitOnFlip = True
+            win.callOnFlip(quz_instruction_text.clock.reset)  # t=0 on next screen flip
+            win.callOnFlip(quz_instruction_text.clearEvents, eventType='keyboard')  # clear events on next screen flip
+        if quz_instruction_text.status == STARTED and not waitOnFlip:
+            theseKeys = quz_instruction_text.getKeys(keyList=['space'], ignoreKeys=["escape"], waitRelease=False)
+            _quz_instruction_text_allKeys.extend(theseKeys)
+            if len(_quz_instruction_text_allKeys):
+                quz_instruction_text.keys = _quz_instruction_text_allKeys[-1].name  # just the last key pressed
+                quz_instruction_text.rt = _quz_instruction_text_allKeys[-1].rt
+                quz_instruction_text.duration = _quz_instruction_text_allKeys[-1].duration
+                # a response ends the routine
+                continueRoutine = False
         
         # check for quit (typically the Esc key)
         if defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1145,6 +1221,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     quizinstruction.tStop = globalClock.getTime(format='float')
     quizinstruction.tStopRefresh = tThisFlipGlobal
     thisExp.addData('quizinstruction.stopped', quizinstruction.tStop)
+    # check responses
+    if quz_instruction_text.keys in ['', [], None]:  # No response was made
+        quz_instruction_text.keys = None
+    thisExp.addData('quz_instruction_text.keys',quz_instruction_text.keys)
+    if quz_instruction_text.keys != None:  # we had a response
+        thisExp.addData('quz_instruction_text.rt', quz_instruction_text.rt)
+        thisExp.addData('quz_instruction_text.duration', quz_instruction_text.duration)
     thisExp.nextEntry()
     # the Routine "quizinstruction" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
