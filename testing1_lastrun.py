@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2025.1.1),
-    on September 18, 2026, at 14:45
+    on September 22, 2026, at 14:31
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -202,7 +202,7 @@ def setupWindow(expInfo=None, win=None):
         win = visual.Window(
             size=_winSize, fullscr=_fullScr, screen=0,
             winType='pyglet', allowGUI=True, allowStencil=True,
-            monitor='testMonitor', color=[-1,-1,-1], colorSpace='rgb',
+            monitor='testMonitor', color="'#808080'", colorSpace='hex',
             backgroundImage='', backgroundFit='none',
             blendMode='avg', useFBO=True,
             units='norm',
@@ -210,8 +210,8 @@ def setupWindow(expInfo=None, win=None):
         )
     else:
         # if we have a window, just set the attributes which are safe to set
-        win.color = [-1,-1,-1]
-        win.colorSpace = 'rgb'
+        win.color = "'#808080'"
+        win.colorSpace = 'hex'
         win.backgroundImage = ''
         win.backgroundFit = 'none'
         win.units = 'norm'
@@ -262,6 +262,12 @@ def setupDevices(expInfo, thisExp, win):
     if deviceManager.getDevice('defaultKeyboard') is None:
         deviceManager.addDevice(
             deviceClass='keyboard', deviceName='defaultKeyboard', backend='ptb'
+        )
+    if deviceManager.getDevice('key_resp') is None:
+        # initialise key_resp
+        key_resp = deviceManager.addDevice(
+            deviceClass='keyboard',
+            deviceName='key_resp',
         )
     if deviceManager.getDevice('introresp') is None:
         # initialise introresp
@@ -400,12 +406,48 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # Start Code - component code to be run after the window creation
     
+    # --- Initialize components for Routine "consent" ---
+    consentText = visual.TextBox2(
+         win, text='Participant Information and Consent\n\nPURPOSE OF THE STUDY\n- This study looks at how people learn from recorded lectures.\n- You will watch short lecture videos and answer questions about them.\n- The study is run by [researcher names] at [university/department].\n\nWHAT YOU WILL DO\n- Watch [number] lecture video segments on the screen.\n- Answer questions about what you understood.\n- Answer questions about what you thought of the lecture.\n- Fill in a short form about your age, gender, and education.\n\nHOW LONG IT TAKES\n- The whole session takes about 30 to 45 minutes.\n- Please do not pause, skip, or rewind the videos.\n- Please follow the instructions on the screen.\n\nPAYMENT\n- You will receive [amount] baht after you finish the session.\n- Payment is made by [cash / method decided by the school].\n\nYOUR RIGHTS\n- Taking part is voluntary.\n- You can stop and leave at any time. You do not have to give a reason.\n- If you leave, your data will not be stored or used.\n- There is no risk beyond what you meet in everyday life.\n\nPRIVACY\n- Your name will not be written in your data. You will only have a participant number.\n- Your signed consent form will be kept locked in a separate place.\n- Your data will be stored securely for [number] years.\n- Results will only be reported for the whole group. No one will be identified.\n\nWHO CAN TAKE PART\n- You must be 18 years or older.\n- You must have normal vision, or vision corrected with glasses or lenses.\n- You must have normal hearing.\n- You must be able to follow a lecture in English.\n\nQUESTIONS\n- You can ask the experimenter any question before you start.\n- For questions later, contact [name, email, phone].\n- If you have concerns about how the study was run, contact [ethics committee contact].\n\nCONSENT\n- I have read this information, or it was read to me.\n- I understand that I can stop at any time.\n- I agree to take part in this study.\n\nIf you agree, please tell the experimenter. You will sign the printed consent form before you begin.', placeholder='Type here...', font='Times New Roman',
+         ori=0.0, pos=(-0.65, 0.38), draggable=False, units='height',     letterHeight=0.03,
+         size=(1.3, None), borderWidth=2.0,
+         color="'#000000'", colorSpace='rgb',
+         opacity=None,
+         bold=False, italic=False,
+         lineSpacing=1.0, speechPoint=None,
+         padding=0.0, alignment='top-left',
+         anchor='top-left', overflow='visible',
+         fillColor=None, borderColor=None,
+         flipHoriz=False, flipVert=False, languageStyle='LTR',
+         editable=False,
+         name='consentText',
+         depth=0, autoLog=True,
+    )
+    topMask = visual.Rect(
+        win=win, name='topMask',units='height', 
+        width=(3, 0.14)[0], height=(3, 0.14)[1],
+        ori=0.0, pos=(0, 0.47), draggable=False, anchor='center',
+        lineWidth=1.0,
+        colorSpace='rgb', lineColor="'#808080'", fillColor="'#808080'",
+        opacity=None, depth=-1.0, interpolate=True)
+    bottomMask = visual.Rect(
+        win=win, name='bottomMask',units='height', 
+        width=(3, 0.16)[0], height=(3, 0.16)[1],
+        ori=0.0, pos=(0, -0.42), draggable=False, anchor='center',
+        lineWidth=1.0,
+        colorSpace='rgb', lineColor="'#808080'", fillColor="'#808080'",
+        opacity=None, depth=-2.0, interpolate=True)
+    # Run 'Begin Experiment' code from scrollCode
+    from psychopy import event
+    mouse = event.Mouse(win=win)
+    key_resp = keyboard.Keyboard(deviceName='key_resp')
+    
     # --- Initialize components for Routine "intro" ---
     intro_text = visual.TextBox2(
          win, text="Welcome to this research study on educational video content.\n\n(This study will take approximately 30 minutes to complete.)\n\nYour responses will be kept confidential and used for research \npurposes only. No personally identifying information will be shared \nin any publication resulting from this research.\n\nBy continuing, you confirm that you agree to participate in this study.\n\nPress 'SPACE'  to continue.", placeholder='Type here...', font='Times New Roman',
          ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.1,
          size=(1.85, 0.5), borderWidth=2.0,
-         color='white', colorSpace='rgb',
+         color="'#000000'", colorSpace='rgb',
          opacity=None,
          bold=False, italic=False,
          lineSpacing=1.0, speechPoint=None,
@@ -424,7 +466,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          win, text='Instructions', placeholder='Type here...', font='Times New Roman',
          ori=0.0, pos=(0, 0.65), draggable=False,      letterHeight=0.15,
          size=(1.85, 0.5), borderWidth=2.0,
-         color='white', colorSpace='rgb',
+         color="'#000000'", colorSpace='rgb',
          opacity=None,
          bold=True, italic=False,
          lineSpacing=1.0, speechPoint=None,
@@ -440,7 +482,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          win, text="In this study, you will:\n\n1. Watch a short educational video\n2. Answer a series of questions about what you watched\n3. Answer a few questions about your experience\n\nPress 'SPACE' to continue.", placeholder='Type here...', font='Times New Roman',
          ori=0.0, pos=(0, -0.05), draggable=False,      letterHeight=0.1,
          size=(1.85, 0.5), borderWidth=2.0,
-         color='white', colorSpace='rgb',
+         color="'#000000'", colorSpace='rgb',
          opacity=None,
          bold=False, italic=False,
          lineSpacing=1.0, speechPoint=None,
@@ -459,7 +501,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          win, text='IMPORTANT', placeholder='Type here...', font='Times New Roman',
          ori=0.0, pos=(0, 0.65), draggable=False,      letterHeight=0.15,
          size=(1.85, 0.5), borderWidth=2.0,
-         color='white', colorSpace='rgb',
+         color="'#000000'", colorSpace='rgb',
          opacity=None,
          bold=False, italic=False,
          lineSpacing=1.0, speechPoint=None,
@@ -475,7 +517,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          win, text="- You will watch one video in full. Please do not skip, pause, or \n  rewind during playback.\n- Pay close attention, as you will be tested on the content \n  immediately afterward.\n- The video and quiz cannot be repeated once completed.\n- Please do not switch to other tabs, applications, or windows \n  during the video.\n\nPress 'SPACE' when you are ready to begin the video.", placeholder='Type here...', font='Times New Roman',
          ori=0.0, pos=(0, -0.15), draggable=False,      letterHeight=0.1,
          size=(1.85, 0.5), borderWidth=2.0,
-         color='white', colorSpace='rgb',
+         color="'#000000'", colorSpace='rgb',
          opacity=None,
          bold=False, italic=False,
          lineSpacing=1.0, speechPoint=None,
@@ -496,7 +538,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          win, text="Thank you for watching the video.\n\nYou will now answer some questions about what you just watched.\n\nPlease answer based on your own understanding.\n\nBefore the main questions, you will first complete a short sample \nquiz to help you get familiar with how the questions work.\n\nPress 'SPACE' to begin the questions.", placeholder='Type here...', font='Times New Roman',
          ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.1,
          size=(1.85, 0.5), borderWidth=2.0,
-         color='white', colorSpace='rgb',
+         color="'#000000'", colorSpace='rgb',
          opacity=None,
          bold=False, italic=False,
          lineSpacing=1.0, speechPoint=None,
@@ -517,7 +559,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          win, text="You have completed the quiz.\n\nJust a few more short questions about your experience, and then \nyou'll be finished.\n\nPress 'SPACE' to continue.", placeholder='Type here...', font='Times New Roman',
          ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.1,
          size=(1.85, 0.5), borderWidth=2.0,
-         color='white', colorSpace='rgb',
+         color="'#000000'", colorSpace='rgb',
          opacity=None,
          bold=False, italic=False,
          lineSpacing=1.0, speechPoint=None,
@@ -536,15 +578,15 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         text='',
         font='Times New Roman',
         pos=(0, 0), draggable=False, height=0.1, wrapWidth=None, ori=0.0, 
-        color='white', colorSpace='rgb', opacity=None, 
+        color="'#000000'", colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=0.0);
     likert_slider = visual.Slider(win=win, name='likert_slider',
-        startValue=None, size=(1.4, 0.1), pos=(0, -0.4), units=win.units,
-        labels=('Strongly Disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly Agree'), ticks=(1, 2, 3, 4, 5), granularity=1.0,
+        startValue=None, size=(1.5, 0.1), pos=(0, -0.4), units=win.units,
+        labels=('Strongly disagree', 'Disagree', 'Somewhat disagree', 'Neither agree nor disagree', 'Somewhat agree', 'Agree', 'Strongly agree'), ticks=(1, 2, 3, 4, 5, 6, 7), granularity=1.0,
         style='rating', styleTweaks=(), opacity=None,
-        labelColor='LightGray', markerColor='Red', lineColor='White', colorSpace='rgb',
-        font='Noto Sans', labelHeight=0.05,
+        labelColor="'#000000'", markerColor='Red', lineColor='White', colorSpace='rgb',
+        font='Noto Sans', labelHeight=0.036,
         flip=False, ori=0.0, depth=-1, readOnly=False)
     nextButton = visual.ButtonStim(win, 
         text='Next>>', font='Times New Roman',
@@ -565,13 +607,22 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     nextButton.buttonClock = core.Clock()
     
     # --- Initialize components for Routine "end" ---
-    text = visual.TextStim(win=win, name='text',
-        text='Thank you for participating in this study!\n\nYour responses have been recorded successfully.\n\nThis window will be closed in 5s. ',
-        font='Times New Roman',
-        pos=(0, 0), draggable=False, height=0.1, wrapWidth=None, ori=0.0, 
-        color='white', colorSpace='rgb', opacity=None, 
-        languageStyle='LTR',
-        depth=0.0);
+    ending_text = visual.TextBox2(
+         win, text='Thank you for participating in this study!\n\nYour responses have been recorded successfully.', placeholder='Type here...', font='Times New Roman',
+         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.1,
+         size=(1.8, 0.5), borderWidth=2.0,
+         color="'#000000'", colorSpace='rgb',
+         opacity=None,
+         bold=False, italic=False,
+         lineSpacing=1.0, speechPoint=None,
+         padding=0.0, alignment='center',
+         anchor='center', overflow='visible',
+         fillColor=None, borderColor=None,
+         flipHoriz=False, flipVert=False, languageStyle='LTR',
+         editable=False,
+         name='ending_text',
+         depth=0, autoLog=True,
+    )
     
     # create some handy timers
     
@@ -600,6 +651,214 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     expInfo['expStart'] = data.getDateStr(
         format='%Y-%m-%d %Hh%M.%S.%f %z', fractionalSecondDigits=6
     )
+    
+    # --- Prepare to start Routine "consent" ---
+    # create an object to store info about Routine consent
+    consent = data.Routine(
+        name='consent',
+        components=[consentText, topMask, bottomMask, key_resp],
+    )
+    consent.status = NOT_STARTED
+    continueRoutine = True
+    # update component parameters for each repeat
+    consentText.reset()
+    # Run 'Begin Routine' code from scrollCode
+    scrollY = 0
+    startX = -0.65       # left edge of the text
+    startY = 0.38        # top edge of the text
+    maxScroll = 1.4      
+    scrollSpeed = 0.05
+    atBottom = False
+    DEBUG = True         # set to False when you finish tuning
+    event.clearEvents()
+    mouse.getWheelRel()  # discard old wheel movement
+    # create starting attributes for key_resp
+    key_resp.keys = []
+    key_resp.rt = []
+    _key_resp_allKeys = []
+    # store start times for consent
+    consent.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
+    consent.tStart = globalClock.getTime(format='float')
+    consent.status = STARTED
+    thisExp.addData('consent.started', consent.tStart)
+    consent.maxDuration = None
+    # keep track of which components have finished
+    consentComponents = consent.components
+    for thisComponent in consent.components:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    frameN = -1
+    
+    # --- Run Routine "consent" ---
+    consent.forceEnded = routineForceEnded = not continueRoutine
+    while continueRoutine:
+        # get current time
+        t = routineTimer.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # *consentText* updates
+        
+        # if consentText is starting this frame...
+        if consentText.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            consentText.frameNStart = frameN  # exact frame index
+            consentText.tStart = t  # local t and not account for scr refresh
+            consentText.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(consentText, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'consentText.started')
+            # update status
+            consentText.status = STARTED
+            consentText.setAutoDraw(True)
+        
+        # if consentText is active this frame...
+        if consentText.status == STARTED:
+            # update params
+            pass
+        
+        # *topMask* updates
+        
+        # if topMask is starting this frame...
+        if topMask.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            topMask.frameNStart = frameN  # exact frame index
+            topMask.tStart = t  # local t and not account for scr refresh
+            topMask.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(topMask, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'topMask.started')
+            # update status
+            topMask.status = STARTED
+            topMask.setAutoDraw(True)
+        
+        # if topMask is active this frame...
+        if topMask.status == STARTED:
+            # update params
+            pass
+        
+        # *bottomMask* updates
+        
+        # if bottomMask is starting this frame...
+        if bottomMask.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            bottomMask.frameNStart = frameN  # exact frame index
+            bottomMask.tStart = t  # local t and not account for scr refresh
+            bottomMask.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(bottomMask, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'bottomMask.started')
+            # update status
+            bottomMask.status = STARTED
+            bottomMask.setAutoDraw(True)
+        
+        # if bottomMask is active this frame...
+        if bottomMask.status == STARTED:
+            # update params
+            pass
+        # Run 'Each Frame' code from scrollCode
+        wheel = mouse.getWheelRel()[1]
+        keys = event.getKeys(keyList=['up', 'down', 'space'])
+        if 'down' in keys:
+            wheel -= 2
+        if 'up' in keys:
+            wheel += 2
+        
+        scrollY -= wheel * scrollSpeed
+        scrollY = max(0, min(maxScroll, scrollY))
+        consentText.pos = (startX, startY + scrollY)
+        
+        atBottom = scrollY >= maxScroll - 0.01
+        
+        if atBottom and 'space' in keys:
+            continueRoutine = False
+        
+        # *key_resp* updates
+        waitOnFlip = False
+        
+        # if key_resp is starting this frame...
+        if key_resp.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            key_resp.frameNStart = frameN  # exact frame index
+            key_resp.tStart = t  # local t and not account for scr refresh
+            key_resp.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(key_resp, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'key_resp.started')
+            # update status
+            key_resp.status = STARTED
+            # keyboard checking is just starting
+            waitOnFlip = True
+            win.callOnFlip(key_resp.clock.reset)  # t=0 on next screen flip
+            win.callOnFlip(key_resp.clearEvents, eventType='keyboard')  # clear events on next screen flip
+        if key_resp.status == STARTED and not waitOnFlip:
+            theseKeys = key_resp.getKeys(keyList=['space'], ignoreKeys=["escape"], waitRelease=False)
+            _key_resp_allKeys.extend(theseKeys)
+            if len(_key_resp_allKeys):
+                key_resp.keys = _key_resp_allKeys[-1].name  # just the last key pressed
+                key_resp.rt = _key_resp_allKeys[-1].rt
+                key_resp.duration = _key_resp_allKeys[-1].duration
+                # a response ends the routine
+                continueRoutine = False
+        
+        # check for quit (typically the Esc key)
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            thisExp.status = FINISHED
+        if thisExp.status == FINISHED or endExpNow:
+            endExperiment(thisExp, win=win)
+            return
+        # pause experiment here if requested
+        if thisExp.status == PAUSED:
+            pauseExperiment(
+                thisExp=thisExp, 
+                win=win, 
+                timers=[routineTimer, globalClock], 
+                currentRoutine=consent,
+            )
+            # skip the frame we paused on
+            continue
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            consent.forceEnded = routineForceEnded = True
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in consent.components:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # --- Ending Routine "consent" ---
+    for thisComponent in consent.components:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    # store stop times for consent
+    consent.tStop = globalClock.getTime(format='float')
+    consent.tStopRefresh = tThisFlipGlobal
+    thisExp.addData('consent.stopped', consent.tStop)
+    # check responses
+    if key_resp.keys in ['', [], None]:  # No response was made
+        key_resp.keys = None
+    thisExp.addData('key_resp.keys',key_resp.keys)
+    if key_resp.keys != None:  # we had a response
+        thisExp.addData('key_resp.rt', key_resp.rt)
+        thisExp.addData('key_resp.duration', key_resp.duration)
+    thisExp.nextEntry()
+    # the Routine "consent" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
     
     # --- Prepare to start Routine "intro" ---
     # create an object to store info about Routine intro
@@ -1521,7 +1780,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     likertLoop = data.TrialHandler2(
         name='likertLoop',
         nReps=1.0, 
-        method='random', 
+        method='sequential', 
         extraInfo=expInfo, 
         originPath=-1, 
         trialList=data.importConditions('likert_items.xlsx'), 
@@ -1750,11 +2009,12 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # create an object to store info about Routine end
     end = data.Routine(
         name='end',
-        components=[text],
+        components=[ending_text],
     )
     end.status = NOT_STARTED
     continueRoutine = True
     # update component parameters for each repeat
+    ending_text.reset()
     # store start times for end
     end.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
     end.tStart = globalClock.getTime(format='float')
@@ -1777,7 +2037,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Run Routine "end" ---
     end.forceEnded = routineForceEnded = not continueRoutine
-    while continueRoutine and routineTimer.getTime() < 5.0:
+    while continueRoutine:
         # get current time
         t = routineTimer.getTime()
         tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -1785,39 +2045,25 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
         
-        # *text* updates
+        # *ending_text* updates
         
-        # if text is starting this frame...
-        if text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # if ending_text is starting this frame...
+        if ending_text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            text.frameNStart = frameN  # exact frame index
-            text.tStart = t  # local t and not account for scr refresh
-            text.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(text, 'tStartRefresh')  # time at next scr refresh
+            ending_text.frameNStart = frameN  # exact frame index
+            ending_text.tStart = t  # local t and not account for scr refresh
+            ending_text.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(ending_text, 'tStartRefresh')  # time at next scr refresh
             # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'text.started')
+            thisExp.timestampOnFlip(win, 'ending_text.started')
             # update status
-            text.status = STARTED
-            text.setAutoDraw(True)
+            ending_text.status = STARTED
+            ending_text.setAutoDraw(True)
         
-        # if text is active this frame...
-        if text.status == STARTED:
+        # if ending_text is active this frame...
+        if ending_text.status == STARTED:
             # update params
             pass
-        
-        # if text is stopping this frame...
-        if text.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > text.tStartRefresh + 5-frameTolerance:
-                # keep track of stop time/frame for later
-                text.tStop = t  # not accounting for scr refresh
-                text.tStopRefresh = tThisFlipGlobal  # on global time
-                text.frameNStop = frameN  # exact frame index
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'text.stopped')
-                # update status
-                text.status = FINISHED
-                text.setAutoDraw(False)
         
         # check for quit (typically the Esc key)
         if defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1858,14 +2104,9 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     end.tStop = globalClock.getTime(format='float')
     end.tStopRefresh = tThisFlipGlobal
     thisExp.addData('end.stopped', end.tStop)
-    # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
-    if end.maxDurationReached:
-        routineTimer.addTime(-end.maxDuration)
-    elif end.forceEnded:
-        routineTimer.reset()
-    else:
-        routineTimer.addTime(-5.000000)
     thisExp.nextEntry()
+    # the Routine "end" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
     
     # mark experiment as finished
     endExperiment(thisExp, win=win)

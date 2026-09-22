@@ -1,0 +1,111 @@
+5.9626 	INFO 	Loaded monitor calibration from ['2026_09_03 20:22']
+5.9739 	WARNING 	User requested fullscreen with size [1152  720], but screen is actually [2880, 1800]. Using actual size
+7.5634 	INFO 	Using renderer 'Intel(R) Arc(TM) Graphics' for graphics
+7.5635 	INFO 	OpenGL version supported by driver is 4..
+7.5949 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001ECF772A950>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001ECF772A8F0>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color='808080', colorSpace='hex', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001ECF781B640>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([2880, 1800]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+7.5950 	EXP 	window1: backgroundImage = ''
+7.5950 	EXP 	window1: backgroundFit = 'none'
+7.9360 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+7.9360 	EXP 	window1: recordFrameIntervals = False
+8.0329 	EXP 	window1: recordFrameIntervals = True
+8.1557 	EXP 	Screen (0) actual frame rate measured at 90.00Hz
+8.1558 	EXP 	window1: recordFrameIntervals = False
+8.3513 	INFO 	keyboard.Keyboard is using ptb backend.
+8.3514 	INFO 	keyboard.Keyboard is using ptb backend.
+8.3514 	INFO 	keyboard.Keyboard is using ptb backend.
+8.3515 	INFO 	keyboard.Keyboard is using ptb backend.
+8.3515 	INFO 	keyboard.Keyboard is using ptb backend.
+8.3515 	INFO 	keyboard.Keyboard is using ptb backend.
+8.3515 	INFO 	keyboard.Keyboard is using ptb backend.
+8.3515 	EXP 	testing1: status = STARTED
+8.4994 	EXP 	Created topMask = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-1.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='topMask', opacity=1, ori=0.0, pos=array([0.  , 0.47]), size=array([3.  , 0.14]), units='height', vertices=ndarray(...), win=Window(...))
+8.5006 	EXP 	Created bottomMask = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-2.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([-1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([-1., -1., -1.]), lineWidth=1.0, name='bottomMask', opacity=1, ori=0.0, pos=array([ 0.  , -0.42]), size=array([3.  , 0.16]), units='height', vertices=ndarray(...), win=Window(...))
+9.0430 	EXP 	Created likertText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Times New Roman', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='likertText', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='norm', win=Window(...), wrapWidth=1)
+9.4733 	EXP 	Created likert_slider = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-1, fillColor=None, flip=False, font='Noto Sans', granularity=1.0, labelColor=None, labelHeight=np.float64(0.04), labelWrapWidth=None, labels=tuple(...), lineColor=None, markerColor=None, name='likert_slider', opacity=None, ori=0.0, pos=array([ 0. , -0.4]), readOnly=False, self=UNKNOWN, size=array([1.5, 0.1]), startValue=None, style='rating', styleTweaks=[], ticks=array([1, 2, 3, 4, 5, 6, 7]), units='norm', win=Window(...))
+9.5773 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Times New Roman', fontFiles=[], height=np.float64(0.1), italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='norm', win=Window(...), wrapWidth=1)
+0.0019 	EXP 	consentText: autoLog = True
+0.0019 	EXP 	intro_text: autoLog = True
+0.0019 	EXP 	instruction_header: autoLog = True
+0.0019 	EXP 	instruction_text: autoLog = True
+0.0019 	EXP 	warning_header: autoLog = True
+0.0019 	EXP 	warning_text: autoLog = True
+0.0019 	EXP 	textbox: autoLog = True
+0.0019 	EXP 	textbox_2: autoLog = True
+0.0019 	EXP 	likert_slider: autoLog = True
+0.0019 	EXP 	likert_slider: styleTweaks = []
+0.0019 	EXP 	likert_slider: styleTweaks = []
+0.0019 	EXP 	likert_slider: styleTweaks = []
+0.0019 	EXP 	likert_slider: styleTweaks = []
+0.0019 	EXP 	likert_slider: contrast = 1.0
+0.0019 	EXP 	likert_slider: markerPos = None
+0.0019 	EXP 	likert_slider: autoLog = True
+0.0277 	INFO 	Keyboard events cleared
+0.0276 	EXP 	consentText: autoDraw = True
+0.0276 	EXP 	topMask: autoDraw = True
+0.0276 	EXP 	bottomMask: autoDraw = True
+0.9466 	EXP 	Device response: <KeyPress from None: t=0.9415543000213802, value=space, duration=None>
+0.9506 	DATA 	Keypress: space
+0.9530 	INFO 	Keyboard events cleared
+0.9529 	EXP 	consentText: autoDraw = False
+0.9529 	EXP 	topMask: autoDraw = False
+0.9529 	EXP 	bottomMask: autoDraw = False
+0.9529 	EXP 	intro_text: autoDraw = True
+1.0227 	EXP 	Device response: <KeyPress from None: t=0.9415543000213802, value=space, duration=0.07126400002744049>
+1.1338 	EXP 	Device response: <KeyPress from None: t=1.1316431000595912, value=space, duration=None>
+1.1376 	DATA 	Keypress: space
+1.1444 	INFO 	Keyboard events cleared
+1.1443 	EXP 	intro_text: autoDraw = False
+1.1443 	EXP 	instruction_header: autoDraw = True
+1.1443 	EXP 	instruction_text: autoDraw = True
+1.2224 	EXP 	Device response: <KeyPress from None: t=1.1316431000595912, value=space, duration=0.08985649992246181>
+1.4908 	DATA 	Keypress: space
+1.5002 	EXP 	Device response: <KeyPress from None: t=1.4902830000501126, value=space, duration=None>
+1.5112 	INFO 	Keyboard events cleared
+1.5111 	EXP 	instruction_header: autoDraw = False
+1.5111 	EXP 	instruction_text: autoDraw = False
+1.5111 	EXP 	warning_header: autoDraw = True
+1.5111 	EXP 	warning_text: autoDraw = True
+1.5893 	EXP 	Device response: <KeyPress from None: t=1.4902830000501126, value=space, duration=0.09450849995482713>
+1.7114 	EXP 	Device response: <KeyPress from None: t=1.7055238999892026, value=space, duration=None>
+1.7179 	DATA 	Keypress: space
+1.7224 	INFO 	Keyboard events cleared
+1.7223 	EXP 	warning_header: autoDraw = False
+1.7223 	EXP 	warning_text: autoDraw = False
+1.7223 	EXP 	textbox: autoDraw = True
+1.8116 	EXP 	Device response: <KeyPress from None: t=1.7055238999892026, value=space, duration=0.09672530007082969>
+2.0782 	EXP 	Device response: <KeyPress from None: t=2.0739539000205696, value=space, duration=None>
+2.0831 	DATA 	Keypress: space
+2.0889 	INFO 	Keyboard events cleared
+2.0889 	EXP 	textbox: autoDraw = False
+2.0889 	EXP 	textbox_2: autoDraw = True
+2.1668 	EXP 	Device response: <KeyPress from None: t=2.0739539000205696, value=space, duration=0.09244889998808503>
+2.4337 	EXP 	Device response: <KeyPress from None: t=2.431371600017883, value=space, duration=None>
+2.4423 	EXP 	Imported likert_items.xlsx as conditions, 5 conditions, 1 params
+2.4426 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'itemText': 'The video held my attention throughout.', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+2.4499 	DATA 	Keypress: space
+2.4648 	EXP 	textbox_2: autoDraw = False
+2.4648 	EXP 	likertText: height = np.float64(0.1)
+2.4648 	EXP 	likertText: height = np.float64(0.1)
+2.4648 	EXP 	likertText: height = np.float64(0.1)
+2.4648 	EXP 	likertText: text = 'The video held my attention throughout.'
+2.4648 	EXP 	likert_slider: markerPos = None
+2.4648 	EXP 	likert_slider: markerPos = None
+2.4648 	EXP 	likertText: autoDraw = True
+2.4648 	EXP 	likert_slider: autoDraw = True
+2.5340 	EXP 	Device response: <KeyPress from None: t=2.431371600017883, value=space, duration=0.10115320002660155>
+14.8697 	DATA 	Keypress: escape
+14.8718 	EXP 	Device response: <KeyPress from None: t=14.867922200006433, value=escape, duration=None>
+15.0132 	EXP 	Device response: <KeyPress from None: t=14.867922200006433, value=escape, duration=0.1424640000332147>
+15.0132 	EXP 	testing1: status = STOPPED
+15.0218 	EXP 	likertText: autoDraw = False
+15.0218 	EXP 	likert_slider: autoDraw = False
+15.0220 	EXP 	testing1: status = STOPPED
+15.0276 	INFO 	saved data to 'C:\\SPPA\\CMKL\\Animation_Project\\Summer\\Experiment_Workflows\\Testing1\\data\\917232_testing1_2026-09-22_13h56.53.117.csv'
+15.0324 	INFO 	saved data to C:\SPPA\CMKL\Animation_Project\Summer\Experiment_Workflows\Testing1\data\917232_testing1_2026-09-22_13h56.53.117.psydat
+16.9079 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+16.9438 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+16.9438 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+16.9438 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+16.9438 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+16.9438 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+16.9438 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
