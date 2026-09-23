@@ -273,7 +273,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="- You will watch one video in full. Please do not skip, pause, or &amp;#10;  rewind during playback.&amp;#10;- Pay close attention, as you will be tested on the content &amp;#10;  immediately afterward.&amp;#10;- The video and quiz cannot be repeated once completed.&amp;#10;- Please do not switch to other tabs, applications, or windows &amp;#10;  during the video.&amp;#10;&amp;#10;Press 'SPACE' when you are ready to begin the video." valType="str" updates="constant" name="text"/>
+        <Param val="- You will watch one video in full. &amp;#10;- Please pay close attention, as you will be tested on the content &amp;#10;  afterward.&amp;#10;- The video and quiz cannot be repeated once completed.&amp;#10;&amp;#10;Press 'SPACE' when you are ready to begin the video." valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
       </TextboxComponent>
@@ -769,7 +769,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="In this study, you will:&amp;#10;&amp;#10;1. Watch a short educational video&amp;#10;2. Answer a series of questions about what you watched&amp;#10;3. Answer a few questions about your experience&amp;#10;&amp;#10;Press 'SPACE' to continue." valType="str" updates="constant" name="text"/>
+        <Param val="In this study, you will:&amp;#10;&amp;#10;1. Watch a short educational video&amp;#10;2. Answer a series of questions about what you watched&amp;#10;3. Answer a few questions about your experience&amp;#10;4. Fill in a short form about your age, gender, and education.&amp;#10;&amp;#10;Press 'SPACE' to continue." valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
       </TextboxComponent>
@@ -849,7 +849,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Participant Information and Consent&amp;#10;&amp;#10;PURPOSE OF THE STUDY&amp;#10;- This study looks at how people learn from recorded lectures.&amp;#10;- You will watch short lecture videos and answer questions about them.&amp;#10;- The study is run by [researcher names] at [university/department].&amp;#10;&amp;#10;WHAT YOU WILL DO&amp;#10;- Watch [number] lecture video segments on the screen.&amp;#10;- Answer questions about what you understood.&amp;#10;- Answer questions about what you thought of the lecture.&amp;#10;- Fill in a short form about your age, gender, and education.&amp;#10;&amp;#10;HOW LONG IT TAKES&amp;#10;- The whole session takes about 30 to 45 minutes.&amp;#10;- Please do not pause, skip, or rewind the videos.&amp;#10;- Please follow the instructions on the screen.&amp;#10;&amp;#10;PAYMENT&amp;#10;- You will receive [amount] baht after you finish the session.&amp;#10;- Payment is made by [cash / method decided by the school].&amp;#10;&amp;#10;YOUR RIGHTS&amp;#10;- Taking part is voluntary.&amp;#10;- You can stop and leave at any time. You do not have to give a reason.&amp;#10;- If you leave, your data will not be stored or used.&amp;#10;- There is no risk beyond what you meet in everyday life.&amp;#10;&amp;#10;PRIVACY&amp;#10;- Your name will not be written in your data. You will only have a participant number.&amp;#10;- Your signed consent form will be kept locked in a separate place.&amp;#10;- Your data will be stored securely for [number] years.&amp;#10;- Results will only be reported for the whole group. No one will be identified.&amp;#10;&amp;#10;WHO CAN TAKE PART&amp;#10;- You must be 18 years or older.&amp;#10;- You must have normal vision, or vision corrected with glasses or lenses.&amp;#10;- You must have normal hearing.&amp;#10;- You must be able to follow a lecture in English.&amp;#10;&amp;#10;QUESTIONS&amp;#10;- You can ask the experimenter any question before you start.&amp;#10;- For questions later, contact [name, email, phone].&amp;#10;- If you have concerns about how the study was run, contact [ethics committee contact].&amp;#10;&amp;#10;CONSENT&amp;#10;- I have read this information, or it was read to me.&amp;#10;- I understand that I can stop at any time.&amp;#10;- I agree to take part in this study.&amp;#10;&amp;#10;If you agree, please tell the experimenter. You will sign the printed consent form before you begin." valType="str" updates="constant" name="text"/>
+        <Param val="PARTICIPANT INFORMATION AND CONSENT&amp;#10;&amp;#10;Who Can Take Part&amp;#10;- You must be 18 years or older.&amp;#10;- You must not have a vision or hearing impairment that would affect your participation.&amp;#10;- You must be able to follow a lecture in English&amp;#10;- You must not have been enrolled one of the competencies listed here:&amp;#10;   - AIC - 505 Generative AI&amp;#10;   - SEN - 210 DesktopGUI&amp;#10;   - TBC&amp;#10;&amp;#10;How Long It Takes&amp;#10;- The whole session takes about 30 to 45 minutes.&amp;#10;- Please follow the instructions on the screen.&amp;#10;&amp;#10;Your Rights&amp;#10;- Taking part is voluntary.&amp;#10;- You can stop and leave at any time. You do not have to give a reason.&amp;#10;- If you leave, your data will not be stored or used.&amp;#10;&amp;#10;Privacy&amp;#10;- Your name will not be written in your data. You will only have a participant number.&amp;#10;- Your data will be stored securely.&amp;#10;- Results will only be reported for the whole group. No one will be identified.&amp;#10;&amp;#10;Questions&amp;#10;- You can ask the experimenter any question before you start.&amp;#10;- For questions later, contact: [email].&amp;#10;&amp;#10;CONSENT&amp;#10;- I have read this information.&amp;#10;- I understand that I can stop at any time.&amp;#10;- I agree to take part in this study.&amp;#10;&amp;#10;If you agree, please continue to the next step by clicking the &quot;NEXT&quot; button." valType="str" updates="constant" name="text"/>
         <Param val="height" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
       </TextboxComponent>
@@ -948,11 +948,46 @@
         <Param val="False" valType="bool" updates="constant" name="storeCorrect"/>
         <Param val="True" valType="bool" updates="constant" name="syncScreenRefresh"/>
       </KeyboardComponent>
+      <ButtonComponent name="consentButton" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="True" valType="bool" updates="constant" name="bold"/>
+        <Param val="None" valType="color" updates="constant" name="borderColor"/>
+        <Param val="0" valType="num" updates="constant" name="borderWidth"/>
+        <Param val="" valType="extendedCode" updates="constant" name="callback"/>
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="1.0000, 1.0000, 1.0000" valType="color" updates="constant" name="fillColor"/>
+        <Param val="Arvo" valType="str" updates="constant" name="font"/>
+        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="False" valType="bool" updates="constant" name="italic"/>
+        <Param val="0.04" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="consentButton" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="constant" name="oncePerClick"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="" valType="num" updates="constant" name="padding"/>
+        <Param val="(0.8, -0.75)" valType="list" updates="constant" name="pos"/>
+        <Param val="every click" valType="str" updates="None" name="save"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(0.15, 0.15)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="NEXT&gt;&gt;" valType="str" updates="constant" name="text"/>
+        <Param val="button onset" valType="str" updates="constant" name="timeRelativeTo"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="code" updates="None" name="validator"/>
+      </ButtonComponent>
     </Routine>
   </Routines>
   <Flow>
     <Routine name="consent"/>
-    <Routine name="intro"/>
     <Routine name="instructions"/>
     <Routine name="warning"/>
     <Routine name="video"/>

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2025.1.1),
-    on September 22, 2026, at 14:31
+    on September 23, 2026, at 15:54
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -269,12 +269,6 @@ def setupDevices(expInfo, thisExp, win):
             deviceClass='keyboard',
             deviceName='key_resp',
         )
-    if deviceManager.getDevice('introresp') is None:
-        # initialise introresp
-        introresp = deviceManager.addDevice(
-            deviceClass='keyboard',
-            deviceName='introresp',
-        )
     if deviceManager.getDevice('instruct_resp') is None:
         # initialise instruct_resp
         instruct_resp = deviceManager.addDevice(
@@ -408,7 +402,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "consent" ---
     consentText = visual.TextBox2(
-         win, text='Participant Information and Consent\n\nPURPOSE OF THE STUDY\n- This study looks at how people learn from recorded lectures.\n- You will watch short lecture videos and answer questions about them.\n- The study is run by [researcher names] at [university/department].\n\nWHAT YOU WILL DO\n- Watch [number] lecture video segments on the screen.\n- Answer questions about what you understood.\n- Answer questions about what you thought of the lecture.\n- Fill in a short form about your age, gender, and education.\n\nHOW LONG IT TAKES\n- The whole session takes about 30 to 45 minutes.\n- Please do not pause, skip, or rewind the videos.\n- Please follow the instructions on the screen.\n\nPAYMENT\n- You will receive [amount] baht after you finish the session.\n- Payment is made by [cash / method decided by the school].\n\nYOUR RIGHTS\n- Taking part is voluntary.\n- You can stop and leave at any time. You do not have to give a reason.\n- If you leave, your data will not be stored or used.\n- There is no risk beyond what you meet in everyday life.\n\nPRIVACY\n- Your name will not be written in your data. You will only have a participant number.\n- Your signed consent form will be kept locked in a separate place.\n- Your data will be stored securely for [number] years.\n- Results will only be reported for the whole group. No one will be identified.\n\nWHO CAN TAKE PART\n- You must be 18 years or older.\n- You must have normal vision, or vision corrected with glasses or lenses.\n- You must have normal hearing.\n- You must be able to follow a lecture in English.\n\nQUESTIONS\n- You can ask the experimenter any question before you start.\n- For questions later, contact [name, email, phone].\n- If you have concerns about how the study was run, contact [ethics committee contact].\n\nCONSENT\n- I have read this information, or it was read to me.\n- I understand that I can stop at any time.\n- I agree to take part in this study.\n\nIf you agree, please tell the experimenter. You will sign the printed consent form before you begin.', placeholder='Type here...', font='Times New Roman',
+         win, text='PARTICIPANT INFORMATION AND CONSENT\n\nWho Can Take Part\n- You must be 18 years or older.\n- You must not have a vision or hearing impairment that would affect your participation.\n- You must be able to follow a lecture in English\n- You must not have been enrolled one of the competencies listed here:\n   - AIC - 505 Generative AI\n   - SEN - 210 DesktopGUI\n   - TBC\n\nHow Long It Takes\n- The whole session takes about 30 to 45 minutes.\n- Please follow the instructions on the screen.\n\nYour Rights\n- Taking part is voluntary.\n- You can stop and leave at any time. You do not have to give a reason.\n- If you leave, your data will not be stored or used.\n\nPrivacy\n- Your name will not be written in your data. You will only have a participant number.\n- Your data will be stored securely.\n- Results will only be reported for the whole group. No one will be identified.\n\nQuestions\n- You can ask the experimenter any question before you start.\n- For questions later, contact: [email].\n\nCONSENT\n- I have read this information.\n- I understand that I can stop at any time.\n- I agree to take part in this study.\n\nIf you agree, please continue to the next step by clicking the "NEXT" button.', placeholder='Type here...', font='Times New Roman',
          ori=0.0, pos=(-0.65, 0.38), draggable=False, units='height',     letterHeight=0.03,
          size=(1.3, None), borderWidth=2.0,
          color="'#000000'", colorSpace='rgb',
@@ -441,25 +435,23 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     from psychopy import event
     mouse = event.Mouse(win=win)
     key_resp = keyboard.Keyboard(deviceName='key_resp')
-    
-    # --- Initialize components for Routine "intro" ---
-    intro_text = visual.TextBox2(
-         win, text="Welcome to this research study on educational video content.\n\n(This study will take approximately 30 minutes to complete.)\n\nYour responses will be kept confidential and used for research \npurposes only. No personally identifying information will be shared \nin any publication resulting from this research.\n\nBy continuing, you confirm that you agree to participate in this study.\n\nPress 'SPACE'  to continue.", placeholder='Type here...', font='Times New Roman',
-         ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.1,
-         size=(1.85, 0.5), borderWidth=2.0,
-         color="'#000000'", colorSpace='rgb',
-         opacity=None,
-         bold=False, italic=False,
-         lineSpacing=1.0, speechPoint=None,
-         padding=0.0, alignment='center-left',
-         anchor='center', overflow='visible',
-         fillColor=None, borderColor=None,
-         flipHoriz=False, flipVert=False, languageStyle='LTR',
-         editable=False,
-         name='intro_text',
-         depth=0, autoLog=True,
+    consentButton = visual.ButtonStim(win, 
+        text='NEXT>>', font='Arvo',
+        pos=(0.8, -0.75),
+        letterHeight=0.04,
+        size=(0.15, 0.15), 
+        ori=0.0
+        ,borderWidth=0.0,
+        fillColor=[1.0000, 1.0000, 1.0000], borderColor=None,
+        color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb',
+        opacity=None,
+        bold=True, italic=False,
+        padding=None,
+        anchor='center',
+        name='consentButton',
+        depth=-5
     )
-    introresp = keyboard.Keyboard(deviceName='introresp')
+    consentButton.buttonClock = core.Clock()
     
     # --- Initialize components for Routine "instructions" ---
     instruction_header = visual.TextBox2(
@@ -479,7 +471,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          depth=0, autoLog=True,
     )
     instruction_text = visual.TextBox2(
-         win, text="In this study, you will:\n\n1. Watch a short educational video\n2. Answer a series of questions about what you watched\n3. Answer a few questions about your experience\n\nPress 'SPACE' to continue.", placeholder='Type here...', font='Times New Roman',
+         win, text="In this study, you will:\n\n1. Watch a short educational video\n2. Answer a series of questions about what you watched\n3. Answer a few questions about your experience\n4. Fill in a short form about your age, gender, and education.\n\nPress 'SPACE' to continue.", placeholder='Type here...', font='Times New Roman',
          ori=0.0, pos=(0, -0.05), draggable=False,      letterHeight=0.1,
          size=(1.85, 0.5), borderWidth=2.0,
          color="'#000000'", colorSpace='rgb',
@@ -514,7 +506,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          depth=0, autoLog=True,
     )
     warning_text = visual.TextBox2(
-         win, text="- You will watch one video in full. Please do not skip, pause, or \n  rewind during playback.\n- Pay close attention, as you will be tested on the content \n  immediately afterward.\n- The video and quiz cannot be repeated once completed.\n- Please do not switch to other tabs, applications, or windows \n  during the video.\n\nPress 'SPACE' when you are ready to begin the video.", placeholder='Type here...', font='Times New Roman',
+         win, text="- You will watch one video in full. \n- Please pay close attention, as you will be tested on the content \n  afterward.\n- The video and quiz cannot be repeated once completed.\n\nPress 'SPACE' when you are ready to begin the video.", placeholder='Type here...', font='Times New Roman',
          ori=0.0, pos=(0, -0.15), draggable=False,      letterHeight=0.1,
          size=(1.85, 0.5), borderWidth=2.0,
          color="'#000000'", colorSpace='rgb',
@@ -656,7 +648,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # create an object to store info about Routine consent
     consent = data.Routine(
         name='consent',
-        components=[consentText, topMask, bottomMask, key_resp],
+        components=[consentText, topMask, bottomMask, key_resp, consentButton],
     )
     consent.status = NOT_STARTED
     continueRoutine = True
@@ -676,6 +668,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     key_resp.keys = []
     key_resp.rt = []
     _key_resp_allKeys = []
+    # reset consentButton to account for continued clicks & clear times on/off
+    consentButton.reset()
     # store start times for consent
     consent.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
     consent.tStart = globalClock.getTime(format='float')
@@ -809,6 +803,43 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 key_resp.duration = _key_resp_allKeys[-1].duration
                 # a response ends the routine
                 continueRoutine = False
+        # *consentButton* updates
+        
+        # if consentButton is starting this frame...
+        if consentButton.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
+            # keep track of start time/frame for later
+            consentButton.frameNStart = frameN  # exact frame index
+            consentButton.tStart = t  # local t and not account for scr refresh
+            consentButton.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(consentButton, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'consentButton.started')
+            # update status
+            consentButton.status = STARTED
+            win.callOnFlip(consentButton.buttonClock.reset)
+            consentButton.setAutoDraw(True)
+        
+        # if consentButton is active this frame...
+        if consentButton.status == STARTED:
+            # update params
+            pass
+            # check whether consentButton has been pressed
+            if consentButton.isClicked:
+                if not consentButton.wasClicked:
+                    # if this is a new click, store time of first click and clicked until
+                    consentButton.timesOn.append(consentButton.buttonClock.getTime())
+                    consentButton.timesOff.append(consentButton.buttonClock.getTime())
+                elif len(consentButton.timesOff):
+                    # if click is continuing from last frame, update time of clicked until
+                    consentButton.timesOff[-1] = consentButton.buttonClock.getTime()
+                if not consentButton.wasClicked:
+                    # end routine when consentButton is clicked
+                    continueRoutine = False
+                if not consentButton.wasClicked:
+                    # run callback code when consentButton is clicked
+                    pass
+        # take note of whether consentButton was clicked, so that next frame we know if clicks are new
+        consentButton.wasClicked = consentButton.isClicked and consentButton.status == STARTED
         
         # check for quit (typically the Esc key)
         if defaultKeyboard.getKeys(keyList=["escape"]):
@@ -856,150 +887,15 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     if key_resp.keys != None:  # we had a response
         thisExp.addData('key_resp.rt', key_resp.rt)
         thisExp.addData('key_resp.duration', key_resp.duration)
+    thisExp.addData('consentButton.numClicks', consentButton.numClicks)
+    if consentButton.numClicks:
+       thisExp.addData('consentButton.timesOn', consentButton.timesOn)
+       thisExp.addData('consentButton.timesOff', consentButton.timesOff)
+    else:
+       thisExp.addData('consentButton.timesOn', "")
+       thisExp.addData('consentButton.timesOff', "")
     thisExp.nextEntry()
     # the Routine "consent" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset()
-    
-    # --- Prepare to start Routine "intro" ---
-    # create an object to store info about Routine intro
-    intro = data.Routine(
-        name='intro',
-        components=[intro_text, introresp],
-    )
-    intro.status = NOT_STARTED
-    continueRoutine = True
-    # update component parameters for each repeat
-    intro_text.reset()
-    # create starting attributes for introresp
-    introresp.keys = []
-    introresp.rt = []
-    _introresp_allKeys = []
-    # store start times for intro
-    intro.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
-    intro.tStart = globalClock.getTime(format='float')
-    intro.status = STARTED
-    thisExp.addData('intro.started', intro.tStart)
-    intro.maxDuration = None
-    # keep track of which components have finished
-    introComponents = intro.components
-    for thisComponent in intro.components:
-        thisComponent.tStart = None
-        thisComponent.tStop = None
-        thisComponent.tStartRefresh = None
-        thisComponent.tStopRefresh = None
-        if hasattr(thisComponent, 'status'):
-            thisComponent.status = NOT_STARTED
-    # reset timers
-    t = 0
-    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    frameN = -1
-    
-    # --- Run Routine "intro" ---
-    intro.forceEnded = routineForceEnded = not continueRoutine
-    while continueRoutine:
-        # get current time
-        t = routineTimer.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
-        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-        # update/draw components on each frame
-        
-        # *intro_text* updates
-        
-        # if intro_text is starting this frame...
-        if intro_text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            intro_text.frameNStart = frameN  # exact frame index
-            intro_text.tStart = t  # local t and not account for scr refresh
-            intro_text.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(intro_text, 'tStartRefresh')  # time at next scr refresh
-            # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'intro_text.started')
-            # update status
-            intro_text.status = STARTED
-            intro_text.setAutoDraw(True)
-        
-        # if intro_text is active this frame...
-        if intro_text.status == STARTED:
-            # update params
-            pass
-        
-        # *introresp* updates
-        waitOnFlip = False
-        
-        # if introresp is starting this frame...
-        if introresp.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            introresp.frameNStart = frameN  # exact frame index
-            introresp.tStart = t  # local t and not account for scr refresh
-            introresp.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(introresp, 'tStartRefresh')  # time at next scr refresh
-            # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'introresp.started')
-            # update status
-            introresp.status = STARTED
-            # keyboard checking is just starting
-            waitOnFlip = True
-            win.callOnFlip(introresp.clock.reset)  # t=0 on next screen flip
-            win.callOnFlip(introresp.clearEvents, eventType='keyboard')  # clear events on next screen flip
-        if introresp.status == STARTED and not waitOnFlip:
-            theseKeys = introresp.getKeys(keyList=['space'], ignoreKeys=["escape"], waitRelease=False)
-            _introresp_allKeys.extend(theseKeys)
-            if len(_introresp_allKeys):
-                introresp.keys = _introresp_allKeys[-1].name  # just the last key pressed
-                introresp.rt = _introresp_allKeys[-1].rt
-                introresp.duration = _introresp_allKeys[-1].duration
-                # a response ends the routine
-                continueRoutine = False
-        
-        # check for quit (typically the Esc key)
-        if defaultKeyboard.getKeys(keyList=["escape"]):
-            thisExp.status = FINISHED
-        if thisExp.status == FINISHED or endExpNow:
-            endExperiment(thisExp, win=win)
-            return
-        # pause experiment here if requested
-        if thisExp.status == PAUSED:
-            pauseExperiment(
-                thisExp=thisExp, 
-                win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=intro,
-            )
-            # skip the frame we paused on
-            continue
-        
-        # check if all components have finished
-        if not continueRoutine:  # a component has requested a forced-end of Routine
-            intro.forceEnded = routineForceEnded = True
-            break
-        continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in intro.components:
-            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                continueRoutine = True
-                break  # at least one component has not yet finished
-        
-        # refresh the screen
-        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-            win.flip()
-    
-    # --- Ending Routine "intro" ---
-    for thisComponent in intro.components:
-        if hasattr(thisComponent, "setAutoDraw"):
-            thisComponent.setAutoDraw(False)
-    # store stop times for intro
-    intro.tStop = globalClock.getTime(format='float')
-    intro.tStopRefresh = tThisFlipGlobal
-    thisExp.addData('intro.stopped', intro.tStop)
-    # check responses
-    if introresp.keys in ['', [], None]:  # No response was made
-        introresp.keys = None
-    thisExp.addData('introresp.keys',introresp.keys)
-    if introresp.keys != None:  # we had a response
-        thisExp.addData('introresp.rt', introresp.rt)
-        thisExp.addData('introresp.duration', introresp.duration)
-    thisExp.nextEntry()
-    # the Routine "intro" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
     # --- Prepare to start Routine "instructions" ---
