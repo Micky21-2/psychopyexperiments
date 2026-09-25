@@ -1,0 +1,157 @@
+5.9322 	INFO 	Loaded monitor calibration from ['2026_09_03 20:22']
+5.9464 	WARNING 	User requested fullscreen with size [1152  720], but screen is actually [2880, 1800]. Using actual size
+6.1104 	INFO 	Using renderer 'Intel(R) Arc(TM) Graphics' for graphics
+6.1104 	INFO 	OpenGL version supported by driver is 4..
+6.2150 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000020F76CC3580>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000020F76CC35E0>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color='d3d3d3', colorSpace='hex', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000020F76DBA620>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([2880, 1800]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+6.2152 	EXP 	window1: backgroundImage = ''
+6.2152 	EXP 	window1: backgroundFit = 'none'
+6.5721 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+6.5721 	EXP 	window1: recordFrameIntervals = False
+6.6984 	EXP 	window1: recordFrameIntervals = True
+6.8213 	EXP 	Screen (0) actual frame rate measured at 89.86Hz
+6.8215 	EXP 	window1: recordFrameIntervals = False
+7.0303 	INFO 	keyboard.Keyboard is using ptb backend.
+7.0305 	INFO 	keyboard.Keyboard is using ptb backend.
+7.0305 	INFO 	keyboard.Keyboard is using ptb backend.
+7.0306 	INFO 	keyboard.Keyboard is using ptb backend.
+7.0306 	INFO 	keyboard.Keyboard is using ptb backend.
+7.0306 	EXP 	testing1: status = STARTED
+7.7323 	EXP 	Created likertText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Times New Roman', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='likertText', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='norm', win=Window(...), wrapWidth=1)
+8.1309 	EXP 	Created likert_slider = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-1, fillColor=None, flip=False, font='Noto Sans', granularity=1.0, labelColor=None, labelHeight=np.float64(0.036), labelWrapWidth=None, labels=tuple(...), lineColor=None, markerColor=None, name='likert_slider', opacity=None, ori=0.0, pos=array([ 0. , -0.4]), readOnly=False, self=UNKNOWN, size=array([1.5, 0.1]), startValue=None, style='rating', styleTweaks=[], ticks=array([1, 2, 3, 4, 5, 6, 7]), units='norm', win=Window(...))
+0.0172 	EXP 	consentText: autoLog = True
+0.0172 	EXP 	instruction_header: autoLog = True
+0.0172 	EXP 	instruction_text: autoLog = True
+0.0172 	EXP 	warning_header: autoLog = True
+0.0172 	EXP 	warning_text: autoLog = True
+0.0172 	EXP 	textbox: autoLog = True
+0.0172 	EXP 	textbox_2: autoLog = True
+0.0172 	EXP 	likert_slider: autoLog = True
+0.0172 	EXP 	likert_slider: styleTweaks = []
+0.0172 	EXP 	likert_slider: styleTweaks = []
+0.0172 	EXP 	likert_slider: styleTweaks = []
+0.0172 	EXP 	likert_slider: styleTweaks = []
+0.0172 	EXP 	likert_slider: contrast = 1.0
+0.0172 	EXP 	likert_slider: markerPos = None
+0.0172 	EXP 	likert_slider: autoLog = True
+0.0172 	EXP 	ending_text: autoLog = True
+0.0348 	EXP 	consentText: autoDraw = True
+0.8322 	DATA 	Mouse: wheel shift=(0,-1), pos=(1280,1036)
+0.8545 	DATA 	Mouse: wheel shift=(0,-1), pos=(1296,1036)
+0.8664 	DATA 	Mouse: wheel shift=(0,-1), pos=(1302,1039)
+0.8997 	DATA 	Mouse: wheel shift=(0,-1), pos=(1325,1064)
+1.1548 	DATA 	Mouse: wheel shift=(0,-1), pos=(1281,534)
+1.1706 	DATA 	Mouse: wheel shift=(0,-1), pos=(1282,534)
+1.1779 	DATA 	Mouse: wheel shift=(0,-1), pos=(1284,543)
+1.1899 	DATA 	Mouse: wheel shift=(0,-1), pos=(1292,573)
+1.1989 	DATA 	Mouse: wheel shift=(0,-1), pos=(1297,587)
+1.2101 	DATA 	Mouse: wheel shift=(0,-1), pos=(1313,653)
+1.4661 	DATA 	Mouse: wheel shift=(0,-1), pos=(1293,730)
+1.4898 	DATA 	Mouse: wheel shift=(0,-1), pos=(1293,730)
+1.5104 	DATA 	Mouse: wheel shift=(0,-1), pos=(1293,730)
+1.5262 	DATA 	Mouse: wheel shift=(0,-1), pos=(1293,730)
+1.7990 	DATA 	Mouse: wheel shift=(0,-1), pos=(1249,741)
+1.8225 	DATA 	Mouse: wheel shift=(0,-1), pos=(1244,741)
+1.8458 	DATA 	Mouse: wheel shift=(0,-1), pos=(1236,744)
+3.9577 	DATA 	Mouse: wheel shift=(0,1), pos=(1272,510)
+3.9765 	DATA 	Mouse: wheel shift=(0,1), pos=(1229,535)
+3.9880 	DATA 	Mouse: wheel shift=(0,1), pos=(1214,544)
+4.0323 	DATA 	Mouse: wheel shift=(0,1), pos=(1191,561)
+4.2097 	DATA 	Mouse: wheel shift=(0,1), pos=(1154,615)
+4.2209 	DATA 	Mouse: wheel shift=(0,1), pos=(1154,615)
+4.2346 	DATA 	Mouse: wheel shift=(0,1), pos=(1148,615)
+4.2658 	DATA 	Mouse: wheel shift=(0,1), pos=(1134,617)
+4.4438 	DATA 	Mouse: wheel shift=(0,1), pos=(1125,617)
+4.4541 	DATA 	Mouse: wheel shift=(0,1), pos=(1125,617)
+4.4676 	DATA 	Mouse: wheel shift=(0,1), pos=(1125,617)
+4.4985 	DATA 	Mouse: wheel shift=(0,1), pos=(1125,617)
+4.6876 	DATA 	Mouse: wheel shift=(0,1), pos=(1124,617)
+4.6987 	DATA 	Mouse: wheel shift=(0,1), pos=(1120,617)
+4.7114 	DATA 	Mouse: wheel shift=(0,1), pos=(1118,617)
+4.7322 	DATA 	Mouse: wheel shift=(0,1), pos=(1111,617)
+4.9432 	DATA 	Mouse: wheel shift=(0,1), pos=(1100,616)
+4.9543 	DATA 	Mouse: wheel shift=(0,1), pos=(1100,616)
+4.9653 	DATA 	Mouse: wheel shift=(0,1), pos=(1100,616)
+4.9764 	DATA 	Mouse: wheel shift=(0,1), pos=(1100,616)
+4.9988 	DATA 	Mouse: wheel shift=(0,1), pos=(1100,616)
+5.2701 	DATA 	Mouse: wheel shift=(0,1), pos=(1084,605)
+5.2892 	DATA 	Mouse: wheel shift=(0,1), pos=(1084,605)
+5.3099 	DATA 	Mouse: wheel shift=(0,1), pos=(1084,605)
+5.3339 	DATA 	Mouse: wheel shift=(0,1), pos=(1084,605)
+5.5433 	DATA 	Mouse: wheel shift=(0,-1), pos=(1068,583)
+5.5545 	DATA 	Mouse: wheel shift=(0,-1), pos=(1065,582)
+5.5679 	DATA 	Mouse: wheel shift=(0,-1), pos=(1065,581)
+5.8108 	DATA 	Mouse: wheel shift=(0,-1), pos=(1063,578)
+5.8321 	DATA 	Mouse: wheel shift=(0,-1), pos=(1063,578)
+5.8460 	DATA 	Mouse: wheel shift=(0,-1), pos=(1063,578)
+6.0320 	DATA 	Mouse: wheel shift=(0,1), pos=(1061,578)
+6.0432 	DATA 	Mouse: wheel shift=(0,1), pos=(1061,578)
+6.0546 	DATA 	Mouse: wheel shift=(0,1), pos=(1061,578)
+6.0767 	DATA 	Mouse: wheel shift=(0,1), pos=(1061,578)
+6.2702 	DATA 	Mouse: wheel shift=(0,1), pos=(1053,584)
+6.2786 	DATA 	Mouse: wheel shift=(0,1), pos=(1050,587)
+6.2989 	DATA 	Mouse: wheel shift=(0,1), pos=(1046,590)
+6.3215 	DATA 	Mouse: wheel shift=(0,1), pos=(1040,594)
+6.5127 	DATA 	Mouse: wheel shift=(0,1), pos=(1037,595)
+6.5217 	DATA 	Mouse: wheel shift=(0,1), pos=(1037,595)
+6.5322 	DATA 	Mouse: wheel shift=(0,1), pos=(1037,595)
+6.5432 	DATA 	Mouse: wheel shift=(0,1), pos=(1037,595)
+6.5767 	DATA 	Mouse: wheel shift=(0,1), pos=(1037,595)
+6.7478 	DATA 	Mouse: wheel shift=(0,1), pos=(1037,595)
+6.7661 	DATA 	Mouse: wheel shift=(0,1), pos=(1037,595)
+6.7880 	DATA 	Mouse: wheel shift=(0,1), pos=(1037,595)
+6.9595 	DATA 	Mouse: wheel shift=(0,-1), pos=(1020,573)
+6.9737 	DATA 	Mouse: wheel shift=(0,-1), pos=(1004,562)
+6.9859 	DATA 	Mouse: wheel shift=(0,-1), pos=(998,561)
+7.0014 	DATA 	Mouse: wheel shift=(0,-1), pos=(998,561)
+7.2125 	DATA 	Mouse: wheel shift=(0,-1), pos=(994,561)
+7.2324 	DATA 	Mouse: wheel shift=(0,-1), pos=(994,561)
+7.2437 	DATA 	Mouse: wheel shift=(0,-1), pos=(994,561)
+7.2560 	DATA 	Mouse: wheel shift=(0,-1), pos=(994,561)
+7.4899 	DATA 	Mouse: wheel shift=(0,-1), pos=(994,561)
+7.5023 	DATA 	Mouse: wheel shift=(0,-1), pos=(994,561)
+7.5117 	DATA 	Mouse: wheel shift=(0,-1), pos=(994,561)
+7.5241 	DATA 	Mouse: wheel shift=(0,-1), pos=(994,561)
+7.7118 	DATA 	Mouse: wheel shift=(0,1), pos=(992,561)
+7.7215 	DATA 	Mouse: wheel shift=(0,1), pos=(992,561)
+7.7433 	DATA 	Mouse: wheel shift=(0,1), pos=(992,561)
+7.7576 	DATA 	Mouse: wheel shift=(0,1), pos=(992,561)
+7.9688 	DATA 	Mouse: wheel shift=(0,1), pos=(992,561)
+7.9839 	DATA 	Mouse: wheel shift=(0,1), pos=(992,561)
+7.9961 	DATA 	Mouse: wheel shift=(0,1), pos=(992,561)
+8.0212 	DATA 	Mouse: wheel shift=(0,1), pos=(992,561)
+8.2342 	DATA 	Mouse: wheel shift=(0,1), pos=(992,561)
+8.2458 	DATA 	Mouse: wheel shift=(0,1), pos=(992,561)
+8.2657 	DATA 	Mouse: wheel shift=(0,1), pos=(992,561)
+8.2781 	DATA 	Mouse: wheel shift=(0,1), pos=(992,561)
+8.3164 	DATA 	Mouse: wheel shift=(0,1), pos=(992,561)
+8.4991 	DATA 	Mouse: wheel shift=(0,1), pos=(992,561)
+8.5150 	DATA 	Mouse: wheel shift=(0,1), pos=(992,561)
+8.5346 	DATA 	Mouse: wheel shift=(0,1), pos=(992,561)
+8.5781 	DATA 	Mouse: wheel shift=(0,1), pos=(992,561)
+14.3463 	DATA 	Mouse: wheel shift=(0,1), pos=(672,1020)
+14.3762 	DATA 	Mouse: wheel shift=(0,1), pos=(641,1024)
+14.3984 	DATA 	Mouse: wheel shift=(0,1), pos=(629,1025)
+14.9770 	DATA 	Mouse: Left button down, pos=(537,1065)
+14.9915 	INFO 	Keyboard events cleared
+14.9915 	EXP 	consentText: autoDraw = False
+14.9915 	EXP 	instruction_header: autoDraw = True
+14.9915 	EXP 	instruction_text: autoDraw = True
+15.0896 	DATA 	Mouse:  Left button up, pos=(515,1029)
+15.1895 	DATA 	Mouse: Left button down, pos=(519,1019)
+15.2456 	DATA 	Mouse:  Left button up, pos=(519,1019)
+16.3111 	DATA 	Mouse: Left button down, pos=(629,939)
+16.4390 	DATA 	Mouse:  Left button up, pos=(638,939)
+19.3870 	EXP 	Device response: <KeyPress from None: t=19.373021799954586, value=escape, duration=None>
+19.3890 	DATA 	Keypress: escape
+19.5319 	EXP 	Device response: <KeyPress from None: t=19.373021799954586, value=escape, duration=0.1540867000585422>
+19.5319 	EXP 	testing1: status = STOPPED
+19.5426 	EXP 	instruction_header: autoDraw = False
+19.5426 	EXP 	instruction_text: autoDraw = False
+19.5427 	EXP 	testing1: status = STOPPED
+19.5465 	INFO 	saved data to 'C:\\SPPA\\CMKL\\Animation_Project\\Summer\\Experiment_Workflows\\Testing1\\data\\472454_testing1_2026-09-25_15h05.53.584.csv'
+19.5475 	INFO 	saved data to C:\SPPA\CMKL\Animation_Project\Summer\Experiment_Workflows\Testing1\data\472454_testing1_2026-09-25_15h05.53.584.psydat
+19.8693 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+19.9312 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+19.9312 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+19.9312 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+19.9312 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.

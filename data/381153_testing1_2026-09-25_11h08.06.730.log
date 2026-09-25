@@ -1,0 +1,59 @@
+16.3623 	INFO 	Loaded monitor calibration from ['2026_09_03 20:22']
+16.3901 	WARNING 	User requested fullscreen with size [1152  720], but screen is actually [2880, 1800]. Using actual size
+18.2517 	INFO 	Using renderer 'Intel(R) Arc(TM) Graphics' for graphics
+18.2518 	INFO 	OpenGL version supported by driver is 4..
+18.3192 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001FC9A9AD9C0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001FC9A9AD960>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color='808080', colorSpace='hex', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001FC9AA70B80>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([2880, 1800]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+18.3193 	EXP 	window1: backgroundImage = ''
+18.3194 	EXP 	window1: backgroundFit = 'none'
+18.8239 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+18.8240 	EXP 	window1: recordFrameIntervals = False
+18.9450 	EXP 	window1: recordFrameIntervals = True
+19.0676 	EXP 	Screen (0) actual frame rate measured at 89.93Hz
+19.0676 	EXP 	window1: recordFrameIntervals = False
+19.3535 	INFO 	keyboard.Keyboard is using ptb backend.
+19.3537 	INFO 	keyboard.Keyboard is using ptb backend.
+19.3537 	INFO 	keyboard.Keyboard is using ptb backend.
+19.3539 	INFO 	keyboard.Keyboard is using ptb backend.
+19.3539 	INFO 	keyboard.Keyboard is using ptb backend.
+19.3539 	INFO 	keyboard.Keyboard is using ptb backend.
+19.3540 	EXP 	testing1: status = STARTED
+19.5618 	EXP 	Created topMask = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-1.0, draggable=False, fillColor=array([0.00392157, 0.00392157, 0.00392157]), fillColorSpace='rgb', fillRGB=array([0.00392157, 0.00392157, 0.00392157]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=1.0, name='topMask', opacity=1, ori=0.0, pos=array([0.  , 0.47]), size=array([3.  , 0.14]), units='height', vertices=ndarray(...), win=Window(...))
+19.5633 	EXP 	Created bottomMask = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-2.0, draggable=False, fillColor=array([0.00392157, 0.00392157, 0.00392157]), fillColorSpace='rgb', fillRGB=array([0.00392157, 0.00392157, 0.00392157]), interpolate=True, lineColor=array([0.00392157, 0.00392157, 0.00392157]), lineColorSpace='rgb', lineRGB=array([0.00392157, 0.00392157, 0.00392157]), lineWidth=1.0, name='bottomMask', opacity=1, ori=0.0, pos=array([ 0.  , -0.42]), size=array([3.  , 0.16]), units='height', vertices=ndarray(...), win=Window(...))
+20.3639 	EXP 	Created likertText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Times New Roman', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='likertText', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='norm', win=Window(...), wrapWidth=1)
+20.9292 	EXP 	Created likert_slider = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-1, fillColor=None, flip=False, font='Noto Sans', granularity=1.0, labelColor=None, labelHeight=np.float64(0.036), labelWrapWidth=None, labels=tuple(...), lineColor=None, markerColor=None, name='likert_slider', opacity=None, ori=0.0, pos=array([ 0. , -0.4]), readOnly=False, self=UNKNOWN, size=array([1.5, 0.1]), startValue=None, style='rating', styleTweaks=[], ticks=array([1, 2, 3, 4, 5, 6, 7]), units='norm', win=Window(...))
+0.0100 	EXP 	consentText: autoLog = True
+0.0100 	EXP 	instruction_header: autoLog = True
+0.0100 	EXP 	instruction_text: autoLog = True
+0.0100 	EXP 	warning_header: autoLog = True
+0.0100 	EXP 	warning_text: autoLog = True
+0.0100 	EXP 	textbox: autoLog = True
+0.0100 	EXP 	textbox_2: autoLog = True
+0.0100 	EXP 	likert_slider: autoLog = True
+0.0100 	EXP 	likert_slider: styleTweaks = []
+0.0100 	EXP 	likert_slider: styleTweaks = []
+0.0100 	EXP 	likert_slider: styleTweaks = []
+0.0100 	EXP 	likert_slider: styleTweaks = []
+0.0100 	EXP 	likert_slider: contrast = 1.0
+0.0100 	EXP 	likert_slider: markerPos = None
+0.0100 	EXP 	likert_slider: autoLog = True
+0.0100 	EXP 	ending_text: autoLog = True
+0.0353 	INFO 	Keyboard events cleared
+0.0351 	EXP 	consentText: autoDraw = True
+0.0351 	EXP 	topMask: autoDraw = True
+0.0351 	EXP 	bottomMask: autoDraw = True
+79.8900 	DATA 	Keypress: escape
+79.9094 	EXP 	Device response: <KeyPress from None: t=79.88790719991084, value=escape, duration=None>
+80.0201 	EXP 	Device response: <KeyPress from None: t=79.88790719991084, value=escape, duration=0.12097050005104393>
+80.0202 	EXP 	testing1: status = STOPPED
+80.0219 	EXP 	consentText: autoDraw = False
+80.0219 	EXP 	topMask: autoDraw = False
+80.0219 	EXP 	bottomMask: autoDraw = False
+80.0220 	EXP 	testing1: status = STOPPED
+80.0278 	INFO 	saved data to 'C:\\SPPA\\CMKL\\Animation_Project\\Summer\\Experiment_Workflows\\Testing1\\data\\381153_testing1_2026-09-25_11h08.06.730.csv'
+80.0298 	INFO 	saved data to C:\SPPA\CMKL\Animation_Project\Summer\Experiment_Workflows\Testing1\data\381153_testing1_2026-09-25_11h08.06.730.psydat
+82.0998 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+82.1826 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+82.1827 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+82.1827 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+82.1827 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+82.1827 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.

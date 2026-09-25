@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2025.1.1),
-    on September 23, 2026, at 15:54
+    on September 25, 2026, at 15:30
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -202,7 +202,7 @@ def setupWindow(expInfo=None, win=None):
         win = visual.Window(
             size=_winSize, fullscr=_fullScr, screen=0,
             winType='pyglet', allowGUI=True, allowStencil=True,
-            monitor='testMonitor', color="'#808080'", colorSpace='hex',
+            monitor='testMonitor', color='#d3d3d3', colorSpace='hex',
             backgroundImage='', backgroundFit='none',
             blendMode='avg', useFBO=True,
             units='norm',
@@ -210,7 +210,7 @@ def setupWindow(expInfo=None, win=None):
         )
     else:
         # if we have a window, just set the attributes which are safe to set
-        win.color = "'#808080'"
+        win.color = '#d3d3d3'
         win.colorSpace = 'hex'
         win.backgroundImage = ''
         win.backgroundFit = 'none'
@@ -262,12 +262,6 @@ def setupDevices(expInfo, thisExp, win):
     if deviceManager.getDevice('defaultKeyboard') is None:
         deviceManager.addDevice(
             deviceClass='keyboard', deviceName='defaultKeyboard', backend='ptb'
-        )
-    if deviceManager.getDevice('key_resp') is None:
-        # initialise key_resp
-        key_resp = deviceManager.addDevice(
-            deviceClass='keyboard',
-            deviceName='key_resp',
         )
     if deviceManager.getDevice('instruct_resp') is None:
         # initialise instruct_resp
@@ -332,9 +326,6 @@ def pauseExperiment(thisExp, win=None, timers=[], currentRoutine=None):
         )
     # run a while loop while we wait to unpause
     while thisExp.status == PAUSED:
-        # check for quit (typically the Esc key)
-        if defaultKeyboard.getKeys(keyList=['escape']):
-            endExperiment(thisExp, win=win)
         # dispatch messages on response components
         if currentRoutine is not None:
             for comp in currentRoutine.getDispatchComponents():
@@ -403,38 +394,20 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "consent" ---
     consentText = visual.TextBox2(
          win, text='PARTICIPANT INFORMATION AND CONSENT\n\nWho Can Take Part\n- You must be 18 years or older.\n- You must not have a vision or hearing impairment that would affect your participation.\n- You must be able to follow a lecture in English\n- You must not have been enrolled one of the competencies listed here:\n   - AIC - 505 Generative AI\n   - SEN - 210 DesktopGUI\n   - TBC\n\nHow Long It Takes\n- The whole session takes about 30 to 45 minutes.\n- Please follow the instructions on the screen.\n\nYour Rights\n- Taking part is voluntary.\n- You can stop and leave at any time. You do not have to give a reason.\n- If you leave, your data will not be stored or used.\n\nPrivacy\n- Your name will not be written in your data. You will only have a participant number.\n- Your data will be stored securely.\n- Results will only be reported for the whole group. No one will be identified.\n\nQuestions\n- You can ask the experimenter any question before you start.\n- For questions later, contact: [email].\n\nCONSENT\n- I have read this information.\n- I understand that I can stop at any time.\n- I agree to take part in this study.\n\nIf you agree, please continue to the next step by clicking the "NEXT" button.', placeholder='Type here...', font='Times New Roman',
-         ori=0.0, pos=(-0.65, 0.38), draggable=False, units='height',     letterHeight=0.03,
-         size=(1.3, None), borderWidth=2.0,
+         ori=0.0, pos=(0, 0), draggable=False, units='height',     letterHeight=0.03,
+         size=(1.5, 0.75), borderWidth=0.0,
          color="'#000000'", colorSpace='rgb',
          opacity=None,
          bold=False, italic=False,
          lineSpacing=1.0, speechPoint=None,
-         padding=0.0, alignment='top-left',
-         anchor='top-left', overflow='visible',
+         padding=0.02, alignment='top-left',
+         anchor='center', overflow='scroll',
          fillColor=None, borderColor=None,
          flipHoriz=False, flipVert=False, languageStyle='LTR',
          editable=False,
          name='consentText',
          depth=0, autoLog=True,
     )
-    topMask = visual.Rect(
-        win=win, name='topMask',units='height', 
-        width=(3, 0.14)[0], height=(3, 0.14)[1],
-        ori=0.0, pos=(0, 0.47), draggable=False, anchor='center',
-        lineWidth=1.0,
-        colorSpace='rgb', lineColor="'#808080'", fillColor="'#808080'",
-        opacity=None, depth=-1.0, interpolate=True)
-    bottomMask = visual.Rect(
-        win=win, name='bottomMask',units='height', 
-        width=(3, 0.16)[0], height=(3, 0.16)[1],
-        ori=0.0, pos=(0, -0.42), draggable=False, anchor='center',
-        lineWidth=1.0,
-        colorSpace='rgb', lineColor="'#808080'", fillColor="'#808080'",
-        opacity=None, depth=-2.0, interpolate=True)
-    # Run 'Begin Experiment' code from scrollCode
-    from psychopy import event
-    mouse = event.Mouse(win=win)
-    key_resp = keyboard.Keyboard(deviceName='key_resp')
     consentButton = visual.ButtonStim(win, 
         text='NEXT>>', font='Arvo',
         pos=(0.8, -0.75),
@@ -449,9 +422,12 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         padding=None,
         anchor='center',
         name='consentButton',
-        depth=-5
+        depth=-1
     )
     consentButton.buttonClock = core.Clock()
+    mouse = event.Mouse(win=win)
+    x, y = [None, None]
+    mouse.mouseClock = core.Clock()
     
     # --- Initialize components for Routine "instructions" ---
     instruction_header = visual.TextBox2(
@@ -479,7 +455,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          bold=False, italic=False,
          lineSpacing=1.0, speechPoint=None,
          padding=0.0, alignment='center-left',
-         anchor='center', overflow='visible',
+         anchor='center', overflow='scroll',
          fillColor=None, borderColor=None,
          flipHoriz=False, flipVert=False, languageStyle='LTR',
          editable=False,
@@ -648,28 +624,22 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # create an object to store info about Routine consent
     consent = data.Routine(
         name='consent',
-        components=[consentText, topMask, bottomMask, key_resp, consentButton],
+        components=[consentText, consentButton, mouse],
     )
     consent.status = NOT_STARTED
     continueRoutine = True
     # update component parameters for each repeat
     consentText.reset()
-    # Run 'Begin Routine' code from scrollCode
-    scrollY = 0
-    startX = -0.65       # left edge of the text
-    startY = 0.38        # top edge of the text
-    maxScroll = 1.4      
-    scrollSpeed = 0.05
-    atBottom = False
-    DEBUG = True         # set to False when you finish tuning
-    event.clearEvents()
-    mouse.getWheelRel()  # discard old wheel movement
-    # create starting attributes for key_resp
-    key_resp.keys = []
-    key_resp.rt = []
-    _key_resp_allKeys = []
     # reset consentButton to account for continued clicks & clear times on/off
     consentButton.reset()
+    # setup some python lists for storing info about the mouse
+    mouse.x = []
+    mouse.y = []
+    mouse.leftButton = []
+    mouse.midButton = []
+    mouse.rightButton = []
+    mouse.time = []
+    gotValidClick = False  # until a click is received
     # store start times for consent
     consent.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
     consent.tStart = globalClock.getTime(format='float')
@@ -719,90 +689,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         if consentText.status == STARTED:
             # update params
             pass
-        
-        # *topMask* updates
-        
-        # if topMask is starting this frame...
-        if topMask.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            topMask.frameNStart = frameN  # exact frame index
-            topMask.tStart = t  # local t and not account for scr refresh
-            topMask.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(topMask, 'tStartRefresh')  # time at next scr refresh
-            # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'topMask.started')
-            # update status
-            topMask.status = STARTED
-            topMask.setAutoDraw(True)
-        
-        # if topMask is active this frame...
-        if topMask.status == STARTED:
-            # update params
-            pass
-        
-        # *bottomMask* updates
-        
-        # if bottomMask is starting this frame...
-        if bottomMask.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            bottomMask.frameNStart = frameN  # exact frame index
-            bottomMask.tStart = t  # local t and not account for scr refresh
-            bottomMask.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(bottomMask, 'tStartRefresh')  # time at next scr refresh
-            # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'bottomMask.started')
-            # update status
-            bottomMask.status = STARTED
-            bottomMask.setAutoDraw(True)
-        
-        # if bottomMask is active this frame...
-        if bottomMask.status == STARTED:
-            # update params
-            pass
-        # Run 'Each Frame' code from scrollCode
-        wheel = mouse.getWheelRel()[1]
-        keys = event.getKeys(keyList=['up', 'down', 'space'])
-        if 'down' in keys:
-            wheel -= 2
-        if 'up' in keys:
-            wheel += 2
-        
-        scrollY -= wheel * scrollSpeed
-        scrollY = max(0, min(maxScroll, scrollY))
-        consentText.pos = (startX, startY + scrollY)
-        
-        atBottom = scrollY >= maxScroll - 0.01
-        
-        if atBottom and 'space' in keys:
-            continueRoutine = False
-        
-        # *key_resp* updates
-        waitOnFlip = False
-        
-        # if key_resp is starting this frame...
-        if key_resp.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            key_resp.frameNStart = frameN  # exact frame index
-            key_resp.tStart = t  # local t and not account for scr refresh
-            key_resp.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(key_resp, 'tStartRefresh')  # time at next scr refresh
-            # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'key_resp.started')
-            # update status
-            key_resp.status = STARTED
-            # keyboard checking is just starting
-            waitOnFlip = True
-            win.callOnFlip(key_resp.clock.reset)  # t=0 on next screen flip
-            win.callOnFlip(key_resp.clearEvents, eventType='keyboard')  # clear events on next screen flip
-        if key_resp.status == STARTED and not waitOnFlip:
-            theseKeys = key_resp.getKeys(keyList=['space'], ignoreKeys=["escape"], waitRelease=False)
-            _key_resp_allKeys.extend(theseKeys)
-            if len(_key_resp_allKeys):
-                key_resp.keys = _key_resp_allKeys[-1].name  # just the last key pressed
-                key_resp.rt = _key_resp_allKeys[-1].rt
-                key_resp.duration = _key_resp_allKeys[-1].duration
-                # a response ends the routine
-                continueRoutine = False
         # *consentButton* updates
         
         # if consentButton is starting this frame...
@@ -840,10 +726,52 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                     pass
         # take note of whether consentButton was clicked, so that next frame we know if clicks are new
         consentButton.wasClicked = consentButton.isClicked and consentButton.status == STARTED
+        # Run 'Each Frame' code from codeScroll
+        # Fix TextBox size
+        consentText.container.size = consentText.size * (1.1, 1)
+        consentText.scrollbar.size[1] = consentText.size[1]
         
-        # check for quit (typically the Esc key)
-        if defaultKeyboard.getKeys(keyList=["escape"]):
-            thisExp.status = FINISHED
+        # Mouse-wheel scrolling
+        wheel = mouse.getWheelRel()[1]
+        
+        if wheel != 0:
+            consentText.scrollbar.markerPos += wheel * 0.1
+        
+        # Ctrl + Q to quit
+        keys = event.getKeys(modifiers=True)
+        
+        for key, modifiers in keys:
+            if key.lower() == 'q' and modifiers.get('ctrl', False):
+                core.quit()
+        # *mouse* updates
+        
+        # if mouse is starting this frame...
+        if mouse.status == NOT_STARTED and t >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            mouse.frameNStart = frameN  # exact frame index
+            mouse.tStart = t  # local t and not account for scr refresh
+            mouse.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(mouse, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.addData('mouse.started', t)
+            # update status
+            mouse.status = STARTED
+            mouse.mouseClock.reset()
+            prevButtonState = mouse.getPressed()  # if button is down already this ISN'T a new click
+        if mouse.status == STARTED:  # only update if started and not finished!
+            buttons = mouse.getPressed()
+            if buttons != prevButtonState:  # button state changed?
+                prevButtonState = buttons
+                if sum(buttons) > 0:  # state changed to a new click
+                    pass
+                    x, y = mouse.getPos()
+                    mouse.x.append(x)
+                    mouse.y.append(y)
+                    buttons = mouse.getPressed()
+                    mouse.leftButton.append(buttons[0])
+                    mouse.midButton.append(buttons[1])
+                    mouse.rightButton.append(buttons[2])
+                    mouse.time.append(mouse.mouseClock.getTime())
         if thisExp.status == FINISHED or endExpNow:
             endExperiment(thisExp, win=win)
             return
@@ -880,13 +808,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     consent.tStop = globalClock.getTime(format='float')
     consent.tStopRefresh = tThisFlipGlobal
     thisExp.addData('consent.stopped', consent.tStop)
-    # check responses
-    if key_resp.keys in ['', [], None]:  # No response was made
-        key_resp.keys = None
-    thisExp.addData('key_resp.keys',key_resp.keys)
-    if key_resp.keys != None:  # we had a response
-        thisExp.addData('key_resp.rt', key_resp.rt)
-        thisExp.addData('key_resp.duration', key_resp.duration)
     thisExp.addData('consentButton.numClicks', consentButton.numClicks)
     if consentButton.numClicks:
        thisExp.addData('consentButton.timesOn', consentButton.timesOn)
@@ -894,6 +815,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     else:
        thisExp.addData('consentButton.timesOn', "")
        thisExp.addData('consentButton.timesOff', "")
+    # store data for thisExp (ExperimentHandler)
+    thisExp.addData('mouse.x', mouse.x)
+    thisExp.addData('mouse.y', mouse.y)
+    thisExp.addData('mouse.leftButton', mouse.leftButton)
+    thisExp.addData('mouse.midButton', mouse.midButton)
+    thisExp.addData('mouse.rightButton', mouse.rightButton)
+    thisExp.addData('mouse.time', mouse.time)
     thisExp.nextEntry()
     # the Routine "consent" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
@@ -1002,7 +930,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             win.callOnFlip(instruct_resp.clock.reset)  # t=0 on next screen flip
             win.callOnFlip(instruct_resp.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if instruct_resp.status == STARTED and not waitOnFlip:
-            theseKeys = instruct_resp.getKeys(keyList=['space'], ignoreKeys=["escape"], waitRelease=False)
+            theseKeys = instruct_resp.getKeys(keyList=['space'], ignoreKeys=None, waitRelease=False)
             _instruct_resp_allKeys.extend(theseKeys)
             if len(_instruct_resp_allKeys):
                 instruct_resp.keys = _instruct_resp_allKeys[-1].name  # just the last key pressed
@@ -1010,10 +938,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 instruct_resp.duration = _instruct_resp_allKeys[-1].duration
                 # a response ends the routine
                 continueRoutine = False
-        
-        # check for quit (typically the Esc key)
-        if defaultKeyboard.getKeys(keyList=["escape"]):
-            thisExp.status = FINISHED
         if thisExp.status == FINISHED or endExpNow:
             endExperiment(thisExp, win=win)
             return
@@ -1165,7 +1089,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             win.callOnFlip(warning_resp.clock.reset)  # t=0 on next screen flip
             win.callOnFlip(warning_resp.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if warning_resp.status == STARTED and not waitOnFlip:
-            theseKeys = warning_resp.getKeys(keyList=None, ignoreKeys=["escape"], waitRelease=False)
+            theseKeys = warning_resp.getKeys(keyList=None, ignoreKeys=None, waitRelease=False)
             _warning_resp_allKeys.extend(theseKeys)
             if len(_warning_resp_allKeys):
                 warning_resp.keys = _warning_resp_allKeys[-1].name  # just the last key pressed
@@ -1173,10 +1097,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 warning_resp.duration = _warning_resp_allKeys[-1].duration
                 # a response ends the routine
                 continueRoutine = False
-        
-        # check for quit (typically the Esc key)
-        if defaultKeyboard.getKeys(keyList=["escape"]):
-            thisExp.status = FINISHED
         if thisExp.status == FINISHED or endExpNow:
             endExperiment(thisExp, win=win)
             return
@@ -1262,10 +1182,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
-        
-        # check for quit (typically the Esc key)
-        if defaultKeyboard.getKeys(keyList=["escape"]):
-            thisExp.status = FINISHED
         if thisExp.status == FINISHED or endExpNow:
             endExperiment(thisExp, win=win)
             return
@@ -1389,7 +1305,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             win.callOnFlip(quz_instruction_text.clock.reset)  # t=0 on next screen flip
             win.callOnFlip(quz_instruction_text.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if quz_instruction_text.status == STARTED and not waitOnFlip:
-            theseKeys = quz_instruction_text.getKeys(keyList=['space'], ignoreKeys=["escape"], waitRelease=False)
+            theseKeys = quz_instruction_text.getKeys(keyList=['space'], ignoreKeys=None, waitRelease=False)
             _quz_instruction_text_allKeys.extend(theseKeys)
             if len(_quz_instruction_text_allKeys):
                 quz_instruction_text.keys = _quz_instruction_text_allKeys[-1].name  # just the last key pressed
@@ -1397,10 +1313,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 quz_instruction_text.duration = _quz_instruction_text_allKeys[-1].duration
                 # a response ends the routine
                 continueRoutine = False
-        
-        # check for quit (typically the Esc key)
-        if defaultKeyboard.getKeys(keyList=["escape"]):
-            thisExp.status = FINISHED
         if thisExp.status == FINISHED or endExpNow:
             endExperiment(thisExp, win=win)
             return
@@ -1486,10 +1398,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
-        
-        # check for quit (typically the Esc key)
-        if defaultKeyboard.getKeys(keyList=["escape"]):
-            thisExp.status = FINISHED
         if thisExp.status == FINISHED or endExpNow:
             endExperiment(thisExp, win=win)
             return
@@ -1613,7 +1521,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             win.callOnFlip(key_resp_quizending.clock.reset)  # t=0 on next screen flip
             win.callOnFlip(key_resp_quizending.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if key_resp_quizending.status == STARTED and not waitOnFlip:
-            theseKeys = key_resp_quizending.getKeys(keyList=['space'], ignoreKeys=["escape"], waitRelease=False)
+            theseKeys = key_resp_quizending.getKeys(keyList=['space'], ignoreKeys=None, waitRelease=False)
             _key_resp_quizending_allKeys.extend(theseKeys)
             if len(_key_resp_quizending_allKeys):
                 key_resp_quizending.keys = _key_resp_quizending_allKeys[-1].name  # just the last key pressed
@@ -1621,10 +1529,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 key_resp_quizending.duration = _key_resp_quizending_allKeys[-1].duration
                 # a response ends the routine
                 continueRoutine = False
-        
-        # check for quit (typically the Esc key)
-        if defaultKeyboard.getKeys(keyList=["escape"]):
-            thisExp.status = FINISHED
         if thisExp.status == FINISHED or endExpNow:
             endExperiment(thisExp, win=win)
             return
@@ -1828,10 +1732,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                         pass
             # take note of whether nextButton was clicked, so that next frame we know if clicks are new
             nextButton.wasClicked = nextButton.isClicked and nextButton.status == STARTED
-            
-            # check for quit (typically the Esc key)
-            if defaultKeyboard.getKeys(keyList=["escape"]):
-                thisExp.status = FINISHED
             if thisExp.status == FINISHED or endExpNow:
                 endExperiment(thisExp, win=win)
                 return
@@ -1960,10 +1860,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         if ending_text.status == STARTED:
             # update params
             pass
-        
-        # check for quit (typically the Esc key)
-        if defaultKeyboard.getKeys(keyList=["escape"]):
-            thisExp.status = FINISHED
         if thisExp.status == FINISHED or endExpNow:
             endExperiment(thisExp, win=win)
             return
