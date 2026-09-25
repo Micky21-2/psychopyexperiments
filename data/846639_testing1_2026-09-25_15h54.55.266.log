@@ -1,0 +1,50 @@
+7.5701 	INFO 	Loaded monitor calibration from ['2026_09_05 13:50']
+7.5855 	WARNING 	User requested fullscreen with size [1152  720], but screen is actually [1920, 1080]. Using actual size
+8.1017 	INFO 	Using renderer 'AMD Radeon(TM) 610M' for graphics
+8.1018 	INFO 	OpenGL version supported by driver is 4..
+8.1800 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000028B9FD96E30>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000028B9FD96DD0>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color='d3d3d3', colorSpace='hex', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000028B9FE506A0>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([1920, 1080]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+8.1801 	EXP 	window1: backgroundImage = ''
+8.1802 	EXP 	window1: backgroundFit = 'none'
+9.0061 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+9.0062 	EXP 	window1: recordFrameIntervals = False
+9.1927 	EXP 	window1: recordFrameIntervals = True
+9.3751 	EXP 	Screen (0) actual frame rate measured at 59.99Hz
+9.3752 	EXP 	window1: recordFrameIntervals = False
+9.4431 	INFO 	keyboard.Keyboard is using ptb backend.
+9.4434 	INFO 	keyboard.Keyboard is using ptb backend.
+9.4435 	INFO 	keyboard.Keyboard is using ptb backend.
+9.4435 	INFO 	keyboard.Keyboard is using ptb backend.
+9.4436 	INFO 	keyboard.Keyboard is using ptb backend.
+9.4437 	EXP 	testing1: status = STARTED
+10.4978 	EXP 	Created likertText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Times New Roman', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='likertText', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='norm', win=Window(...), wrapWidth=1)
+11.4077 	EXP 	Created likert_slider = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-1, fillColor=None, flip=False, font='Noto Sans', granularity=1.0, labelColor=None, labelHeight=np.float64(0.036), labelWrapWidth=None, labels=tuple(...), lineColor=None, markerColor=None, name='likert_slider', opacity=None, ori=0.0, pos=array([ 0. , -0.4]), readOnly=False, self=UNKNOWN, size=array([1.5, 0.1]), startValue=None, style='rating', styleTweaks=[], ticks=array([1, 2, 3, 4, 5, 6, 7]), units='norm', win=Window(...))
+0.0994 	EXP 	consentText: autoLog = True
+0.0994 	EXP 	instruction_header: autoLog = True
+0.0994 	EXP 	instruction_text: autoLog = True
+0.0994 	EXP 	warning_header: autoLog = True
+0.0994 	EXP 	warning_text: autoLog = True
+0.0994 	EXP 	textbox: autoLog = True
+0.0994 	EXP 	textbox_2: autoLog = True
+0.0994 	EXP 	likert_slider: autoLog = True
+0.0994 	EXP 	likert_slider: styleTweaks = []
+0.0994 	EXP 	likert_slider: styleTweaks = []
+0.0994 	EXP 	likert_slider: styleTweaks = []
+0.0994 	EXP 	likert_slider: styleTweaks = []
+0.0994 	EXP 	likert_slider: contrast = 1.0
+0.0994 	EXP 	likert_slider: markerPos = None
+0.0994 	EXP 	likert_slider: autoLog = True
+0.0994 	EXP 	ending_text: autoLog = True
+0.1363 	EXP 	consentText: autoDraw = True
+7.8647 	DATA 	Mouse: Left button down, pos=(1893,844)
+8.2391 	DATA 	Mouse:  Left button up, pos=(1889,841)
+9.0120 	DATA 	Mouse: Left button down, pos=(1800,856)
+10.5902 	DATA 	Mouse:  Left button up, pos=(1919,1080)
+12.5473 	DATA 	Keypress: lctrl
+13.9237 	DATA 	Keypress: q
+14.1489 	INFO 	saved data to C:\Users\LENOVO\Documents\psychopyexperiments\data\846639_testing1_2026-09-25_15h54.55.266.psydat
+14.1506 	INFO 	saved data to 'C:\\Users\\LENOVO\\Documents\\psychopyexperiments\\data\\846639_testing1_2026-09-25_15h54.55.266.csv'
+14.1684 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+14.2048 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+14.2049 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+14.2049 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+14.2049 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.

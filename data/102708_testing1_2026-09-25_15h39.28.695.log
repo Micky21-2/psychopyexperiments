@@ -1,0 +1,25 @@
+15.2949 	INFO 	Loaded monitor calibration from ['2026_09_05 13:50']
+15.3110 	WARNING 	User requested fullscreen with size [1152  720], but screen is actually [1920, 1080]. Using actual size
+15.8349 	INFO 	Using renderer 'AMD Radeon(TM) 610M' for graphics
+15.8350 	INFO 	OpenGL version supported by driver is 4..
+15.9072 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002674B232E30>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002674B232DD0>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color='d3d3d3', colorSpace='hex', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000002674B2F06A0>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([1920, 1080]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+15.9073 	EXP 	window1: backgroundImage = ''
+15.9073 	EXP 	window1: backgroundFit = 'none'
+16.6344 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+16.6344 	EXP 	window1: recordFrameIntervals = False
+16.8146 	EXP 	window1: recordFrameIntervals = True
+16.9970 	EXP 	Screen (0) actual frame rate measured at 60.16Hz
+16.9970 	EXP 	window1: recordFrameIntervals = False
+17.0681 	INFO 	keyboard.Keyboard is using ptb backend.
+17.0683 	INFO 	keyboard.Keyboard is using ptb backend.
+17.0684 	INFO 	keyboard.Keyboard is using ptb backend.
+17.0685 	INFO 	keyboard.Keyboard is using ptb backend.
+17.0685 	INFO 	keyboard.Keyboard is using ptb backend.
+17.0686 	EXP 	testing1: status = STARTED
+17.1281 	INFO 	saved data to C:\Users\LENOVO\Documents\psychopyexperiments\data\102708_testing1_2026-09-25_15h39.28.695.psydat
+17.1301 	INFO 	saved data to 'C:\\Users\\LENOVO\\Documents\\psychopyexperiments\\data\\102708_testing1_2026-09-25_15h39.28.695.csv'
+17.1526 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+17.1716 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+17.1717 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+17.1717 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+17.1717 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
