@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2025.1.1),
-    on September 25, 2026, at 15:30
+    on September 25, 2026, at 16:32
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -408,8 +408,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          name='consentText',
          depth=0, autoLog=True,
     )
-    consentButton = visual.ButtonStim(win, 
-        text='NEXT>>', font='Arvo',
+    nextButtonConsent = visual.ButtonStim(win, 
+        text='NEXT>>', font='Times New Roman',
         pos=(0.8, -0.75),
         letterHeight=0.04,
         size=(0.15, 0.15), 
@@ -421,10 +421,10 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         bold=True, italic=False,
         padding=None,
         anchor='center',
-        name='consentButton',
+        name='nextButtonConsent',
         depth=-1
     )
-    consentButton.buttonClock = core.Clock()
+    nextButtonConsent.buttonClock = core.Clock()
     mouse = event.Mouse(win=win)
     x, y = [None, None]
     mouse.mouseClock = core.Clock()
@@ -455,7 +455,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          bold=False, italic=False,
          lineSpacing=1.0, speechPoint=None,
          padding=0.0, alignment='center-left',
-         anchor='center', overflow='scroll',
+         anchor='center', overflow='visible',
          fillColor=None, borderColor=None,
          flipHoriz=False, flipVert=False, languageStyle='LTR',
          editable=False,
@@ -463,6 +463,23 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          depth=-1, autoLog=True,
     )
     instruct_resp = keyboard.Keyboard(deviceName='instruct_resp')
+    nextButtonInstructions = visual.ButtonStim(win, 
+        text='NEXT>>', font='Times New Roman',
+        pos=(0.8, -0.75),
+        letterHeight=0.04,
+        size=(0.15, 0.15), 
+        ori=0.0
+        ,borderWidth=0.0,
+        fillColor=[1.0000, 1.0000, 1.0000], borderColor=None,
+        color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb',
+        opacity=None,
+        bold=True, italic=False,
+        padding=None,
+        anchor='center',
+        name='nextButtonInstructions',
+        depth=-4
+    )
+    nextButtonInstructions.buttonClock = core.Clock()
     
     # --- Initialize components for Routine "warning" ---
     warning_header = visual.TextBox2(
@@ -624,14 +641,14 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # create an object to store info about Routine consent
     consent = data.Routine(
         name='consent',
-        components=[consentText, consentButton, mouse],
+        components=[consentText, nextButtonConsent, mouse],
     )
     consent.status = NOT_STARTED
     continueRoutine = True
     # update component parameters for each repeat
     consentText.reset()
-    # reset consentButton to account for continued clicks & clear times on/off
-    consentButton.reset()
+    # reset nextButtonConsent to account for continued clicks & clear times on/off
+    nextButtonConsent.reset()
     # setup some python lists for storing info about the mouse
     mouse.x = []
     mouse.y = []
@@ -689,43 +706,43 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         if consentText.status == STARTED:
             # update params
             pass
-        # *consentButton* updates
+        # *nextButtonConsent* updates
         
-        # if consentButton is starting this frame...
-        if consentButton.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
+        # if nextButtonConsent is starting this frame...
+        if nextButtonConsent.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
             # keep track of start time/frame for later
-            consentButton.frameNStart = frameN  # exact frame index
-            consentButton.tStart = t  # local t and not account for scr refresh
-            consentButton.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(consentButton, 'tStartRefresh')  # time at next scr refresh
+            nextButtonConsent.frameNStart = frameN  # exact frame index
+            nextButtonConsent.tStart = t  # local t and not account for scr refresh
+            nextButtonConsent.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(nextButtonConsent, 'tStartRefresh')  # time at next scr refresh
             # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'consentButton.started')
+            thisExp.timestampOnFlip(win, 'nextButtonConsent.started')
             # update status
-            consentButton.status = STARTED
-            win.callOnFlip(consentButton.buttonClock.reset)
-            consentButton.setAutoDraw(True)
+            nextButtonConsent.status = STARTED
+            win.callOnFlip(nextButtonConsent.buttonClock.reset)
+            nextButtonConsent.setAutoDraw(True)
         
-        # if consentButton is active this frame...
-        if consentButton.status == STARTED:
+        # if nextButtonConsent is active this frame...
+        if nextButtonConsent.status == STARTED:
             # update params
             pass
-            # check whether consentButton has been pressed
-            if consentButton.isClicked:
-                if not consentButton.wasClicked:
+            # check whether nextButtonConsent has been pressed
+            if nextButtonConsent.isClicked:
+                if not nextButtonConsent.wasClicked:
                     # if this is a new click, store time of first click and clicked until
-                    consentButton.timesOn.append(consentButton.buttonClock.getTime())
-                    consentButton.timesOff.append(consentButton.buttonClock.getTime())
-                elif len(consentButton.timesOff):
+                    nextButtonConsent.timesOn.append(nextButtonConsent.buttonClock.getTime())
+                    nextButtonConsent.timesOff.append(nextButtonConsent.buttonClock.getTime())
+                elif len(nextButtonConsent.timesOff):
                     # if click is continuing from last frame, update time of clicked until
-                    consentButton.timesOff[-1] = consentButton.buttonClock.getTime()
-                if not consentButton.wasClicked:
-                    # end routine when consentButton is clicked
+                    nextButtonConsent.timesOff[-1] = nextButtonConsent.buttonClock.getTime()
+                if not nextButtonConsent.wasClicked:
+                    # end routine when nextButtonConsent is clicked
                     continueRoutine = False
-                if not consentButton.wasClicked:
-                    # run callback code when consentButton is clicked
+                if not nextButtonConsent.wasClicked:
+                    # run callback code when nextButtonConsent is clicked
                     pass
-        # take note of whether consentButton was clicked, so that next frame we know if clicks are new
-        consentButton.wasClicked = consentButton.isClicked and consentButton.status == STARTED
+        # take note of whether nextButtonConsent was clicked, so that next frame we know if clicks are new
+        nextButtonConsent.wasClicked = nextButtonConsent.isClicked and nextButtonConsent.status == STARTED
         # Run 'Each Frame' code from codeScroll
         # Fix TextBox size
         consentText.container.size = consentText.size * (1.1, 1)
@@ -808,13 +825,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     consent.tStop = globalClock.getTime(format='float')
     consent.tStopRefresh = tThisFlipGlobal
     thisExp.addData('consent.stopped', consent.tStop)
-    thisExp.addData('consentButton.numClicks', consentButton.numClicks)
-    if consentButton.numClicks:
-       thisExp.addData('consentButton.timesOn', consentButton.timesOn)
-       thisExp.addData('consentButton.timesOff', consentButton.timesOff)
+    thisExp.addData('nextButtonConsent.numClicks', nextButtonConsent.numClicks)
+    if nextButtonConsent.numClicks:
+       thisExp.addData('nextButtonConsent.timesOn', nextButtonConsent.timesOn)
+       thisExp.addData('nextButtonConsent.timesOff', nextButtonConsent.timesOff)
     else:
-       thisExp.addData('consentButton.timesOn', "")
-       thisExp.addData('consentButton.timesOff', "")
+       thisExp.addData('nextButtonConsent.timesOn', "")
+       thisExp.addData('nextButtonConsent.timesOff', "")
     # store data for thisExp (ExperimentHandler)
     thisExp.addData('mouse.x', mouse.x)
     thisExp.addData('mouse.y', mouse.y)
@@ -830,7 +847,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # create an object to store info about Routine instructions
     instructions = data.Routine(
         name='instructions',
-        components=[instruction_header, instruction_text, instruct_resp],
+        components=[instruction_header, instruction_text, instruct_resp, nextButtonInstructions],
     )
     instructions.status = NOT_STARTED
     continueRoutine = True
@@ -841,6 +858,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     instruct_resp.keys = []
     instruct_resp.rt = []
     _instruct_resp_allKeys = []
+    # reset nextButtonInstructions to account for continued clicks & clear times on/off
+    nextButtonInstructions.reset()
     # store start times for instructions
     instructions.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
     instructions.tStart = globalClock.getTime(format='float')
@@ -938,6 +957,50 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 instruct_resp.duration = _instruct_resp_allKeys[-1].duration
                 # a response ends the routine
                 continueRoutine = False
+        # Run 'Each Frame' code from quitcode_8
+        # Ctrl + Q to quit
+        keys = event.getKeys(modifiers=True)
+        
+        for key, modifiers in keys:
+            if key.lower() == 'q' and modifiers.get('ctrl', False):
+                core.quit()
+        # *nextButtonInstructions* updates
+        
+        # if nextButtonInstructions is starting this frame...
+        if nextButtonInstructions.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
+            # keep track of start time/frame for later
+            nextButtonInstructions.frameNStart = frameN  # exact frame index
+            nextButtonInstructions.tStart = t  # local t and not account for scr refresh
+            nextButtonInstructions.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(nextButtonInstructions, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'nextButtonInstructions.started')
+            # update status
+            nextButtonInstructions.status = STARTED
+            win.callOnFlip(nextButtonInstructions.buttonClock.reset)
+            nextButtonInstructions.setAutoDraw(True)
+        
+        # if nextButtonInstructions is active this frame...
+        if nextButtonInstructions.status == STARTED:
+            # update params
+            pass
+            # check whether nextButtonInstructions has been pressed
+            if nextButtonInstructions.isClicked:
+                if not nextButtonInstructions.wasClicked:
+                    # if this is a new click, store time of first click and clicked until
+                    nextButtonInstructions.timesOn.append(nextButtonInstructions.buttonClock.getTime())
+                    nextButtonInstructions.timesOff.append(nextButtonInstructions.buttonClock.getTime())
+                elif len(nextButtonInstructions.timesOff):
+                    # if click is continuing from last frame, update time of clicked until
+                    nextButtonInstructions.timesOff[-1] = nextButtonInstructions.buttonClock.getTime()
+                if not nextButtonInstructions.wasClicked:
+                    # end routine when nextButtonInstructions is clicked
+                    continueRoutine = False
+                if not nextButtonInstructions.wasClicked:
+                    # run callback code when nextButtonInstructions is clicked
+                    pass
+        # take note of whether nextButtonInstructions was clicked, so that next frame we know if clicks are new
+        nextButtonInstructions.wasClicked = nextButtonInstructions.isClicked and nextButtonInstructions.status == STARTED
         if thisExp.status == FINISHED or endExpNow:
             endExperiment(thisExp, win=win)
             return
@@ -981,6 +1044,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     if instruct_resp.keys != None:  # we had a response
         thisExp.addData('instruct_resp.rt', instruct_resp.rt)
         thisExp.addData('instruct_resp.duration', instruct_resp.duration)
+    thisExp.addData('nextButtonInstructions.numClicks', nextButtonInstructions.numClicks)
+    if nextButtonInstructions.numClicks:
+       thisExp.addData('nextButtonInstructions.timesOn', nextButtonInstructions.timesOn)
+       thisExp.addData('nextButtonInstructions.timesOff', nextButtonInstructions.timesOff)
+    else:
+       thisExp.addData('nextButtonInstructions.timesOn', "")
+       thisExp.addData('nextButtonInstructions.timesOff', "")
     thisExp.nextEntry()
     # the Routine "instructions" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
@@ -1097,6 +1167,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 warning_resp.duration = _warning_resp_allKeys[-1].duration
                 # a response ends the routine
                 continueRoutine = False
+        # Run 'Each Frame' code from quitcode_7
+        # Ctrl + Q to quit
+        keys = event.getKeys(modifiers=True)
+        
+        for key, modifiers in keys:
+            if key.lower() == 'q' and modifiers.get('ctrl', False):
+                core.quit()
         if thisExp.status == FINISHED or endExpNow:
             endExperiment(thisExp, win=win)
             return
@@ -1182,6 +1259,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
+        # Run 'Each Frame' code from quitcode_6
+        # Ctrl + Q to quit
+        keys = event.getKeys(modifiers=True)
+        
+        for key, modifiers in keys:
+            if key.lower() == 'q' and modifiers.get('ctrl', False):
+                core.quit()
         if thisExp.status == FINISHED or endExpNow:
             endExperiment(thisExp, win=win)
             return
@@ -1313,6 +1397,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 quz_instruction_text.duration = _quz_instruction_text_allKeys[-1].duration
                 # a response ends the routine
                 continueRoutine = False
+        # Run 'Each Frame' code from quitcode_5
+        # Ctrl + Q to quit
+        keys = event.getKeys(modifiers=True)
+        
+        for key, modifiers in keys:
+            if key.lower() == 'q' and modifiers.get('ctrl', False):
+                core.quit()
         if thisExp.status == FINISHED or endExpNow:
             endExperiment(thisExp, win=win)
             return
@@ -1398,6 +1489,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
+        # Run 'Each Frame' code from quitcode_4
+        # Ctrl + Q to quit
+        keys = event.getKeys(modifiers=True)
+        
+        for key, modifiers in keys:
+            if key.lower() == 'q' and modifiers.get('ctrl', False):
+                core.quit()
         if thisExp.status == FINISHED or endExpNow:
             endExperiment(thisExp, win=win)
             return
@@ -1529,6 +1627,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 key_resp_quizending.duration = _key_resp_quizending_allKeys[-1].duration
                 # a response ends the routine
                 continueRoutine = False
+        # Run 'Each Frame' code from quitcode_3
+        # Ctrl + Q to quit
+        keys = event.getKeys(modifiers=True)
+        
+        for key, modifiers in keys:
+            if key.lower() == 'q' and modifiers.get('ctrl', False):
+                core.quit()
         if thisExp.status == FINISHED or endExpNow:
             endExperiment(thisExp, win=win)
             return
@@ -1732,6 +1837,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                         pass
             # take note of whether nextButton was clicked, so that next frame we know if clicks are new
             nextButton.wasClicked = nextButton.isClicked and nextButton.status == STARTED
+            # Run 'Each Frame' code from quitcode_2
+            # Ctrl + Q to quit
+            keys = event.getKeys(modifiers=True)
+            
+            for key, modifiers in keys:
+                if key.lower() == 'q' and modifiers.get('ctrl', False):
+                    core.quit()
             if thisExp.status == FINISHED or endExpNow:
                 endExperiment(thisExp, win=win)
                 return
@@ -1860,6 +1972,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         if ending_text.status == STARTED:
             # update params
             pass
+        # Run 'Each Frame' code from quitcode
+        # Ctrl + Q to quit
+        keys = event.getKeys(modifiers=True)
+        
+        for key, modifiers in keys:
+            if key.lower() == 'q' and modifiers.get('ctrl', False):
+                core.quit()
         if thisExp.status == FINISHED or endExpNow:
             endExperiment(thisExp, win=win)
             return

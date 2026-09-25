@@ -1,0 +1,56 @@
+6.5571 	INFO 	Loaded monitor calibration from ['2026_09_03 20:22']
+6.5694 	WARNING 	User requested fullscreen with size [1152  720], but screen is actually [2880, 1800]. Using actual size
+8.2866 	INFO 	Using renderer 'Intel(R) Arc(TM) Graphics' for graphics
+8.2866 	INFO 	OpenGL version supported by driver is 4..
+8.3445 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000021A322CFE80>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000021A322CFE20>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color='d3d3d3', colorSpace='hex', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000021A31C48670>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([2880, 1800]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+8.3446 	EXP 	window1: backgroundImage = ''
+8.3446 	EXP 	window1: backgroundFit = 'none'
+8.6870 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+8.6870 	EXP 	window1: recordFrameIntervals = False
+8.7894 	EXP 	window1: recordFrameIntervals = True
+8.9119 	EXP 	Screen (0) actual frame rate measured at 90.04Hz
+8.9119 	EXP 	window1: recordFrameIntervals = False
+9.1004 	INFO 	keyboard.Keyboard is using ptb backend.
+9.1005 	INFO 	keyboard.Keyboard is using ptb backend.
+9.1006 	INFO 	keyboard.Keyboard is using ptb backend.
+9.1006 	INFO 	keyboard.Keyboard is using ptb backend.
+9.1007 	INFO 	keyboard.Keyboard is using ptb backend.
+9.1007 	EXP 	testing1: status = STARTED
+9.8269 	EXP 	Created likertText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Times New Roman', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='likertText', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='norm', win=Window(...), wrapWidth=1)
+10.2057 	EXP 	Created likert_slider = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-1, fillColor=None, flip=False, font='Noto Sans', granularity=1.0, labelColor=None, labelHeight=np.float64(0.036), labelWrapWidth=None, labels=tuple(...), lineColor=None, markerColor=None, name='likert_slider', opacity=None, ori=0.0, pos=array([ 0. , -0.4]), readOnly=False, self=UNKNOWN, size=array([1.5, 0.1]), startValue=None, style='rating', styleTweaks=[], ticks=array([1, 2, 3, 4, 5, 6, 7]), units='norm', win=Window(...))
+0.0138 	EXP 	consentText: autoLog = True
+0.0138 	EXP 	instruction_header: autoLog = True
+0.0138 	EXP 	instruction_text: autoLog = True
+0.0138 	EXP 	warning_header: autoLog = True
+0.0138 	EXP 	warning_text: autoLog = True
+0.0138 	EXP 	textbox: autoLog = True
+0.0138 	EXP 	textbox_2: autoLog = True
+0.0138 	EXP 	likert_slider: autoLog = True
+0.0138 	EXP 	likert_slider: styleTweaks = []
+0.0138 	EXP 	likert_slider: styleTweaks = []
+0.0138 	EXP 	likert_slider: styleTweaks = []
+0.0138 	EXP 	likert_slider: styleTweaks = []
+0.0138 	EXP 	likert_slider: contrast = 1.0
+0.0138 	EXP 	likert_slider: markerPos = None
+0.0138 	EXP 	likert_slider: autoLog = True
+0.0138 	EXP 	ending_text: autoLog = True
+0.0324 	EXP 	consentText: autoDraw = True
+55.0066 	DATA 	Mouse: Left button down, pos=(2524,267)
+55.1160 	DATA 	Mouse:  Left button up, pos=(2507,267)
+55.7159 	DATA 	Mouse: Left button down, pos=(2569,214)
+55.7264 	INFO 	Keyboard events cleared
+55.7263 	EXP 	consentText: autoDraw = False
+55.7263 	EXP 	instruction_header: autoDraw = True
+55.7263 	EXP 	instruction_text: autoDraw = True
+55.8603 	DATA 	Mouse:  Left button up, pos=(2568,214)
+73.7874 	EXP 	Device response: <KeyPress from None: t=73.77611990000014, value=lctrl, duration=None>
+73.7880 	DATA 	Keypress: lctrl
+75.2277 	EXP 	Device response: <KeyPress from None: t=75.22129410000002, value=q, duration=None>
+75.2279 	DATA 	Keypress: q
+77.0673 	INFO 	saved data to C:\SPPA\CMKL\Animation_Project\Summer\Experiment_Workflows\Testing1\data\367802_testing1_2026-09-25_16h09.53.665.psydat
+77.0803 	INFO 	saved data to 'C:\\SPPA\\CMKL\\Animation_Project\\Summer\\Experiment_Workflows\\Testing1\\data\\367802_testing1_2026-09-25_16h09.53.665.csv'
+77.0879 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+77.1876 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+77.1877 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+77.1877 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+77.1877 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.

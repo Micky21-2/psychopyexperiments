@@ -1,0 +1,96 @@
+4.9655 	INFO 	Loaded monitor calibration from ['2026_09_03 20:22']
+4.9745 	WARNING 	User requested fullscreen with size [1152  720], but screen is actually [2880, 1800]. Using actual size
+6.6778 	INFO 	Using renderer 'Intel(R) Arc(TM) Graphics' for graphics
+6.6778 	INFO 	OpenGL version supported by driver is 4..
+6.7092 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001BBDF81FE80>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001BBDF81FE20>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color='d3d3d3', colorSpace='hex', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001BBDF8D8670>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([2880, 1800]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+6.7093 	EXP 	window1: backgroundImage = ''
+6.7093 	EXP 	window1: backgroundFit = 'none'
+7.0507 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+7.0507 	EXP 	window1: recordFrameIntervals = False
+7.1421 	EXP 	window1: recordFrameIntervals = True
+7.2649 	EXP 	Screen (0) actual frame rate measured at 89.49Hz
+7.2649 	EXP 	window1: recordFrameIntervals = False
+7.4199 	INFO 	keyboard.Keyboard is using ptb backend.
+7.4200 	INFO 	keyboard.Keyboard is using ptb backend.
+7.4201 	INFO 	keyboard.Keyboard is using ptb backend.
+7.4201 	INFO 	keyboard.Keyboard is using ptb backend.
+7.4202 	INFO 	keyboard.Keyboard is using ptb backend.
+7.4202 	EXP 	testing1: status = STARTED
+8.1692 	EXP 	Created likertText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Times New Roman', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='likertText', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='norm', win=Window(...), wrapWidth=1)
+8.5528 	EXP 	Created likert_slider = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-1, fillColor=None, flip=False, font='Noto Sans', granularity=1.0, labelColor=None, labelHeight=np.float64(0.036), labelWrapWidth=None, labels=tuple(...), lineColor=None, markerColor=None, name='likert_slider', opacity=None, ori=0.0, pos=array([ 0. , -0.4]), readOnly=False, self=UNKNOWN, size=array([1.5, 0.1]), startValue=None, style='rating', styleTweaks=[], ticks=array([1, 2, 3, 4, 5, 6, 7]), units='norm', win=Window(...))
+0.0142 	EXP 	consentText: autoLog = True
+0.0142 	EXP 	instruction_header: autoLog = True
+0.0142 	EXP 	instruction_text: autoLog = True
+0.0142 	EXP 	warning_header: autoLog = True
+0.0142 	EXP 	warning_text: autoLog = True
+0.0142 	EXP 	textbox: autoLog = True
+0.0142 	EXP 	textbox_2: autoLog = True
+0.0142 	EXP 	likert_slider: autoLog = True
+0.0142 	EXP 	likert_slider: styleTweaks = []
+0.0142 	EXP 	likert_slider: styleTweaks = []
+0.0142 	EXP 	likert_slider: styleTweaks = []
+0.0142 	EXP 	likert_slider: styleTweaks = []
+0.0142 	EXP 	likert_slider: contrast = 1.0
+0.0142 	EXP 	likert_slider: markerPos = None
+0.0142 	EXP 	likert_slider: autoLog = True
+0.0142 	EXP 	ending_text: autoLog = True
+0.0276 	EXP 	consentText: autoDraw = True
+15.8580 	DATA 	Keypress: lwindows
+15.8581 	DATA 	Keypress: lshift
+15.9237 	DATA 	Keypress: s
+26.4289 	DATA 	Keypress: lwindows
+26.4319 	DATA 	Keypress: lshift
+26.6057 	DATA 	Keypress: s
+30.8513 	DATA 	Mouse: wheel shift=(0,1), pos=(0,1408)
+31.4979 	DATA 	Mouse: Left button down, pos=(97,1800)
+32.0197 	DATA 	Mouse:  Left button up, pos=(2470,538)
+33.0508 	DATA 	Mouse: wheel shift=(0,0), pos=(2572,996)
+33.0553 	DATA 	Mouse: wheel shift=(0,0), pos=(2577,1010)
+33.0621 	DATA 	Mouse: wheel shift=(0,0), pos=(2578,1019)
+33.0741 	DATA 	Mouse: wheel shift=(0,0), pos=(2582,1026)
+33.0778 	DATA 	Mouse: wheel shift=(0,0), pos=(2585,1029)
+33.1071 	DATA 	Mouse: wheel shift=(0,0), pos=(2602,1038)
+33.1187 	DATA 	Mouse: wheel shift=(0,0), pos=(2616,1042)
+33.1391 	DATA 	Mouse: wheel shift=(0,0), pos=(2672,1068)
+33.1517 	DATA 	Mouse: wheel shift=(0,0), pos=(2878,1302)
+33.1642 	DATA 	Mouse: wheel shift=(0,0), pos=(2879,1720)
+33.1853 	DATA 	Mouse: wheel shift=(0,0), pos=(2879,1800)
+33.1959 	DATA 	Mouse: wheel shift=(0,0), pos=(2879,1800)
+33.2181 	DATA 	Mouse: wheel shift=(0,0), pos=(2879,1800)
+33.2290 	DATA 	Mouse: wheel shift=(0,0), pos=(2879,1800)
+33.2403 	DATA 	Mouse: wheel shift=(0,0), pos=(2879,1800)
+33.2628 	DATA 	Mouse: wheel shift=(0,0), pos=(2879,1800)
+33.2738 	DATA 	Mouse: wheel shift=(0,0), pos=(2879,1800)
+33.2959 	DATA 	Mouse: wheel shift=(0,0), pos=(2879,1800)
+33.3071 	DATA 	Mouse: wheel shift=(0,0), pos=(2879,1800)
+33.3179 	DATA 	Mouse: wheel shift=(0,0), pos=(2879,1800)
+33.3407 	DATA 	Mouse: wheel shift=(0,0), pos=(2879,1800)
+33.3519 	DATA 	Mouse: wheel shift=(0,0), pos=(2879,1800)
+33.3738 	DATA 	Mouse: wheel shift=(0,0), pos=(2879,1800)
+37.4022 	DATA 	Keypress: lwindows
+37.4059 	DATA 	Keypress: lshift
+37.6635 	DATA 	Keypress: s
+41.6733 	DATA 	Mouse: Left button down, pos=(2567,197)
+41.6843 	INFO 	Keyboard events cleared
+41.6842 	EXP 	consentText: autoDraw = False
+41.6842 	EXP 	instruction_header: autoDraw = True
+41.6842 	EXP 	instruction_text: autoDraw = True
+41.7813 	DATA 	Mouse:  Left button up, pos=(2567,197)
+42.8903 	EXP 	Device response: <KeyPress from None: t=42.88279209999996, value=lwindows, duration=None>
+42.8906 	DATA 	Keypress: lwindows
+42.8906 	DATA 	Keypress: lshift
+42.8953 	EXP 	Device response: <KeyPress from None: t=42.88454449999995, value=lshift, duration=None>
+43.0179 	EXP 	Device response: <KeyPress from None: t=42.88279209999996, value=lwindows, duration=0.12636329999997997>
+43.0179 	EXP 	Device response: <KeyPress from None: t=42.88454449999995, value=lshift, duration=0.12974289999999655>
+43.0213 	DATA 	Keypress: s
+48.1310 	DATA 	Keypress: lctrl
+48.1381 	EXP 	Device response: <KeyPress from None: t=48.12997139999993, value=lctrl, duration=None>
+48.2277 	EXP 	Device response: <KeyPress from None: t=48.22316269999999, value=q, duration=None>
+48.2279 	DATA 	Keypress: q
+49.9818 	INFO 	saved data to C:\SPPA\CMKL\Animation_Project\Summer\Experiment_Workflows\Testing1\data\336839_testing1_2026-09-25_16h04.46.550.psydat
+50.0759 	INFO 	saved data to 'C:\\SPPA\\CMKL\\Animation_Project\\Summer\\Experiment_Workflows\\Testing1\\data\\336839_testing1_2026-09-25_16h04.46.550.csv'
+50.0972 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+50.1503 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+50.1504 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+50.1504 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+50.1504 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.

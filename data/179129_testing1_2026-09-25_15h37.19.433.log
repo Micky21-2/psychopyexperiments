@@ -1,0 +1,47 @@
+7.4482 	INFO 	Loaded monitor calibration from ['2026_09_03 20:22']
+7.4615 	WARNING 	User requested fullscreen with size [1152  720], but screen is actually [2880, 1800]. Using actual size
+7.6270 	INFO 	Using renderer 'Intel(R) Arc(TM) Graphics' for graphics
+7.6270 	INFO 	OpenGL version supported by driver is 4..
+7.7344 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002C88E48EB30>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002C88E48EB90>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color='d3d3d3', colorSpace='hex', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000002C88E58DAB0>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([2880, 1800]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+7.7345 	EXP 	window1: backgroundImage = ''
+7.7346 	EXP 	window1: backgroundFit = 'none'
+8.1222 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+8.1223 	EXP 	window1: recordFrameIntervals = False
+8.2585 	EXP 	window1: recordFrameIntervals = True
+8.3803 	EXP 	Screen (0) actual frame rate measured at 90.54Hz
+8.3805 	EXP 	window1: recordFrameIntervals = False
+8.5820 	INFO 	keyboard.Keyboard is using ptb backend.
+8.5821 	INFO 	keyboard.Keyboard is using ptb backend.
+8.5821 	INFO 	keyboard.Keyboard is using ptb backend.
+8.5822 	INFO 	keyboard.Keyboard is using ptb backend.
+8.5823 	INFO 	keyboard.Keyboard is using ptb backend.
+8.5823 	EXP 	testing1: status = STARTED
+9.3447 	EXP 	Created likertText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Times New Roman', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='likertText', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='norm', win=Window(...), wrapWidth=1)
+9.7401 	EXP 	Created likert_slider = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-1, fillColor=None, flip=False, font='Noto Sans', granularity=1.0, labelColor=None, labelHeight=np.float64(0.036), labelWrapWidth=None, labels=tuple(...), lineColor=None, markerColor=None, name='likert_slider', opacity=None, ori=0.0, pos=array([ 0. , -0.4]), readOnly=False, self=UNKNOWN, size=array([1.5, 0.1]), startValue=None, style='rating', styleTweaks=[], ticks=array([1, 2, 3, 4, 5, 6, 7]), units='norm', win=Window(...))
+0.0171 	EXP 	consentText: autoLog = True
+0.0171 	EXP 	instruction_header: autoLog = True
+0.0171 	EXP 	instruction_text: autoLog = True
+0.0171 	EXP 	warning_header: autoLog = True
+0.0171 	EXP 	warning_text: autoLog = True
+0.0171 	EXP 	textbox: autoLog = True
+0.0171 	EXP 	textbox_2: autoLog = True
+0.0171 	EXP 	likert_slider: autoLog = True
+0.0171 	EXP 	likert_slider: styleTweaks = []
+0.0171 	EXP 	likert_slider: styleTweaks = []
+0.0171 	EXP 	likert_slider: styleTweaks = []
+0.0171 	EXP 	likert_slider: styleTweaks = []
+0.0171 	EXP 	likert_slider: contrast = 1.0
+0.0171 	EXP 	likert_slider: markerPos = None
+0.0171 	EXP 	likert_slider: autoLog = True
+0.0171 	EXP 	ending_text: autoLog = True
+0.0343 	EXP 	consentText: autoDraw = True
+57.4624 	DATA 	Keypress: escape
+59.3761 	DATA 	Keypress: lctrl
+59.4758 	DATA 	Keypress: q
+59.8537 	INFO 	saved data to C:\SPPA\CMKL\Animation_Project\Summer\Experiment_Workflows\Testing1\data\179129_testing1_2026-09-25_15h37.19.433.psydat
+59.8773 	INFO 	saved data to 'C:\\SPPA\\CMKL\\Animation_Project\\Summer\\Experiment_Workflows\\Testing1\\data\\179129_testing1_2026-09-25_15h37.19.433.csv'
+59.8903 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+59.9683 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+59.9697 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+59.9701 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+59.9702 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
