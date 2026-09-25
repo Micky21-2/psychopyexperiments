@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2025.1.1),
-    on September 25, 2026, at 15:30
+    on September 25, 2026, at 16:38
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -133,7 +133,7 @@ def setupData(expInfo, dataDir=None):
     thisExp = data.ExperimentHandler(
         name=expName, version=expVersion,
         extraInfo=expInfo, runtimeInfo=None,
-        originPath='C:\\SPPA\\CMKL\\Animation_Project\\Summer\\Experiment_Workflows\\Testing1\\testing1_lastrun.py',
+        originPath='C:\\Users\\LENOVO\\Documents\\psychopyexperiments\\testing1_lastrun.py',
         savePickle=True, saveWideText=True,
         dataFileName=dataDir + os.sep + filename, sortColumns='time'
     )
@@ -447,7 +447,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          depth=0, autoLog=True,
     )
     instruction_text = visual.TextBox2(
-         win, text="In this study, you will:\n\n1. Watch a short educational video\n2. Answer a series of questions about what you watched\n3. Answer a few questions about your experience\n4. Fill in a short form about your age, gender, and education.\n\nPress 'SPACE' to continue.", placeholder='Type here...', font='Times New Roman',
+         win, text='In this study, you will:\n\n1. Watch a short educational video\n2. Answer a series of questions about what you watched\n3. Answer a few questions about your experience\n4. Fill in a short form about your age, gender, and education.\n\n', placeholder='Type here...', font='Times New Roman',
          ori=0.0, pos=(0, -0.05), draggable=False,      letterHeight=0.1,
          size=(1.85, 0.5), borderWidth=2.0,
          color="'#000000'", colorSpace='rgb',
@@ -463,6 +463,23 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          depth=-1, autoLog=True,
     )
     instruct_resp = keyboard.Keyboard(deviceName='instruct_resp')
+    nextButton_instructions = visual.ButtonStim(win, 
+        text='Next>>', font='Times New Roman',
+        pos=(0.8, -0.75),
+        letterHeight=0.05,
+        size=(0.15, 0.15), 
+        ori=0.0
+        ,borderWidth=0.0,
+        fillColor=[1.0000, 1.0000, 1.0000], borderColor=None,
+        color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb',
+        opacity=None,
+        bold=True, italic=False,
+        padding=None,
+        anchor='center',
+        name='nextButton_instructions',
+        depth=-3
+    )
+    nextButton_instructions.buttonClock = core.Clock()
     
     # --- Initialize components for Routine "warning" ---
     warning_header = visual.TextBox2(
@@ -482,7 +499,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          depth=0, autoLog=True,
     )
     warning_text = visual.TextBox2(
-         win, text="- You will watch one video in full. \n- Please pay close attention, as you will be tested on the content \n  afterward.\n- The video and quiz cannot be repeated once completed.\n\nPress 'SPACE' when you are ready to begin the video.", placeholder='Type here...', font='Times New Roman',
+         win, text='- You will watch one video in full. \n- Please pay close attention, as you will be tested on the content \n  afterward.\n- The video and quiz cannot be repeated once completed.\n\n', placeholder='Type here...', font='Times New Roman',
          ori=0.0, pos=(0, -0.15), draggable=False,      letterHeight=0.1,
          size=(1.85, 0.5), borderWidth=2.0,
          color="'#000000'", colorSpace='rgb',
@@ -498,12 +515,29 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          depth=-1, autoLog=True,
     )
     warning_resp = keyboard.Keyboard(deviceName='warning_resp')
+    nextButton_warning = visual.ButtonStim(win, 
+        text='Next>>', font='Times New Roman',
+        pos=(0.8, -0.75),
+        letterHeight=0.05,
+        size=(0.15, 0.15), 
+        ori=0.0
+        ,borderWidth=0.0,
+        fillColor=[1.0000, 1.0000, 1.0000], borderColor=None,
+        color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb',
+        opacity=None,
+        bold=True, italic=False,
+        padding=None,
+        anchor='center',
+        name='nextButton_warning',
+        depth=-3
+    )
+    nextButton_warning.buttonClock = core.Clock()
     
     # --- Initialize components for Routine "video" ---
     
     # --- Initialize components for Routine "quizinstruction" ---
     textbox = visual.TextBox2(
-         win, text="Thank you for watching the video.\n\nYou will now answer some questions about what you just watched.\n\nPlease answer based on your own understanding.\n\nBefore the main questions, you will first complete a short sample \nquiz to help you get familiar with how the questions work.\n\nPress 'SPACE' to begin the questions.", placeholder='Type here...', font='Times New Roman',
+         win, text='Thank you for watching the video.\n\nYou will now answer some questions about what you just watched.\n\nPlease answer based on your own understanding.\n\nBefore the main questions, you will first complete a short sample \nquiz to help you get familiar with how the questions work.\n\n', placeholder='Type here...', font='Times New Roman',
          ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.1,
          size=(1.85, 0.5), borderWidth=2.0,
          color="'#000000'", colorSpace='rgb',
@@ -519,12 +553,29 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          depth=0, autoLog=True,
     )
     quz_instruction_text = keyboard.Keyboard(deviceName='quz_instruction_text')
+    nextButton_quizInstruction = visual.ButtonStim(win, 
+        text='Next>>', font='Times New Roman',
+        pos=(0.8, -0.75),
+        letterHeight=0.05,
+        size=(0.15, 0.15), 
+        ori=0.0
+        ,borderWidth=0.0,
+        fillColor=[1.0000, 1.0000, 1.0000], borderColor=None,
+        color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb',
+        opacity=None,
+        bold=True, italic=False,
+        padding=None,
+        anchor='center',
+        name='nextButton_quizInstruction',
+        depth=-2
+    )
+    nextButton_quizInstruction.buttonClock = core.Clock()
     
     # --- Initialize components for Routine "quiz" ---
     
     # --- Initialize components for Routine "quizending" ---
     textbox_2 = visual.TextBox2(
-         win, text="You have completed the quiz.\n\nJust a few more short questions about your experience, and then \nyou'll be finished.\n\nPress 'SPACE' to continue.", placeholder='Type here...', font='Times New Roman',
+         win, text="You have completed the quiz.\n\nJust a few more short questions about your experience, and then \nyou'll be finished.\n\n", placeholder='Type here...', font='Times New Roman',
          ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.1,
          size=(1.85, 0.5), borderWidth=2.0,
          color="'#000000'", colorSpace='rgb',
@@ -540,6 +591,23 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          depth=0, autoLog=True,
     )
     key_resp_quizending = keyboard.Keyboard(deviceName='key_resp_quizending')
+    nextButton_2 = visual.ButtonStim(win, 
+        text='Next>>', font='Times New Roman',
+        pos=(0.8, -0.75),
+        letterHeight=0.05,
+        size=(0.15, 0.15), 
+        ori=0.0
+        ,borderWidth=0.0,
+        fillColor=[1.0000, 1.0000, 1.0000], borderColor=None,
+        color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb',
+        opacity=None,
+        bold=True, italic=False,
+        padding=None,
+        anchor='center',
+        name='nextButton_2',
+        depth=-2
+    )
+    nextButton_2.buttonClock = core.Clock()
     
     # --- Initialize components for Routine "likert" ---
     likertText = visual.TextStim(win=win, name='likertText',
@@ -573,6 +641,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         depth=-2
     )
     nextButton.buttonClock = core.Clock()
+    # Run 'Begin Experiment' code from code_7
+    # Ctrl + Q to quit
+    keys = event.getKeys(modifiers=True)
+    
+    for key, modifiers in keys:
+        if key.lower() == 'q' and modifiers.get('ctrl', False):
+            core.quit()
     
     # --- Initialize components for Routine "end" ---
     ending_text = visual.TextBox2(
@@ -830,7 +905,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # create an object to store info about Routine instructions
     instructions = data.Routine(
         name='instructions',
-        components=[instruction_header, instruction_text, instruct_resp],
+        components=[instruction_header, instruction_text, instruct_resp, nextButton_instructions],
     )
     instructions.status = NOT_STARTED
     continueRoutine = True
@@ -841,6 +916,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     instruct_resp.keys = []
     instruct_resp.rt = []
     _instruct_resp_allKeys = []
+    # reset nextButton_instructions to account for continued clicks & clear times on/off
+    nextButton_instructions.reset()
     # store start times for instructions
     instructions.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
     instructions.tStart = globalClock.getTime(format='float')
@@ -938,6 +1015,50 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 instruct_resp.duration = _instruct_resp_allKeys[-1].duration
                 # a response ends the routine
                 continueRoutine = False
+        # *nextButton_instructions* updates
+        
+        # if nextButton_instructions is starting this frame...
+        if nextButton_instructions.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
+            # keep track of start time/frame for later
+            nextButton_instructions.frameNStart = frameN  # exact frame index
+            nextButton_instructions.tStart = t  # local t and not account for scr refresh
+            nextButton_instructions.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(nextButton_instructions, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'nextButton_instructions.started')
+            # update status
+            nextButton_instructions.status = STARTED
+            win.callOnFlip(nextButton_instructions.buttonClock.reset)
+            nextButton_instructions.setAutoDraw(True)
+        
+        # if nextButton_instructions is active this frame...
+        if nextButton_instructions.status == STARTED:
+            # update params
+            pass
+            # check whether nextButton_instructions has been pressed
+            if nextButton_instructions.isClicked:
+                if not nextButton_instructions.wasClicked:
+                    # if this is a new click, store time of first click and clicked until
+                    nextButton_instructions.timesOn.append(nextButton_instructions.buttonClock.getTime())
+                    nextButton_instructions.timesOff.append(nextButton_instructions.buttonClock.getTime())
+                elif len(nextButton_instructions.timesOff):
+                    # if click is continuing from last frame, update time of clicked until
+                    nextButton_instructions.timesOff[-1] = nextButton_instructions.buttonClock.getTime()
+                if not nextButton_instructions.wasClicked:
+                    # end routine when nextButton_instructions is clicked
+                    continueRoutine = False
+                if not nextButton_instructions.wasClicked:
+                    # run callback code when nextButton_instructions is clicked
+                    pass
+        # take note of whether nextButton_instructions was clicked, so that next frame we know if clicks are new
+        nextButton_instructions.wasClicked = nextButton_instructions.isClicked and nextButton_instructions.status == STARTED
+        # Run 'Each Frame' code from code
+        # Ctrl + Q to quit
+        keys = event.getKeys(modifiers=True)
+        
+        for key, modifiers in keys:
+            if key.lower() == 'q' and modifiers.get('ctrl', False):
+                core.quit()
         if thisExp.status == FINISHED or endExpNow:
             endExperiment(thisExp, win=win)
             return
@@ -981,6 +1102,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     if instruct_resp.keys != None:  # we had a response
         thisExp.addData('instruct_resp.rt', instruct_resp.rt)
         thisExp.addData('instruct_resp.duration', instruct_resp.duration)
+    thisExp.addData('nextButton_instructions.numClicks', nextButton_instructions.numClicks)
+    if nextButton_instructions.numClicks:
+       thisExp.addData('nextButton_instructions.timesOn', nextButton_instructions.timesOn)
+       thisExp.addData('nextButton_instructions.timesOff', nextButton_instructions.timesOff)
+    else:
+       thisExp.addData('nextButton_instructions.timesOn', "")
+       thisExp.addData('nextButton_instructions.timesOff', "")
     thisExp.nextEntry()
     # the Routine "instructions" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
@@ -989,7 +1117,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # create an object to store info about Routine warning
     warning = data.Routine(
         name='warning',
-        components=[warning_header, warning_text, warning_resp],
+        components=[warning_header, warning_text, warning_resp, nextButton_warning],
     )
     warning.status = NOT_STARTED
     continueRoutine = True
@@ -1000,6 +1128,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     warning_resp.keys = []
     warning_resp.rt = []
     _warning_resp_allKeys = []
+    # reset nextButton_warning to account for continued clicks & clear times on/off
+    nextButton_warning.reset()
     # store start times for warning
     warning.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
     warning.tStart = globalClock.getTime(format='float')
@@ -1097,6 +1227,51 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 warning_resp.duration = _warning_resp_allKeys[-1].duration
                 # a response ends the routine
                 continueRoutine = False
+        # *nextButton_warning* updates
+        
+        # if nextButton_warning is starting this frame...
+        if nextButton_warning.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
+            # keep track of start time/frame for later
+            nextButton_warning.frameNStart = frameN  # exact frame index
+            nextButton_warning.tStart = t  # local t and not account for scr refresh
+            nextButton_warning.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(nextButton_warning, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'nextButton_warning.started')
+            # update status
+            nextButton_warning.status = STARTED
+            win.callOnFlip(nextButton_warning.buttonClock.reset)
+            nextButton_warning.setAutoDraw(True)
+        
+        # if nextButton_warning is active this frame...
+        if nextButton_warning.status == STARTED:
+            # update params
+            pass
+            # check whether nextButton_warning has been pressed
+            if nextButton_warning.isClicked:
+                if not nextButton_warning.wasClicked:
+                    # if this is a new click, store time of first click and clicked until
+                    nextButton_warning.timesOn.append(nextButton_warning.buttonClock.getTime())
+                    nextButton_warning.timesOff.append(nextButton_warning.buttonClock.getTime())
+                elif len(nextButton_warning.timesOff):
+                    # if click is continuing from last frame, update time of clicked until
+                    nextButton_warning.timesOff[-1] = nextButton_warning.buttonClock.getTime()
+                if not nextButton_warning.wasClicked:
+                    # end routine when nextButton_warning is clicked
+                    continueRoutine = False
+                if not nextButton_warning.wasClicked:
+                    # run callback code when nextButton_warning is clicked
+                    pass
+        # take note of whether nextButton_warning was clicked, so that next frame we know if clicks are new
+        nextButton_warning.wasClicked = nextButton_warning.isClicked and nextButton_warning.status == STARTED
+        # Run 'Each Frame' code from code_2
+        # Ctrl + Q to quit
+        keys = event.getKeys(modifiers=True)
+        
+        for key, modifiers in keys:
+            if key.lower() == 'q' and modifiers.get('ctrl', False):
+                core.quit()
+                
         if thisExp.status == FINISHED or endExpNow:
             endExperiment(thisExp, win=win)
             return
@@ -1140,6 +1315,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     if warning_resp.keys != None:  # we had a response
         thisExp.addData('warning_resp.rt', warning_resp.rt)
         thisExp.addData('warning_resp.duration', warning_resp.duration)
+    thisExp.addData('nextButton_warning.numClicks', nextButton_warning.numClicks)
+    if nextButton_warning.numClicks:
+       thisExp.addData('nextButton_warning.timesOn', nextButton_warning.timesOn)
+       thisExp.addData('nextButton_warning.timesOff', nextButton_warning.timesOff)
+    else:
+       thisExp.addData('nextButton_warning.timesOn', "")
+       thisExp.addData('nextButton_warning.timesOff', "")
     thisExp.nextEntry()
     # the Routine "warning" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
@@ -1182,6 +1364,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
+        # Run 'Each Frame' code from code_3
+        # Ctrl + Q to quit
+        keys = event.getKeys(modifiers=True)
+        
+        for key, modifiers in keys:
+            if key.lower() == 'q' and modifiers.get('ctrl', False):
+                core.quit()
         if thisExp.status == FINISHED or endExpNow:
             endExperiment(thisExp, win=win)
             return
@@ -1226,7 +1415,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # create an object to store info about Routine quizinstruction
     quizinstruction = data.Routine(
         name='quizinstruction',
-        components=[textbox, quz_instruction_text],
+        components=[textbox, quz_instruction_text, nextButton_quizInstruction],
     )
     quizinstruction.status = NOT_STARTED
     continueRoutine = True
@@ -1236,6 +1425,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     quz_instruction_text.keys = []
     quz_instruction_text.rt = []
     _quz_instruction_text_allKeys = []
+    # reset nextButton_quizInstruction to account for continued clicks & clear times on/off
+    nextButton_quizInstruction.reset()
     # store start times for quizinstruction
     quizinstruction.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
     quizinstruction.tStart = globalClock.getTime(format='float')
@@ -1313,6 +1504,50 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 quz_instruction_text.duration = _quz_instruction_text_allKeys[-1].duration
                 # a response ends the routine
                 continueRoutine = False
+        # *nextButton_quizInstruction* updates
+        
+        # if nextButton_quizInstruction is starting this frame...
+        if nextButton_quizInstruction.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
+            # keep track of start time/frame for later
+            nextButton_quizInstruction.frameNStart = frameN  # exact frame index
+            nextButton_quizInstruction.tStart = t  # local t and not account for scr refresh
+            nextButton_quizInstruction.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(nextButton_quizInstruction, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'nextButton_quizInstruction.started')
+            # update status
+            nextButton_quizInstruction.status = STARTED
+            win.callOnFlip(nextButton_quizInstruction.buttonClock.reset)
+            nextButton_quizInstruction.setAutoDraw(True)
+        
+        # if nextButton_quizInstruction is active this frame...
+        if nextButton_quizInstruction.status == STARTED:
+            # update params
+            pass
+            # check whether nextButton_quizInstruction has been pressed
+            if nextButton_quizInstruction.isClicked:
+                if not nextButton_quizInstruction.wasClicked:
+                    # if this is a new click, store time of first click and clicked until
+                    nextButton_quizInstruction.timesOn.append(nextButton_quizInstruction.buttonClock.getTime())
+                    nextButton_quizInstruction.timesOff.append(nextButton_quizInstruction.buttonClock.getTime())
+                elif len(nextButton_quizInstruction.timesOff):
+                    # if click is continuing from last frame, update time of clicked until
+                    nextButton_quizInstruction.timesOff[-1] = nextButton_quizInstruction.buttonClock.getTime()
+                if not nextButton_quizInstruction.wasClicked:
+                    # end routine when nextButton_quizInstruction is clicked
+                    continueRoutine = False
+                if not nextButton_quizInstruction.wasClicked:
+                    # run callback code when nextButton_quizInstruction is clicked
+                    pass
+        # take note of whether nextButton_quizInstruction was clicked, so that next frame we know if clicks are new
+        nextButton_quizInstruction.wasClicked = nextButton_quizInstruction.isClicked and nextButton_quizInstruction.status == STARTED
+        # Run 'Each Frame' code from code_4
+        # Ctrl + Q to quit
+        keys = event.getKeys(modifiers=True)
+        
+        for key, modifiers in keys:
+            if key.lower() == 'q' and modifiers.get('ctrl', False):
+                core.quit()
         if thisExp.status == FINISHED or endExpNow:
             endExperiment(thisExp, win=win)
             return
@@ -1356,6 +1591,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     if quz_instruction_text.keys != None:  # we had a response
         thisExp.addData('quz_instruction_text.rt', quz_instruction_text.rt)
         thisExp.addData('quz_instruction_text.duration', quz_instruction_text.duration)
+    thisExp.addData('nextButton_quizInstruction.numClicks', nextButton_quizInstruction.numClicks)
+    if nextButton_quizInstruction.numClicks:
+       thisExp.addData('nextButton_quizInstruction.timesOn', nextButton_quizInstruction.timesOn)
+       thisExp.addData('nextButton_quizInstruction.timesOff', nextButton_quizInstruction.timesOff)
+    else:
+       thisExp.addData('nextButton_quizInstruction.timesOn', "")
+       thisExp.addData('nextButton_quizInstruction.timesOff', "")
     thisExp.nextEntry()
     # the Routine "quizinstruction" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
@@ -1398,6 +1640,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
+        # Run 'Each Frame' code from code_5
+        # Ctrl + Q to quit
+        keys = event.getKeys(modifiers=True)
+        
+        for key, modifiers in keys:
+            if key.lower() == 'q' and modifiers.get('ctrl', False):
+                core.quit()
         if thisExp.status == FINISHED or endExpNow:
             endExperiment(thisExp, win=win)
             return
@@ -1442,7 +1691,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # create an object to store info about Routine quizending
     quizending = data.Routine(
         name='quizending',
-        components=[textbox_2, key_resp_quizending],
+        components=[textbox_2, key_resp_quizending, nextButton_2],
     )
     quizending.status = NOT_STARTED
     continueRoutine = True
@@ -1452,6 +1701,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     key_resp_quizending.keys = []
     key_resp_quizending.rt = []
     _key_resp_quizending_allKeys = []
+    # reset nextButton_2 to account for continued clicks & clear times on/off
+    nextButton_2.reset()
     # store start times for quizending
     quizending.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
     quizending.tStart = globalClock.getTime(format='float')
@@ -1529,6 +1780,43 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 key_resp_quizending.duration = _key_resp_quizending_allKeys[-1].duration
                 # a response ends the routine
                 continueRoutine = False
+        # *nextButton_2* updates
+        
+        # if nextButton_2 is starting this frame...
+        if nextButton_2.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
+            # keep track of start time/frame for later
+            nextButton_2.frameNStart = frameN  # exact frame index
+            nextButton_2.tStart = t  # local t and not account for scr refresh
+            nextButton_2.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(nextButton_2, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'nextButton_2.started')
+            # update status
+            nextButton_2.status = STARTED
+            win.callOnFlip(nextButton_2.buttonClock.reset)
+            nextButton_2.setAutoDraw(True)
+        
+        # if nextButton_2 is active this frame...
+        if nextButton_2.status == STARTED:
+            # update params
+            pass
+            # check whether nextButton_2 has been pressed
+            if nextButton_2.isClicked:
+                if not nextButton_2.wasClicked:
+                    # if this is a new click, store time of first click and clicked until
+                    nextButton_2.timesOn.append(nextButton_2.buttonClock.getTime())
+                    nextButton_2.timesOff.append(nextButton_2.buttonClock.getTime())
+                elif len(nextButton_2.timesOff):
+                    # if click is continuing from last frame, update time of clicked until
+                    nextButton_2.timesOff[-1] = nextButton_2.buttonClock.getTime()
+                if not nextButton_2.wasClicked:
+                    # end routine when nextButton_2 is clicked
+                    continueRoutine = False
+                if not nextButton_2.wasClicked:
+                    # run callback code when nextButton_2 is clicked
+                    pass
+        # take note of whether nextButton_2 was clicked, so that next frame we know if clicks are new
+        nextButton_2.wasClicked = nextButton_2.isClicked and nextButton_2.status == STARTED
         if thisExp.status == FINISHED or endExpNow:
             endExperiment(thisExp, win=win)
             return
@@ -1572,6 +1860,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     if key_resp_quizending.keys != None:  # we had a response
         thisExp.addData('key_resp_quizending.rt', key_resp_quizending.rt)
         thisExp.addData('key_resp_quizending.duration', key_resp_quizending.duration)
+    thisExp.addData('nextButton_2.numClicks', nextButton_2.numClicks)
+    if nextButton_2.numClicks:
+       thisExp.addData('nextButton_2.timesOn', nextButton_2.timesOn)
+       thisExp.addData('nextButton_2.timesOff', nextButton_2.timesOff)
+    else:
+       thisExp.addData('nextButton_2.timesOn', "")
+       thisExp.addData('nextButton_2.timesOff', "")
     thisExp.nextEntry()
     # the Routine "quizending" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
@@ -1860,6 +2155,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         if ending_text.status == STARTED:
             # update params
             pass
+        # Run 'Each Frame' code from code_8
+        # Ctrl + Q to quit
+        keys = event.getKeys(modifiers=True)
+        
+        for key, modifiers in keys:
+            if key.lower() == 'q' and modifiers.get('ctrl', False):
+                core.quit()
         if thisExp.status == FINISHED or endExpNow:
             endExperiment(thisExp, win=win)
             return
