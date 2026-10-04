@@ -1286,12 +1286,12 @@
         <Param val="False" valType="bool" updates="constant" name="Randomize"/>
         <Param val="custom..." valType="str" updates="constant" name="Style"/>
         <Param val="0.03" valType="num" updates="constant" name="Text Height"/>
-        <Param val="" valType="color" updates="constant" name="borderColor"/>
+        <Param val="0.0039, 0.0039, 0.0039" valType="color" updates="constant" name="borderColor"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="" valType="color" updates="constant" name="fillColor"/>
+        <Param val="0.0039, 0.0039, 0.0039" valType="color" updates="constant" name="fillColor"/>
         <Param val="white" valType="color" updates="constant" name="itemColor"/>
         <Param val="red" valType="color" updates="constant" name="markerColor"/>
         <Param val="form" valType="code" updates="None" name="name"/>
@@ -1299,7 +1299,7 @@
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="white" valType="color" updates="constant" name="responseColor"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="(1, 0.7)" valType="list" updates="constant" name="size"/>
+        <Param val="(1.6, 0.7)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>

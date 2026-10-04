@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2025.1.1),
-    on October 04, 2026, at 20:39
+    on October 04, 2026, at 21:07
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -676,9 +676,9 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         font='Noto Sans',
         randomize=False,
         style='custom...',
-        fillColor=None, borderColor=None, itemColor='white', 
+        fillColor=[0.0039, 0.0039, 0.0039], borderColor=[0.0039, 0.0039, 0.0039], itemColor='white', 
         responseColor='white', markerColor='red', colorSpace='rgb', 
-        size=(1, 0.7),
+        size=(1.6, 0.7),
         pos=(0, 0),
         itemPadding=0.05,
         depth=-1
