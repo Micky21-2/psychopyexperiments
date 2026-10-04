@@ -1,0 +1,29 @@
+12.8139 	INFO 	Loaded monitor calibration from ['2026_09_03 20:22']
+12.8207 	WARNING 	User requested fullscreen with size [1152  720], but screen is actually [2880, 1800]. Using actual size
+12.9829 	INFO 	Using renderer 'Intel(R) Arc(TM) Graphics' for graphics
+12.9829 	INFO 	OpenGL version supported by driver is 4..
+13.0252 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001F6724EF700>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001F6724EF760>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color='d3d3d3', colorSpace='hex', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001F6725F0610>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([2880, 1800]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+13.0253 	EXP 	window1: backgroundImage = ''
+13.0253 	EXP 	window1: backgroundFit = 'none'
+13.3610 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+13.3610 	EXP 	window1: recordFrameIntervals = False
+13.4860 	EXP 	window1: recordFrameIntervals = True
+13.6089 	EXP 	Screen (0) actual frame rate measured at 89.98Hz
+13.6091 	EXP 	window1: recordFrameIntervals = False
+13.8278 	INFO 	keyboard.Keyboard is using ptb backend.
+13.8280 	INFO 	keyboard.Keyboard is using ptb backend.
+13.8280 	INFO 	keyboard.Keyboard is using ptb backend.
+13.8282 	INFO 	keyboard.Keyboard is using ptb backend.
+13.8282 	INFO 	keyboard.Keyboard is using ptb backend.
+13.8282 	EXP 	testing1: status = STARTED
+15.1183 	EXP 	Created likertText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Times New Roman', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='likertText', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='norm', win=Window(...), wrapWidth=1)
+15.9062 	EXP 	Created likert_slider = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-1, fillColor=None, flip=False, font='Noto Sans', granularity=1.0, labelColor=None, labelHeight=np.float64(0.036), labelWrapWidth=None, labels=tuple(...), lineColor=None, markerColor=None, name='likert_slider', opacity=None, ori=0.0, pos=array([ 0. , -0.4]), readOnly=False, self=UNKNOWN, size=array([1.5, 0.1]), startValue=None, style='rating', styleTweaks=[], ticks=array([1, 2, 3, 4, 5, 6, 7]), units='norm', win=Window(...))
+15.9165 	INFO 	Importing items...
+15.9233 	EXP 	Imported demographicQuestions.xlsx as conditions, 4 conditions, 4 params
+15.9848 	INFO 	saved data to C:\SPPA\CMKL\Animation_Project\Summer\Experiment_Workflows\Testing1\data\645548_testing1_2026-10-04_19h55.35.410.psydat
+15.9860 	INFO 	saved data to 'C:\\SPPA\\CMKL\\Animation_Project\\Summer\\Experiment_Workflows\\Testing1\\data\\645548_testing1_2026-10-04_19h55.35.410.csv'
+15.9913 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+16.0473 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+16.0473 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+16.0474 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+16.0474 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.

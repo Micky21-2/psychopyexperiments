@@ -1,0 +1,191 @@
+6.0258 	INFO 	Loaded monitor calibration from ['2026_09_03 20:22']
+6.0374 	WARNING 	User requested fullscreen with size [1152  720], but screen is actually [2880, 1800]. Using actual size
+6.1516 	INFO 	Using renderer 'Intel(R) Arc(TM) Graphics' for graphics
+6.1516 	INFO 	OpenGL version supported by driver is 4..
+6.1736 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x00000157D4DD9B10>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x00000157D4DD9B70>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color='d3d3d3', colorSpace='hex', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x00000157D4EC4E20>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([2880, 1800]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+6.1737 	EXP 	window1: backgroundImage = ''
+6.1737 	EXP 	window1: backgroundFit = 'none'
+6.5250 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+6.5251 	EXP 	window1: recordFrameIntervals = False
+6.6336 	EXP 	window1: recordFrameIntervals = True
+6.7556 	EXP 	Screen (0) actual frame rate measured at 90.60Hz
+6.7556 	EXP 	window1: recordFrameIntervals = False
+6.9971 	INFO 	keyboard.Keyboard is using ptb backend.
+6.9973 	INFO 	keyboard.Keyboard is using ptb backend.
+6.9973 	INFO 	keyboard.Keyboard is using ptb backend.
+6.9974 	INFO 	keyboard.Keyboard is using ptb backend.
+6.9975 	INFO 	keyboard.Keyboard is using ptb backend.
+6.9975 	EXP 	testing1: status = STARTED
+7.8778 	EXP 	Created likertText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Times New Roman', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='likertText', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='norm', win=Window(...), wrapWidth=1)
+8.4030 	EXP 	Created likert_slider = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-1, fillColor=None, flip=False, font='Noto Sans', granularity=1.0, labelColor=None, labelHeight=np.float64(0.036), labelWrapWidth=None, labels=tuple(...), lineColor=None, markerColor=None, name='likert_slider', opacity=None, ori=0.0, pos=array([ 0. , -0.4]), readOnly=False, self=UNKNOWN, size=array([1.5, 0.1]), startValue=None, style='rating', styleTweaks=[], ticks=array([1, 2, 3, 4, 5, 6, 7]), units='norm', win=Window(...))
+0.0164 	EXP 	consentText: autoLog = True
+0.0164 	EXP 	instruction_header: autoLog = True
+0.0164 	EXP 	instruction_text: autoLog = True
+0.0164 	EXP 	warning_header: autoLog = True
+0.0164 	EXP 	warning_text: autoLog = True
+0.0164 	EXP 	textbox: autoLog = True
+0.0164 	EXP 	textbox_2: autoLog = True
+0.0164 	EXP 	likert_slider: autoLog = True
+0.0164 	EXP 	likert_slider: styleTweaks = []
+0.0164 	EXP 	likert_slider: styleTweaks = []
+0.0164 	EXP 	likert_slider: styleTweaks = []
+0.0164 	EXP 	likert_slider: styleTweaks = []
+0.0164 	EXP 	likert_slider: contrast = 1.0
+0.0164 	EXP 	likert_slider: markerPos = None
+0.0164 	EXP 	likert_slider: autoLog = True
+0.0164 	EXP 	ending_text: autoLog = True
+0.0337 	EXP 	consentText: autoDraw = True
+0.9692 	DATA 	Mouse: wheel shift=(0,-1), pos=(1837,908)
+0.9811 	DATA 	Mouse: wheel shift=(0,-1), pos=(1849,908)
+0.9937 	DATA 	Mouse: wheel shift=(0,-1), pos=(1855,908)
+1.0049 	DATA 	Mouse: wheel shift=(0,-1), pos=(1863,910)
+1.2038 	DATA 	Mouse: wheel shift=(0,-1), pos=(1869,916)
+1.2239 	DATA 	Mouse: wheel shift=(0,-1), pos=(1869,916)
+1.2349 	DATA 	Mouse: wheel shift=(0,-1), pos=(1869,916)
+1.2465 	DATA 	Mouse: wheel shift=(0,-1), pos=(1869,916)
+1.2574 	DATA 	Mouse: wheel shift=(0,-1), pos=(1869,916)
+1.2590 	DATA 	Mouse: wheel shift=(0,-1), pos=(1869,916)
+1.4682 	DATA 	Mouse: wheel shift=(0,-1), pos=(1869,916)
+1.4818 	DATA 	Mouse: wheel shift=(0,-1), pos=(1869,916)
+1.4912 	DATA 	Mouse: wheel shift=(0,-1), pos=(1869,916)
+1.4968 	DATA 	Mouse: wheel shift=(0,-1), pos=(1869,916)
+1.5030 	DATA 	Mouse: wheel shift=(0,-1), pos=(1869,916)
+1.7359 	DATA 	Mouse: wheel shift=(0,-1), pos=(1861,916)
+1.7490 	DATA 	Mouse: wheel shift=(0,-1), pos=(1861,916)
+1.7611 	DATA 	Mouse: wheel shift=(0,-1), pos=(1861,916)
+1.7727 	DATA 	Mouse: wheel shift=(0,-1), pos=(1861,916)
+1.7906 	DATA 	Mouse: wheel shift=(0,-1), pos=(1861,916)
+1.9902 	DATA 	Mouse: wheel shift=(0,-1), pos=(1860,916)
+2.0049 	DATA 	Mouse: wheel shift=(0,-1), pos=(1860,916)
+2.0150 	DATA 	Mouse: wheel shift=(0,-1), pos=(1860,916)
+2.0238 	DATA 	Mouse: wheel shift=(0,-1), pos=(1860,916)
+2.0462 	DATA 	Mouse: wheel shift=(0,-1), pos=(1860,916)
+2.2635 	DATA 	Mouse: wheel shift=(0,-1), pos=(1860,916)
+2.2775 	DATA 	Mouse: wheel shift=(0,-1), pos=(1860,916)
+2.3030 	DATA 	Mouse: wheel shift=(0,-1), pos=(1860,916)
+2.3517 	DATA 	Mouse: wheel shift=(0,-1), pos=(1860,916)
+3.3923 	DATA 	Mouse: wheel shift=(0,-1), pos=(660,559)
+3.4104 	DATA 	Mouse: wheel shift=(0,-1), pos=(666,559)
+3.4267 	DATA 	Mouse: wheel shift=(0,-1), pos=(667,559)
+3.4389 	DATA 	Mouse: wheel shift=(0,-1), pos=(667,559)
+3.7812 	DATA 	Mouse: wheel shift=(0,-1), pos=(814,485)
+3.8157 	DATA 	Mouse: wheel shift=(0,-1), pos=(814,485)
+3.8398 	DATA 	Mouse: wheel shift=(0,-1), pos=(814,485)
+3.8601 	DATA 	Mouse: wheel shift=(0,-1), pos=(814,485)
+7.5457 	DATA 	Mouse: wheel shift=(0,1), pos=(1584,597)
+7.5611 	DATA 	Mouse: wheel shift=(0,1), pos=(1584,597)
+7.5900 	DATA 	Mouse: wheel shift=(0,1), pos=(1584,597)
+7.7831 	DATA 	Mouse: wheel shift=(0,1), pos=(1574,597)
+7.8041 	DATA 	Mouse: wheel shift=(0,1), pos=(1572,597)
+7.8470 	DATA 	Mouse: wheel shift=(0,1), pos=(1571,597)
+8.6014 	DATA 	Mouse: Left button down, pos=(2586,263)
+8.6134 	INFO 	Keyboard events cleared
+8.6133 	EXP 	consentText: autoDraw = False
+8.6133 	EXP 	instruction_header: autoDraw = True
+8.6133 	EXP 	instruction_text: autoDraw = True
+8.6576 	DATA 	Mouse:  Left button up, pos=(2586,263)
+20.1457 	DATA 	Mouse: Left button down, pos=(298,650)
+20.5814 	DATA 	Mouse:  Left button up, pos=(1809,774)
+28.2683 	DATA 	Mouse: Left button down, pos=(2512,669)
+28.8377 	DATA 	Mouse:  Left button up, pos=(1638,606)
+36.2371 	DATA 	Mouse: Left button down, pos=(2617,178)
+36.2655 	INFO 	Keyboard events cleared
+36.2654 	EXP 	instruction_header: autoDraw = False
+36.2654 	EXP 	instruction_text: autoDraw = False
+36.2654 	EXP 	warning_header: autoDraw = True
+36.2654 	EXP 	warning_text: autoDraw = True
+36.3585 	DATA 	Mouse:  Left button up, pos=(2617,176)
+38.8679 	DATA 	Mouse: Left button down, pos=(2637,171)
+38.8819 	INFO 	Keyboard events cleared
+38.8819 	EXP 	warning_header: autoDraw = False
+38.8819 	EXP 	warning_text: autoDraw = False
+38.8819 	EXP 	textbox: autoDraw = True
+39.0021 	DATA 	Mouse:  Left button up, pos=(2637,171)
+40.5136 	DATA 	Mouse: Left button down, pos=(2637,171)
+40.5240 	INFO 	Keyboard events cleared
+40.5239 	EXP 	textbox: autoDraw = False
+40.5239 	EXP 	textbox_2: autoDraw = True
+40.6593 	DATA 	Mouse:  Left button up, pos=(2641,170)
+41.1496 	DATA 	Mouse: Left button down, pos=(2641,170)
+41.1680 	EXP 	Imported likert_items.xlsx as conditions, 5 conditions, 1 params
+41.1685 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'itemText': 'The video held my attention throughout.', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+41.2755 	DATA 	Mouse:  Left button up, pos=(2641,170)
+41.2908 	EXP 	textbox_2: autoDraw = False
+41.2908 	EXP 	likertText: height = np.float64(0.1)
+41.2908 	EXP 	likertText: height = np.float64(0.1)
+41.2908 	EXP 	likertText: height = np.float64(0.1)
+41.2908 	EXP 	likertText: text = 'The video held my attention throughout.'
+41.2908 	EXP 	likert_slider: markerPos = None
+41.2908 	EXP 	likert_slider: markerPos = None
+41.2908 	EXP 	likertText: autoDraw = True
+41.2908 	EXP 	likert_slider: autoDraw = True
+41.9015 	DATA 	Mouse: Left button down, pos=(2641,170)
+41.9053 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'itemText': 'The speaker was easy to understand.', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+41.9256 	EXP 	likertText: autoDraw = False
+41.9256 	EXP 	likert_slider: autoDraw = False
+41.9256 	EXP 	likertText: height = np.float64(0.1)
+41.9256 	EXP 	likertText: height = np.float64(0.1)
+41.9256 	EXP 	likertText: height = np.float64(0.1)
+41.9256 	EXP 	likertText: text = 'The speaker was easy to understand.'
+41.9256 	EXP 	likert_slider: markerPos = None
+41.9256 	EXP 	likert_slider: markerPos = None
+41.9256 	EXP 	likertText: autoDraw = True
+41.9256 	EXP 	likert_slider: autoDraw = True
+42.0180 	DATA 	Mouse:  Left button up, pos=(2641,170)
+42.1329 	DATA 	Mouse: Left button down, pos=(2641,170)
+42.1366 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'itemText': 'The content was interesting.', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+42.1533 	EXP 	likertText: autoDraw = False
+42.1533 	EXP 	likert_slider: autoDraw = False
+42.1533 	EXP 	likertText: height = np.float64(0.1)
+42.1533 	EXP 	likertText: height = np.float64(0.1)
+42.1533 	EXP 	likertText: height = np.float64(0.1)
+42.1533 	EXP 	likertText: text = 'The content was interesting.'
+42.1533 	EXP 	likert_slider: markerPos = None
+42.1533 	EXP 	likert_slider: markerPos = None
+42.1533 	EXP 	likertText: autoDraw = True
+42.1533 	EXP 	likert_slider: autoDraw = True
+42.2368 	DATA 	Mouse:  Left button up, pos=(2641,170)
+42.3493 	DATA 	Mouse: Left button down, pos=(2641,170)
+42.3540 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'itemText': 'I would want to watch more videos like this.', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+42.3787 	EXP 	likertText: autoDraw = False
+42.3787 	EXP 	likert_slider: autoDraw = False
+42.3787 	EXP 	likertText: height = np.float64(0.1)
+42.3787 	EXP 	likertText: height = np.float64(0.1)
+42.3787 	EXP 	likertText: height = np.float64(0.1)
+42.3787 	EXP 	likertText: text = 'I would want to watch more videos like this.'
+42.3787 	EXP 	likert_slider: markerPos = None
+42.3787 	EXP 	likert_slider: markerPos = None
+42.3787 	EXP 	likertText: autoDraw = True
+42.3787 	EXP 	likert_slider: autoDraw = True
+42.4696 	DATA 	Mouse:  Left button up, pos=(2641,170)
+42.6252 	DATA 	Mouse: Left button down, pos=(2641,170)
+42.6290 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'itemText': 'The speed of the video felt appropriate.', 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+42.6455 	EXP 	likertText: autoDraw = False
+42.6455 	EXP 	likert_slider: autoDraw = False
+42.6455 	EXP 	likertText: height = np.float64(0.1)
+42.6455 	EXP 	likertText: height = np.float64(0.1)
+42.6455 	EXP 	likertText: height = np.float64(0.1)
+42.6455 	EXP 	likertText: text = 'The speed of the video felt appropriate.'
+42.6455 	EXP 	likert_slider: markerPos = None
+42.6455 	EXP 	likert_slider: markerPos = None
+42.6455 	EXP 	likertText: autoDraw = True
+42.6455 	EXP 	likert_slider: autoDraw = True
+42.7576 	DATA 	Mouse:  Left button up, pos=(2641,170)
+42.9241 	DATA 	Mouse: Left button down, pos=(2641,170)
+42.9342 	EXP 	likertText: autoDraw = False
+42.9342 	EXP 	likert_slider: autoDraw = False
+42.9342 	EXP 	ending_text: autoDraw = True
+43.0362 	DATA 	Mouse:  Left button up, pos=(2641,170)
+43.1706 	DATA 	Mouse: Left button down, pos=(2641,170)
+43.2899 	DATA 	Mouse:  Left button up, pos=(2641,170)
+46.2795 	DATA 	Mouse: Left button down, pos=(2542,555)
+46.8008 	DATA 	Mouse:  Left button up, pos=(763,751)
+49.0905 	DATA 	Keypress: lctrl
+49.4365 	DATA 	Keypress: q
+50.0065 	INFO 	saved data to C:\SPPA\CMKL\Animation_Project\Summer\Experiment_Workflows\Testing1\data\342514_testing1_2026-10-04_19h40.49.586.psydat
+50.0470 	INFO 	saved data to 'C:\\SPPA\\CMKL\\Animation_Project\\Summer\\Experiment_Workflows\\Testing1\\data\\342514_testing1_2026-10-04_19h40.49.586.csv'
+50.0587 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+50.1456 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+50.1458 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+50.1458 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+50.1459 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.

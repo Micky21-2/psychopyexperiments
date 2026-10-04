@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2025.1.1),
-    on September 25, 2026, at 16:38
+    on October 04, 2026, at 20:39
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -133,7 +133,7 @@ def setupData(expInfo, dataDir=None):
     thisExp = data.ExperimentHandler(
         name=expName, version=expVersion,
         extraInfo=expInfo, runtimeInfo=None,
-        originPath='C:\\Users\\LENOVO\\Documents\\psychopyexperiments\\testing1_lastrun.py',
+        originPath='C:\\SPPA\\CMKL\\Animation_Project\\Summer\\Experiment_Workflows\\Testing1\\testing1_lastrun.py',
         savePickle=True, saveWideText=True,
         dataFileName=dataDir + os.sep + filename, sortColumns='time'
     )
@@ -393,7 +393,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "consent" ---
     consentText = visual.TextBox2(
-         win, text='PARTICIPANT INFORMATION AND CONSENT\n\nWho Can Take Part\n- You must be 18 years or older.\n- You must not have a vision or hearing impairment that would affect your participation.\n- You must be able to follow a lecture in English\n- You must not have been enrolled one of the competencies listed here:\n   - AIC - 505 Generative AI\n   - SEN - 210 DesktopGUI\n   - TBC\n\nHow Long It Takes\n- The whole session takes about 30 to 45 minutes.\n- Please follow the instructions on the screen.\n\nYour Rights\n- Taking part is voluntary.\n- You can stop and leave at any time. You do not have to give a reason.\n- If you leave, your data will not be stored or used.\n\nPrivacy\n- Your name will not be written in your data. You will only have a participant number.\n- Your data will be stored securely.\n- Results will only be reported for the whole group. No one will be identified.\n\nQuestions\n- You can ask the experimenter any question before you start.\n- For questions later, contact: [email].\n\nCONSENT\n- I have read this information.\n- I understand that I can stop at any time.\n- I agree to take part in this study.\n\nIf you agree, please continue to the next step by clicking the "NEXT" button.', placeholder='Type here...', font='Times New Roman',
+         win, text='PARTICIPANT INFORMATION AND CONSENT\n\nWho Can Take Part\n- You must be 18 years or older.\n- You must not have a vision or hearing impairment that would affect your participation.\n- You must be able to follow a lecture in English\n- You must not have been enrolled one of the competencies listed here:\n   - AIC - 505 Generative AI\n   - SEN - 210 DesktopGUI\n   - TBC\n\nHow Long It Takes\n- The whole session takes about 30 to 45 minutes.\n- Please follow the instructions on the screen.\n\nYour Rights\n- Taking part is voluntary.\n- You can stop and leave at any time. You do not have to give a reason.\n- If you leave, your data will not be stored or used.\n\nPrivacy\n- Your name will not be written in your data. You will only have a participant number.\n- Your data will be stored securely.\n- Results will only be reported for the whole group. No one will be identified.\n\nCONSENT\n- I have read this information.\n- I understand that I can stop at any time.\n- I agree to take part in this study.\n\nYou can ask the experimenter any question before you start.\n\nIf you agree, please continue to the next step by clicking the "NEXT" button.', placeholder='Type here...', font='Times New Roman',
          ori=0.0, pos=(0, 0), draggable=False, units='height',     letterHeight=0.03,
          size=(1.5, 0.75), borderWidth=0.0,
          color="'#000000'", colorSpace='rgb',
@@ -408,10 +408,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          name='consentText',
          depth=0, autoLog=True,
     )
-    consentButton = visual.ButtonStim(win, 
-        text='NEXT>>', font='Arvo',
+    mouse = event.Mouse(win=win)
+    x, y = [None, None]
+    mouse.mouseClock = core.Clock()
+    consentNextButton = visual.ButtonStim(win, 
+        text='Next>>', font='Times New Roman',
         pos=(0.8, -0.75),
-        letterHeight=0.04,
+        letterHeight=0.05,
         size=(0.15, 0.15), 
         ori=0.0
         ,borderWidth=0.0,
@@ -421,13 +424,10 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         bold=True, italic=False,
         padding=None,
         anchor='center',
-        name='consentButton',
-        depth=-1
+        name='consentNextButton',
+        depth=-3
     )
-    consentButton.buttonClock = core.Clock()
-    mouse = event.Mouse(win=win)
-    x, y = [None, None]
-    mouse.mouseClock = core.Clock()
+    consentNextButton.buttonClock = core.Clock()
     
     # --- Initialize components for Routine "instructions" ---
     instruction_header = visual.TextBox2(
@@ -455,7 +455,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          bold=False, italic=False,
          lineSpacing=1.0, speechPoint=None,
          padding=0.0, alignment='center-left',
-         anchor='center', overflow='scroll',
+         anchor='center', overflow='hidden',
          fillColor=None, borderColor=None,
          flipHoriz=False, flipVert=False, languageStyle='LTR',
          editable=False,
@@ -571,6 +571,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     )
     nextButton_quizInstruction.buttonClock = core.Clock()
     
+    # --- Initialize components for Routine "sampleQuiz" ---
+    
     # --- Initialize components for Routine "quiz" ---
     
     # --- Initialize components for Routine "quizending" ---
@@ -649,6 +651,39 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         if key.lower() == 'q' and modifiers.get('ctrl', False):
             core.quit()
     
+    # --- Initialize components for Routine "demographic" ---
+    demoNext = visual.ButtonStim(win, 
+        text='Next>>', font='Times New Roman',
+        pos=(0.8, -0.75),
+        letterHeight=0.05,
+        size=(0.15, 0.15), 
+        ori=0.0
+        ,borderWidth=0.0,
+        fillColor=[1.0000, 1.0000, 1.0000], borderColor=None,
+        color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb',
+        opacity=None,
+        bold=True, italic=False,
+        padding=None,
+        anchor='center',
+        name='demoNext',
+        depth=0
+    )
+    demoNext.buttonClock = core.Clock()
+    win.allowStencil = True
+    form = visual.Form(win=win, name='form',
+        items='demoForm.xlsx',
+        textHeight=0.03,
+        font='Noto Sans',
+        randomize=False,
+        style='custom...',
+        fillColor=None, borderColor=None, itemColor='white', 
+        responseColor='white', markerColor='red', colorSpace='rgb', 
+        size=(1, 0.7),
+        pos=(0, 0),
+        itemPadding=0.05,
+        depth=-1
+    )
+    
     # --- Initialize components for Routine "end" ---
     ending_text = visual.TextBox2(
          win, text='Thank you for participating in this study!\n\nYour responses have been recorded successfully.', placeholder='Type here...', font='Times New Roman',
@@ -699,14 +734,12 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # create an object to store info about Routine consent
     consent = data.Routine(
         name='consent',
-        components=[consentText, consentButton, mouse],
+        components=[consentText, mouse, consentNextButton],
     )
     consent.status = NOT_STARTED
     continueRoutine = True
     # update component parameters for each repeat
     consentText.reset()
-    # reset consentButton to account for continued clicks & clear times on/off
-    consentButton.reset()
     # setup some python lists for storing info about the mouse
     mouse.x = []
     mouse.y = []
@@ -715,6 +748,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     mouse.rightButton = []
     mouse.time = []
     gotValidClick = False  # until a click is received
+    # reset consentNextButton to account for continued clicks & clear times on/off
+    consentNextButton.reset()
     # store start times for consent
     consent.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
     consent.tStart = globalClock.getTime(format='float')
@@ -764,43 +799,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         if consentText.status == STARTED:
             # update params
             pass
-        # *consentButton* updates
-        
-        # if consentButton is starting this frame...
-        if consentButton.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
-            # keep track of start time/frame for later
-            consentButton.frameNStart = frameN  # exact frame index
-            consentButton.tStart = t  # local t and not account for scr refresh
-            consentButton.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(consentButton, 'tStartRefresh')  # time at next scr refresh
-            # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'consentButton.started')
-            # update status
-            consentButton.status = STARTED
-            win.callOnFlip(consentButton.buttonClock.reset)
-            consentButton.setAutoDraw(True)
-        
-        # if consentButton is active this frame...
-        if consentButton.status == STARTED:
-            # update params
-            pass
-            # check whether consentButton has been pressed
-            if consentButton.isClicked:
-                if not consentButton.wasClicked:
-                    # if this is a new click, store time of first click and clicked until
-                    consentButton.timesOn.append(consentButton.buttonClock.getTime())
-                    consentButton.timesOff.append(consentButton.buttonClock.getTime())
-                elif len(consentButton.timesOff):
-                    # if click is continuing from last frame, update time of clicked until
-                    consentButton.timesOff[-1] = consentButton.buttonClock.getTime()
-                if not consentButton.wasClicked:
-                    # end routine when consentButton is clicked
-                    continueRoutine = False
-                if not consentButton.wasClicked:
-                    # run callback code when consentButton is clicked
-                    pass
-        # take note of whether consentButton was clicked, so that next frame we know if clicks are new
-        consentButton.wasClicked = consentButton.isClicked and consentButton.status == STARTED
         # Run 'Each Frame' code from codeScroll
         # Fix TextBox size
         consentText.container.size = consentText.size * (1.1, 1)
@@ -847,6 +845,43 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                     mouse.midButton.append(buttons[1])
                     mouse.rightButton.append(buttons[2])
                     mouse.time.append(mouse.mouseClock.getTime())
+        # *consentNextButton* updates
+        
+        # if consentNextButton is starting this frame...
+        if consentNextButton.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
+            # keep track of start time/frame for later
+            consentNextButton.frameNStart = frameN  # exact frame index
+            consentNextButton.tStart = t  # local t and not account for scr refresh
+            consentNextButton.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(consentNextButton, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'consentNextButton.started')
+            # update status
+            consentNextButton.status = STARTED
+            win.callOnFlip(consentNextButton.buttonClock.reset)
+            consentNextButton.setAutoDraw(True)
+        
+        # if consentNextButton is active this frame...
+        if consentNextButton.status == STARTED:
+            # update params
+            pass
+            # check whether consentNextButton has been pressed
+            if consentNextButton.isClicked:
+                if not consentNextButton.wasClicked:
+                    # if this is a new click, store time of first click and clicked until
+                    consentNextButton.timesOn.append(consentNextButton.buttonClock.getTime())
+                    consentNextButton.timesOff.append(consentNextButton.buttonClock.getTime())
+                elif len(consentNextButton.timesOff):
+                    # if click is continuing from last frame, update time of clicked until
+                    consentNextButton.timesOff[-1] = consentNextButton.buttonClock.getTime()
+                if not consentNextButton.wasClicked:
+                    # end routine when consentNextButton is clicked
+                    continueRoutine = False
+                if not consentNextButton.wasClicked:
+                    # run callback code when consentNextButton is clicked
+                    pass
+        # take note of whether consentNextButton was clicked, so that next frame we know if clicks are new
+        consentNextButton.wasClicked = consentNextButton.isClicked and consentNextButton.status == STARTED
         if thisExp.status == FINISHED or endExpNow:
             endExperiment(thisExp, win=win)
             return
@@ -883,13 +918,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     consent.tStop = globalClock.getTime(format='float')
     consent.tStopRefresh = tThisFlipGlobal
     thisExp.addData('consent.stopped', consent.tStop)
-    thisExp.addData('consentButton.numClicks', consentButton.numClicks)
-    if consentButton.numClicks:
-       thisExp.addData('consentButton.timesOn', consentButton.timesOn)
-       thisExp.addData('consentButton.timesOff', consentButton.timesOff)
-    else:
-       thisExp.addData('consentButton.timesOn', "")
-       thisExp.addData('consentButton.timesOff', "")
     # store data for thisExp (ExperimentHandler)
     thisExp.addData('mouse.x', mouse.x)
     thisExp.addData('mouse.y', mouse.y)
@@ -897,6 +925,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     thisExp.addData('mouse.midButton', mouse.midButton)
     thisExp.addData('mouse.rightButton', mouse.rightButton)
     thisExp.addData('mouse.time', mouse.time)
+    thisExp.addData('consentNextButton.numClicks', consentNextButton.numClicks)
+    if consentNextButton.numClicks:
+       thisExp.addData('consentNextButton.timesOn', consentNextButton.timesOn)
+       thisExp.addData('consentNextButton.timesOff', consentNextButton.timesOff)
+    else:
+       thisExp.addData('consentNextButton.timesOn', "")
+       thisExp.addData('consentNextButton.timesOff', "")
     thisExp.nextEntry()
     # the Routine "consent" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
@@ -1602,6 +1637,84 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # the Routine "quizinstruction" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
+    # --- Prepare to start Routine "sampleQuiz" ---
+    # create an object to store info about Routine sampleQuiz
+    sampleQuiz = data.Routine(
+        name='sampleQuiz',
+        components=[],
+    )
+    sampleQuiz.status = NOT_STARTED
+    continueRoutine = True
+    # update component parameters for each repeat
+    # store start times for sampleQuiz
+    sampleQuiz.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
+    sampleQuiz.tStart = globalClock.getTime(format='float')
+    sampleQuiz.status = STARTED
+    thisExp.addData('sampleQuiz.started', sampleQuiz.tStart)
+    sampleQuiz.maxDuration = None
+    # keep track of which components have finished
+    sampleQuizComponents = sampleQuiz.components
+    for thisComponent in sampleQuiz.components:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    frameN = -1
+    
+    # --- Run Routine "sampleQuiz" ---
+    sampleQuiz.forceEnded = routineForceEnded = not continueRoutine
+    while continueRoutine:
+        # get current time
+        t = routineTimer.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        if thisExp.status == FINISHED or endExpNow:
+            endExperiment(thisExp, win=win)
+            return
+        # pause experiment here if requested
+        if thisExp.status == PAUSED:
+            pauseExperiment(
+                thisExp=thisExp, 
+                win=win, 
+                timers=[routineTimer, globalClock], 
+                currentRoutine=sampleQuiz,
+            )
+            # skip the frame we paused on
+            continue
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            sampleQuiz.forceEnded = routineForceEnded = True
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in sampleQuiz.components:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # --- Ending Routine "sampleQuiz" ---
+    for thisComponent in sampleQuiz.components:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    # store stop times for sampleQuiz
+    sampleQuiz.tStop = globalClock.getTime(format='float')
+    sampleQuiz.tStopRefresh = tThisFlipGlobal
+    thisExp.addData('sampleQuiz.stopped', sampleQuiz.tStop)
+    thisExp.nextEntry()
+    # the Routine "sampleQuiz" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
+    
     # --- Prepare to start Routine "quiz" ---
     # create an object to store info about Routine quiz
     quiz = data.Routine(
@@ -2095,6 +2208,159 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     if thisSession is not None:
         # if running in a Session with a Liaison client, send data up to now
         thisSession.sendExperimentData()
+    
+    # --- Prepare to start Routine "demographic" ---
+    # create an object to store info about Routine demographic
+    demographic = data.Routine(
+        name='demographic',
+        components=[demoNext, form],
+    )
+    demographic.status = NOT_STARTED
+    continueRoutine = True
+    # update component parameters for each repeat
+    # reset demoNext to account for continued clicks & clear times on/off
+    demoNext.reset()
+    # store start times for demographic
+    demographic.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
+    demographic.tStart = globalClock.getTime(format='float')
+    demographic.status = STARTED
+    thisExp.addData('demographic.started', demographic.tStart)
+    demographic.maxDuration = None
+    # keep track of which components have finished
+    demographicComponents = demographic.components
+    for thisComponent in demographic.components:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    frameN = -1
+    
+    # --- Run Routine "demographic" ---
+    demographic.forceEnded = routineForceEnded = not continueRoutine
+    while continueRoutine:
+        # get current time
+        t = routineTimer.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        # *demoNext* updates
+        
+        # if demoNext is starting this frame...
+        if demoNext.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
+            # keep track of start time/frame for later
+            demoNext.frameNStart = frameN  # exact frame index
+            demoNext.tStart = t  # local t and not account for scr refresh
+            demoNext.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(demoNext, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'demoNext.started')
+            # update status
+            demoNext.status = STARTED
+            win.callOnFlip(demoNext.buttonClock.reset)
+            demoNext.setAutoDraw(True)
+        
+        # if demoNext is active this frame...
+        if demoNext.status == STARTED:
+            # update params
+            pass
+            # check whether demoNext has been pressed
+            if demoNext.isClicked:
+                if not demoNext.wasClicked:
+                    # if this is a new click, store time of first click and clicked until
+                    demoNext.timesOn.append(demoNext.buttonClock.getTime())
+                    demoNext.timesOff.append(demoNext.buttonClock.getTime())
+                elif len(demoNext.timesOff):
+                    # if click is continuing from last frame, update time of clicked until
+                    demoNext.timesOff[-1] = demoNext.buttonClock.getTime()
+                if not demoNext.wasClicked:
+                    # end routine when demoNext is clicked
+                    continueRoutine = False
+                if not demoNext.wasClicked:
+                    # run callback code when demoNext is clicked
+                    pass
+        # take note of whether demoNext was clicked, so that next frame we know if clicks are new
+        demoNext.wasClicked = demoNext.isClicked and demoNext.status == STARTED
+        
+        # *form* updates
+        
+        # if form is starting this frame...
+        if form.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            form.frameNStart = frameN  # exact frame index
+            form.tStart = t  # local t and not account for scr refresh
+            form.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(form, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'form.started')
+            # update status
+            form.status = STARTED
+            form.setAutoDraw(True)
+        
+        # if form is active this frame...
+        if form.status == STARTED:
+            # update params
+            pass
+        # Run 'Each Frame' code from code_9
+        # Ctrl + Q to quit
+        keys = event.getKeys(modifiers=True)
+        
+        for key, modifiers in keys:
+            if key.lower() == 'q' and modifiers.get('ctrl', False):
+                core.quit()
+        if thisExp.status == FINISHED or endExpNow:
+            endExperiment(thisExp, win=win)
+            return
+        # pause experiment here if requested
+        if thisExp.status == PAUSED:
+            pauseExperiment(
+                thisExp=thisExp, 
+                win=win, 
+                timers=[routineTimer, globalClock], 
+                currentRoutine=demographic,
+            )
+            # skip the frame we paused on
+            continue
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            demographic.forceEnded = routineForceEnded = True
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in demographic.components:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # --- Ending Routine "demographic" ---
+    for thisComponent in demographic.components:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    # store stop times for demographic
+    demographic.tStop = globalClock.getTime(format='float')
+    demographic.tStopRefresh = tThisFlipGlobal
+    thisExp.addData('demographic.stopped', demographic.tStop)
+    thisExp.addData('demoNext.numClicks', demoNext.numClicks)
+    if demoNext.numClicks:
+       thisExp.addData('demoNext.timesOn', demoNext.timesOn)
+       thisExp.addData('demoNext.timesOff', demoNext.timesOff)
+    else:
+       thisExp.addData('demoNext.timesOn', "")
+       thisExp.addData('demoNext.timesOff', "")
+    form.addDataToExp(thisExp, 'rows')
+    form.autodraw = False
+    thisExp.nextEntry()
+    # the Routine "demographic" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
     
     # --- Prepare to start Routine "end" ---
     # create an object to store info about Routine end

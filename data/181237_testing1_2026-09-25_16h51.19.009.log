@@ -1,0 +1,144 @@
+5.7237 	INFO 	Loaded monitor calibration from ['2026_09_03 20:22']
+5.7334 	WARNING 	User requested fullscreen with size [1152  720], but screen is actually [2880, 1800]. Using actual size
+7.2563 	INFO 	Using renderer 'Intel(R) Arc(TM) Graphics' for graphics
+7.2563 	INFO 	OpenGL version supported by driver is 4..
+7.2724 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000021E44D081F0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000021E44D08190>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color='d3d3d3', colorSpace='hex', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000021E44DE9F90>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([2880, 1800]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+7.2724 	EXP 	window1: backgroundImage = ''
+7.2724 	EXP 	window1: backgroundFit = 'none'
+7.5761 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+7.5761 	EXP 	window1: recordFrameIntervals = False
+7.6661 	EXP 	window1: recordFrameIntervals = True
+7.7886 	EXP 	Screen (0) actual frame rate measured at 90.00Hz
+7.7886 	EXP 	window1: recordFrameIntervals = False
+7.9597 	INFO 	keyboard.Keyboard is using ptb backend.
+7.9599 	INFO 	keyboard.Keyboard is using ptb backend.
+7.9599 	INFO 	keyboard.Keyboard is using ptb backend.
+7.9599 	INFO 	keyboard.Keyboard is using ptb backend.
+7.9600 	INFO 	keyboard.Keyboard is using ptb backend.
+7.9600 	EXP 	testing1: status = STARTED
+8.6340 	EXP 	Created likertText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Times New Roman', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='likertText', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='norm', win=Window(...), wrapWidth=1)
+8.9894 	EXP 	Created likert_slider = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-1, fillColor=None, flip=False, font='Noto Sans', granularity=1.0, labelColor=None, labelHeight=np.float64(0.036), labelWrapWidth=None, labels=tuple(...), lineColor=None, markerColor=None, name='likert_slider', opacity=None, ori=0.0, pos=array([ 0. , -0.4]), readOnly=False, self=UNKNOWN, size=array([1.5, 0.1]), startValue=None, style='rating', styleTweaks=[], ticks=array([1, 2, 3, 4, 5, 6, 7]), units='norm', win=Window(...))
+0.0153 	EXP 	consentText: autoLog = True
+0.0153 	EXP 	instruction_header: autoLog = True
+0.0153 	EXP 	instruction_text: autoLog = True
+0.0153 	EXP 	warning_header: autoLog = True
+0.0153 	EXP 	warning_text: autoLog = True
+0.0153 	EXP 	textbox: autoLog = True
+0.0153 	EXP 	textbox_2: autoLog = True
+0.0153 	EXP 	likert_slider: autoLog = True
+0.0153 	EXP 	likert_slider: styleTweaks = []
+0.0153 	EXP 	likert_slider: styleTweaks = []
+0.0153 	EXP 	likert_slider: styleTweaks = []
+0.0153 	EXP 	likert_slider: styleTweaks = []
+0.0153 	EXP 	likert_slider: contrast = 1.0
+0.0153 	EXP 	likert_slider: markerPos = None
+0.0153 	EXP 	likert_slider: autoLog = True
+0.0153 	EXP 	ending_text: autoLog = True
+0.0339 	EXP 	consentText: autoDraw = True
+2.6890 	DATA 	Mouse: Left button down, pos=(2565,236)
+2.7000 	INFO 	Keyboard events cleared
+2.6999 	EXP 	consentText: autoDraw = False
+2.6999 	EXP 	instruction_header: autoDraw = True
+2.6999 	EXP 	instruction_text: autoDraw = True
+2.7908 	DATA 	Mouse:  Left button up, pos=(2565,236)
+5.4154 	DATA 	Mouse: Left button down, pos=(2556,223)
+5.4354 	INFO 	Keyboard events cleared
+5.4354 	EXP 	instruction_header: autoDraw = False
+5.4354 	EXP 	instruction_text: autoDraw = False
+5.4354 	EXP 	warning_header: autoDraw = True
+5.4354 	EXP 	warning_text: autoDraw = True
+5.5002 	DATA 	Mouse:  Left button up, pos=(2556,223)
+5.7557 	DATA 	Mouse: Left button down, pos=(2553,223)
+5.7664 	INFO 	Keyboard events cleared
+5.7664 	EXP 	warning_header: autoDraw = False
+5.7664 	EXP 	warning_text: autoDraw = False
+5.7664 	EXP 	textbox: autoDraw = True
+5.8447 	DATA 	Mouse:  Left button up, pos=(2552,223)
+5.9559 	DATA 	Mouse: Left button down, pos=(2543,220)
+5.9669 	INFO 	Keyboard events cleared
+5.9668 	EXP 	textbox: autoDraw = False
+5.9668 	EXP 	textbox_2: autoDraw = True
+6.1673 	DATA 	Mouse:  Left button up, pos=(2543,220)
+6.3019 	DATA 	Mouse: Left button down, pos=(2543,220)
+6.3194 	EXP 	Imported likert_items.xlsx as conditions, 5 conditions, 1 params
+6.3198 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'itemText': 'The video held my attention throughout.', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+6.3871 	EXP 	textbox_2: autoDraw = False
+6.3871 	EXP 	likertText: height = np.float64(0.1)
+6.3871 	EXP 	likertText: height = np.float64(0.1)
+6.3871 	EXP 	likertText: height = np.float64(0.1)
+6.3871 	EXP 	likertText: text = 'The video held my attention throughout.'
+6.3871 	EXP 	likert_slider: markerPos = None
+6.3871 	EXP 	likert_slider: markerPos = None
+6.3871 	EXP 	likertText: autoDraw = True
+6.3871 	EXP 	likert_slider: autoDraw = True
+6.3971 	DATA 	Mouse:  Left button up, pos=(2543,220)
+6.5671 	DATA 	Mouse: Left button down, pos=(2543,220)
+6.5679 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'itemText': 'The speaker was easy to understand.', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+6.5826 	EXP 	likertText: autoDraw = False
+6.5826 	EXP 	likert_slider: autoDraw = False
+6.5826 	EXP 	likertText: height = np.float64(0.1)
+6.5826 	EXP 	likertText: height = np.float64(0.1)
+6.5826 	EXP 	likertText: height = np.float64(0.1)
+6.5826 	EXP 	likertText: text = 'The speaker was easy to understand.'
+6.5826 	EXP 	likert_slider: markerPos = None
+6.5826 	EXP 	likert_slider: markerPos = None
+6.5826 	EXP 	likertText: autoDraw = True
+6.5826 	EXP 	likert_slider: autoDraw = True
+6.6859 	DATA 	Mouse:  Left button up, pos=(2543,220)
+6.8107 	DATA 	Mouse: Left button down, pos=(2543,220)
+6.8113 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'itemText': 'The content was interesting.', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+6.8231 	EXP 	likertText: autoDraw = False
+6.8231 	EXP 	likert_slider: autoDraw = False
+6.8231 	EXP 	likertText: height = np.float64(0.1)
+6.8231 	EXP 	likertText: height = np.float64(0.1)
+6.8231 	EXP 	likertText: height = np.float64(0.1)
+6.8231 	EXP 	likertText: text = 'The content was interesting.'
+6.8231 	EXP 	likert_slider: markerPos = None
+6.8231 	EXP 	likert_slider: markerPos = None
+6.8231 	EXP 	likertText: autoDraw = True
+6.8231 	EXP 	likert_slider: autoDraw = True
+6.8949 	DATA 	Mouse:  Left button up, pos=(2543,220)
+6.9944 	DATA 	Mouse: Left button down, pos=(2543,220)
+7.0000 	EXP 	New trial (rep=0, index=3): <Trial 3 (3 in rep 0) data={'itemText': 'I would want to watch more videos like this.', 'thisN': 3, 'thisTrialN': 3, 'thisRepN': 0}>
+7.0120 	EXP 	likertText: autoDraw = False
+7.0120 	EXP 	likert_slider: autoDraw = False
+7.0120 	EXP 	likertText: height = np.float64(0.1)
+7.0120 	EXP 	likertText: height = np.float64(0.1)
+7.0120 	EXP 	likertText: height = np.float64(0.1)
+7.0120 	EXP 	likertText: text = 'I would want to watch more videos like this.'
+7.0120 	EXP 	likert_slider: markerPos = None
+7.0120 	EXP 	likert_slider: markerPos = None
+7.0120 	EXP 	likertText: autoDraw = True
+7.0120 	EXP 	likert_slider: autoDraw = True
+7.0875 	DATA 	Mouse:  Left button up, pos=(2543,220)
+7.1724 	DATA 	Mouse: Left button down, pos=(2543,220)
+7.1781 	EXP 	New trial (rep=0, index=4): <Trial 4 (4 in rep 0) data={'itemText': 'The speed of the video felt appropriate.', 'thisN': 4, 'thisTrialN': 4, 'thisRepN': 0}>
+7.1898 	EXP 	likertText: autoDraw = False
+7.1898 	EXP 	likert_slider: autoDraw = False
+7.1898 	EXP 	likertText: height = np.float64(0.1)
+7.1898 	EXP 	likertText: height = np.float64(0.1)
+7.1898 	EXP 	likertText: height = np.float64(0.1)
+7.1898 	EXP 	likertText: text = 'The speed of the video felt appropriate.'
+7.1898 	EXP 	likert_slider: markerPos = None
+7.1898 	EXP 	likert_slider: markerPos = None
+7.1898 	EXP 	likertText: autoDraw = True
+7.1898 	EXP 	likert_slider: autoDraw = True
+7.2494 	DATA 	Mouse:  Left button up, pos=(2543,220)
+7.3171 	DATA 	Mouse: Left button down, pos=(2543,220)
+7.3327 	EXP 	likertText: autoDraw = False
+7.3327 	EXP 	likert_slider: autoDraw = False
+7.3327 	EXP 	ending_text: autoDraw = True
+7.4337 	DATA 	Mouse:  Left button up, pos=(2543,220)
+7.4554 	DATA 	Mouse: Left button down, pos=(2543,220)
+7.5447 	DATA 	Mouse:  Left button up, pos=(2543,220)
+7.8445 	DATA 	Mouse: Left button down, pos=(2543,220)
+7.9445 	DATA 	Mouse:  Left button up, pos=(2543,220)
+10.8118 	DATA 	Keypress: lctrl
+11.6667 	DATA 	Keypress: q
+13.3824 	INFO 	saved data to C:\SPPA\CMKL\Animation_Project\Summer\Experiment_Workflows\Testing1\data\181237_testing1_2026-09-25_16h51.19.009.psydat
+13.3860 	INFO 	saved data to 'C:\\SPPA\\CMKL\\Animation_Project\\Summer\\Experiment_Workflows\\Testing1\\data\\181237_testing1_2026-09-25_16h51.19.009.csv'
+13.4167 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+13.5014 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+13.5014 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+13.5014 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+13.5014 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
