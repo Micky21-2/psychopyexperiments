@@ -1,0 +1,67 @@
+9.8921 	INFO 	Loaded monitor calibration from ['2026_09_03 20:22']
+9.9073 	WARNING 	User requested fullscreen with size [1152  720], but screen is actually [2880, 1800]. Using actual size
+10.0347 	INFO 	Using renderer 'Intel(R) Arc(TM) Graphics' for graphics
+10.0347 	INFO 	OpenGL version supported by driver is 4..
+10.0640 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002B045ABE5C0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002B045ABE560>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color='d3d3d3', colorSpace='hex', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000002B045BA96C0>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([2880, 1800]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+10.0641 	EXP 	window1: backgroundImage = ''
+10.0641 	EXP 	window1: backgroundFit = 'none'
+10.3932 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+10.3933 	EXP 	window1: recordFrameIntervals = False
+10.5038 	EXP 	window1: recordFrameIntervals = True
+10.6262 	EXP 	Screen (0) actual frame rate measured at 89.93Hz
+10.6263 	EXP 	window1: recordFrameIntervals = False
+10.9244 	INFO 	keyboard.Keyboard is using ptb backend.
+10.9249 	INFO 	keyboard.Keyboard is using ptb backend.
+10.9250 	INFO 	keyboard.Keyboard is using ptb backend.
+10.9251 	INFO 	keyboard.Keyboard is using ptb backend.
+10.9251 	INFO 	keyboard.Keyboard is using ptb backend.
+10.9252 	EXP 	testing1: status = STARTED
+12.1173 	EXP 	Created likertText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Times New Roman', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='likertText', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='norm', win=Window(...), wrapWidth=1)
+12.7611 	EXP 	Created likert_slider = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-1, fillColor=None, flip=False, font='Noto Sans', granularity=1.0, labelColor=None, labelHeight=np.float64(0.036), labelWrapWidth=None, labels=tuple(...), lineColor=None, markerColor=None, name='likert_slider', opacity=None, ori=0.0, pos=array([ 0. , -0.4]), readOnly=False, self=UNKNOWN, size=array([1.5, 0.1]), startValue=None, style='rating', styleTweaks=[], ticks=array([1, 2, 3, 4, 5, 6, 7]), units='norm', win=Window(...))
+12.7971 	INFO 	Importing items...
+12.8137 	EXP 	Imported demoForm.xlsx as conditions, 4 conditions, 13 params
+12.8137 	INFO 	Using default values for the following headers: ['itemColor', 'ticks', 'tickLabels', 'font', 'responseColor', 'markerColor', 'itemColor', 'ticks', 'tickLabels', 'font', 'responseColor', 'markerColor', 'itemColor', 'ticks', 'tickLabels', 'font', 'responseColor', 'markerColor', 'itemColor', 'ticks', 'tickLabels', 'font', 'responseColor', 'markerColor']
+12.8141 	WARNING 	Form currently only formats correctly using height units. Please change the units in Experiment Settings to 'height'
+12.8141 	INFO 	Setting layout of Form: form.
+12.8142 	EXP 	Question text: What is your age?
+13.0330 	INFO 	Adding response to Form type: choice, layout: vert, options: ['18 years', '19 years', '20 years', '21 years', '22 years', '23 years', '24 years', '25 years']
+13.2254 	EXP 	Question text: What is your gender?
+13.2614 	INFO 	Adding response to Form type: choice, layout: vert, options: ['Male', 'Female', 'Other', 'Prefer not to say']
+13.3970 	EXP 	Question text: What is your highest level of education?
+13.4273 	INFO 	Adding response to Form type: choice, layout: vert, options: ['High school', "Bachelor's degree", "Master's degree", 'Doctoral degree']
+13.5240 	EXP 	Question text: What is your English proficiency level?
+13.5477 	INFO 	Adding response to Form type: choice, layout: vert, options: ['A1 - Beginner', 'A2 - Elementary', 'B1 - Intermediate', 'B2 - Upper-intermediate', 'C1 - Advanced', 'C2 - Proficient']
+13.6973 	INFO 	Layout set for Form: form.
+13.6973 	EXP 	Created form = <psychopy.visual.form.Form object at 0x000002B05E913070>
+0.0309 	EXP 	movie: autoLog = True
+0.0309 	EXP 	consentText: autoLog = True
+0.0309 	EXP 	instruction_header: autoLog = True
+0.0309 	EXP 	instruction_text: autoLog = True
+0.0309 	EXP 	warning_header: autoLog = True
+0.0309 	EXP 	warning_text: autoLog = True
+0.0309 	EXP 	textbox: autoLog = True
+0.0309 	EXP 	textbox_2: autoLog = True
+0.0309 	EXP 	likert_slider: autoLog = True
+0.0309 	EXP 	likert_slider: styleTweaks = []
+0.0309 	EXP 	likert_slider: styleTweaks = []
+0.0309 	EXP 	likert_slider: styleTweaks = []
+0.0309 	EXP 	likert_slider: styleTweaks = []
+0.0309 	EXP 	likert_slider: contrast = 1.0
+0.0309 	EXP 	likert_slider: markerPos = None
+0.0309 	EXP 	likert_slider: autoLog = True
+0.0309 	EXP 	unnamed Form: autoLog = True
+0.0309 	EXP 	form: name = 'form'
+0.0309 	EXP 	form: depth = -1
+0.0309 	EXP 	form: fillColor = [0.6549, 0.6549, 0.6549]
+0.0309 	EXP 	form: borderColor = [0.6549, 0.6549, 0.6549]
+0.0309 	EXP 	ending_text: autoLog = True
+0.2336 	EXP 	movie: autoDraw = True
+2.0266 	DATA 	Keypress: lctrl
+2.1823 	DATA 	Keypress: q
+2.6449 	INFO 	saved data to C:\SPPA\CMKL\Animation_Project\Summer\Experiment_Workflows\Testing1\data\13_testing1_2026-10-06_20h41.18.363.psydat
+2.6671 	INFO 	saved data to 'C:\\SPPA\\CMKL\\Animation_Project\\Summer\\Experiment_Workflows\\Testing1\\data\\13_testing1_2026-10-06_20h41.18.363.csv'
+2.6853 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+2.7230 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+2.7231 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+2.7231 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+2.7231 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.

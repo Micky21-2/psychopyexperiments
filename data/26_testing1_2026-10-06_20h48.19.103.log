@@ -1,0 +1,25 @@
+8.3254 	INFO 	Loaded monitor calibration from ['2026_09_03 20:22']
+8.3435 	WARNING 	User requested fullscreen with size [1152  720], but screen is actually [2880, 1800]. Using actual size
+8.4788 	INFO 	Using renderer 'Intel(R) Arc(TM) Graphics' for graphics
+8.4788 	INFO 	OpenGL version supported by driver is 4..
+8.5074 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000020A3D8BE5C0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000020A3D8BE560>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color='d3d3d3', colorSpace='hex', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000020A3D9A96C0>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([2880, 1800]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+8.5074 	EXP 	window1: backgroundImage = ''
+8.5074 	EXP 	window1: backgroundFit = 'none'
+8.8398 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+8.8399 	EXP 	window1: recordFrameIntervals = False
+8.9489 	EXP 	window1: recordFrameIntervals = True
+9.0712 	EXP 	Screen (0) actual frame rate measured at 90.36Hz
+9.0712 	EXP 	window1: recordFrameIntervals = False
+9.2761 	INFO 	keyboard.Keyboard is using ptb backend.
+9.2765 	INFO 	keyboard.Keyboard is using ptb backend.
+9.2766 	INFO 	keyboard.Keyboard is using ptb backend.
+9.2767 	INFO 	keyboard.Keyboard is using ptb backend.
+9.2767 	INFO 	keyboard.Keyboard is using ptb backend.
+9.2767 	EXP 	testing1: status = STARTED
+9.3426 	INFO 	saved data to C:\SPPA\CMKL\Animation_Project\Summer\Experiment_Workflows\Testing1\data\26_testing1_2026-10-06_20h48.19.103.psydat
+9.3633 	INFO 	saved data to 'C:\\SPPA\\CMKL\\Animation_Project\\Summer\\Experiment_Workflows\\Testing1\\data\\26_testing1_2026-10-06_20h48.19.103.csv'
+9.3752 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+9.3820 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+9.3820 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+9.3820 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+9.3820 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.

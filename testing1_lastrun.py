@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2025.1.1),
-    on October 06, 2026, at 20:00
+    on October 06, 2026, at 20:58
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -391,36 +391,116 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # Start Code - component code to be run after the window creation
     
-    # --- Initialize components for Routine "demographic" ---
-    demoNext = visual.ButtonStim(win, 
-        text='Next>>', font='Times New Roman',
-        pos=(0.8, -0.75),
-        letterHeight=0.05,
-        size=(0.15, 0.15), 
-        ori=0.0
-        ,borderWidth=0.0,
-        fillColor=[1.0000, 1.0000, 1.0000], borderColor=None,
-        color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb',
-        opacity=None,
-        bold=True, italic=False,
-        padding=None,
-        anchor='center',
-        name='demoNext',
-        depth=0
+    # --- Initialize components for Routine "videoAssignment" ---
+    # Run 'Begin Experiment' code from code_10
+    import csv
+    import random
+    
+    # -------------------------------------------------
+    # SETTINGS
+    # -------------------------------------------------
+    
+    video_files = [
+        "3_with_jump.mp4",
+        "Sigmachinesecat.mp4",
+        "Possessed_cat.mp4",
+        "Jack_jet.mp4",
+        "Creepy and scary cat.mp4",
+        "cattransition.mp4"
+    ]
+    
+    MAX_PER_VIDEO = 6
+    
+    # File used to keep track of assignments
+    assignment_file = os.path.join(
+        _thisDir,
+        "video_assignment.csv"
     )
-    demoNext.buttonClock = core.Clock()
-    win.allowStencil = True
-    form = visual.Form(win=win, name='form',
-        items='demoForm.xlsx',
-        textHeight=0.03,
-        font='Noto Sans',
-        randomize=False,
-        style='custom...',
-        fillColor=[0.6549, 0.6549, 0.6549], borderColor=[0.6549, 0.6549, 0.6549], itemColor=[-1.0000, -1.0000, -1.0000], 
-        responseColor=[-1.0000, -1.0000, -1.0000], markerColor=[1.0000, -1.0000, -1.0000], colorSpace='rgb', 
-        size=(1.6, 0.7),
-        pos=(0, 0),
-        itemPadding=0.1,
+    
+    # -------------------------------------------------
+    # CREATE ASSIGNMENT FILE IF IT DOES NOT EXIST
+    # -------------------------------------------------
+    
+    if not os.path.exists(assignment_file):
+    
+        with open(assignment_file, "w", newline="") as f:
+            writer = csv.writer(f)
+            writer.writerow(["participant", "video"])
+    
+    
+    # -------------------------------------------------
+    # READ PREVIOUS ASSIGNMENTS
+    # -------------------------------------------------
+    
+    video_counts = {video: 0 for video in video_files}
+    
+    with open(assignment_file, "r", newline="") as f:
+    
+        reader = csv.DictReader(f)
+    
+        for row in reader:
+    
+            video = row["video"]
+    
+            if video in video_counts:
+                video_counts[video] += 1
+    
+    
+    # -------------------------------------------------
+    # FIND VIDEOS THAT STILL HAVE SPACE
+    # -------------------------------------------------
+    
+    available_videos = [
+        video
+        for video in video_files
+        if video_counts[video] < MAX_PER_VIDEO
+    ]
+    
+    
+    # -------------------------------------------------
+    # RANDOMLY SELECT ONE AVAILABLE VIDEO
+    # -------------------------------------------------
+    
+    if len(available_videos) == 0:
+    
+        raise Exception(
+            "All videos have already been assigned "
+            "to 6 participants each."
+        )
+    
+    selected_video = random.choice(available_videos)
+    
+    
+    # -------------------------------------------------
+    # SAVE THE ASSIGNMENT
+    # -------------------------------------------------
+    
+    participant_id = expInfo["participant"]
+    
+    with open(assignment_file, "a", newline="") as f:
+    
+        writer = csv.writer(f)
+    
+        writer.writerow([
+            participant_id,
+            selected_video
+        ])
+    
+    
+    # -------------------------------------------------
+    # VARIABLE USED BY MOVIE COMPONENT
+    # -------------------------------------------------
+    
+    video_to_play = selected_video
+    thisExp.addData("assigned_video", video_to_play)
+    
+    # --- Initialize components for Routine "video" ---
+    movie = visual.MovieStim(
+        win, name='movie',
+        filename=None, movieLib='ffpyplayer',
+        loop=False, volume=1.0, noAudio=False,
+        pos=(0, 0), size=(0.5, 0.5), units=win.units,
+        ori=0.0, anchor='center',opacity=None, contrast=1.0,
         depth=-1
     )
     
@@ -566,8 +646,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     )
     nextButton_warning.buttonClock = core.Clock()
     
-    # --- Initialize components for Routine "video" ---
-    
     # --- Initialize components for Routine "quizinstruction" ---
     textbox = visual.TextBox2(
          win, text='Thank you for watching the video.\n\nYou will now answer some questions about what you just watched.\n\nPlease answer based on your own understanding.\n\nBefore the main questions, you will first complete a short sample \nquiz to help you get familiar with how the questions work.\n\n', placeholder='Type here...', font='Times New Roman',
@@ -684,6 +762,39 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         if key.lower() == 'q' and modifiers.get('ctrl', False):
             core.quit()
     
+    # --- Initialize components for Routine "demographic" ---
+    demoNext = visual.ButtonStim(win, 
+        text='Next>>', font='Times New Roman',
+        pos=(0.8, -0.75),
+        letterHeight=0.05,
+        size=(0.15, 0.15), 
+        ori=0.0
+        ,borderWidth=0.0,
+        fillColor=[1.0000, 1.0000, 1.0000], borderColor=None,
+        color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb',
+        opacity=None,
+        bold=True, italic=False,
+        padding=None,
+        anchor='center',
+        name='demoNext',
+        depth=0
+    )
+    demoNext.buttonClock = core.Clock()
+    win.allowStencil = True
+    form = visual.Form(win=win, name='form',
+        items='demoForm.xlsx',
+        textHeight=0.03,
+        font='Noto Sans',
+        randomize=False,
+        style='custom...',
+        fillColor=[0.6549, 0.6549, 0.6549], borderColor=[0.6549, 0.6549, 0.6549], itemColor=[-1.0000, -1.0000, -1.0000], 
+        responseColor=[-1.0000, -1.0000, -1.0000], markerColor=[1.0000, -1.0000, -1.0000], colorSpace='rgb', 
+        size=(1.6, 0.7),
+        pos=(0, 0),
+        itemPadding=0.1,
+        depth=-1
+    )
+    
     # --- Initialize components for Routine "end" ---
     ending_text = visual.TextBox2(
          win, text='Thank you for participating in this study!\n\nYour responses have been recorded successfully.', placeholder='Type here...', font='Times New Roman',
@@ -730,43 +841,24 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         format='%Y-%m-%d %Hh%M.%S.%f %z', fractionalSecondDigits=6
     )
     
-    # --- Prepare to start Routine "demographic" ---
-    # create an object to store info about Routine demographic
-    demographic = data.Routine(
-        name='demographic',
-        components=[demoNext, form],
+    # --- Prepare to start Routine "videoAssignment" ---
+    # create an object to store info about Routine videoAssignment
+    videoAssignment = data.Routine(
+        name='videoAssignment',
+        components=[],
     )
-    demographic.status = NOT_STARTED
+    videoAssignment.status = NOT_STARTED
     continueRoutine = True
     # update component parameters for each repeat
-    # reset demoNext to account for continued clicks & clear times on/off
-    demoNext.reset()
-    # Run 'Begin Routine' code from code_10
-    # Replace 'form' with your exact Form component name if it's different
-    for item in form.items:
-        # Safely extract the slider question response object
-        slider = item.get('responseObj', None) if isinstance(item, dict) else getattr(item, 'responseObj', None)
-        
-        if slider:
-            # Turn off the fill color for the choice dots/markers
-            if hasattr(slider, 'marker') and slider.marker:
-                slider.marker.fillColor = None
-                
-            # Clear out fills for individual radio element choices if they exist
-            if hasattr(slider, 'elements') and slider.elements:
-                for elem in slider.elements:
-                    if hasattr(elem, 'fillColor'):
-                        elem.fillColor = None
-    
-    # store start times for demographic
-    demographic.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
-    demographic.tStart = globalClock.getTime(format='float')
-    demographic.status = STARTED
-    thisExp.addData('demographic.started', demographic.tStart)
-    demographic.maxDuration = None
+    # store start times for videoAssignment
+    videoAssignment.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
+    videoAssignment.tStart = globalClock.getTime(format='float')
+    videoAssignment.status = STARTED
+    thisExp.addData('videoAssignment.started', videoAssignment.tStart)
+    videoAssignment.maxDuration = None
     # keep track of which components have finished
-    demographicComponents = demographic.components
-    for thisComponent in demographic.components:
+    videoAssignmentComponents = videoAssignment.components
+    for thisComponent in videoAssignment.components:
         thisComponent.tStart = None
         thisComponent.tStop = None
         thisComponent.tStartRefresh = None
@@ -778,8 +870,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
     frameN = -1
     
-    # --- Run Routine "demographic" ---
-    demographic.forceEnded = routineForceEnded = not continueRoutine
+    # --- Run Routine "videoAssignment" ---
+    videoAssignment.forceEnded = routineForceEnded = not continueRoutine
     while continueRoutine:
         # get current time
         t = routineTimer.getTime()
@@ -787,64 +879,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
-        # *demoNext* updates
-        
-        # if demoNext is starting this frame...
-        if demoNext.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
-            # keep track of start time/frame for later
-            demoNext.frameNStart = frameN  # exact frame index
-            demoNext.tStart = t  # local t and not account for scr refresh
-            demoNext.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(demoNext, 'tStartRefresh')  # time at next scr refresh
-            # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'demoNext.started')
-            # update status
-            demoNext.status = STARTED
-            win.callOnFlip(demoNext.buttonClock.reset)
-            demoNext.setAutoDraw(True)
-        
-        # if demoNext is active this frame...
-        if demoNext.status == STARTED:
-            # update params
-            pass
-            # check whether demoNext has been pressed
-            if demoNext.isClicked:
-                if not demoNext.wasClicked:
-                    # if this is a new click, store time of first click and clicked until
-                    demoNext.timesOn.append(demoNext.buttonClock.getTime())
-                    demoNext.timesOff.append(demoNext.buttonClock.getTime())
-                elif len(demoNext.timesOff):
-                    # if click is continuing from last frame, update time of clicked until
-                    demoNext.timesOff[-1] = demoNext.buttonClock.getTime()
-                if not demoNext.wasClicked:
-                    # end routine when demoNext is clicked
-                    continueRoutine = False
-                if not demoNext.wasClicked:
-                    # run callback code when demoNext is clicked
-                    pass
-        # take note of whether demoNext was clicked, so that next frame we know if clicks are new
-        demoNext.wasClicked = demoNext.isClicked and demoNext.status == STARTED
-        
-        # *form* updates
-        
-        # if form is starting this frame...
-        if form.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            form.frameNStart = frameN  # exact frame index
-            form.tStart = t  # local t and not account for scr refresh
-            form.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(form, 'tStartRefresh')  # time at next scr refresh
-            # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'form.started')
-            # update status
-            form.status = STARTED
-            form.setAutoDraw(True)
-        
-        # if form is active this frame...
-        if form.status == STARTED:
-            # update params
-            pass
-        # Run 'Each Frame' code from code_9
+        # Run 'Each Frame' code from ctrlQ
         # Ctrl + Q to quit
         keys = event.getKeys(modifiers=True)
         
@@ -860,17 +895,17 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 thisExp=thisExp, 
                 win=win, 
                 timers=[routineTimer, globalClock], 
-                currentRoutine=demographic,
+                currentRoutine=videoAssignment,
             )
             # skip the frame we paused on
             continue
         
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
-            demographic.forceEnded = routineForceEnded = True
+            videoAssignment.forceEnded = routineForceEnded = True
             break
         continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in demographic.components:
+        for thisComponent in videoAssignment.components:
             if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                 continueRoutine = True
                 break  # at least one component has not yet finished
@@ -879,25 +914,133 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
     
-    # --- Ending Routine "demographic" ---
-    for thisComponent in demographic.components:
+    # --- Ending Routine "videoAssignment" ---
+    for thisComponent in videoAssignment.components:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    # store stop times for demographic
-    demographic.tStop = globalClock.getTime(format='float')
-    demographic.tStopRefresh = tThisFlipGlobal
-    thisExp.addData('demographic.stopped', demographic.tStop)
-    thisExp.addData('demoNext.numClicks', demoNext.numClicks)
-    if demoNext.numClicks:
-       thisExp.addData('demoNext.timesOn', demoNext.timesOn)
-       thisExp.addData('demoNext.timesOff', demoNext.timesOff)
-    else:
-       thisExp.addData('demoNext.timesOn', "")
-       thisExp.addData('demoNext.timesOff', "")
-    form.addDataToExp(thisExp, 'rows')
-    form.autodraw = False
+    # store stop times for videoAssignment
+    videoAssignment.tStop = globalClock.getTime(format='float')
+    videoAssignment.tStopRefresh = tThisFlipGlobal
+    thisExp.addData('videoAssignment.stopped', videoAssignment.tStop)
     thisExp.nextEntry()
-    # the Routine "demographic" was not non-slip safe, so reset the non-slip timer
+    # the Routine "videoAssignment" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
+    
+    # --- Prepare to start Routine "video" ---
+    # create an object to store info about Routine video
+    video = data.Routine(
+        name='video',
+        components=[movie],
+    )
+    video.status = NOT_STARTED
+    continueRoutine = True
+    # update component parameters for each repeat
+    movie.setMovie(video_to_play)
+    # store start times for video
+    video.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
+    video.tStart = globalClock.getTime(format='float')
+    video.status = STARTED
+    thisExp.addData('video.started', video.tStart)
+    video.maxDuration = None
+    # keep track of which components have finished
+    videoComponents = video.components
+    for thisComponent in video.components:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    frameN = -1
+    
+    # --- Run Routine "video" ---
+    video.forceEnded = routineForceEnded = not continueRoutine
+    while continueRoutine:
+        # get current time
+        t = routineTimer.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        # Run 'Each Frame' code from code_3
+        # Ctrl + Q to quit
+        keys = event.getKeys(modifiers=True)
+        
+        for key, modifiers in keys:
+            if key.lower() == 'q' and modifiers.get('ctrl', False):
+                core.quit()
+        
+        # *movie* updates
+        
+        # if movie is starting this frame...
+        if movie.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            movie.frameNStart = frameN  # exact frame index
+            movie.tStart = t  # local t and not account for scr refresh
+            movie.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(movie, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'movie.started')
+            # update status
+            movie.status = STARTED
+            movie.setAutoDraw(True)
+            movie.play()
+        
+        # if movie is stopping this frame...
+        if movie.status == STARTED:
+            if bool(False) or movie.isFinished:
+                # keep track of stop time/frame for later
+                movie.tStop = t  # not accounting for scr refresh
+                movie.tStopRefresh = tThisFlipGlobal  # on global time
+                movie.frameNStop = frameN  # exact frame index
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'movie.stopped')
+                # update status
+                movie.status = FINISHED
+                movie.setAutoDraw(False)
+                movie.stop()
+        if thisExp.status == FINISHED or endExpNow:
+            endExperiment(thisExp, win=win)
+            return
+        # pause experiment here if requested
+        if thisExp.status == PAUSED:
+            pauseExperiment(
+                thisExp=thisExp, 
+                win=win, 
+                timers=[routineTimer, globalClock], 
+                currentRoutine=video,
+            )
+            # skip the frame we paused on
+            continue
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            video.forceEnded = routineForceEnded = True
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in video.components:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # --- Ending Routine "video" ---
+    for thisComponent in video.components:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    # store stop times for video
+    video.tStop = globalClock.getTime(format='float')
+    video.tStopRefresh = tThisFlipGlobal
+    thisExp.addData('video.stopped', video.tStop)
+    movie.stop()  # ensure movie has stopped at end of Routine
+    thisExp.nextEntry()
+    # the Routine "video" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
     # --- Prepare to start Routine "consent" ---
@@ -1529,91 +1672,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
        thisExp.addData('nextButton_warning.timesOff', "")
     thisExp.nextEntry()
     # the Routine "warning" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset()
-    
-    # --- Prepare to start Routine "video" ---
-    # create an object to store info about Routine video
-    video = data.Routine(
-        name='video',
-        components=[],
-    )
-    video.status = NOT_STARTED
-    continueRoutine = True
-    # update component parameters for each repeat
-    # store start times for video
-    video.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
-    video.tStart = globalClock.getTime(format='float')
-    video.status = STARTED
-    thisExp.addData('video.started', video.tStart)
-    video.maxDuration = None
-    # keep track of which components have finished
-    videoComponents = video.components
-    for thisComponent in video.components:
-        thisComponent.tStart = None
-        thisComponent.tStop = None
-        thisComponent.tStartRefresh = None
-        thisComponent.tStopRefresh = None
-        if hasattr(thisComponent, 'status'):
-            thisComponent.status = NOT_STARTED
-    # reset timers
-    t = 0
-    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    frameN = -1
-    
-    # --- Run Routine "video" ---
-    video.forceEnded = routineForceEnded = not continueRoutine
-    while continueRoutine:
-        # get current time
-        t = routineTimer.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
-        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-        # update/draw components on each frame
-        # Run 'Each Frame' code from code_3
-        # Ctrl + Q to quit
-        keys = event.getKeys(modifiers=True)
-        
-        for key, modifiers in keys:
-            if key.lower() == 'q' and modifiers.get('ctrl', False):
-                core.quit()
-        if thisExp.status == FINISHED or endExpNow:
-            endExperiment(thisExp, win=win)
-            return
-        # pause experiment here if requested
-        if thisExp.status == PAUSED:
-            pauseExperiment(
-                thisExp=thisExp, 
-                win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=video,
-            )
-            # skip the frame we paused on
-            continue
-        
-        # check if all components have finished
-        if not continueRoutine:  # a component has requested a forced-end of Routine
-            video.forceEnded = routineForceEnded = True
-            break
-        continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in video.components:
-            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                continueRoutine = True
-                break  # at least one component has not yet finished
-        
-        # refresh the screen
-        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-            win.flip()
-    
-    # --- Ending Routine "video" ---
-    for thisComponent in video.components:
-        if hasattr(thisComponent, "setAutoDraw"):
-            thisComponent.setAutoDraw(False)
-    # store stop times for video
-    video.tStop = globalClock.getTime(format='float')
-    video.tStopRefresh = tThisFlipGlobal
-    thisExp.addData('video.stopped', video.tStop)
-    thisExp.nextEntry()
-    # the Routine "video" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
     # --- Prepare to start Routine "quizinstruction" ---
@@ -2378,6 +2436,159 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     if thisSession is not None:
         # if running in a Session with a Liaison client, send data up to now
         thisSession.sendExperimentData()
+    
+    # --- Prepare to start Routine "demographic" ---
+    # create an object to store info about Routine demographic
+    demographic = data.Routine(
+        name='demographic',
+        components=[demoNext, form],
+    )
+    demographic.status = NOT_STARTED
+    continueRoutine = True
+    # update component parameters for each repeat
+    # reset demoNext to account for continued clicks & clear times on/off
+    demoNext.reset()
+    # store start times for demographic
+    demographic.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
+    demographic.tStart = globalClock.getTime(format='float')
+    demographic.status = STARTED
+    thisExp.addData('demographic.started', demographic.tStart)
+    demographic.maxDuration = None
+    # keep track of which components have finished
+    demographicComponents = demographic.components
+    for thisComponent in demographic.components:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    frameN = -1
+    
+    # --- Run Routine "demographic" ---
+    demographic.forceEnded = routineForceEnded = not continueRoutine
+    while continueRoutine:
+        # get current time
+        t = routineTimer.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        # *demoNext* updates
+        
+        # if demoNext is starting this frame...
+        if demoNext.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
+            # keep track of start time/frame for later
+            demoNext.frameNStart = frameN  # exact frame index
+            demoNext.tStart = t  # local t and not account for scr refresh
+            demoNext.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(demoNext, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'demoNext.started')
+            # update status
+            demoNext.status = STARTED
+            win.callOnFlip(demoNext.buttonClock.reset)
+            demoNext.setAutoDraw(True)
+        
+        # if demoNext is active this frame...
+        if demoNext.status == STARTED:
+            # update params
+            pass
+            # check whether demoNext has been pressed
+            if demoNext.isClicked:
+                if not demoNext.wasClicked:
+                    # if this is a new click, store time of first click and clicked until
+                    demoNext.timesOn.append(demoNext.buttonClock.getTime())
+                    demoNext.timesOff.append(demoNext.buttonClock.getTime())
+                elif len(demoNext.timesOff):
+                    # if click is continuing from last frame, update time of clicked until
+                    demoNext.timesOff[-1] = demoNext.buttonClock.getTime()
+                if not demoNext.wasClicked:
+                    # end routine when demoNext is clicked
+                    continueRoutine = False
+                if not demoNext.wasClicked:
+                    # run callback code when demoNext is clicked
+                    pass
+        # take note of whether demoNext was clicked, so that next frame we know if clicks are new
+        demoNext.wasClicked = demoNext.isClicked and demoNext.status == STARTED
+        
+        # *form* updates
+        
+        # if form is starting this frame...
+        if form.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            form.frameNStart = frameN  # exact frame index
+            form.tStart = t  # local t and not account for scr refresh
+            form.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(form, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'form.started')
+            # update status
+            form.status = STARTED
+            form.setAutoDraw(True)
+        
+        # if form is active this frame...
+        if form.status == STARTED:
+            # update params
+            pass
+        # Run 'Each Frame' code from code_9
+        # Ctrl + Q to quit
+        keys = event.getKeys(modifiers=True)
+        
+        for key, modifiers in keys:
+            if key.lower() == 'q' and modifiers.get('ctrl', False):
+                core.quit()
+        if thisExp.status == FINISHED or endExpNow:
+            endExperiment(thisExp, win=win)
+            return
+        # pause experiment here if requested
+        if thisExp.status == PAUSED:
+            pauseExperiment(
+                thisExp=thisExp, 
+                win=win, 
+                timers=[routineTimer, globalClock], 
+                currentRoutine=demographic,
+            )
+            # skip the frame we paused on
+            continue
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            demographic.forceEnded = routineForceEnded = True
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in demographic.components:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # --- Ending Routine "demographic" ---
+    for thisComponent in demographic.components:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    # store stop times for demographic
+    demographic.tStop = globalClock.getTime(format='float')
+    demographic.tStopRefresh = tThisFlipGlobal
+    thisExp.addData('demographic.stopped', demographic.tStop)
+    thisExp.addData('demoNext.numClicks', demoNext.numClicks)
+    if demoNext.numClicks:
+       thisExp.addData('demoNext.timesOn', demoNext.timesOn)
+       thisExp.addData('demoNext.timesOff', demoNext.timesOff)
+    else:
+       thisExp.addData('demoNext.timesOn', "")
+       thisExp.addData('demoNext.timesOff', "")
+    form.addDataToExp(thisExp, 'rows')
+    form.autodraw = False
+    thisExp.nextEntry()
+    # the Routine "demographic" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
     
     # --- Prepare to start Routine "end" ---
     # create an object to store info about Routine end

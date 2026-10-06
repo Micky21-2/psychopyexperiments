@@ -1,0 +1,25 @@
+12.6104 	INFO 	Loaded monitor calibration from ['2026_09_03 20:22']
+12.6250 	WARNING 	User requested fullscreen with size [1152  720], but screen is actually [2880, 1800]. Using actual size
+12.8077 	INFO 	Using renderer 'Intel(R) Arc(TM) Graphics' for graphics
+12.8077 	INFO 	OpenGL version supported by driver is 4..
+12.9110 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001F450AAE6E0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001F450AAE680>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color='d3d3d3', colorSpace='hex', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001F450B95720>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([2880, 1800]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+12.9111 	EXP 	window1: backgroundImage = ''
+12.9111 	EXP 	window1: backgroundFit = 'none'
+13.2598 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+13.2599 	EXP 	window1: recordFrameIntervals = False
+13.3943 	EXP 	window1: recordFrameIntervals = True
+13.5172 	EXP 	Screen (0) actual frame rate measured at 89.71Hz
+13.5173 	EXP 	window1: recordFrameIntervals = False
+13.8316 	INFO 	keyboard.Keyboard is using ptb backend.
+13.8317 	INFO 	keyboard.Keyboard is using ptb backend.
+13.8318 	INFO 	keyboard.Keyboard is using ptb backend.
+13.8319 	INFO 	keyboard.Keyboard is using ptb backend.
+13.8319 	INFO 	keyboard.Keyboard is using ptb backend.
+13.8319 	EXP 	testing1: status = STARTED
+13.8825 	INFO 	saved data to C:\SPPA\CMKL\Animation_Project\Summer\Experiment_Workflows\Testing1\data\638026_testing1_2026-10-06_20h33.32.208.psydat
+13.8969 	INFO 	saved data to 'C:\\SPPA\\CMKL\\Animation_Project\\Summer\\Experiment_Workflows\\Testing1\\data\\638026_testing1_2026-10-06_20h33.32.208.csv'
+13.9127 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+13.9335 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+13.9336 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+13.9336 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+13.9336 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
