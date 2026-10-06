@@ -1,0 +1,99 @@
+10.2264 	INFO 	Loaded monitor calibration from ['2026_09_03 20:22']
+10.2332 	WARNING 	User requested fullscreen with size [1152  720], but screen is actually [2880, 1800]. Using actual size
+10.3448 	INFO 	Using renderer 'Intel(R) Arc(TM) Graphics' for graphics
+10.3448 	INFO 	OpenGL version supported by driver is 4..
+10.3708 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001EF8C7EA4A0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001EF8C7EA440>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color='d3d3d3', colorSpace='hex', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001EF8C8D1660>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([2880, 1800]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+10.3709 	EXP 	window1: backgroundImage = ''
+10.3709 	EXP 	window1: backgroundFit = 'none'
+10.6906 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+10.6906 	EXP 	window1: recordFrameIntervals = False
+10.8158 	EXP 	window1: recordFrameIntervals = True
+10.9384 	EXP 	Screen (0) actual frame rate measured at 90.03Hz
+10.9385 	EXP 	window1: recordFrameIntervals = False
+11.2438 	INFO 	keyboard.Keyboard is using ptb backend.
+11.2443 	INFO 	keyboard.Keyboard is using ptb backend.
+11.2444 	INFO 	keyboard.Keyboard is using ptb backend.
+11.2445 	INFO 	keyboard.Keyboard is using ptb backend.
+11.2446 	INFO 	keyboard.Keyboard is using ptb backend.
+11.2446 	EXP 	testing1: status = STARTED
+11.2859 	INFO 	Importing items...
+11.2953 	EXP 	Imported demoForm.xlsx as conditions, 4 conditions, 13 params
+11.2954 	INFO 	Using default values for the following headers: ['itemColor', 'ticks', 'tickLabels', 'font', 'responseColor', 'markerColor', 'itemColor', 'ticks', 'tickLabels', 'font', 'responseColor', 'markerColor', 'itemColor', 'ticks', 'tickLabels', 'font', 'responseColor', 'markerColor', 'itemColor', 'ticks', 'tickLabels', 'font', 'responseColor', 'markerColor']
+11.2958 	WARNING 	Form currently only formats correctly using height units. Please change the units in Experiment Settings to 'height'
+11.2958 	INFO 	Setting layout of Form: form.
+11.2959 	EXP 	Question text: What is your age?
+11.7241 	INFO 	Adding response to Form type: choice, layout: vert, options: ['18 years', '19 years', '20 years', '21 years', '22 years', '23 years', '24 years', '25 years']
+12.0363 	EXP 	Question text: What is your gender?
+12.0828 	INFO 	Adding response to Form type: choice, layout: vert, options: ['Male', 'Female', 'Other', 'Prefer not to say']
+12.3078 	EXP 	Question text: What is your highest level of education?
+12.3864 	INFO 	Adding response to Form type: choice, layout: vert, options: ['High school', "Bachelor's degree", "Master's degree", 'Doctoral degree']
+12.6605 	EXP 	Question text: What is your English proficiency level?
+12.7127 	INFO 	Adding response to Form type: choice, layout: vert, options: ['A1 - Beginner', 'A2 - Elementary', 'B1 - Intermediate', 'B2 - Upper-intermediate', 'C1 - Advanced', 'C2 - Proficient']
+13.0814 	INFO 	Layout set for Form: form.
+13.0815 	EXP 	Created form = <psychopy.visual.form.Form object at 0x000001EF946250C0>
+14.6173 	EXP 	Created likertText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Times New Roman', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='likertText', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='norm', win=Window(...), wrapWidth=1)
+15.0898 	EXP 	Created likert_slider = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-1, fillColor=None, flip=False, font='Noto Sans', granularity=1.0, labelColor=None, labelHeight=np.float64(0.036), labelWrapWidth=None, labels=tuple(...), lineColor=None, markerColor=None, name='likert_slider', opacity=None, ori=0.0, pos=array([ 0. , -0.4]), readOnly=False, self=UNKNOWN, size=array([1.5, 0.1]), startValue=None, style='rating', styleTweaks=[], ticks=array([1, 2, 3, 4, 5, 6, 7]), units='norm', win=Window(...))
+0.0327 	EXP 	unnamed Form: autoLog = True
+0.0327 	EXP 	form: name = 'form'
+0.0327 	EXP 	form: depth = -1
+0.0327 	EXP 	form: fillColor = [0.6549, 0.6549, 0.6549]
+0.0327 	EXP 	form: borderColor = [0.6549, 0.6549, 0.6549]
+0.0327 	EXP 	consentText: autoLog = True
+0.0327 	EXP 	instruction_header: autoLog = True
+0.0327 	EXP 	instruction_text: autoLog = True
+0.0327 	EXP 	warning_header: autoLog = True
+0.0327 	EXP 	warning_text: autoLog = True
+0.0327 	EXP 	textbox: autoLog = True
+0.0327 	EXP 	textbox_2: autoLog = True
+0.0327 	EXP 	likert_slider: autoLog = True
+0.0327 	EXP 	likert_slider: styleTweaks = []
+0.0327 	EXP 	likert_slider: styleTweaks = []
+0.0327 	EXP 	likert_slider: styleTweaks = []
+0.0327 	EXP 	likert_slider: styleTweaks = []
+0.0327 	EXP 	likert_slider: contrast = 1.0
+0.0327 	EXP 	likert_slider: markerPos = None
+0.0327 	EXP 	likert_slider: autoLog = True
+0.0327 	EXP 	ending_text: autoLog = True
+0.1385 	EXP 	form: autoDraw = True
+1.7364 	DATA 	Mouse: wheel shift=(0,-1), pos=(1256,1023)
+1.7830 	DATA 	Mouse: wheel shift=(0,-1), pos=(1163,972)
+2.0118 	DATA 	Mouse: wheel shift=(0,-2), pos=(1163,972)
+2.0503 	DATA 	Mouse: wheel shift=(0,-2), pos=(1163,972)
+2.2681 	DATA 	Mouse: wheel shift=(0,-1), pos=(1163,972)
+2.3199 	DATA 	Mouse: wheel shift=(0,-4), pos=(1163,972)
+2.5839 	DATA 	Mouse: wheel shift=(0,-1), pos=(1160,972)
+2.6582 	DATA 	Mouse: wheel shift=(0,-4), pos=(1160,972)
+2.9040 	DATA 	Mouse: wheel shift=(0,-2), pos=(996,925)
+2.9674 	DATA 	Mouse: wheel shift=(0,-2), pos=(801,846)
+3.1836 	DATA 	Mouse: wheel shift=(0,-1), pos=(774,825)
+3.2081 	DATA 	Mouse: wheel shift=(0,-1), pos=(762,816)
+3.2099 	DATA 	Mouse: wheel shift=(0,-1), pos=(761,816)
+3.2718 	DATA 	Mouse: wheel shift=(0,-1), pos=(761,816)
+3.4605 	DATA 	Mouse: wheel shift=(0,-1), pos=(761,813)
+3.4615 	DATA 	Mouse: wheel shift=(0,-1), pos=(752,803)
+3.5020 	DATA 	Mouse: wheel shift=(0,-1), pos=(751,803)
+3.9136 	DATA 	Mouse: wheel shift=(0,2), pos=(751,800)
+3.9430 	DATA 	Mouse: wheel shift=(0,1), pos=(751,800)
+4.2071 	DATA 	Mouse: wheel shift=(0,3), pos=(751,800)
+4.4252 	DATA 	Mouse: wheel shift=(0,2), pos=(750,799)
+4.4669 	DATA 	Mouse: wheel shift=(0,1), pos=(748,796)
+4.7329 	DATA 	Mouse: wheel shift=(0,3), pos=(747,795)
+4.9752 	DATA 	Mouse: wheel shift=(0,1), pos=(744,790)
+5.0087 	DATA 	Mouse: wheel shift=(0,2), pos=(744,790)
+5.2591 	DATA 	Mouse: wheel shift=(0,1), pos=(744,789)
+5.2826 	DATA 	Mouse: wheel shift=(0,1), pos=(742,789)
+5.3288 	DATA 	Mouse: wheel shift=(0,1), pos=(741,786)
+5.5473 	DATA 	Mouse: wheel shift=(0,1), pos=(738,783)
+5.5868 	DATA 	Mouse: wheel shift=(0,1), pos=(738,783)
+5.6218 	DATA 	Mouse: wheel shift=(0,1), pos=(738,783)
+7.2076 	DATA 	Mouse: Left button down, pos=(684,1020)
+7.3740 	DATA 	Mouse:  Left button up, pos=(684,1009)
+12.6987 	DATA 	Keypress: lctrl
+12.9511 	DATA 	Keypress: q
+13.5882 	INFO 	saved data to C:\SPPA\CMKL\Animation_Project\Summer\Experiment_Workflows\Testing1\data\759863_testing1_2026-10-06_20h00.45.042.psydat
+13.5904 	INFO 	saved data to 'C:\\SPPA\\CMKL\\Animation_Project\\Summer\\Experiment_Workflows\\Testing1\\data\\759863_testing1_2026-10-06_20h00.45.042.csv'
+13.6179 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+13.6906 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+13.6906 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+13.6906 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+13.6906 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.

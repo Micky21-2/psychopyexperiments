@@ -1281,23 +1281,23 @@
       <FormComponent name="form" plugin="None">
         <Param val="rows" valType="str" updates="constant" name="Data Format"/>
         <Param val="Noto Sans" valType="str" updates="constant" name="Font"/>
-        <Param val="0.05" valType="num" updates="constant" name="Item Padding"/>
+        <Param val="0.1" valType="num" updates="constant" name="Item Padding"/>
         <Param val="demoForm.xlsx" valType="file" updates="constant" name="Items"/>
         <Param val="False" valType="bool" updates="constant" name="Randomize"/>
         <Param val="custom..." valType="str" updates="constant" name="Style"/>
         <Param val="0.03" valType="num" updates="constant" name="Text Height"/>
-        <Param val="0.0000, 0.0000, 0.0000" valType="color" updates="constant" name="borderColor"/>
+        <Param val="0.6549, 0.6549, 0.6549" valType="color" updates="constant" name="borderColor"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="0.0000, 0.0000, 0.0000" valType="color" updates="constant" name="fillColor"/>
-        <Param val="white" valType="color" updates="constant" name="itemColor"/>
-        <Param val="red" valType="color" updates="constant" name="markerColor"/>
+        <Param val="0.6549, 0.6549, 0.6549" valType="color" updates="constant" name="fillColor"/>
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="itemColor"/>
+        <Param val="1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="markerColor"/>
         <Param val="form" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
-        <Param val="white" valType="color" updates="constant" name="responseColor"/>
+        <Param val="-1.0000, -1.0000, -1.0000" valType="color" updates="constant" name="responseColor"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="(1.6, 0.7)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
