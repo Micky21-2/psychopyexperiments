@@ -1,0 +1,179 @@
+6.5205 	INFO 	Loaded monitor calibration from ['2026_09_03 20:22']
+6.5302 	WARNING 	User requested fullscreen with size [1152  720], but screen is actually [2880, 1800]. Using actual size
+6.6404 	INFO 	Using renderer 'Intel(R) Arc(TM) Graphics' for graphics
+6.6405 	INFO 	OpenGL version supported by driver is 4..
+6.6652 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000019231D25780>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000019231D257E0>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color='d3d3d3', colorSpace='hex', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000019231DD0D30>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([2880, 1800]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+6.6653 	EXP 	window1: backgroundImage = ''
+6.6653 	EXP 	window1: backgroundFit = 'none'
+7.0255 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+7.0255 	EXP 	window1: recordFrameIntervals = False
+7.1402 	EXP 	window1: recordFrameIntervals = True
+7.2613 	EXP 	Screen (0) actual frame rate measured at 90.43Hz
+7.2614 	EXP 	window1: recordFrameIntervals = False
+7.4558 	INFO 	keyboard.Keyboard is using ptb backend.
+7.4560 	INFO 	keyboard.Keyboard is using ptb backend.
+7.4561 	INFO 	keyboard.Keyboard is using ptb backend.
+7.4561 	INFO 	keyboard.Keyboard is using ptb backend.
+7.4561 	INFO 	keyboard.Keyboard is using ptb backend.
+7.4562 	EXP 	testing1: status = STARTED
+7.5477 	EXP 	Created boxA = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-4.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='boxA', opacity=1, ori=0.0, pos=array([0. , 0.1]), size=array([1.2 , 0.12]), units='norm', vertices=ndarray(...), win=Window(...))
+7.5565 	EXP 	Created boxB = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-6.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='boxB', opacity=1, ori=0.0, pos=array([ 0.  , -0.05]), size=array([1.2 , 0.12]), units='norm', vertices=ndarray(...), win=Window(...))
+7.5644 	EXP 	Created boxC = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-8.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='boxC', opacity=1, ori=0.0, pos=array([ 0. , -0.2]), size=array([1.2 , 0.12]), units='norm', vertices=ndarray(...), win=Window(...))
+7.5729 	EXP 	Created boxD = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-10.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='boxD', opacity=1, ori=0.0, pos=array([ 0.  , -0.35]), size=array([1.2 , 0.12]), units='norm', vertices=ndarray(...), win=Window(...))
+7.5802 	INFO 	Importing items...
+7.5876 	EXP 	Imported quizB.xlsx as conditions, 2 conditions, 13 params
+7.5876 	INFO 	Using default values for the following headers: ['itemColor', 'ticks', 'tickLabels', 'font', 'responseColor', 'markerColor', 'itemColor', 'ticks', 'tickLabels', 'font', 'responseColor', 'markerColor']
+7.5879 	WARNING 	Form currently only formats correctly using height units. Please change the units in Experiment Settings to 'height'
+7.5879 	INFO 	Setting layout of Form: form3.
+7.5879 	EXP 	Question text: This is possessed cat video.
+7.7870 	INFO 	Adding response to Form type: choice, layout: vert, options: ['Yes', 'No']
+7.8469 	EXP 	Question text: This is jack jet video.
+7.8795 	INFO 	Adding response to Form type: choice, layout: vert, options: ['Yes', 'No']
+7.9100 	INFO 	Layout set for Form: form3.
+7.9100 	EXP 	Created form3 = <psychopy.visual.form.Form object at 0x0000019239C6A4A0>
+7.9176 	INFO 	Importing items...
+7.9251 	EXP 	Imported quizC.xlsx as conditions, 2 conditions, 13 params
+7.9251 	INFO 	Using default values for the following headers: ['itemColor', 'ticks', 'tickLabels', 'font', 'responseColor', 'markerColor', 'itemColor', 'ticks', 'tickLabels', 'font', 'responseColor', 'markerColor']
+7.9254 	WARNING 	Form currently only formats correctly using height units. Please change the units in Experiment Settings to 'height'
+7.9254 	INFO 	Setting layout of Form: form4.
+7.9254 	EXP 	Question text: This is creepy and scary cat video.
+7.9441 	INFO 	Adding response to Form type: choice, layout: vert, options: ['Yes', 'No']
+7.9692 	EXP 	Question text: This is cattransition video.
+7.9753 	INFO 	Adding response to Form type: choice, layout: vert, options: ['Yes', 'No']
+8.0050 	INFO 	Layout set for Form: form4.
+8.0050 	EXP 	Created form4 = <psychopy.visual.form.Form object at 0x00000192495F1A80>
+8.6368 	EXP 	Created likertText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Times New Roman', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='likertText', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='norm', win=Window(...), wrapWidth=1)
+8.9756 	EXP 	Created likert_slider = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-1, fillColor=None, flip=False, font='Noto Sans', granularity=1.0, labelColor=None, labelHeight=np.float64(0.036), labelWrapWidth=None, labels=tuple(...), lineColor=None, markerColor=None, name='likert_slider', opacity=None, ori=0.0, pos=array([ 0. , -0.4]), readOnly=False, self=UNKNOWN, size=array([1.5, 0.1]), startValue=None, style='rating', styleTweaks=[], ticks=array([1, 2, 3, 4, 5, 6, 7]), units='norm', win=Window(...))
+8.9907 	INFO 	Importing items...
+8.9964 	EXP 	Imported demoForm.xlsx as conditions, 4 conditions, 13 params
+8.9964 	INFO 	Using default values for the following headers: ['itemColor', 'ticks', 'tickLabels', 'font', 'responseColor', 'markerColor', 'itemColor', 'ticks', 'tickLabels', 'font', 'responseColor', 'markerColor', 'itemColor', 'ticks', 'tickLabels', 'font', 'responseColor', 'markerColor', 'itemColor', 'ticks', 'tickLabels', 'font', 'responseColor', 'markerColor']
+8.9967 	WARNING 	Form currently only formats correctly using height units. Please change the units in Experiment Settings to 'height'
+8.9967 	INFO 	Setting layout of Form: form.
+8.9967 	EXP 	Question text: What is your age?
+9.0538 	INFO 	Adding response to Form type: choice, layout: vert, options: ['18 years', '19 years', '20 years', '21 years', '22 years', '23 years', '24 years', '25 years']
+9.2312 	EXP 	Question text: What is your gender?
+9.2382 	INFO 	Adding response to Form type: choice, layout: vert, options: ['Male', 'Female', 'Other', 'Prefer not to say']
+9.3638 	EXP 	Question text: What is your highest level of education?
+9.3719 	INFO 	Adding response to Form type: choice, layout: vert, options: ['High school', "Bachelor's degree", "Master's degree", 'Doctoral degree']
+9.4664 	EXP 	Question text: What is your English proficiency level?
+9.4926 	INFO 	Adding response to Form type: choice, layout: vert, options: ['A1 - Beginner', 'A2 - Elementary', 'B1 - Intermediate', 'B2 - Upper-intermediate', 'C1 - Advanced', 'C2 - Proficient']
+9.6356 	INFO 	Layout set for Form: form.
+9.6356 	EXP 	Created form = <psychopy.visual.form.Form object at 0x000001927FD275B0>
+0.0318 	EXP 	movie: autoLog = True
+0.0318 	EXP 	questionAText: autoLog = True
+0.0318 	EXP 	choiceA: autoLog = True
+0.0318 	EXP 	choiceB: autoLog = True
+0.0318 	EXP 	choiceC: autoLog = True
+0.0318 	EXP 	choiceD: autoLog = True
+0.0318 	EXP 	unnamed Form: autoLog = True
+0.0318 	EXP 	form3: name = 'form3'
+0.0318 	EXP 	form3: depth = -2
+0.0318 	EXP 	form3: fillColor = [0.0039, 0.0039, 0.0039]
+0.0318 	EXP 	form3: borderColor = [0.0039, 0.0039, 0.0039]
+0.0318 	EXP 	unnamed Form: autoLog = True
+0.0318 	EXP 	form4: name = 'form4'
+0.0318 	EXP 	form4: depth = -2
+0.0318 	EXP 	form4: fillColor = [0.6549, 0.6549, 0.6549]
+0.0318 	EXP 	form4: borderColor = [0.6549, 0.6549, 0.6549]
+0.0318 	EXP 	consentText: autoLog = True
+0.0318 	EXP 	instruction_header: autoLog = True
+0.0318 	EXP 	instruction_text: autoLog = True
+0.0318 	EXP 	warning_header: autoLog = True
+0.0318 	EXP 	warning_text: autoLog = True
+0.0318 	EXP 	textbox: autoLog = True
+0.0318 	EXP 	textbox_2: autoLog = True
+0.0318 	EXP 	likert_slider: autoLog = True
+0.0318 	EXP 	likert_slider: styleTweaks = []
+0.0318 	EXP 	likert_slider: styleTweaks = []
+0.0318 	EXP 	likert_slider: styleTweaks = []
+0.0318 	EXP 	likert_slider: styleTweaks = []
+0.0318 	EXP 	likert_slider: contrast = 1.0
+0.0318 	EXP 	likert_slider: markerPos = None
+0.0318 	EXP 	likert_slider: autoLog = True
+0.0318 	EXP 	unnamed Form: autoLog = True
+0.0318 	EXP 	form: name = 'form'
+0.0318 	EXP 	form: depth = -1
+0.0318 	EXP 	form: fillColor = [0.6549, 0.6549, 0.6549]
+0.0318 	EXP 	form: borderColor = [0.6549, 0.6549, 0.6549]
+0.0318 	EXP 	ending_text: autoLog = True
+0.1956 	EXP 	movie: autoDraw = True
+1.6541 	DATA 	Mouse: Left button down, pos=(2612,192)
+1.7916 	EXP 	Imported questionA.xlsx as conditions, 3 conditions, 7 params
+1.7921 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'questionID': 'Q1', 'question': 'What is the answer for 2+2?', 'A': 3, 'B': 6, 'C': 4, 'D': 5, 'correct': 'C', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+1.7937 	DATA 	Mouse:  Left button up, pos=(2612,192)
+1.8432 	EXP 	movie: autoDraw = False
+1.8432 	EXP 	questionAText: autoDraw = True
+1.8432 	EXP 	boxA: autoDraw = True
+1.8432 	EXP 	choiceA: autoDraw = True
+1.8432 	EXP 	boxB: autoDraw = True
+1.8432 	EXP 	choiceB: autoDraw = True
+1.8432 	EXP 	boxC: autoDraw = True
+1.8432 	EXP 	choiceC: autoDraw = True
+1.8432 	EXP 	boxD: autoDraw = True
+1.8432 	EXP 	choiceD: autoDraw = True
+6.0926 	DATA 	Mouse: wheel shift=(0,-1), pos=(1964,568)
+6.9646 	DATA 	Mouse: Left button down, pos=(1722,833)
+6.9654 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'questionID': 'Q2', 'question': 'What is the answer for 8 - 6?', 'A': 2, 'B': 1, 'C': 5, 'D': -2, 'correct': 'A', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+6.9878 	EXP 	questionAText: autoDraw = False
+6.9878 	EXP 	boxA: autoDraw = False
+6.9878 	EXP 	choiceA: autoDraw = False
+6.9878 	EXP 	boxB: autoDraw = False
+6.9878 	EXP 	choiceB: autoDraw = False
+6.9878 	EXP 	boxC: autoDraw = False
+6.9878 	EXP 	choiceC: autoDraw = False
+6.9878 	EXP 	boxD: autoDraw = False
+6.9878 	EXP 	choiceD: autoDraw = False
+6.9878 	EXP 	questionAText: autoDraw = True
+6.9878 	EXP 	boxA: autoDraw = True
+6.9878 	EXP 	choiceA: autoDraw = True
+6.9878 	EXP 	boxB: autoDraw = True
+6.9878 	EXP 	choiceB: autoDraw = True
+6.9878 	EXP 	boxC: autoDraw = True
+6.9878 	EXP 	choiceC: autoDraw = True
+6.9878 	EXP 	boxD: autoDraw = True
+6.9878 	EXP 	choiceD: autoDraw = True
+7.0774 	DATA 	Mouse:  Left button up, pos=(1722,833)
+8.2585 	DATA 	Mouse: Left button down, pos=(1673,1025)
+8.2647 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'questionID': 'Q3', 'question': 'What is the answer for 43 x 2?', 'A': 68, 'B': 86, 'C': 43, 'D': 90, 'correct': 'B', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+8.2826 	EXP 	questionAText: autoDraw = False
+8.2826 	EXP 	boxA: autoDraw = False
+8.2826 	EXP 	choiceA: autoDraw = False
+8.2826 	EXP 	boxB: autoDraw = False
+8.2826 	EXP 	choiceB: autoDraw = False
+8.2826 	EXP 	boxC: autoDraw = False
+8.2826 	EXP 	choiceC: autoDraw = False
+8.2826 	EXP 	boxD: autoDraw = False
+8.2826 	EXP 	choiceD: autoDraw = False
+8.2826 	EXP 	questionAText: autoDraw = True
+8.2826 	EXP 	boxA: autoDraw = True
+8.2826 	EXP 	choiceA: autoDraw = True
+8.2826 	EXP 	boxB: autoDraw = True
+8.2826 	EXP 	choiceB: autoDraw = True
+8.2826 	EXP 	boxC: autoDraw = True
+8.2826 	EXP 	choiceC: autoDraw = True
+8.2826 	EXP 	boxD: autoDraw = True
+8.2826 	EXP 	choiceD: autoDraw = True
+8.3619 	DATA 	Mouse:  Left button up, pos=(1673,1025)
+9.6091 	DATA 	Mouse: Left button down, pos=(1525,586)
+9.6258 	EXP 	questionAText: autoDraw = False
+9.6258 	EXP 	boxA: autoDraw = False
+9.6258 	EXP 	choiceA: autoDraw = False
+9.6258 	EXP 	boxB: autoDraw = False
+9.6258 	EXP 	choiceB: autoDraw = False
+9.6258 	EXP 	boxC: autoDraw = False
+9.6258 	EXP 	choiceC: autoDraw = False
+9.6258 	EXP 	boxD: autoDraw = False
+9.6258 	EXP 	choiceD: autoDraw = False
+9.6258 	EXP 	form3: autoDraw = False
+9.6258 	EXP 	form4: autoDraw = False
+9.6258 	EXP 	consentText: autoDraw = True
+9.7208 	DATA 	Mouse:  Left button up, pos=(1525,586)
+13.6536 	DATA 	Keypress: lctrl
+13.7978 	DATA 	Keypress: q
+14.0194 	INFO 	saved data to C:\SPPA\CMKL\Animation_Project\Summer\Experiment_Workflows\Testing1\data\1_testing1_2026-10-08_20h25.17.795.psydat
+14.0280 	INFO 	saved data to 'C:\\SPPA\\CMKL\\Animation_Project\\Summer\\Experiment_Workflows\\Testing1\\data\\1_testing1_2026-10-08_20h25.17.795.csv'
+14.0358 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+14.0560 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+14.0561 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+14.0561 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+14.0561 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.

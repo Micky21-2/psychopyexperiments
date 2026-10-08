@@ -1,0 +1,25 @@
+5.7199 	INFO 	Loaded monitor calibration from ['2026_09_03 20:22']
+5.7337 	WARNING 	User requested fullscreen with size [1152  720], but screen is actually [2880, 1800]. Using actual size
+5.8864 	INFO 	Using renderer 'Intel(R) Arc(TM) Graphics' for graphics
+5.8865 	INFO 	OpenGL version supported by driver is 4..
+5.9630 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002945866A230>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000002945866A290>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color='d3d3d3', colorSpace='hex', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000002945879D330>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([2880, 1800]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+5.9632 	EXP 	window1: backgroundImage = ''
+5.9632 	EXP 	window1: backgroundFit = 'none'
+6.3186 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+6.3187 	EXP 	window1: recordFrameIntervals = False
+6.4422 	EXP 	window1: recordFrameIntervals = True
+6.5646 	EXP 	Screen (0) actual frame rate measured at 90.34Hz
+6.5647 	EXP 	window1: recordFrameIntervals = False
+6.7533 	INFO 	keyboard.Keyboard is using ptb backend.
+6.7535 	INFO 	keyboard.Keyboard is using ptb backend.
+6.7536 	INFO 	keyboard.Keyboard is using ptb backend.
+6.7536 	INFO 	keyboard.Keyboard is using ptb backend.
+6.7536 	INFO 	keyboard.Keyboard is using ptb backend.
+6.7536 	EXP 	testing1: status = STARTED
+6.8225 	INFO 	saved data to C:\SPPA\CMKL\Animation_Project\Summer\Experiment_Workflows\Testing1\data\537354_testing1_2026-10-08_21h38.32.662.psydat
+6.8298 	INFO 	saved data to 'C:\\SPPA\\CMKL\\Animation_Project\\Summer\\Experiment_Workflows\\Testing1\\data\\537354_testing1_2026-10-08_21h38.32.662.csv'
+6.8411 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+6.8553 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+6.8553 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+6.8553 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+6.8554 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.

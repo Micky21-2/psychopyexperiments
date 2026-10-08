@@ -1,0 +1,160 @@
+7.8218 	INFO 	Loaded monitor calibration from ['2026_09_03 20:22']
+7.8339 	WARNING 	User requested fullscreen with size [1152  720], but screen is actually [2880, 1800]. Using actual size
+7.9583 	INFO 	Using renderer 'Intel(R) Arc(TM) Graphics' for graphics
+7.9583 	INFO 	OpenGL version supported by driver is 4..
+8.0332 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001F9A5A81ED0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001F9A5A81F30>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color='d3d3d3', colorSpace='hex', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001F9A5B714E0>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([2880, 1800]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+8.0334 	EXP 	window1: backgroundImage = ''
+8.0334 	EXP 	window1: backgroundFit = 'none'
+8.3866 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+8.3866 	EXP 	window1: recordFrameIntervals = False
+8.5182 	EXP 	window1: recordFrameIntervals = True
+8.6411 	EXP 	Screen (0) actual frame rate measured at 89.84Hz
+8.6413 	EXP 	window1: recordFrameIntervals = False
+8.8305 	INFO 	keyboard.Keyboard is using ptb backend.
+8.8307 	INFO 	keyboard.Keyboard is using ptb backend.
+8.8307 	INFO 	keyboard.Keyboard is using ptb backend.
+8.8307 	INFO 	keyboard.Keyboard is using ptb backend.
+8.8308 	INFO 	keyboard.Keyboard is using ptb backend.
+8.8308 	EXP 	testing1: status = STARTED
+8.9231 	EXP 	Created boxA = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-4.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='boxA', opacity=1, ori=0.0, pos=array([0. , 0.1]), size=array([1.2 , 0.12]), units='norm', vertices=ndarray(...), win=Window(...))
+8.9313 	EXP 	Created boxB = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-6.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='boxB', opacity=1, ori=0.0, pos=array([ 0.  , -0.05]), size=array([1.2 , 0.12]), units='norm', vertices=ndarray(...), win=Window(...))
+8.9393 	EXP 	Created boxC = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-8.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='boxC', opacity=1, ori=0.0, pos=array([ 0. , -0.2]), size=array([1.2 , 0.12]), units='norm', vertices=ndarray(...), win=Window(...))
+8.9473 	EXP 	Created boxD = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-10.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='boxD', opacity=1, ori=0.0, pos=array([ 0.  , -0.35]), size=array([1.2 , 0.12]), units='norm', vertices=ndarray(...), win=Window(...))
+8.9715 	EXP 	Created boxA_2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-4.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='boxA_2', opacity=1, ori=0.0, pos=array([0. , 0.1]), size=array([1.2 , 0.12]), units='norm', vertices=ndarray(...), win=Window(...))
+8.9787 	EXP 	Created boxB_2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-6.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='boxB_2', opacity=1, ori=0.0, pos=array([ 0.  , -0.05]), size=array([1.2 , 0.12]), units='norm', vertices=ndarray(...), win=Window(...))
+8.9878 	EXP 	Created boxC_2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-8.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='boxC_2', opacity=1, ori=0.0, pos=array([ 0. , -0.2]), size=array([1.2 , 0.12]), units='norm', vertices=ndarray(...), win=Window(...))
+8.9960 	EXP 	Created boxD_2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-10.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='boxD_2', opacity=1, ori=0.0, pos=array([ 0.  , -0.35]), size=array([1.2 , 0.12]), units='norm', vertices=ndarray(...), win=Window(...))
+9.0203 	EXP 	Created boxA_3 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-4.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='boxA_3', opacity=1, ori=0.0, pos=array([0. , 0.1]), size=array([1.2 , 0.12]), units='norm', vertices=ndarray(...), win=Window(...))
+9.0285 	EXP 	Created boxB_3 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-6.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='boxB_3', opacity=1, ori=0.0, pos=array([ 0.  , -0.05]), size=array([1.2 , 0.12]), units='norm', vertices=ndarray(...), win=Window(...))
+9.0364 	EXP 	Created boxC_3 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-8.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='boxC_3', opacity=1, ori=0.0, pos=array([ 0. , -0.2]), size=array([1.2 , 0.12]), units='norm', vertices=ndarray(...), win=Window(...))
+9.0448 	EXP 	Created boxD_3 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-10.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='boxD_3', opacity=1, ori=0.0, pos=array([ 0.  , -0.35]), size=array([1.2 , 0.12]), units='norm', vertices=ndarray(...), win=Window(...))
+9.7025 	EXP 	Created likertText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Times New Roman', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='likertText', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='norm', win=Window(...), wrapWidth=1)
+10.0764 	EXP 	Created likert_slider = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-1, fillColor=None, flip=False, font='Noto Sans', granularity=1.0, labelColor=None, labelHeight=np.float64(0.036), labelWrapWidth=None, labels=tuple(...), lineColor=None, markerColor=None, name='likert_slider', opacity=None, ori=0.0, pos=array([ 0. , -0.4]), readOnly=False, self=UNKNOWN, size=array([1.5, 0.1]), startValue=None, style='rating', styleTweaks=[], ticks=array([1, 2, 3, 4, 5, 6, 7]), units='norm', win=Window(...))
+10.0928 	INFO 	Importing items...
+10.0992 	EXP 	Imported demoForm.xlsx as conditions, 4 conditions, 13 params
+10.0993 	INFO 	Using default values for the following headers: ['itemColor', 'ticks', 'tickLabels', 'font', 'responseColor', 'markerColor', 'itemColor', 'ticks', 'tickLabels', 'font', 'responseColor', 'markerColor', 'itemColor', 'ticks', 'tickLabels', 'font', 'responseColor', 'markerColor', 'itemColor', 'ticks', 'tickLabels', 'font', 'responseColor', 'markerColor']
+10.0995 	WARNING 	Form currently only formats correctly using height units. Please change the units in Experiment Settings to 'height'
+10.0995 	INFO 	Setting layout of Form: form.
+10.0995 	EXP 	Question text: What is your age?
+10.3166 	INFO 	Adding response to Form type: choice, layout: vert, options: ['18 years', '19 years', '20 years', '21 years', '22 years', '23 years', '24 years', '25 years']
+10.5374 	EXP 	Question text: What is your gender?
+10.5776 	INFO 	Adding response to Form type: choice, layout: vert, options: ['Male', 'Female', 'Other', 'Prefer not to say']
+10.7416 	EXP 	Question text: What is your highest level of education?
+10.7834 	INFO 	Adding response to Form type: choice, layout: vert, options: ['High school', "Bachelor's degree", "Master's degree", 'Doctoral degree']
+10.8991 	EXP 	Question text: What is your English proficiency level?
+10.9242 	INFO 	Adding response to Form type: choice, layout: vert, options: ['A1 - Beginner', 'A2 - Elementary', 'B1 - Intermediate', 'B2 - Upper-intermediate', 'C1 - Advanced', 'C2 - Proficient']
+11.0774 	INFO 	Layout set for Form: form.
+11.0774 	EXP 	Created form = <psychopy.visual.form.Form object at 0x000001F9FFBA1F90>
+0.0297 	EXP 	movie: autoLog = True
+0.0297 	EXP 	questionAText: autoLog = True
+0.0297 	EXP 	choiceA: autoLog = True
+0.0297 	EXP 	choiceB: autoLog = True
+0.0297 	EXP 	choiceC: autoLog = True
+0.0297 	EXP 	choiceD: autoLog = True
+0.0297 	EXP 	questionBText: autoLog = True
+0.0297 	EXP 	choiceA_2: autoLog = True
+0.0297 	EXP 	choiceB_2: autoLog = True
+0.0297 	EXP 	choiceC_2: autoLog = True
+0.0297 	EXP 	choiceD_2: autoLog = True
+0.0297 	EXP 	questionCText: autoLog = True
+0.0297 	EXP 	choiceA_3: autoLog = True
+0.0297 	EXP 	choiceB_3: autoLog = True
+0.0297 	EXP 	choiceC_3: autoLog = True
+0.0297 	EXP 	choiceD_3: autoLog = True
+0.0297 	EXP 	consentText: autoLog = True
+0.0297 	EXP 	instruction_header: autoLog = True
+0.0297 	EXP 	instruction_text: autoLog = True
+0.0297 	EXP 	warning_header: autoLog = True
+0.0297 	EXP 	warning_text: autoLog = True
+0.0297 	EXP 	textbox: autoLog = True
+0.0297 	EXP 	textbox_2: autoLog = True
+0.0297 	EXP 	likert_slider: autoLog = True
+0.0297 	EXP 	likert_slider: styleTweaks = []
+0.0297 	EXP 	likert_slider: styleTweaks = []
+0.0297 	EXP 	likert_slider: styleTweaks = []
+0.0297 	EXP 	likert_slider: styleTweaks = []
+0.0297 	EXP 	likert_slider: contrast = 1.0
+0.0297 	EXP 	likert_slider: markerPos = None
+0.0297 	EXP 	likert_slider: autoLog = True
+0.0297 	EXP 	unnamed Form: autoLog = True
+0.0297 	EXP 	form: name = 'form'
+0.0297 	EXP 	form: depth = -1
+0.0297 	EXP 	form: fillColor = [0.6549, 0.6549, 0.6549]
+0.0297 	EXP 	form: borderColor = [0.6549, 0.6549, 0.6549]
+0.0297 	EXP 	ending_text: autoLog = True
+0.1923 	EXP 	movie: autoDraw = True
+1.4556 	DATA 	Mouse: Left button down, pos=(2497,286)
+1.6184 	EXP 	Imported questionA.xlsx as conditions, 3 conditions, 7 params
+1.6188 	EXP 	New trial (rep=0, index=0): <Trial 0 (0 in rep 0) data={'questionID': 'Q1', 'question': 'What is the answer for 2+2?', 'A': 3, 'B': 6, 'C': 4, 'D': 5, 'correct': 'C', 'thisN': 0, 'thisTrialN': 0, 'thisRepN': 0}>
+1.6208 	DATA 	Mouse:  Left button up, pos=(2497,286)
+1.6810 	EXP 	movie: autoDraw = False
+1.6810 	EXP 	questionAText: autoDraw = True
+1.6810 	EXP 	boxA: autoDraw = True
+1.6810 	EXP 	choiceA: autoDraw = True
+1.6810 	EXP 	boxB: autoDraw = True
+1.6810 	EXP 	choiceB: autoDraw = True
+1.6810 	EXP 	boxC: autoDraw = True
+1.6810 	EXP 	choiceC: autoDraw = True
+1.6810 	EXP 	boxD: autoDraw = True
+1.6810 	EXP 	choiceD: autoDraw = True
+2.9705 	DATA 	Mouse: Left button down, pos=(1682,756)
+2.9779 	EXP 	New trial (rep=0, index=1): <Trial 1 (1 in rep 0) data={'questionID': 'Q2', 'question': 'What is the answer for 8 - 6?', 'A': 2, 'B': 1, 'C': 5, 'D': -2, 'correct': 'A', 'thisN': 1, 'thisTrialN': 1, 'thisRepN': 0}>
+2.9849 	EXP 	New trial (rep=0, index=2): <Trial 2 (2 in rep 0) data={'questionID': 'Q3', 'question': 'What is the answer for 43 x 2?', 'A': 68, 'B': 86, 'C': 43, 'D': 90, 'correct': 'B', 'thisN': 2, 'thisTrialN': 2, 'thisRepN': 0}>
+2.9963 	EXP 	Imported questionB.xlsx as conditions, 3 conditions, 7 params
+3.0002 	EXP 	Imported questionC.xlsx as conditions, 3 conditions, 7 params
+3.0208 	EXP 	questionAText: autoDraw = False
+3.0208 	EXP 	boxA: autoDraw = False
+3.0208 	EXP 	choiceA: autoDraw = False
+3.0208 	EXP 	boxB: autoDraw = False
+3.0208 	EXP 	choiceB: autoDraw = False
+3.0208 	EXP 	boxC: autoDraw = False
+3.0208 	EXP 	choiceC: autoDraw = False
+3.0208 	EXP 	boxD: autoDraw = False
+3.0208 	EXP 	choiceD: autoDraw = False
+3.0208 	EXP 	questionAText: autoDraw = True
+3.0208 	EXP 	boxA: autoDraw = True
+3.0208 	EXP 	choiceA: autoDraw = True
+3.0208 	EXP 	boxB: autoDraw = True
+3.0208 	EXP 	choiceB: autoDraw = True
+3.0208 	EXP 	boxC: autoDraw = True
+3.0208 	EXP 	choiceC: autoDraw = True
+3.0208 	EXP 	boxD: autoDraw = True
+3.0208 	EXP 	choiceD: autoDraw = True
+3.0208 	EXP 	questionAText: autoDraw = False
+3.0208 	EXP 	boxA: autoDraw = False
+3.0208 	EXP 	choiceA: autoDraw = False
+3.0208 	EXP 	boxB: autoDraw = False
+3.0208 	EXP 	choiceB: autoDraw = False
+3.0208 	EXP 	boxC: autoDraw = False
+3.0208 	EXP 	choiceC: autoDraw = False
+3.0208 	EXP 	boxD: autoDraw = False
+3.0208 	EXP 	choiceD: autoDraw = False
+3.0208 	EXP 	questionAText: autoDraw = True
+3.0208 	EXP 	boxA: autoDraw = True
+3.0208 	EXP 	choiceA: autoDraw = True
+3.0208 	EXP 	boxB: autoDraw = True
+3.0208 	EXP 	choiceB: autoDraw = True
+3.0208 	EXP 	boxC: autoDraw = True
+3.0208 	EXP 	choiceC: autoDraw = True
+3.0208 	EXP 	boxD: autoDraw = True
+3.0208 	EXP 	choiceD: autoDraw = True
+3.0208 	EXP 	questionAText: autoDraw = False
+3.0208 	EXP 	boxA: autoDraw = False
+3.0208 	EXP 	choiceA: autoDraw = False
+3.0208 	EXP 	boxB: autoDraw = False
+3.0208 	EXP 	choiceB: autoDraw = False
+3.0208 	EXP 	boxC: autoDraw = False
+3.0208 	EXP 	choiceC: autoDraw = False
+3.0208 	EXP 	boxD: autoDraw = False
+3.0208 	EXP 	choiceD: autoDraw = False
+3.0208 	EXP 	consentText: autoDraw = True
+3.0680 	DATA 	Mouse:  Left button up, pos=(1682,756)
+7.2071 	DATA 	Keypress: lctrl
+7.3700 	DATA 	Keypress: q
+7.6151 	INFO 	saved data to C:\SPPA\CMKL\Animation_Project\Summer\Experiment_Workflows\Testing1\data\20_testing1_2026-10-08_21h14.40.695.psydat
+7.6217 	INFO 	saved data to 'C:\\SPPA\\CMKL\\Animation_Project\\Summer\\Experiment_Workflows\\Testing1\\data\\20_testing1_2026-10-08_21h14.40.695.csv'
+7.6440 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+7.7422 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+7.7423 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+7.7423 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+7.7423 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.

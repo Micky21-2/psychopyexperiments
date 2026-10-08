@@ -1,0 +1,154 @@
+7.3186 	INFO 	Loaded monitor calibration from ['2026_09_03 20:22']
+7.3309 	WARNING 	User requested fullscreen with size [1152  720], but screen is actually [2880, 1800]. Using actual size
+7.4303 	INFO 	Using renderer 'Intel(R) Arc(TM) Graphics' for graphics
+7.4303 	INFO 	OpenGL version supported by driver is 4..
+7.4575 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=True, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000029C43FA9780>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000029C43FA97E0>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color='d3d3d3', colorSpace='hex', depthBits=8, fullscr=True, gamma=None, gammaErrorPolicy='raise', infoMsg=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000029C44064DF0>, multiSample=False, name='window1', numSamples=2, pos=[np.float64(0.0), np.float64(0.0)], screen=0, size=array([2880, 1800]), stencilBits=8, stereo=False, title='PsychoPy', units='norm', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+7.4576 	EXP 	window1: backgroundImage = ''
+7.4576 	EXP 	window1: backgroundFit = 'none'
+7.7708 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+7.7709 	EXP 	window1: recordFrameIntervals = False
+7.8847 	EXP 	window1: recordFrameIntervals = True
+8.0077 	EXP 	Screen (0) actual frame rate measured at 89.56Hz
+8.0079 	EXP 	window1: recordFrameIntervals = False
+8.1940 	INFO 	keyboard.Keyboard is using ptb backend.
+8.1942 	INFO 	keyboard.Keyboard is using ptb backend.
+8.1942 	INFO 	keyboard.Keyboard is using ptb backend.
+8.1943 	INFO 	keyboard.Keyboard is using ptb backend.
+8.1943 	INFO 	keyboard.Keyboard is using ptb backend.
+8.1943 	EXP 	testing1: status = STARTED
+8.2550 	INFO 	Importing items...
+8.2622 	EXP 	Imported quizA.xlsx as conditions, 2 conditions, 13 params
+8.2622 	INFO 	Using default values for the following headers: ['itemColor', 'ticks', 'tickLabels', 'font', 'responseColor', 'markerColor', 'itemColor', 'ticks', 'tickLabels', 'font', 'responseColor', 'markerColor']
+8.2625 	WARNING 	Form currently only formats correctly using height units. Please change the units in Experiment Settings to 'height'
+8.2626 	INFO 	Setting layout of Form: form_2.
+8.2626 	EXP 	Question text: This is 3 with jump video.
+8.4830 	INFO 	Adding response to Form type: choice, layout: vert, options: ['Yes', 'No']
+8.5410 	EXP 	Question text: This is  sigmacatchienese video.
+8.5933 	INFO 	Adding response to Form type: choice, layout: vert, options: ['Yes', 'No']
+8.6212 	INFO 	Layout set for Form: form_2.
+8.6212 	EXP 	Created form_2 = <psychopy.visual.form.Form object at 0x0000029C4755AA70>
+8.6284 	INFO 	Importing items...
+8.6374 	EXP 	Imported quizB.xlsx as conditions, 2 conditions, 13 params
+8.6374 	INFO 	Using default values for the following headers: ['itemColor', 'ticks', 'tickLabels', 'font', 'responseColor', 'markerColor', 'itemColor', 'ticks', 'tickLabels', 'font', 'responseColor', 'markerColor']
+8.6377 	WARNING 	Form currently only formats correctly using height units. Please change the units in Experiment Settings to 'height'
+8.6377 	INFO 	Setting layout of Form: form3.
+8.6377 	EXP 	Question text: This is possessed cat video.
+8.6445 	INFO 	Adding response to Form type: choice, layout: vert, options: ['Yes', 'No']
+8.6681 	EXP 	Question text: This is jack jet video.
+8.6887 	INFO 	Adding response to Form type: choice, layout: vert, options: ['Yes', 'No']
+8.7176 	INFO 	Layout set for Form: form3.
+8.7176 	EXP 	Created form3 = <psychopy.visual.form.Form object at 0x0000029C475BA6E0>
+8.7176 	INFO 	Importing items...
+8.7246 	EXP 	Imported quizC.xlsx as conditions, 2 conditions, 13 params
+8.7246 	INFO 	Using default values for the following headers: ['itemColor', 'ticks', 'tickLabels', 'font', 'responseColor', 'markerColor', 'itemColor', 'ticks', 'tickLabels', 'font', 'responseColor', 'markerColor']
+8.7249 	WARNING 	Form currently only formats correctly using height units. Please change the units in Experiment Settings to 'height'
+8.7249 	INFO 	Setting layout of Form: form4.
+8.7249 	EXP 	Question text: This is creepy and scary cat video.
+8.7314 	INFO 	Adding response to Form type: choice, layout: vert, options: ['Yes', 'No']
+8.7600 	EXP 	Question text: This is cattransition video.
+8.7668 	INFO 	Adding response to Form type: choice, layout: vert, options: ['Yes', 'No']
+8.7937 	INFO 	Layout set for Form: form4.
+8.7937 	EXP 	Created form4 = <psychopy.visual.form.Form object at 0x0000029C5A9A2920>
+9.4025 	EXP 	Created likertText = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Times New Roman', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='likertText', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='norm', win=Window(...), wrapWidth=1)
+9.7422 	EXP 	Created likert_slider = Slider(__class__=<class 'psychopy.visual.slider.Slider'>, autoDraw=False, autoLog=True, borderColor=None, color=None, colorSpace='rgb', depth=-1, fillColor=None, flip=False, font='Noto Sans', granularity=1.0, labelColor=None, labelHeight=np.float64(0.036), labelWrapWidth=None, labels=tuple(...), lineColor=None, markerColor=None, name='likert_slider', opacity=None, ori=0.0, pos=array([ 0. , -0.4]), readOnly=False, self=UNKNOWN, size=array([1.5, 0.1]), startValue=None, style='rating', styleTweaks=[], ticks=array([1, 2, 3, 4, 5, 6, 7]), units='norm', win=Window(...))
+9.7570 	INFO 	Importing items...
+9.7627 	EXP 	Imported demoForm.xlsx as conditions, 4 conditions, 13 params
+9.7627 	INFO 	Using default values for the following headers: ['itemColor', 'ticks', 'tickLabels', 'font', 'responseColor', 'markerColor', 'itemColor', 'ticks', 'tickLabels', 'font', 'responseColor', 'markerColor', 'itemColor', 'ticks', 'tickLabels', 'font', 'responseColor', 'markerColor', 'itemColor', 'ticks', 'tickLabels', 'font', 'responseColor', 'markerColor']
+9.7630 	WARNING 	Form currently only formats correctly using height units. Please change the units in Experiment Settings to 'height'
+9.7630 	INFO 	Setting layout of Form: form.
+9.7630 	EXP 	Question text: What is your age?
+9.7942 	INFO 	Adding response to Form type: choice, layout: vert, options: ['18 years', '19 years', '20 years', '21 years', '22 years', '23 years', '24 years', '25 years']
+9.9505 	EXP 	Question text: What is your gender?
+9.9569 	INFO 	Adding response to Form type: choice, layout: vert, options: ['Male', 'Female', 'Other', 'Prefer not to say']
+10.0776 	EXP 	Question text: What is your highest level of education?
+10.0843 	INFO 	Adding response to Form type: choice, layout: vert, options: ['High school', "Bachelor's degree", "Master's degree", 'Doctoral degree']
+10.1708 	EXP 	Question text: What is your English proficiency level?
+10.1942 	INFO 	Adding response to Form type: choice, layout: vert, options: ['A1 - Beginner', 'A2 - Elementary', 'B1 - Intermediate', 'B2 - Upper-intermediate', 'C1 - Advanced', 'C2 - Proficient']
+10.3285 	INFO 	Layout set for Form: form.
+10.3285 	EXP 	Created form = <psychopy.visual.form.Form object at 0x0000029C85D60E20>
+0.0316 	EXP 	movie: autoLog = True
+0.0316 	EXP 	unnamed Form: autoLog = True
+0.0316 	EXP 	form_2: name = 'form_2'
+0.0316 	EXP 	form_2: depth = -2
+0.0316 	EXP 	form_2: fillColor = [0.0039, 0.0039, 0.0039]
+0.0316 	EXP 	form_2: borderColor = [0.0039, 0.0039, 0.0039]
+0.0316 	EXP 	unnamed Form: autoLog = True
+0.0316 	EXP 	form3: name = 'form3'
+0.0316 	EXP 	form3: depth = -2
+0.0316 	EXP 	form3: fillColor = [0.0039, 0.0039, 0.0039]
+0.0316 	EXP 	form3: borderColor = [0.0039, 0.0039, 0.0039]
+0.0316 	EXP 	unnamed Form: autoLog = True
+0.0316 	EXP 	form4: name = 'form4'
+0.0316 	EXP 	form4: depth = -2
+0.0316 	EXP 	form4: fillColor = [0.6549, 0.6549, 0.6549]
+0.0316 	EXP 	form4: borderColor = [0.6549, 0.6549, 0.6549]
+0.0316 	EXP 	consentText: autoLog = True
+0.0316 	EXP 	instruction_header: autoLog = True
+0.0316 	EXP 	instruction_text: autoLog = True
+0.0316 	EXP 	warning_header: autoLog = True
+0.0316 	EXP 	warning_text: autoLog = True
+0.0316 	EXP 	textbox: autoLog = True
+0.0316 	EXP 	textbox_2: autoLog = True
+0.0316 	EXP 	likert_slider: autoLog = True
+0.0316 	EXP 	likert_slider: styleTweaks = []
+0.0316 	EXP 	likert_slider: styleTweaks = []
+0.0316 	EXP 	likert_slider: styleTweaks = []
+0.0316 	EXP 	likert_slider: styleTweaks = []
+0.0316 	EXP 	likert_slider: contrast = 1.0
+0.0316 	EXP 	likert_slider: markerPos = None
+0.0316 	EXP 	likert_slider: autoLog = True
+0.0316 	EXP 	unnamed Form: autoLog = True
+0.0316 	EXP 	form: name = 'form'
+0.0316 	EXP 	form: depth = -1
+0.0316 	EXP 	form: fillColor = [0.6549, 0.6549, 0.6549]
+0.0316 	EXP 	form: borderColor = [0.6549, 0.6549, 0.6549]
+0.0316 	EXP 	ending_text: autoLog = True
+0.1712 	EXP 	movie: autoDraw = True
+1.8876 	DATA 	Mouse: Left button down, pos=(2528,223)
+2.0562 	DATA 	Mouse:  Left button up, pos=(2528,223)
+2.1034 	EXP 	movie: autoDraw = False
+2.1034 	EXP 	form_2: autoDraw = True
+5.3956 	DATA 	Mouse: Left button down, pos=(678,540)
+5.4864 	DATA 	Mouse:  Left button up, pos=(678,540)
+6.3404 	DATA 	Mouse: Left button down, pos=(679,995)
+6.4562 	DATA 	Mouse:  Left button up, pos=(679,995)
+7.4259 	DATA 	Mouse: Left button down, pos=(2555,313)
+7.5329 	DATA 	Mouse:  Left button up, pos=(2564,305)
+7.7414 	DATA 	Mouse: Left button down, pos=(2572,290)
+7.7716 	EXP 	form_2: autoDraw = False
+7.7716 	EXP 	form3: autoDraw = False
+7.7716 	EXP 	form4: autoDraw = False
+7.7716 	EXP 	consentText: autoDraw = True
+7.8438 	DATA 	Mouse:  Left button up, pos=(2572,290)
+8.3611 	DATA 	Mouse: Left button down, pos=(2574,290)
+8.3763 	INFO 	Keyboard events cleared
+8.3762 	EXP 	consentText: autoDraw = False
+8.3762 	EXP 	instruction_header: autoDraw = True
+8.3762 	EXP 	instruction_text: autoDraw = True
+8.4557 	DATA 	Mouse:  Left button up, pos=(2577,290)
+8.6323 	DATA 	Mouse: Left button down, pos=(2577,290)
+8.6542 	INFO 	Keyboard events cleared
+8.6542 	EXP 	instruction_header: autoDraw = False
+8.6542 	EXP 	instruction_text: autoDraw = False
+8.6542 	EXP 	warning_header: autoDraw = True
+8.6542 	EXP 	warning_text: autoDraw = True
+8.7377 	DATA 	Mouse:  Left button up, pos=(2579,291)
+8.8116 	DATA 	Mouse: Left button down, pos=(2579,291)
+8.8330 	INFO 	Keyboard events cleared
+8.8329 	EXP 	warning_header: autoDraw = False
+8.8329 	EXP 	warning_text: autoDraw = False
+8.8329 	EXP 	textbox: autoDraw = True
+8.9650 	DATA 	Mouse:  Left button up, pos=(2581,292)
+9.2654 	DATA 	Mouse: Left button down, pos=(2584,294)
+9.3653 	DATA 	Mouse:  Left button up, pos=(2588,295)
+9.4874 	EXP 	Device response: <KeyPress from None: t=9.47180339996703, value=lctrl, duration=None>
+9.4881 	DATA 	Keypress: lctrl
+9.6981 	EXP 	Device response: <KeyPress from None: t=9.697860699961893, value=q, duration=None>
+9.6985 	DATA 	Keypress: q
+9.9597 	INFO 	saved data to C:\SPPA\CMKL\Animation_Project\Summer\Experiment_Workflows\Testing1\data\3_testing1_2026-10-08_19h45.48.661.psydat
+9.9659 	INFO 	saved data to 'C:\\SPPA\\CMKL\\Animation_Project\\Summer\\Experiment_Workflows\\Testing1\\data\\3_testing1_2026-10-08_19h45.48.661.csv'
+9.9806 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+10.0304 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+10.0305 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+10.0305 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
+10.0305 	WARNING 	Stopping key buffers but this could be dangerous ifother keyboards rely on the same.
