@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2025.1.1),
-    on October 08, 2026, at 21:39
+    on October 09, 2026, at 14:21
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -2333,7 +2333,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                     if sum(buttons) > 0:  # state changed to a new click
                         # check if the mouse was inside our 'clickable' objects
                         gotValidClick = False
-                        clickableList = environmenttools.getFromNames([boxA, boxB, boxC, boxD], namespace=locals())
+                        clickableList = environmenttools.getFromNames([boxA_2,boxB_2, boxC_2, boxD_2], namespace=locals())
                         for obj in clickableList:
                             # is this object clicked on?
                             if obj.contains(mouse_3):
@@ -2794,7 +2794,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                     if sum(buttons) > 0:  # state changed to a new click
                         # check if the mouse was inside our 'clickable' objects
                         gotValidClick = False
-                        clickableList = environmenttools.getFromNames([boxA, boxB, boxC, boxD], namespace=locals())
+                        clickableList = environmenttools.getFromNames([boxA_3, boxB_3, boxC_3, boxD_3], namespace=locals())
                         for obj in clickableList:
                             # is this object clicked on?
                             if obj.contains(mouse_4):
