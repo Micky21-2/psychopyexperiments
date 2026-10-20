@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2025.1.1),
-    on October 20, 2026, at 14:14
+    on October 20, 2026, at 14:26
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -1643,11 +1643,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 elif selectedAnswer == 'D':
                     boxD.fillColor = 'lightblue'
             
-                # Proceed only if an answer has been selected
-                if mouse_2.isPressedIn(nextQuizA):
-                    if selectedAnswer is not None:
-                        continueRoutine = False
-            
             mouseWasPressed = mouseDown
             # Run 'Each Frame' code from cq
             # Ctrl + Q to quit
@@ -1948,25 +1943,19 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         if len(mouse_2.clicked_name):
             trials.addData('mouse_2.clicked_name', mouse_2.clicked_name[0])
         # Run 'End Routine' code from record
-        clicked = ""
-        
-        if len(mouse_2.clicked_name) > 0:
-            clicked = mouse_2.clicked_name[-1]
-        
-        if clicked == "boxA":
-            participant_answer = "A"
-        elif clicked == "boxB":
-            participant_answer = "B"
-        elif clicked == "boxC":
-            participant_answer = "C"
-        elif clicked == "boxD":
-            participant_answer = "D"
-        else:
+        if selectedAnswer is None:
             participant_answer = "No answer"
+        else:
+            participant_answer = selectedAnswer
         
         thisExp.addData("participant_answer", participant_answer)
         thisExp.addData("correct_answer", correct)
-        thisExp.addData("is_correct", int(participant_answer == correct))
+        thisExp.addData(
+            "is_correct",
+            int(participant_answer == correct)
+            if participant_answer != "No answer"
+            else 0
+        )
         # the Routine "QuizA" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         # mark thisTrial as finished
@@ -2440,25 +2429,19 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         if len(mouse_3.clicked_name):
             trials_2.addData('mouse_3.clicked_name', mouse_3.clicked_name[0])
         # Run 'End Routine' code from recordB
-        clicked = ""
-        
-        if len(mouse_3.clicked_name) > 0:
-            clicked = mouse_3.clicked_name[-1]
-        
-        if clicked == "boxA_2":
-            participant_answer = "A"
-        elif clicked == "boxB_2":
-            participant_answer = "B"
-        elif clicked == "boxC_2":
-            participant_answer = "C"
-        elif clicked == "boxD_2":
-            participant_answer = "D"
-        else:
+        if selectedAnswer is None:
             participant_answer = "No answer"
+        else:
+            participant_answer = selectedAnswer
         
         thisExp.addData("participant_answer", participant_answer)
         thisExp.addData("correct_answer", correct)
-        thisExp.addData("is_correct", int(participant_answer == correct))
+        thisExp.addData(
+            "is_correct",
+            int(participant_answer == correct)
+            if participant_answer != "No answer"
+            else 0
+        )
         # the Routine "QuizB" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         # mark thisTrial_2 as finished
@@ -2932,25 +2915,19 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         if len(mouse_4.clicked_name):
             trials_3.addData('mouse_4.clicked_name', mouse_4.clicked_name[0])
         # Run 'End Routine' code from recordC
-        clicked = ""
-        
-        if len(mouse_4.clicked_name) > 0:
-            clicked = mouse_4.clicked_name[-1]
-        
-        if clicked == "boxA_3":
-            participant_answer = "A"
-        elif clicked == "boxB_3":
-            participant_answer = "B"
-        elif clicked == "boxC_3":
-            participant_answer = "C"
-        elif clicked == "boxD_3":
-            participant_answer = "D"
-        else:
+        if selectedAnswer is None:
             participant_answer = "No answer"
+        else:
+            participant_answer = selectedAnswer
         
         thisExp.addData("participant_answer", participant_answer)
         thisExp.addData("correct_answer", correct)
-        thisExp.addData("is_correct", int(participant_answer == correct))
+        thisExp.addData(
+            "is_correct",
+            int(participant_answer == correct)
+            if participant_answer != "No answer"
+            else 0
+        )
         # the Routine "QuizC" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         # mark thisTrial_3 as finished
