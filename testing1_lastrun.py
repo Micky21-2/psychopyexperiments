@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2025.1.1),
-    on October 09, 2026, at 14:21
+    on October 20, 2026, at 14:14
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -202,7 +202,7 @@ def setupWindow(expInfo=None, win=None):
         win = visual.Window(
             size=_winSize, fullscr=_fullScr, screen=0,
             winType='pyglet', allowGUI=True, allowStencil=True,
-            monitor='testMonitor', color='#d3d3d3', colorSpace='hex',
+            monitor='testMonitor', color=[-0.0667, -0.0667, -0.0667], colorSpace='rgb',
             backgroundImage='', backgroundFit='none',
             blendMode='avg', useFBO=True,
             units='norm',
@@ -210,8 +210,8 @@ def setupWindow(expInfo=None, win=None):
         )
     else:
         # if we have a window, just set the attributes which are safe to set
-        win.color = '#d3d3d3'
-        win.colorSpace = 'hex'
+        win.color = [-0.0667, -0.0667, -0.0667]
+        win.colorSpace = 'rgb'
         win.backgroundImage = ''
         win.backgroundFit = 'none'
         win.units = 'norm'
@@ -396,10 +396,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     import csv
     import random
     
-    # -------------------------------------------------
     # SETTINGS
-    # -------------------------------------------------
-    
     video_files = [
         "3_with_jump.mp4",
         "Sigmachinesecat.mp4",
@@ -417,9 +414,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         "video_assignment.csv"
     )
     
-    # -------------------------------------------------
     # CREATE ASSIGNMENT FILE IF IT DOES NOT EXIST
-    # -------------------------------------------------
     
     if not os.path.exists(assignment_file):
     
@@ -428,9 +423,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             writer.writerow(["participant", "video"])
     
     
-    # -------------------------------------------------
     # READ PREVIOUS ASSIGNMENTS
-    # -------------------------------------------------
     
     video_counts = {video: 0 for video in video_files}
     
@@ -446,10 +439,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 video_counts[video] += 1
     
     
-    # -------------------------------------------------
     # FIND VIDEOS THAT STILL HAVE SPACE
-    # -------------------------------------------------
-    
     available_videos = [
         video
         for video in video_files
@@ -457,10 +447,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     ]
     
     
-    # -------------------------------------------------
     # RANDOMLY SELECT ONE AVAILABLE VIDEO
-    # -------------------------------------------------
-    
     if len(available_videos) == 0:
     
         raise Exception(
@@ -471,10 +458,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     selected_video = random.choice(available_videos)
     
     
-    # -------------------------------------------------
     # SAVE THE ASSIGNMENT
-    # -------------------------------------------------
-    
     participant_id = expInfo["participant"]
     
     with open(assignment_file, "a", newline="") as f:
@@ -487,16 +471,12 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         ])
     
     
-    # -------------------------------------------------
-    # VARIABLE USED BY MOVIE COMPONENT
-    # -------------------------------------------------
     
+    # VARIABLE USED BY MOVIE COMPONENT
     video_to_play = selected_video
     thisExp.addData("assigned_video", video_to_play)
     
-    # -------------------------------------------------
     # SELECT WHICH QUIZ TO RUN
-    # -------------------------------------------------
     
     if selected_video in [
         "3_with_jump.mp4",
@@ -532,7 +512,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         depth=-1
     )
     nextVideo = visual.ButtonStim(win, 
-        text='Next>>', font='Times New Roman',
+        text='NEXT', font='Times New Roman',
         pos=(0.8, -0.75),
         letterHeight=0.05,
         size=(0.15, 0.15), 
@@ -551,7 +531,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "QuizA" ---
     nextQuizA = visual.ButtonStim(win, 
-        text='Next>>', font='Times New Roman',
+        text='NEXT', font='Times New Roman',
         pos=(0.8, -0.75),
         letterHeight=0.05,
         size=(0.15, 0.15), 
@@ -681,7 +661,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "QuizB" ---
     nextQuizB = visual.ButtonStim(win, 
-        text='Next>>', font='Times New Roman',
+        text='NEXT', font='Times New Roman',
         pos=(0.8, -0.75),
         letterHeight=0.05,
         size=(0.15, 0.15), 
@@ -811,7 +791,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "QuizC" ---
     nextQuizC = visual.ButtonStim(win, 
-        text='Next>>', font='Times New Roman',
+        text='NEXT', font='Times New Roman',
         pos=(0.8, -0.75),
         letterHeight=0.05,
         size=(0.15, 0.15), 
@@ -960,7 +940,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     x, y = [None, None]
     mouse.mouseClock = core.Clock()
     consentNextButton = visual.ButtonStim(win, 
-        text='Next>>', font='Times New Roman',
+        text='NEXT', font='Times New Roman',
         pos=(0.8, -0.75),
         letterHeight=0.05,
         size=(0.15, 0.15), 
@@ -1012,7 +992,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     )
     instruct_resp = keyboard.Keyboard(deviceName='instruct_resp')
     nextButton_instructions = visual.ButtonStim(win, 
-        text='Next>>', font='Times New Roman',
+        text='NEXT', font='Times New Roman',
         pos=(0.8, -0.75),
         letterHeight=0.05,
         size=(0.15, 0.15), 
@@ -1064,7 +1044,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     )
     warning_resp = keyboard.Keyboard(deviceName='warning_resp')
     nextButton_warning = visual.ButtonStim(win, 
-        text='Next>>', font='Times New Roman',
+        text='NEXT', font='Times New Roman',
         pos=(0.8, -0.75),
         letterHeight=0.05,
         size=(0.15, 0.15), 
@@ -1100,7 +1080,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     )
     quz_instruction_text = keyboard.Keyboard(deviceName='quz_instruction_text')
     nextButton_quizInstruction = visual.ButtonStim(win, 
-        text='Next>>', font='Times New Roman',
+        text='NEXT', font='Times New Roman',
         pos=(0.8, -0.75),
         letterHeight=0.05,
         size=(0.15, 0.15), 
@@ -1118,8 +1098,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     nextButton_quizInstruction.buttonClock = core.Clock()
     
     # --- Initialize components for Routine "sampleQuiz" ---
-    
-    # --- Initialize components for Routine "quiz" ---
     
     # --- Initialize components for Routine "quizending" ---
     textbox_2 = visual.TextBox2(
@@ -1140,7 +1118,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     )
     key_resp_quizending = keyboard.Keyboard(deviceName='key_resp_quizending')
     nextButton_2 = visual.ButtonStim(win, 
-        text='Next>>', font='Times New Roman',
+        text='NEXT', font='Times New Roman',
         pos=(0.8, -0.75),
         letterHeight=0.05,
         size=(0.15, 0.15), 
@@ -1173,7 +1151,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         font='Noto Sans', labelHeight=0.036,
         flip=False, ori=0.0, depth=-1, readOnly=False)
     nextButton = visual.ButtonStim(win, 
-        text='Next>>', font='Times New Roman',
+        text='NEXT', font='Times New Roman',
         pos=(0.8, -0.75),
         letterHeight=0.05,
         size=(0.15, 0.15), 
@@ -1199,7 +1177,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "demographic" ---
     demoNext = visual.ButtonStim(win, 
-        text='Next>>', font='Times New Roman',
+        text='NEXT', font='Times New Roman',
         pos=(0.8, -0.75),
         letterHeight=0.05,
         size=(0.15, 0.15), 
@@ -1573,6 +1551,16 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             "Sigmachinesecat.mp4"
         ]:
             continueRoutine = False
+        
+        selectedAnswer = None
+        mouseWasPressed = False
+        
+        boxA.fillColor = 'white'
+        boxB.fillColor = 'white'
+        boxC.fillColor = 'white'
+        boxD.fillColor = 'white'
+        
+        nextQuizA.fillColor = 'white'
         # reset nextQuizA to account for continued clicks & clear times on/off
         nextQuizA.reset()
         questionAText.reset()
@@ -1586,12 +1574,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         choiceD.reset()
         choiceD.setText(D)
         # setup some python lists for storing info about the mouse_2
-        mouse_2.x = []
-        mouse_2.y = []
-        mouse_2.leftButton = []
-        mouse_2.midButton = []
-        mouse_2.rightButton = []
-        mouse_2.time = []
         mouse_2.clicked_name = []
         gotValidClick = False  # until a click is received
         # store start times for QuizA
@@ -1626,6 +1608,47 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             tThisFlipGlobal = win.getFutureFlipTime(clock=None)
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
+            # Run 'Each Frame' code from code_11
+            buttons = mouse_2.getPressed()
+            mouseDown = buttons[0]
+            
+            # Respond only once per mouse click
+            if mouseDown and not mouseWasPressed:
+            
+                if mouse_2.isPressedIn(boxA):
+                    selectedAnswer = 'A'
+            
+                elif mouse_2.isPressedIn(boxB):
+                    selectedAnswer = 'B'
+            
+                elif mouse_2.isPressedIn(boxC):
+                    selectedAnswer = 'C'
+            
+                elif mouse_2.isPressedIn(boxD):
+                    selectedAnswer = 'D'
+            
+                # Reset all answer colors
+                boxA.fillColor = 'white'
+                boxB.fillColor = 'white'
+                boxC.fillColor = 'white'
+                boxD.fillColor = 'white'
+            
+                # Highlight the selected answer
+                if selectedAnswer == 'A':
+                    boxA.fillColor = 'lightblue'
+                elif selectedAnswer == 'B':
+                    boxB.fillColor = 'lightblue'
+                elif selectedAnswer == 'C':
+                    boxC.fillColor = 'lightblue'
+                elif selectedAnswer == 'D':
+                    boxD.fillColor = 'lightblue'
+            
+                # Proceed only if an answer has been selected
+                if mouse_2.isPressedIn(nextQuizA):
+                    if selectedAnswer is not None:
+                        continueRoutine = False
+            
+            mouseWasPressed = mouseDown
             # Run 'Each Frame' code from cq
             # Ctrl + Q to quit
             keys = event.getKeys(modifiers=True)
@@ -1662,9 +1685,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                     elif len(nextQuizA.timesOff):
                         # if click is continuing from last frame, update time of clicked until
                         nextQuizA.timesOff[-1] = nextQuizA.buttonClock.getTime()
-                    if not nextQuizA.wasClicked:
-                        # end routine when nextQuizA is clicked
-                        continueRoutine = False
                     if not nextQuizA.wasClicked:
                         # run callback code when nextQuizA is clicked
                         pass
@@ -1859,37 +1879,10 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 mouse_2.tStart = t  # local t and not account for scr refresh
                 mouse_2.tStartRefresh = tThisFlipGlobal  # on global time
                 win.timeOnFlip(mouse_2, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.addData('mouse_2.started', t)
                 # update status
                 mouse_2.status = STARTED
                 mouse_2.mouseClock.reset()
                 prevButtonState = mouse_2.getPressed()  # if button is down already this ISN'T a new click
-            if mouse_2.status == STARTED:  # only update if started and not finished!
-                buttons = mouse_2.getPressed()
-                if buttons != prevButtonState:  # button state changed?
-                    prevButtonState = buttons
-                    if sum(buttons) > 0:  # state changed to a new click
-                        # check if the mouse was inside our 'clickable' objects
-                        gotValidClick = False
-                        clickableList = environmenttools.getFromNames([boxA, boxB, boxC, boxD], namespace=locals())
-                        for obj in clickableList:
-                            # is this object clicked on?
-                            if obj.contains(mouse_2):
-                                gotValidClick = True
-                                mouse_2.clicked_name.append(obj.name)
-                        if not gotValidClick:
-                            mouse_2.clicked_name.append(None)
-                        x, y = mouse_2.getPos()
-                        mouse_2.x.append(x)
-                        mouse_2.y.append(y)
-                        buttons = mouse_2.getPressed()
-                        mouse_2.leftButton.append(buttons[0])
-                        mouse_2.midButton.append(buttons[1])
-                        mouse_2.rightButton.append(buttons[2])
-                        mouse_2.time.append(mouse_2.mouseClock.getTime())
-                        
-                        continueRoutine = False  # end routine on response
             if thisExp.status == FINISHED or endExpNow:
                 endExperiment(thisExp, win=win)
                 return
@@ -1934,13 +1927,26 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
            trials.addData('nextQuizA.timesOn', "")
            trials.addData('nextQuizA.timesOff', "")
         # store data for trials (TrialHandler)
-        trials.addData('mouse_2.x', mouse_2.x)
-        trials.addData('mouse_2.y', mouse_2.y)
-        trials.addData('mouse_2.leftButton', mouse_2.leftButton)
-        trials.addData('mouse_2.midButton', mouse_2.midButton)
-        trials.addData('mouse_2.rightButton', mouse_2.rightButton)
-        trials.addData('mouse_2.time', mouse_2.time)
-        trials.addData('mouse_2.clicked_name', mouse_2.clicked_name)
+        x, y = mouse_2.getPos()
+        buttons = mouse_2.getPressed()
+        if sum(buttons):
+            # check if the mouse was inside our 'clickable' objects
+            gotValidClick = False
+            clickableList = environmenttools.getFromNames([boxA, boxB, boxC, boxD], namespace=locals())
+            for obj in clickableList:
+                # is this object clicked on?
+                if obj.contains(mouse_2):
+                    gotValidClick = True
+                    mouse_2.clicked_name.append(obj.name)
+            if not gotValidClick:
+                mouse_2.clicked_name.append(None)
+        trials.addData('mouse_2.x', x)
+        trials.addData('mouse_2.y', y)
+        trials.addData('mouse_2.leftButton', buttons[0])
+        trials.addData('mouse_2.midButton', buttons[1])
+        trials.addData('mouse_2.rightButton', buttons[2])
+        if len(mouse_2.clicked_name):
+            trials.addData('mouse_2.clicked_name', mouse_2.clicked_name[0])
         # Run 'End Routine' code from record
         clicked = ""
         
@@ -2034,6 +2040,16 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             "Jack_jet.mp4"
         ]:
             continueRoutine = False
+            
+        selectedAnswer = None
+        mouseWasPressed = False
+        
+        boxA_2.fillColor = 'white'
+        boxB_2.fillColor = 'white'
+        boxC_2.fillColor = 'white'
+        boxD_2.fillColor = 'white'
+        
+        nextQuizB.fillColor = 'white'
         # reset nextQuizB to account for continued clicks & clear times on/off
         nextQuizB.reset()
         questionBText.reset()
@@ -2047,12 +2063,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         choiceD_2.reset()
         choiceD_2.setText(D)
         # setup some python lists for storing info about the mouse_3
-        mouse_3.x = []
-        mouse_3.y = []
-        mouse_3.leftButton = []
-        mouse_3.midButton = []
-        mouse_3.rightButton = []
-        mouse_3.time = []
         mouse_3.clicked_name = []
         gotValidClick = False  # until a click is received
         # store start times for QuizB
@@ -2087,6 +2097,47 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             tThisFlipGlobal = win.getFutureFlipTime(clock=None)
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
+            # Run 'Each Frame' code from code_12
+            buttons = mouse_3.getPressed()
+            mouseDown = buttons[0]
+            
+            # Respond only once per mouse click
+            if mouseDown and not mouseWasPressed:
+            
+                if mouse_3.isPressedIn(boxA_2):
+                    selectedAnswer = 'A'
+            
+                elif mouse_3.isPressedIn(boxB_2):
+                    selectedAnswer = 'B'
+            
+                elif mouse_3.isPressedIn(boxC_2):
+                    selectedAnswer = 'C'
+            
+                elif mouse_3.isPressedIn(boxD_2):
+                    selectedAnswer = 'D'
+            
+                # Reset all answer colors
+                boxA_2.fillColor = 'white'
+                boxB_2.fillColor = 'white'
+                boxC_2.fillColor = 'white'
+                boxD_2.fillColor = 'white'
+            
+                # Highlight the selected answer
+                if selectedAnswer == 'A':
+                    boxA_2.fillColor = 'lightblue'
+                elif selectedAnswer == 'B':
+                    boxB_2.fillColor = 'lightblue'
+                elif selectedAnswer == 'C':
+                    boxC_2.fillColor = 'lightblue'
+                elif selectedAnswer == 'D':
+                    boxD_2.fillColor = 'lightblue'
+            
+                # Proceed only if an answer has been selected
+                if mouse_3.isPressedIn(nextQuizB):
+                    if selectedAnswer is not None:
+                        continueRoutine = False
+            
+            mouseWasPressed = mouseDown
             # Run 'Each Frame' code from cq_2
             # Ctrl + Q to quit
             keys = event.getKeys(modifiers=True)
@@ -2320,37 +2371,10 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 mouse_3.tStart = t  # local t and not account for scr refresh
                 mouse_3.tStartRefresh = tThisFlipGlobal  # on global time
                 win.timeOnFlip(mouse_3, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.addData('mouse_3.started', t)
                 # update status
                 mouse_3.status = STARTED
                 mouse_3.mouseClock.reset()
                 prevButtonState = mouse_3.getPressed()  # if button is down already this ISN'T a new click
-            if mouse_3.status == STARTED:  # only update if started and not finished!
-                buttons = mouse_3.getPressed()
-                if buttons != prevButtonState:  # button state changed?
-                    prevButtonState = buttons
-                    if sum(buttons) > 0:  # state changed to a new click
-                        # check if the mouse was inside our 'clickable' objects
-                        gotValidClick = False
-                        clickableList = environmenttools.getFromNames([boxA_2,boxB_2, boxC_2, boxD_2], namespace=locals())
-                        for obj in clickableList:
-                            # is this object clicked on?
-                            if obj.contains(mouse_3):
-                                gotValidClick = True
-                                mouse_3.clicked_name.append(obj.name)
-                        if not gotValidClick:
-                            mouse_3.clicked_name.append(None)
-                        x, y = mouse_3.getPos()
-                        mouse_3.x.append(x)
-                        mouse_3.y.append(y)
-                        buttons = mouse_3.getPressed()
-                        mouse_3.leftButton.append(buttons[0])
-                        mouse_3.midButton.append(buttons[1])
-                        mouse_3.rightButton.append(buttons[2])
-                        mouse_3.time.append(mouse_3.mouseClock.getTime())
-                        
-                        continueRoutine = False  # end routine on response
             if thisExp.status == FINISHED or endExpNow:
                 endExperiment(thisExp, win=win)
                 return
@@ -2395,13 +2419,26 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
            trials_2.addData('nextQuizB.timesOn', "")
            trials_2.addData('nextQuizB.timesOff', "")
         # store data for trials_2 (TrialHandler)
-        trials_2.addData('mouse_3.x', mouse_3.x)
-        trials_2.addData('mouse_3.y', mouse_3.y)
-        trials_2.addData('mouse_3.leftButton', mouse_3.leftButton)
-        trials_2.addData('mouse_3.midButton', mouse_3.midButton)
-        trials_2.addData('mouse_3.rightButton', mouse_3.rightButton)
-        trials_2.addData('mouse_3.time', mouse_3.time)
-        trials_2.addData('mouse_3.clicked_name', mouse_3.clicked_name)
+        x, y = mouse_3.getPos()
+        buttons = mouse_3.getPressed()
+        if sum(buttons):
+            # check if the mouse was inside our 'clickable' objects
+            gotValidClick = False
+            clickableList = environmenttools.getFromNames([boxA_2,boxB_2, boxC_2, boxD_2], namespace=locals())
+            for obj in clickableList:
+                # is this object clicked on?
+                if obj.contains(mouse_3):
+                    gotValidClick = True
+                    mouse_3.clicked_name.append(obj.name)
+            if not gotValidClick:
+                mouse_3.clicked_name.append(None)
+        trials_2.addData('mouse_3.x', x)
+        trials_2.addData('mouse_3.y', y)
+        trials_2.addData('mouse_3.leftButton', buttons[0])
+        trials_2.addData('mouse_3.midButton', buttons[1])
+        trials_2.addData('mouse_3.rightButton', buttons[2])
+        if len(mouse_3.clicked_name):
+            trials_2.addData('mouse_3.clicked_name', mouse_3.clicked_name[0])
         # Run 'End Routine' code from recordB
         clicked = ""
         
@@ -2495,6 +2532,16 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             "cattransition.mp4"
         ]:
             continueRoutine = False
+            
+        selectedAnswer = None
+        mouseWasPressed = False
+        
+        boxA_3.fillColor = 'white'
+        boxB_3.fillColor = 'white'
+        boxC_3.fillColor = 'white'
+        boxD_3.fillColor = 'white'
+        
+        nextQuizC.fillColor = 'white'
         # reset nextQuizC to account for continued clicks & clear times on/off
         nextQuizC.reset()
         questionCText.reset()
@@ -2508,12 +2555,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         choiceD_3.reset()
         choiceD_3.setText(D)
         # setup some python lists for storing info about the mouse_4
-        mouse_4.x = []
-        mouse_4.y = []
-        mouse_4.leftButton = []
-        mouse_4.midButton = []
-        mouse_4.rightButton = []
-        mouse_4.time = []
         mouse_4.clicked_name = []
         gotValidClick = False  # until a click is received
         # store start times for QuizC
@@ -2548,6 +2589,47 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             tThisFlipGlobal = win.getFutureFlipTime(clock=None)
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
+            # Run 'Each Frame' code from code_13
+            buttons = mouse_4.getPressed()
+            mouseDown = buttons[0]
+            
+            # Respond only once per mouse click
+            if mouseDown and not mouseWasPressed:
+            
+                if mouse_4.isPressedIn(boxA_3):
+                    selectedAnswer = 'A'
+            
+                elif mouse_4.isPressedIn(boxB_3):
+                    selectedAnswer = 'B'
+            
+                elif mouse_4.isPressedIn(boxC_3):
+                    selectedAnswer = 'C'
+            
+                elif mouse_4.isPressedIn(boxD_3):
+                    selectedAnswer = 'D'
+            
+                # Reset all answer colors
+                boxA_3.fillColor = 'white'
+                boxB_3.fillColor = 'white'
+                boxC_3.fillColor = 'white'
+                boxD_3.fillColor = 'white'
+            
+                # Highlight the selected answer
+                if selectedAnswer == 'A':
+                    boxA_3.fillColor = 'lightblue'
+                elif selectedAnswer == 'B':
+                    boxB_3.fillColor = 'lightblue'
+                elif selectedAnswer == 'C':
+                    boxC_3.fillColor = 'lightblue'
+                elif selectedAnswer == 'D':
+                    boxD_3.fillColor = 'lightblue'
+            
+                # Proceed only if an answer has been selected
+                if mouse_4.isPressedIn(nextQuizC):
+                    if selectedAnswer is not None:
+                        continueRoutine = False
+            
+            mouseWasPressed = mouseDown
             # Run 'Each Frame' code from cq_3
             # Ctrl + Q to quit
             keys = event.getKeys(modifiers=True)
@@ -2781,37 +2863,10 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 mouse_4.tStart = t  # local t and not account for scr refresh
                 mouse_4.tStartRefresh = tThisFlipGlobal  # on global time
                 win.timeOnFlip(mouse_4, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.addData('mouse_4.started', t)
                 # update status
                 mouse_4.status = STARTED
                 mouse_4.mouseClock.reset()
                 prevButtonState = mouse_4.getPressed()  # if button is down already this ISN'T a new click
-            if mouse_4.status == STARTED:  # only update if started and not finished!
-                buttons = mouse_4.getPressed()
-                if buttons != prevButtonState:  # button state changed?
-                    prevButtonState = buttons
-                    if sum(buttons) > 0:  # state changed to a new click
-                        # check if the mouse was inside our 'clickable' objects
-                        gotValidClick = False
-                        clickableList = environmenttools.getFromNames([boxA_3, boxB_3, boxC_3, boxD_3], namespace=locals())
-                        for obj in clickableList:
-                            # is this object clicked on?
-                            if obj.contains(mouse_4):
-                                gotValidClick = True
-                                mouse_4.clicked_name.append(obj.name)
-                        if not gotValidClick:
-                            mouse_4.clicked_name.append(None)
-                        x, y = mouse_4.getPos()
-                        mouse_4.x.append(x)
-                        mouse_4.y.append(y)
-                        buttons = mouse_4.getPressed()
-                        mouse_4.leftButton.append(buttons[0])
-                        mouse_4.midButton.append(buttons[1])
-                        mouse_4.rightButton.append(buttons[2])
-                        mouse_4.time.append(mouse_4.mouseClock.getTime())
-                        
-                        continueRoutine = False  # end routine on response
             if thisExp.status == FINISHED or endExpNow:
                 endExperiment(thisExp, win=win)
                 return
@@ -2856,13 +2911,26 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
            trials_3.addData('nextQuizC.timesOn', "")
            trials_3.addData('nextQuizC.timesOff', "")
         # store data for trials_3 (TrialHandler)
-        trials_3.addData('mouse_4.x', mouse_4.x)
-        trials_3.addData('mouse_4.y', mouse_4.y)
-        trials_3.addData('mouse_4.leftButton', mouse_4.leftButton)
-        trials_3.addData('mouse_4.midButton', mouse_4.midButton)
-        trials_3.addData('mouse_4.rightButton', mouse_4.rightButton)
-        trials_3.addData('mouse_4.time', mouse_4.time)
-        trials_3.addData('mouse_4.clicked_name', mouse_4.clicked_name)
+        x, y = mouse_4.getPos()
+        buttons = mouse_4.getPressed()
+        if sum(buttons):
+            # check if the mouse was inside our 'clickable' objects
+            gotValidClick = False
+            clickableList = environmenttools.getFromNames([boxA_3, boxB_3, boxC_3, boxD_3], namespace=locals())
+            for obj in clickableList:
+                # is this object clicked on?
+                if obj.contains(mouse_4):
+                    gotValidClick = True
+                    mouse_4.clicked_name.append(obj.name)
+            if not gotValidClick:
+                mouse_4.clicked_name.append(None)
+        trials_3.addData('mouse_4.x', x)
+        trials_3.addData('mouse_4.y', y)
+        trials_3.addData('mouse_4.leftButton', buttons[0])
+        trials_3.addData('mouse_4.midButton', buttons[1])
+        trials_3.addData('mouse_4.rightButton', buttons[2])
+        if len(mouse_4.clicked_name):
+            trials_3.addData('mouse_4.clicked_name', mouse_4.clicked_name[0])
         # Run 'End Routine' code from recordC
         clicked = ""
         
@@ -3805,91 +3873,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     thisExp.addData('sampleQuiz.stopped', sampleQuiz.tStop)
     thisExp.nextEntry()
     # the Routine "sampleQuiz" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset()
-    
-    # --- Prepare to start Routine "quiz" ---
-    # create an object to store info about Routine quiz
-    quiz = data.Routine(
-        name='quiz',
-        components=[],
-    )
-    quiz.status = NOT_STARTED
-    continueRoutine = True
-    # update component parameters for each repeat
-    # store start times for quiz
-    quiz.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
-    quiz.tStart = globalClock.getTime(format='float')
-    quiz.status = STARTED
-    thisExp.addData('quiz.started', quiz.tStart)
-    quiz.maxDuration = None
-    # keep track of which components have finished
-    quizComponents = quiz.components
-    for thisComponent in quiz.components:
-        thisComponent.tStart = None
-        thisComponent.tStop = None
-        thisComponent.tStartRefresh = None
-        thisComponent.tStopRefresh = None
-        if hasattr(thisComponent, 'status'):
-            thisComponent.status = NOT_STARTED
-    # reset timers
-    t = 0
-    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    frameN = -1
-    
-    # --- Run Routine "quiz" ---
-    quiz.forceEnded = routineForceEnded = not continueRoutine
-    while continueRoutine:
-        # get current time
-        t = routineTimer.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
-        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-        # update/draw components on each frame
-        # Run 'Each Frame' code from code_5
-        # Ctrl + Q to quit
-        keys = event.getKeys(modifiers=True)
-        
-        for key, modifiers in keys:
-            if key.lower() == 'q' and modifiers.get('ctrl', False):
-                core.quit()
-        if thisExp.status == FINISHED or endExpNow:
-            endExperiment(thisExp, win=win)
-            return
-        # pause experiment here if requested
-        if thisExp.status == PAUSED:
-            pauseExperiment(
-                thisExp=thisExp, 
-                win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=quiz,
-            )
-            # skip the frame we paused on
-            continue
-        
-        # check if all components have finished
-        if not continueRoutine:  # a component has requested a forced-end of Routine
-            quiz.forceEnded = routineForceEnded = True
-            break
-        continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in quiz.components:
-            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                continueRoutine = True
-                break  # at least one component has not yet finished
-        
-        # refresh the screen
-        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-            win.flip()
-    
-    # --- Ending Routine "quiz" ---
-    for thisComponent in quiz.components:
-        if hasattr(thisComponent, "setAutoDraw"):
-            thisComponent.setAutoDraw(False)
-    # store stop times for quiz
-    quiz.tStop = globalClock.getTime(format='float')
-    quiz.tStopRefresh = tThisFlipGlobal
-    thisExp.addData('quiz.stopped', quiz.tStop)
-    thisExp.nextEntry()
-    # the Routine "quiz" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
     # --- Prepare to start Routine "quizending" ---
