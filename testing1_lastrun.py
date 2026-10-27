@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2025.1.1),
-    on October 20, 2026, at 14:26
+    on October 27, 2026, at 12:39
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -133,7 +133,7 @@ def setupData(expInfo, dataDir=None):
     thisExp = data.ExperimentHandler(
         name=expName, version=expVersion,
         extraInfo=expInfo, runtimeInfo=None,
-        originPath='C:\\SPPA\\CMKL\\Animation_Project\\Summer\\Experiment_Workflows\\Testing1\\testing1_lastrun.py',
+        originPath='C:\\Users\\LENOVO\\Documents\\psychopyexperiments\\testing1_lastrun.py',
         savePickle=True, saveWideText=True,
         dataFileName=dataDir + os.sep + filename, sortColumns='time'
     )
@@ -1755,8 +1755,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 boxB.tStart = t  # local t and not account for scr refresh
                 boxB.tStartRefresh = tThisFlipGlobal  # on global time
                 win.timeOnFlip(boxB, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'boxB.started')
                 # update status
                 boxB.status = STARTED
                 boxB.setAutoDraw(True)
@@ -1795,8 +1793,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 boxC.tStart = t  # local t and not account for scr refresh
                 boxC.tStartRefresh = tThisFlipGlobal  # on global time
                 win.timeOnFlip(boxC, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'boxC.started')
                 # update status
                 boxC.status = STARTED
                 boxC.setAutoDraw(True)
@@ -1835,8 +1831,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 boxD.tStart = t  # local t and not account for scr refresh
                 boxD.tStartRefresh = tThisFlipGlobal  # on global time
                 win.timeOnFlip(boxD, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'boxD.started')
                 # update status
                 boxD.status = STARTED
                 boxD.setAutoDraw(True)
@@ -2143,8 +2137,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 nextQuizB.tStart = t  # local t and not account for scr refresh
                 nextQuizB.tStartRefresh = tThisFlipGlobal  # on global time
                 win.timeOnFlip(nextQuizB, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'nextQuizB.started')
                 # update status
                 nextQuizB.status = STARTED
                 win.callOnFlip(nextQuizB.buttonClock.reset)
@@ -2201,8 +2193,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 boxA_2.tStart = t  # local t and not account for scr refresh
                 boxA_2.tStartRefresh = tThisFlipGlobal  # on global time
                 win.timeOnFlip(boxA_2, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'boxA_2.started')
                 # update status
                 boxA_2.status = STARTED
                 boxA_2.setAutoDraw(True)
@@ -2241,8 +2231,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 boxB_2.tStart = t  # local t and not account for scr refresh
                 boxB_2.tStartRefresh = tThisFlipGlobal  # on global time
                 win.timeOnFlip(boxB_2, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'boxB_2.started')
                 # update status
                 boxB_2.status = STARTED
                 boxB_2.setAutoDraw(True)
@@ -2281,8 +2269,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 boxC_2.tStart = t  # local t and not account for scr refresh
                 boxC_2.tStartRefresh = tThisFlipGlobal  # on global time
                 win.timeOnFlip(boxC_2, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'boxC_2.started')
                 # update status
                 boxC_2.status = STARTED
                 boxC_2.setAutoDraw(True)
@@ -2321,8 +2307,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 boxD_2.tStart = t  # local t and not account for scr refresh
                 boxD_2.tStartRefresh = tThisFlipGlobal  # on global time
                 win.timeOnFlip(boxD_2, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'boxD_2.started')
                 # update status
                 boxD_2.status = STARTED
                 boxD_2.setAutoDraw(True)
