@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2025.1.1),
-    on October 31, 2026, at 17:41
+    on October 31, 2026, at 18:50
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -1195,6 +1195,136 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         itemPadding=0.1,
         depth=-1
     )
+    
+    # --- Initialize components for Routine "demographicQuiz" ---
+    nextDemo = visual.ButtonStim(win, 
+        text='NEXT', font='Times New Roman',
+        pos=(0.8, -0.75),
+        letterHeight=0.05,
+        size=(0.15, 0.15), 
+        ori=0.0
+        ,borderWidth=0.0,
+        fillColor=[1.0000, 1.0000, 1.0000], borderColor=None,
+        color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb',
+        opacity=None,
+        bold=True, italic=False,
+        padding=None,
+        anchor='center',
+        name='nextDemo',
+        depth=-3
+    )
+    nextDemo.buttonClock = core.Clock()
+    questionDemo = visual.TextBox2(
+         win, text='', placeholder='Type here...', font='Arial',
+         ori=0.0, pos=(0, 0.35), draggable=False,      letterHeight=0.05,
+         size=(0.5, 0.5), borderWidth=2.0,
+         color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb',
+         opacity=None,
+         bold=False, italic=False,
+         lineSpacing=1.0, speechPoint=None,
+         padding=0.0, alignment='center',
+         anchor='center', overflow='visible',
+         fillColor=None, borderColor=None,
+         flipHoriz=False, flipVert=False, languageStyle='LTR',
+         editable=False,
+         name='questionDemo',
+         depth=-4, autoLog=True,
+    )
+    box1 = visual.Rect(
+        win=win, name='box1',
+        width=(1.2, 0.12)[0], height=(1.2, 0.12)[1],
+        ori=0.0, pos=(0, 0.1), draggable=False, anchor='center',
+        lineWidth=1.0,
+        colorSpace='rgb', lineColor='white', fillColor='white',
+        opacity=None, depth=-5.0, interpolate=True)
+    choiceA_demo = visual.TextBox2(
+         win, text='', placeholder='Type here...', font='Arial',
+         ori=0.0, pos=(0, 0.1), draggable=False,      letterHeight=0.05,
+         size=(0.5, 0.5), borderWidth=2.0,
+         color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb',
+         opacity=None,
+         bold=False, italic=False,
+         lineSpacing=1.0, speechPoint=None,
+         padding=0.0, alignment='center',
+         anchor='center', overflow='visible',
+         fillColor=None, borderColor=None,
+         flipHoriz=False, flipVert=False, languageStyle='LTR',
+         editable=False,
+         name='choiceA_demo',
+         depth=-6, autoLog=True,
+    )
+    box2 = visual.Rect(
+        win=win, name='box2',
+        width=(1.2, 0.12)[0], height=(1.2, 0.12)[1],
+        ori=0.0, pos=(0, -0.05), draggable=False, anchor='center',
+        lineWidth=1.0,
+        colorSpace='rgb', lineColor='white', fillColor='white',
+        opacity=None, depth=-7.0, interpolate=True)
+    choiceB_demo = visual.TextBox2(
+         win, text='', placeholder='Type here...', font='Arial',
+         ori=0.0, pos=(0, -0.05), draggable=False,      letterHeight=0.05,
+         size=(0.5, 0.5), borderWidth=2.0,
+         color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb',
+         opacity=None,
+         bold=False, italic=False,
+         lineSpacing=1.0, speechPoint=None,
+         padding=0.0, alignment='center',
+         anchor='center', overflow='visible',
+         fillColor=None, borderColor=None,
+         flipHoriz=False, flipVert=False, languageStyle='LTR',
+         editable=False,
+         name='choiceB_demo',
+         depth=-8, autoLog=True,
+    )
+    box3 = visual.Rect(
+        win=win, name='box3',
+        width=(1.2, 0.12)[0], height=(1.2, 0.12)[1],
+        ori=0.0, pos=(0, -0.2), draggable=False, anchor='center',
+        lineWidth=1.0,
+        colorSpace='rgb', lineColor='white', fillColor='white',
+        opacity=None, depth=-9.0, interpolate=True)
+    choiceC_demo = visual.TextBox2(
+         win, text='', placeholder='Type here...', font='Arial',
+         ori=0.0, pos=(0, -0.20), draggable=False,      letterHeight=0.05,
+         size=(0.5, 0.5), borderWidth=2.0,
+         color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb',
+         opacity=None,
+         bold=False, italic=False,
+         lineSpacing=1.0, speechPoint=None,
+         padding=0.0, alignment='center',
+         anchor='center', overflow='visible',
+         fillColor=None, borderColor=None,
+         flipHoriz=False, flipVert=False, languageStyle='LTR',
+         editable=False,
+         name='choiceC_demo',
+         depth=-10, autoLog=True,
+    )
+    box4 = visual.Rect(
+        win=win, name='box4',
+        width=(1.2, 0.12)[0], height=(1.2, 0.12)[1],
+        ori=0.0, pos=(0, -0.35), draggable=False, anchor='center',
+        lineWidth=1.0,
+        colorSpace='rgb', lineColor='white', fillColor='white',
+        opacity=None, depth=-11.0, interpolate=True)
+    choiceD_demo = visual.TextBox2(
+         win, text='', placeholder='Type here...', font='Arial',
+         ori=0.0, pos=(0, -0.35), draggable=False,      letterHeight=0.05,
+         size=(0.5, 0.5), borderWidth=2.0,
+         color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb',
+         opacity=None,
+         bold=False, italic=False,
+         lineSpacing=1.0, speechPoint=None,
+         padding=0.0, alignment='center',
+         anchor='center', overflow='visible',
+         fillColor=None, borderColor=None,
+         flipHoriz=False, flipVert=False, languageStyle='LTR',
+         editable=False,
+         name='choiceD_demo',
+         depth=-12, autoLog=True,
+    )
+    mouse_5 = event.Mouse(win=win)
+    x, y = [None, None]
+    mouse_5.mouseClock = core.Clock()
     
     # --- Initialize components for Routine "end" ---
     ending_text = visual.TextBox2(
@@ -4249,6 +4379,462 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     thisExp.nextEntry()
     # the Routine "demographic" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
+    
+    # set up handler to look after randomisation of conditions etc
+    trials_4 = data.TrialHandler2(
+        name='trials_4',
+        nReps=1.0, 
+        method='sequential', 
+        extraInfo=expInfo, 
+        originPath=-1, 
+        trialList=data.importConditions('DQ.xlsx'), 
+        seed=None, 
+    )
+    thisExp.addLoop(trials_4)  # add the loop to the experiment
+    thisTrial_4 = trials_4.trialList[0]  # so we can initialise stimuli with some values
+    # abbreviate parameter names if possible (e.g. rgb = thisTrial_4.rgb)
+    if thisTrial_4 != None:
+        for paramName in thisTrial_4:
+            globals()[paramName] = thisTrial_4[paramName]
+    if thisSession is not None:
+        # if running in a Session with a Liaison client, send data up to now
+        thisSession.sendExperimentData()
+    
+    for thisTrial_4 in trials_4:
+        trials_4.status = STARTED
+        if hasattr(thisTrial_4, 'status'):
+            thisTrial_4.status = STARTED
+        currentLoop = trials_4
+        thisExp.timestampOnFlip(win, 'thisRow.t', format=globalClock.format)
+        if thisSession is not None:
+            # if running in a Session with a Liaison client, send data up to now
+            thisSession.sendExperimentData()
+        # abbreviate parameter names if possible (e.g. rgb = thisTrial_4.rgb)
+        if thisTrial_4 != None:
+            for paramName in thisTrial_4:
+                globals()[paramName] = thisTrial_4[paramName]
+        
+        # --- Prepare to start Routine "demographicQuiz" ---
+        # create an object to store info about Routine demographicQuiz
+        demographicQuiz = data.Routine(
+            name='demographicQuiz',
+            components=[nextDemo, questionDemo, box1, choiceA_demo, box2, choiceB_demo, box3, choiceC_demo, box4, choiceD_demo, mouse_5],
+        )
+        demographicQuiz.status = NOT_STARTED
+        continueRoutine = True
+        # update component parameters for each repeat
+        # Run 'Begin Routine' code from code_14
+        selectedAnswer = None
+        mouseWasPressed = False
+        
+        box1.fillColor = 'white'
+        box2.fillColor = 'white'
+        box3.fillColor = 'white'
+        box4.fillColor = 'white'
+        
+        nextDemo.fillColor = 'white'
+        # reset nextDemo to account for continued clicks & clear times on/off
+        nextDemo.reset()
+        questionDemo.reset()
+        questionDemo.setText(question)
+        choiceA_demo.reset()
+        choiceA_demo.setText(A)
+        choiceB_demo.reset()
+        choiceB_demo.setText(B)
+        choiceC_demo.reset()
+        choiceC_demo.setText(C)
+        choiceD_demo.reset()
+        choiceD_demo.setText(D)
+        # setup some python lists for storing info about the mouse_5
+        mouse_5.clicked_name = []
+        gotValidClick = False  # until a click is received
+        # store start times for demographicQuiz
+        demographicQuiz.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
+        demographicQuiz.tStart = globalClock.getTime(format='float')
+        demographicQuiz.status = STARTED
+        thisExp.addData('demographicQuiz.started', demographicQuiz.tStart)
+        demographicQuiz.maxDuration = None
+        # keep track of which components have finished
+        demographicQuizComponents = demographicQuiz.components
+        for thisComponent in demographicQuiz.components:
+            thisComponent.tStart = None
+            thisComponent.tStop = None
+            thisComponent.tStartRefresh = None
+            thisComponent.tStopRefresh = None
+            if hasattr(thisComponent, 'status'):
+                thisComponent.status = NOT_STARTED
+        # reset timers
+        t = 0
+        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+        frameN = -1
+        
+        # --- Run Routine "demographicQuiz" ---
+        demographicQuiz.forceEnded = routineForceEnded = not continueRoutine
+        while continueRoutine:
+            # if trial has changed, end Routine now
+            if hasattr(thisTrial_4, 'status') and thisTrial_4.status == STOPPING:
+                continueRoutine = False
+            # get current time
+            t = routineTimer.getTime()
+            tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+            # update/draw components on each frame
+            # Run 'Each Frame' code from code_14
+            buttons = mouse_5.getPressed()
+            mouseDown = buttons[0]
+            
+            # Respond only once per mouse click
+            if mouseDown and not mouseWasPressed:
+            
+                if mouse_5.isPressedIn(box1):
+                    selectedAnswer = 'A'
+            
+                elif mouse_5.isPressedIn(box2):
+                    selectedAnswer = 'B'
+            
+                elif mouse_5.isPressedIn(box3):
+                    selectedAnswer = 'C'
+            
+                elif mouse_5.isPressedIn(box4):
+                    selectedAnswer = 'D'
+            
+                # Reset all answer colors
+                box1.fillColor = 'white'
+                box2.fillColor = 'white'
+                box3.fillColor = 'white'
+                box4.fillColor = 'white'
+            
+                # Highlight the selected answer
+                if selectedAnswer == 'A':
+                    box1.fillColor = 'lightblue'
+                elif selectedAnswer == 'B':
+                    box2.fillColor = 'lightblue'
+                elif selectedAnswer == 'C':
+                    box3.fillColor = 'lightblue'
+                elif selectedAnswer == 'D':
+                    box4.fillColor = 'lightblue'
+                    
+                # Proceed only if an answer has been selected
+                if mouse_5.isPressedIn(nextDemo):
+                    if selectedAnswer is not None:
+                        continueRoutine = False
+            
+            
+            mouseWasPressed = mouseDown
+            # Run 'Each Frame' code from cq5
+            # Ctrl + Q to quit
+            keys = event.getKeys(modifiers=True)
+            
+            for key, modifiers in keys:
+                if key.lower() == 'q' and modifiers.get('ctrl', False):
+                    core.quit()
+            # *nextDemo* updates
+            
+            # if nextDemo is starting this frame...
+            if nextDemo.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
+                # keep track of start time/frame for later
+                nextDemo.frameNStart = frameN  # exact frame index
+                nextDemo.tStart = t  # local t and not account for scr refresh
+                nextDemo.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(nextDemo, 'tStartRefresh')  # time at next scr refresh
+                # update status
+                nextDemo.status = STARTED
+                win.callOnFlip(nextDemo.buttonClock.reset)
+                nextDemo.setAutoDraw(True)
+            
+            # if nextDemo is active this frame...
+            if nextDemo.status == STARTED:
+                # update params
+                pass
+                # check whether nextDemo has been pressed
+                if nextDemo.isClicked:
+                    if not nextDemo.wasClicked:
+                        # if this is a new click, store time of first click and clicked until
+                        nextDemo.timesOn.append(nextDemo.buttonClock.getTime())
+                        nextDemo.timesOff.append(nextDemo.buttonClock.getTime())
+                    elif len(nextDemo.timesOff):
+                        # if click is continuing from last frame, update time of clicked until
+                        nextDemo.timesOff[-1] = nextDemo.buttonClock.getTime()
+                    if not nextDemo.wasClicked:
+                        # run callback code when nextDemo is clicked
+                        pass
+            # take note of whether nextDemo was clicked, so that next frame we know if clicks are new
+            nextDemo.wasClicked = nextDemo.isClicked and nextDemo.status == STARTED
+            
+            # *questionDemo* updates
+            
+            # if questionDemo is starting this frame...
+            if questionDemo.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                questionDemo.frameNStart = frameN  # exact frame index
+                questionDemo.tStart = t  # local t and not account for scr refresh
+                questionDemo.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(questionDemo, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'questionDemo.started')
+                # update status
+                questionDemo.status = STARTED
+                questionDemo.setAutoDraw(True)
+            
+            # if questionDemo is active this frame...
+            if questionDemo.status == STARTED:
+                # update params
+                pass
+            
+            # *box1* updates
+            
+            # if box1 is starting this frame...
+            if box1.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                box1.frameNStart = frameN  # exact frame index
+                box1.tStart = t  # local t and not account for scr refresh
+                box1.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(box1, 'tStartRefresh')  # time at next scr refresh
+                # update status
+                box1.status = STARTED
+                box1.setAutoDraw(True)
+            
+            # if box1 is active this frame...
+            if box1.status == STARTED:
+                # update params
+                pass
+            
+            # *choiceA_demo* updates
+            
+            # if choiceA_demo is starting this frame...
+            if choiceA_demo.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                choiceA_demo.frameNStart = frameN  # exact frame index
+                choiceA_demo.tStart = t  # local t and not account for scr refresh
+                choiceA_demo.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(choiceA_demo, 'tStartRefresh')  # time at next scr refresh
+                # update status
+                choiceA_demo.status = STARTED
+                choiceA_demo.setAutoDraw(True)
+            
+            # if choiceA_demo is active this frame...
+            if choiceA_demo.status == STARTED:
+                # update params
+                pass
+            
+            # *box2* updates
+            
+            # if box2 is starting this frame...
+            if box2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                box2.frameNStart = frameN  # exact frame index
+                box2.tStart = t  # local t and not account for scr refresh
+                box2.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(box2, 'tStartRefresh')  # time at next scr refresh
+                # update status
+                box2.status = STARTED
+                box2.setAutoDraw(True)
+            
+            # if box2 is active this frame...
+            if box2.status == STARTED:
+                # update params
+                pass
+            
+            # *choiceB_demo* updates
+            
+            # if choiceB_demo is starting this frame...
+            if choiceB_demo.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                choiceB_demo.frameNStart = frameN  # exact frame index
+                choiceB_demo.tStart = t  # local t and not account for scr refresh
+                choiceB_demo.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(choiceB_demo, 'tStartRefresh')  # time at next scr refresh
+                # update status
+                choiceB_demo.status = STARTED
+                choiceB_demo.setAutoDraw(True)
+            
+            # if choiceB_demo is active this frame...
+            if choiceB_demo.status == STARTED:
+                # update params
+                pass
+            
+            # *box3* updates
+            
+            # if box3 is starting this frame...
+            if box3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                box3.frameNStart = frameN  # exact frame index
+                box3.tStart = t  # local t and not account for scr refresh
+                box3.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(box3, 'tStartRefresh')  # time at next scr refresh
+                # update status
+                box3.status = STARTED
+                box3.setAutoDraw(True)
+            
+            # if box3 is active this frame...
+            if box3.status == STARTED:
+                # update params
+                pass
+            
+            # *choiceC_demo* updates
+            
+            # if choiceC_demo is starting this frame...
+            if choiceC_demo.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                choiceC_demo.frameNStart = frameN  # exact frame index
+                choiceC_demo.tStart = t  # local t and not account for scr refresh
+                choiceC_demo.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(choiceC_demo, 'tStartRefresh')  # time at next scr refresh
+                # update status
+                choiceC_demo.status = STARTED
+                choiceC_demo.setAutoDraw(True)
+            
+            # if choiceC_demo is active this frame...
+            if choiceC_demo.status == STARTED:
+                # update params
+                pass
+            
+            # *box4* updates
+            
+            # if box4 is starting this frame...
+            if box4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                box4.frameNStart = frameN  # exact frame index
+                box4.tStart = t  # local t and not account for scr refresh
+                box4.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(box4, 'tStartRefresh')  # time at next scr refresh
+                # update status
+                box4.status = STARTED
+                box4.setAutoDraw(True)
+            
+            # if box4 is active this frame...
+            if box4.status == STARTED:
+                # update params
+                pass
+            
+            # *choiceD_demo* updates
+            
+            # if choiceD_demo is starting this frame...
+            if choiceD_demo.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                choiceD_demo.frameNStart = frameN  # exact frame index
+                choiceD_demo.tStart = t  # local t and not account for scr refresh
+                choiceD_demo.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(choiceD_demo, 'tStartRefresh')  # time at next scr refresh
+                # update status
+                choiceD_demo.status = STARTED
+                choiceD_demo.setAutoDraw(True)
+            
+            # if choiceD_demo is active this frame...
+            if choiceD_demo.status == STARTED:
+                # update params
+                pass
+            # *mouse_5* updates
+            
+            # if mouse_5 is starting this frame...
+            if mouse_5.status == NOT_STARTED and t >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                mouse_5.frameNStart = frameN  # exact frame index
+                mouse_5.tStart = t  # local t and not account for scr refresh
+                mouse_5.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(mouse_5, 'tStartRefresh')  # time at next scr refresh
+                # update status
+                mouse_5.status = STARTED
+                mouse_5.mouseClock.reset()
+                prevButtonState = mouse_5.getPressed()  # if button is down already this ISN'T a new click
+            if thisExp.status == FINISHED or endExpNow:
+                endExperiment(thisExp, win=win)
+                return
+            # pause experiment here if requested
+            if thisExp.status == PAUSED:
+                pauseExperiment(
+                    thisExp=thisExp, 
+                    win=win, 
+                    timers=[routineTimer, globalClock], 
+                    currentRoutine=demographicQuiz,
+                )
+                # skip the frame we paused on
+                continue
+            
+            # check if all components have finished
+            if not continueRoutine:  # a component has requested a forced-end of Routine
+                demographicQuiz.forceEnded = routineForceEnded = True
+                break
+            continueRoutine = False  # will revert to True if at least one component still running
+            for thisComponent in demographicQuiz.components:
+                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                    continueRoutine = True
+                    break  # at least one component has not yet finished
+            
+            # refresh the screen
+            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                win.flip()
+        
+        # --- Ending Routine "demographicQuiz" ---
+        for thisComponent in demographicQuiz.components:
+            if hasattr(thisComponent, "setAutoDraw"):
+                thisComponent.setAutoDraw(False)
+        # store stop times for demographicQuiz
+        demographicQuiz.tStop = globalClock.getTime(format='float')
+        demographicQuiz.tStopRefresh = tThisFlipGlobal
+        thisExp.addData('demographicQuiz.stopped', demographicQuiz.tStop)
+        # Run 'End Routine' code from demo_record
+        if selectedAnswer is None:
+            participant_answer = "No answer"
+        else:
+            participant_answer = selectedAnswer
+        
+        thisExp.addData("participant_answer", participant_answer)
+        
+        # store data for trials_4 (TrialHandler)
+        x, y = mouse_5.getPos()
+        buttons = mouse_5.getPressed()
+        if sum(buttons):
+            # check if the mouse was inside our 'clickable' objects
+            gotValidClick = False
+            clickableList = environmenttools.getFromNames([boxA, boxB, boxC, boxD], namespace=locals())
+            for obj in clickableList:
+                # is this object clicked on?
+                if obj.contains(mouse_5):
+                    gotValidClick = True
+                    mouse_5.clicked_name.append(obj.name)
+            if not gotValidClick:
+                mouse_5.clicked_name.append(None)
+        trials_4.addData('mouse_5.x', x)
+        trials_4.addData('mouse_5.y', y)
+        trials_4.addData('mouse_5.leftButton', buttons[0])
+        trials_4.addData('mouse_5.midButton', buttons[1])
+        trials_4.addData('mouse_5.rightButton', buttons[2])
+        if len(mouse_5.clicked_name):
+            trials_4.addData('mouse_5.clicked_name', mouse_5.clicked_name[0])
+        # the Routine "demographicQuiz" was not non-slip safe, so reset the non-slip timer
+        routineTimer.reset()
+        # mark thisTrial_4 as finished
+        if hasattr(thisTrial_4, 'status'):
+            thisTrial_4.status = FINISHED
+        # if awaiting a pause, pause now
+        if trials_4.status == PAUSED:
+            thisExp.status = PAUSED
+            pauseExperiment(
+                thisExp=thisExp, 
+                win=win, 
+                timers=[globalClock], 
+            )
+            # once done pausing, restore running status
+            trials_4.status = STARTED
+        thisExp.nextEntry()
+        
+    # completed 1.0 repeats of 'trials_4'
+    trials_4.status = FINISHED
+    
+    if thisSession is not None:
+        # if running in a Session with a Liaison client, send data up to now
+        thisSession.sendExperimentData()
+    # get names of stimulus parameters
+    if trials_4.trialList in ([], [None], None):
+        params = []
+    else:
+        params = trials_4.trialList[0].keys()
+    # save data for this loop
+    trials_4.saveAsExcel(filename + '.xlsx', sheetName='trials_4',
+        stimOut=params,
+        dataOut=['n','all_mean','all_std', 'all_raw'])
     
     # --- Prepare to start Routine "end" ---
     # create an object to store info about Routine end
