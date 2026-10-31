@@ -1,0 +1,16 @@
+﻿itemText,itemText_raw,likert_slider.response_raw,nextButton.numClicks_raw,nextButton.timesOff_raw,nextButton.timesOn_raw,thisN_raw,thisRepN_raw,thisTrialN_raw
+The video held my attention throughout.,The video held my attention throughout.,,1,0.0006353999924613163,0.0006006999901728705,0,0,0
+The speaker was easy to understand.,The speaker was easy to understand.,,1,0.11379350000061095,0.11377860000357032,1,0,1
+The content was interesting.,The content was interesting.,,1,0.12953990000823978,0.12952600000426173,2,0,2
+I would want to watch more videos like this.,I would want to watch more videos like this.,,1,0.11864359999890439,0.11863450000237208,3,0,3
+The speed of the video felt appropriate.,The speed of the video felt appropriate.,,1,0.12777199999254663,0.12775970000075176,4,0,4
+
+extraInfo
+participant,119481
+session,001
+date,2026-10-27_14h47.35.003
+expName,testing1
+expVersion,
+psychopyVersion,2025.1.1
+frameRate,89.88925644696492
+expStart,2026-10-27 14h47.45.071599 +0700

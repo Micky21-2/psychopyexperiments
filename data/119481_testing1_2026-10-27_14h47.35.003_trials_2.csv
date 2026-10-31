@@ -1,0 +1,14 @@
+﻿questionID,question,A,B,C,D,correct,A_raw,B_raw,C_raw,D_raw,correct_raw,mouse_3.clicked_name_raw,mouse_3.leftButton_raw,mouse_3.midButton_raw,mouse_3.rightButton_raw,mouse_3.x_raw,mouse_3.y_raw,nextQuizB.numClicks_raw,nextQuizB.timesOff_raw,nextQuizB.timesOn_raw,questionID_raw,question_raw,thisN_raw,thisRepN_raw,thisTrialN_raw
+Q1,What color is the sky on a clear day?,Green,Blue,Red,Yellow,B,Green,Blue,Red,Yellow,B,,1,0,0,0.8152777777777778,-0.7855555555555556,1,1.8448712000099476,1.844859600008931,Q1,What color is the sky on a clear day?,0,0,0
+Q2,How many days are in a week?,6,7,8,5,B,6,7,8,5,B,,1,0,0,0.7423611111111111,-0.7111111111111111,1,1.852303599996958,1.8522917999944184,Q2,How many days are in a week?,1,0,1
+Q3,Which animal says "meow"?,Dog,Cat,Cow,Bird,B,Dog,Cat,Cow,Bird,B,,1,0,0,0.7631944444444444,-0.7533333333333333,1,1.5723163999937242,1.5723074999987148,Q3,Which animal says "meow"?,2,0,2
+
+extraInfo
+participant,119481
+session,001
+date,2026-10-27_14h47.35.003
+expName,testing1
+expVersion,
+psychopyVersion,2025.1.1
+frameRate,89.88925644696492
+expStart,2026-10-27 14h47.45.071599 +0700

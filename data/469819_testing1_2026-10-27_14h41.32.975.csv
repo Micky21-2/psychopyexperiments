@@ -1,0 +1,4 @@
+﻿questionID,question,A,B,C,D,correct,thisN,thisTrialN,thisRepN,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,thisRow.t,notes,assigned_video,videoAssignment.started,videoAssignment.stopped,video.started,movie.started,video.stopped,nextVideo.numClicks,nextVideo.timesOn,nextVideo.timesOff,QuizA.started,questionAText.started,participant,session,date,expName,expVersion,psychopyVersion,frameRate,expStart,
+,,,,,,,,,,,,,,,,Sigmachinesecat.mp4,0.03790320000553038,0.03805800000554882,,,,,,,,,469819,001,2026-10-27_14h41.32.975,testing1,,2025.1.1,89.80514081020308,2026-10-27 14h41.42.724923 +0700,
+,,,,,,,,,,,,,,,,,,,0.1856098000134807,0.23908950001350604,4.341161700009252,1,[4.101812199995038],[4.1018241999991005],,,469819,001,2026-10-27_14h41.32.975,testing1,,2025.1.1,89.80514081020308,2026-10-27 14h41.42.724923 +0700,
+Q1,What is the answer for 2+2?,3,6,4,5,C,0,0,0,0,0,0,0,4.531983200009563,,,,,,,,,,,4.503095300009591,4.531983200009563,,,,,,,,,
