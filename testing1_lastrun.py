@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2025.1.1),
-    on October 31, 2026, at 18:50
+    on October 31, 2026, at 19:51
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -553,7 +553,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     )
     boxA = visual.Rect(
         win=win, name='boxA',
-        width=(1.2, 0.12)[0], height=(1.2, 0.12)[1],
+        width=(1.9, 0.12)[0], height=(1.9, 0.12)[1],
         ori=0.0, pos=(0, 0.1), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
@@ -576,7 +576,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     )
     boxB = visual.Rect(
         win=win, name='boxB',
-        width=(1.2, 0.12)[0], height=(1.2, 0.12)[1],
+        width=(1.9, 0.12)[0], height=(1.9, 0.12)[1],
         ori=0.0, pos=(0, -0.05), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
@@ -599,7 +599,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     )
     boxC = visual.Rect(
         win=win, name='boxC',
-        width=(1.2, 0.12)[0], height=(1.2, 0.12)[1],
+        width=(1.9, 0.12)[0], height=(1.9, 0.12)[1],
         ori=0.0, pos=(0, -0.2), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
@@ -622,7 +622,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     )
     boxD = visual.Rect(
         win=win, name='boxD',
-        width=(1.2, 0.12)[0], height=(1.2, 0.12)[1],
+        width=(1.9, 0.12)[0], height=(1.9, 0.12)[1],
         ori=0.0, pos=(0, -0.35), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
@@ -683,7 +683,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     )
     boxA_2 = visual.Rect(
         win=win, name='boxA_2',
-        width=(1.2, 0.12)[0], height=(1.2, 0.12)[1],
+        width=(1.9, 0.12)[0], height=(1.9, 0.12)[1],
         ori=0.0, pos=(0, 0.1), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
@@ -706,7 +706,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     )
     boxB_2 = visual.Rect(
         win=win, name='boxB_2',
-        width=(1.2, 0.12)[0], height=(1.2, 0.12)[1],
+        width=(1.9, 0.12)[0], height=(1.9, 0.12)[1],
         ori=0.0, pos=(0, -0.05), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
@@ -729,7 +729,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     )
     boxC_2 = visual.Rect(
         win=win, name='boxC_2',
-        width=(1.2, 0.12)[0], height=(1.2, 0.12)[1],
+        width=(1.9, 0.12)[0], height=(1.9, 0.12)[1],
         ori=0.0, pos=(0, -0.2), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
@@ -752,7 +752,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     )
     boxD_2 = visual.Rect(
         win=win, name='boxD_2',
-        width=(1.2, 0.12)[0], height=(1.2, 0.12)[1],
+        width=(1.9, 0.12)[0], height=(1.9, 0.12)[1],
         ori=0.0, pos=(0, -0.35), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
@@ -813,7 +813,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     )
     boxA_3 = visual.Rect(
         win=win, name='boxA_3',
-        width=(1.2, 0.12)[0], height=(1.2, 0.12)[1],
+        width=(1.9, 0.12)[0], height=(1.9, 0.12)[1],
         ori=0.0, pos=(0, 0.1), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
@@ -836,7 +836,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     )
     boxB_3 = visual.Rect(
         win=win, name='boxB_3',
-        width=(1.2, 0.12)[0], height=(1.2, 0.12)[1],
+        width=(1.9, 0.12)[0], height=(1.9, 0.12)[1],
         ori=0.0, pos=(0, -0.05), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
@@ -859,7 +859,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     )
     boxC_3 = visual.Rect(
         win=win, name='boxC_3',
-        width=(1.2, 0.12)[0], height=(1.2, 0.12)[1],
+        width=(1.9, 0.12)[0], height=(1.9, 0.12)[1],
         ori=0.0, pos=(0, -0.2), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
@@ -882,7 +882,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     )
     boxD_3 = visual.Rect(
         win=win, name='boxD_3',
-        width=(1.2, 0.12)[0], height=(1.2, 0.12)[1],
+        width=(1.9, 0.12)[0], height=(1.9, 0.12)[1],
         ori=0.0, pos=(0, -0.35), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
@@ -1127,16 +1127,16 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     likertText = visual.TextStim(win=win, name='likertText',
         text='',
         font='Times New Roman',
-        pos=(0, 0), draggable=False, height=0.1, wrapWidth=None, ori=0.0, 
+        pos=(0, 0.34), draggable=False, height=0.1, wrapWidth=1.5, ori=0.0, 
         color="'#000000'", colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=0.0);
     likert_slider = visual.Slider(win=win, name='likert_slider',
-        startValue=None, size=(1.5, 0.1), pos=(0, -0.4), units=win.units,
-        labels=('Strongly disagree', 'Disagree', 'Somewhat disagree', 'Neither agree nor disagree', 'Somewhat agree', 'Agree', 'Strongly agree'), ticks=(1, 2, 3, 4, 5, 6, 7), granularity=1.0,
+        startValue=None, size=(1.74, 0.1), pos=(0, 0.14), units=win.units,
+        labels=('Strongly  disagree', 'Disagree', 'Somewhat  disagree', 'Neither  agree nor disagree', 'Somewhat  agree', 'Agree', 'Strongly  agree'), ticks=(1, 2, 3, 4, 5, 6, 7), granularity=1.0,
         style='rating', styleTweaks=(), opacity=None,
         labelColor="'#000000'", markerColor='Red', lineColor='White', colorSpace='rgb',
-        font='Noto Sans', labelHeight=0.036,
+        font='Times New Roman', labelHeight=0.093,
         flip=False, ori=0.0, depth=-1, readOnly=False)
     nextButton = visual.ButtonStim(win, 
         text='NEXT', font='Times New Roman',
@@ -1163,39 +1163,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         if key.lower() == 'q' and modifiers.get('ctrl', False):
             core.quit()
     
-    # --- Initialize components for Routine "demographic" ---
-    demoNext = visual.ButtonStim(win, 
-        text='NEXT', font='Times New Roman',
-        pos=(0.8, -0.75),
-        letterHeight=0.05,
-        size=(0.15, 0.15), 
-        ori=0.0
-        ,borderWidth=0.0,
-        fillColor=[1.0000, 1.0000, 1.0000], borderColor=None,
-        color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb',
-        opacity=None,
-        bold=True, italic=False,
-        padding=None,
-        anchor='center',
-        name='demoNext',
-        depth=0
-    )
-    demoNext.buttonClock = core.Clock()
-    win.allowStencil = True
-    form = visual.Form(win=win, name='form',
-        items='demoForm.xlsx',
-        textHeight=0.03,
-        font='Noto Sans',
-        randomize=False,
-        style='custom...',
-        fillColor=[0.6549, 0.6549, 0.6549], borderColor=[0.6549, 0.6549, 0.6549], itemColor=[-1.0000, -1.0000, -1.0000], 
-        responseColor=[-1.0000, -1.0000, -1.0000], markerColor=[1.0000, -1.0000, -1.0000], colorSpace='rgb', 
-        size=(1.6, 0.7),
-        pos=(0, 0),
-        itemPadding=0.1,
-        depth=-1
-    )
-    
     # --- Initialize components for Routine "demographicQuiz" ---
     nextDemo = visual.ButtonStim(win, 
         text='NEXT', font='Times New Roman',
@@ -1217,7 +1184,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     questionDemo = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, 0.35), draggable=False,      letterHeight=0.05,
-         size=(0.5, 0.5), borderWidth=2.0,
+         size=(1.5, 0.5), borderWidth=2.0,
          color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb',
          opacity=None,
          bold=False, italic=False,
@@ -1232,7 +1199,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     )
     box1 = visual.Rect(
         win=win, name='box1',
-        width=(1.2, 0.12)[0], height=(1.2, 0.12)[1],
+        width=(1.9, 0.12)[0], height=(1.9, 0.12)[1],
         ori=0.0, pos=(0, 0.1), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
@@ -1240,7 +1207,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     choiceA_demo = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, 0.1), draggable=False,      letterHeight=0.05,
-         size=(0.5, 0.5), borderWidth=2.0,
+         size=(1.5, 0.5), borderWidth=2.0,
          color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb',
          opacity=None,
          bold=False, italic=False,
@@ -1255,7 +1222,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     )
     box2 = visual.Rect(
         win=win, name='box2',
-        width=(1.2, 0.12)[0], height=(1.2, 0.12)[1],
+        width=(1.9, 0.12)[0], height=(1.9, 0.12)[1],
         ori=0.0, pos=(0, -0.05), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
@@ -1263,7 +1230,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     choiceB_demo = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, -0.05), draggable=False,      letterHeight=0.05,
-         size=(0.5, 0.5), borderWidth=2.0,
+         size=(1.5, 0.5), borderWidth=2.0,
          color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb',
          opacity=None,
          bold=False, italic=False,
@@ -1278,7 +1245,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     )
     box3 = visual.Rect(
         win=win, name='box3',
-        width=(1.2, 0.12)[0], height=(1.2, 0.12)[1],
+        width=(1.9, 0.12)[0], height=(1.9, 0.12)[1],
         ori=0.0, pos=(0, -0.2), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
@@ -1286,7 +1253,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     choiceC_demo = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, -0.20), draggable=False,      letterHeight=0.05,
-         size=(0.5, 0.5), borderWidth=2.0,
+         size=(1.5, 0.5), borderWidth=2.0,
          color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb',
          opacity=None,
          bold=False, italic=False,
@@ -1301,7 +1268,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     )
     box4 = visual.Rect(
         win=win, name='box4',
-        width=(1.2, 0.12)[0], height=(1.2, 0.12)[1],
+        width=(1.9, 0.12)[0], height=(1.9, 0.12)[1],
         ori=0.0, pos=(0, -0.35), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
@@ -1309,7 +1276,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     choiceD_demo = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, -0.35), draggable=False,      letterHeight=0.05,
-         size=(0.5, 0.5), borderWidth=2.0,
+         size=(1.5, 0.5), borderWidth=2.0,
          color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb',
          opacity=None,
          bold=False, italic=False,
@@ -4237,148 +4204,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     likertLoop.saveAsExcel(filename + '.xlsx', sheetName='likertLoop',
         stimOut=params,
         dataOut=['n','all_mean','all_std', 'all_raw'])
-    
-    # --- Prepare to start Routine "demographic" ---
-    # create an object to store info about Routine demographic
-    demographic = data.Routine(
-        name='demographic',
-        components=[demoNext, form],
-    )
-    demographic.status = NOT_STARTED
-    continueRoutine = True
-    # update component parameters for each repeat
-    # reset demoNext to account for continued clicks & clear times on/off
-    demoNext.reset()
-    # store start times for demographic
-    demographic.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
-    demographic.tStart = globalClock.getTime(format='float')
-    demographic.status = STARTED
-    thisExp.addData('demographic.started', demographic.tStart)
-    demographic.maxDuration = None
-    # keep track of which components have finished
-    demographicComponents = demographic.components
-    for thisComponent in demographic.components:
-        thisComponent.tStart = None
-        thisComponent.tStop = None
-        thisComponent.tStartRefresh = None
-        thisComponent.tStopRefresh = None
-        if hasattr(thisComponent, 'status'):
-            thisComponent.status = NOT_STARTED
-    # reset timers
-    t = 0
-    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    frameN = -1
-    
-    # --- Run Routine "demographic" ---
-    demographic.forceEnded = routineForceEnded = not continueRoutine
-    while continueRoutine:
-        # get current time
-        t = routineTimer.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
-        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-        # update/draw components on each frame
-        # *demoNext* updates
-        
-        # if demoNext is starting this frame...
-        if demoNext.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
-            # keep track of start time/frame for later
-            demoNext.frameNStart = frameN  # exact frame index
-            demoNext.tStart = t  # local t and not account for scr refresh
-            demoNext.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(demoNext, 'tStartRefresh')  # time at next scr refresh
-            # update status
-            demoNext.status = STARTED
-            win.callOnFlip(demoNext.buttonClock.reset)
-            demoNext.setAutoDraw(True)
-        
-        # if demoNext is active this frame...
-        if demoNext.status == STARTED:
-            # update params
-            pass
-            # check whether demoNext has been pressed
-            if demoNext.isClicked:
-                if not demoNext.wasClicked:
-                    # if this is a new click, store time of first click and clicked until
-                    demoNext.timesOn.append(demoNext.buttonClock.getTime())
-                    demoNext.timesOff.append(demoNext.buttonClock.getTime())
-                elif len(demoNext.timesOff):
-                    # if click is continuing from last frame, update time of clicked until
-                    demoNext.timesOff[-1] = demoNext.buttonClock.getTime()
-                if not demoNext.wasClicked:
-                    # end routine when demoNext is clicked
-                    continueRoutine = False
-                if not demoNext.wasClicked:
-                    # run callback code when demoNext is clicked
-                    pass
-        # take note of whether demoNext was clicked, so that next frame we know if clicks are new
-        demoNext.wasClicked = demoNext.isClicked and demoNext.status == STARTED
-        
-        # *form* updates
-        
-        # if form is starting this frame...
-        if form.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            form.frameNStart = frameN  # exact frame index
-            form.tStart = t  # local t and not account for scr refresh
-            form.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(form, 'tStartRefresh')  # time at next scr refresh
-            # update status
-            form.status = STARTED
-            form.setAutoDraw(True)
-        
-        # if form is active this frame...
-        if form.status == STARTED:
-            # update params
-            pass
-        # Run 'Each Frame' code from code_9
-        # Ctrl + Q to quit
-        keys = event.getKeys(modifiers=True)
-        
-        for key, modifiers in keys:
-            if key.lower() == 'q' and modifiers.get('ctrl', False):
-                core.quit()
-        if thisExp.status == FINISHED or endExpNow:
-            endExperiment(thisExp, win=win)
-            return
-        # pause experiment here if requested
-        if thisExp.status == PAUSED:
-            pauseExperiment(
-                thisExp=thisExp, 
-                win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=demographic,
-            )
-            # skip the frame we paused on
-            continue
-        
-        # check if all components have finished
-        if not continueRoutine:  # a component has requested a forced-end of Routine
-            demographic.forceEnded = routineForceEnded = True
-            break
-        continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in demographic.components:
-            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                continueRoutine = True
-                break  # at least one component has not yet finished
-        
-        # refresh the screen
-        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-            win.flip()
-    
-    # --- Ending Routine "demographic" ---
-    for thisComponent in demographic.components:
-        if hasattr(thisComponent, "setAutoDraw"):
-            thisComponent.setAutoDraw(False)
-    # store stop times for demographic
-    demographic.tStop = globalClock.getTime(format='float')
-    demographic.tStopRefresh = tThisFlipGlobal
-    thisExp.addData('demographic.stopped', demographic.tStop)
-    form.addDataToExp(thisExp, 'rows')
-    form.autodraw = False
-    thisExp.nextEntry()
-    # the Routine "demographic" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset()
     
     # set up handler to look after randomisation of conditions etc
     trials_4 = data.TrialHandler2(
