@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2025.1.1),
-    on October 31, 2026, at 19:51
+    on November 01, 2026, at 16:30
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -947,7 +947,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "instructions" ---
     instruction_header = visual.TextBox2(
-         win, text='Instructions', placeholder='Type here...', font='Times New Roman',
+         win, text='INSTRUCTIONS', placeholder='Type here...', font='Times New Roman',
          ori=0.0, pos=(0, 0.65), draggable=False,      letterHeight=0.15,
          size=(1.85, 0.5), borderWidth=2.0,
          color="'#000000'", colorSpace='rgb',
@@ -1004,7 +1004,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          size=(1.85, 0.5), borderWidth=2.0,
          color="'#000000'", colorSpace='rgb',
          opacity=None,
-         bold=False, italic=False,
+         bold=True, italic=False,
          lineSpacing=1.0, speechPoint=None,
          padding=0.0, alignment='center',
          anchor='center', overflow='visible',
@@ -1015,8 +1015,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          depth=0, autoLog=True,
     )
     warning_text = visual.TextBox2(
-         win, text='- You will watch one video in full. \n- Please pay close attention, as you will be tested on the content \n  afterward.\n- The video and quiz cannot be repeated once completed.\n\n', placeholder='Type here...', font='Times New Roman',
-         ori=0.0, pos=(0, -0.15), draggable=False,      letterHeight=0.1,
+         win, text='- You will watch one video in full. \n\n- Please pay close attention, as you will be tested on the content \n  afterward.\n\n- The video and quiz cannot be repeated once completed.\n\n', placeholder='Type here...', font='Times New Roman',
+         ori=0.0, pos=(0, -0.05), draggable=False,      letterHeight=0.1,
          size=(1.85, 0.5), borderWidth=2.0,
          color="'#000000'", colorSpace='rgb',
          opacity=None,
@@ -1132,7 +1132,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         languageStyle='LTR',
         depth=0.0);
     likert_slider = visual.Slider(win=win, name='likert_slider',
-        startValue=None, size=(1.74, 0.1), pos=(0, 0.14), units=win.units,
+        startValue=4, size=(1.74, 0.1), pos=(0, 0.14), units=win.units,
         labels=('Strongly  disagree', 'Disagree', 'Somewhat  disagree', 'Neither  agree nor disagree', 'Somewhat  agree', 'Agree', 'Strongly  agree'), ticks=(1, 2, 3, 4, 5, 6, 7), granularity=1.0,
         style='rating', styleTweaks=(), opacity=None,
         labelColor="'#000000'", markerColor='Red', lineColor='White', colorSpace='rgb',
@@ -1162,6 +1162,22 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     for key, modifiers in keys:
         if key.lower() == 'q' and modifiers.get('ctrl', False):
             core.quit()
+    instruction_slider = visual.TextBox2(
+         win, text='"PLEASE CLICK ON THE SCALE OR INDICATION ON THE SLIDER"', placeholder='Type here...', font='Arial',
+         ori=0.0, pos=(0, -0.55), draggable=False,      letterHeight=0.05,
+         size=(1.2, 0.5), borderWidth=2.0,
+         color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb',
+         opacity=None,
+         bold=True, italic=False,
+         lineSpacing=1.0, speechPoint=None,
+         padding=0.0, alignment='center',
+         anchor='center', overflow='visible',
+         fillColor=None, borderColor=None,
+         flipHoriz=False, flipVert=False, languageStyle='LTR',
+         editable=False,
+         name='instruction_slider',
+         depth=-4, autoLog=True,
+    )
     
     # --- Initialize components for Routine "demographicQuiz" ---
     nextDemo = visual.ButtonStim(win, 
@@ -4023,7 +4039,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         # create an object to store info about Routine likert
         likert = data.Routine(
             name='likert',
-            components=[likertText, likert_slider, nextButton],
+            components=[likertText, likert_slider, nextButton, instruction_slider],
         )
         likert.status = NOT_STARTED
         continueRoutine = True
@@ -4032,6 +4048,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         likert_slider.reset()
         # reset nextButton to account for continued clicks & clear times on/off
         nextButton.reset()
+        instruction_slider.reset()
         # store start times for likert
         likert.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
         likert.tStart = globalClock.getTime(format='float')
@@ -4135,6 +4152,26 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                         pass
             # take note of whether nextButton was clicked, so that next frame we know if clicks are new
             nextButton.wasClicked = nextButton.isClicked and nextButton.status == STARTED
+            
+            # *instruction_slider* updates
+            
+            # if instruction_slider is starting this frame...
+            if instruction_slider.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                instruction_slider.frameNStart = frameN  # exact frame index
+                instruction_slider.tStart = t  # local t and not account for scr refresh
+                instruction_slider.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(instruction_slider, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'instruction_slider.started')
+                # update status
+                instruction_slider.status = STARTED
+                instruction_slider.setAutoDraw(True)
+            
+            # if instruction_slider is active this frame...
+            if instruction_slider.status == STARTED:
+                # update params
+                pass
             if thisExp.status == FINISHED or endExpNow:
                 endExperiment(thisExp, win=win)
                 return
