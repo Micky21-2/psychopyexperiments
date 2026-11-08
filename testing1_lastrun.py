@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2025.1.1),
-    on November 01, 2026, at 16:30
+    on November 08, 2026, at 15:30
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -190,7 +190,7 @@ def setupWindow(expInfo=None, win=None):
         win = visual.Window(
             size=_winSize, fullscr=_fullScr, screen=0,
             winType='pyglet', allowGUI=True, allowStencil=True,
-            monitor='testMonitor', color=[-0.0667, -0.0667, -0.0667], colorSpace='rgb',
+            monitor='testMonitor', color=[0.3255, 0.3255, 0.3255], colorSpace='rgb',
             backgroundImage='', backgroundFit='none',
             blendMode='avg', useFBO=True,
             units='norm',
@@ -198,7 +198,7 @@ def setupWindow(expInfo=None, win=None):
         )
     else:
         # if we have a window, just set the attributes which are safe to set
-        win.color = [-0.0667, -0.0667, -0.0667]
+        win.color = [0.3255, 0.3255, 0.3255]
         win.colorSpace = 'rgb'
         win.backgroundImage = ''
         win.backgroundFit = 'none'
@@ -380,6 +380,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # Start Code - component code to be run after the window creation
     
     # --- Initialize components for Routine "videoAssignment" ---
+    # Run 'Begin Experiment' code from progress_videoAssignment
+    progressStep = 0
+    progressTotal = 21
+    progressBackground = visual.Rect(win=win, width=1.8, height=0.025, pos=(0, 0.94), units='norm', fillColor='white', lineColor='white', opacity=0.45, depth=-100)
+    progressBar = visual.Rect(win=win, width=0.01, height=0.025, pos=(-0.895, 0.94), units='norm', fillColor='lightblue', lineColor='lightblue', depth=-101)
+    progressBackground.setAutoDraw(True)
+    progressBar.setAutoDraw(True)
     # Run 'Begin Experiment' code from code_10
     import csv
     import random
@@ -497,13 +504,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         loop=False, volume=1.0, noAudio=False,
         pos=(0, 0), size=(0.5, 0.5), units=win.units,
         ori=0.0, anchor='center',opacity=None, contrast=1.0,
-        depth=-1
+        depth=-2
     )
     nextVideo = visual.ButtonStim(win, 
-        text='NEXT', font='Times New Roman',
+        text='Next >>', font='Arial',
         pos=(0.8, -0.75),
         letterHeight=0.05,
-        size=(0.15, 0.15), 
+        size=(0.18, 0.15),
         ori=0.0
         ,borderWidth=0.0,
         fillColor=[1.0000, 1.0000, 1.0000], borderColor=None,
@@ -513,16 +520,16 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         padding=None,
         anchor='center',
         name='nextVideo',
-        depth=-2
+        depth=-3
     )
     nextVideo.buttonClock = core.Clock()
     
     # --- Initialize components for Routine "QuizA" ---
     nextQuizA = visual.ButtonStim(win, 
-        text='NEXT', font='Times New Roman',
+        text='Next >>', font='Arial',
         pos=(0.8, -0.75),
         letterHeight=0.05,
-        size=(0.15, 0.15), 
+        size=(0.18, 0.15),
         ori=0.0
         ,borderWidth=0.0,
         fillColor=[1.0000, 1.0000, 1.0000], borderColor=None,
@@ -532,13 +539,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         padding=None,
         anchor='center',
         name='nextQuizA',
-        depth=-2
+        depth=-3
     )
     nextQuizA.buttonClock = core.Clock()
     questionAText = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, 0.35), draggable=False,      letterHeight=0.05,
-         size=(0.5, 0.5), borderWidth=2.0,
+         size=(0.6, 0.5), borderWidth=2.0,
          color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb',
          opacity=None,
          bold=False, italic=False,
@@ -549,15 +556,15 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          flipHoriz=False, flipVert=False, languageStyle='LTR',
          editable=False,
          name='questionAText',
-         depth=-3, autoLog=True,
+         depth=-4, autoLog=True,
     )
     boxA = visual.Rect(
         win=win, name='boxA',
-        width=(1.9, 0.12)[0], height=(1.9, 0.12)[1],
+        width=(1, 0.12)[0], height=(1, 0.12)[1],
         ori=0.0, pos=(0, 0.1), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
-        opacity=None, depth=-4.0, interpolate=True)
+        opacity=None, depth=-5.0, interpolate=True)
     choiceA = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, 0.1), draggable=False,      letterHeight=0.05,
@@ -572,15 +579,15 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          flipHoriz=False, flipVert=False, languageStyle='LTR',
          editable=False,
          name='choiceA',
-         depth=-5, autoLog=True,
+         depth=-6, autoLog=True,
     )
     boxB = visual.Rect(
         win=win, name='boxB',
-        width=(1.9, 0.12)[0], height=(1.9, 0.12)[1],
+        width=(1, 0.12)[0], height=(1, 0.12)[1],
         ori=0.0, pos=(0, -0.05), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
-        opacity=None, depth=-6.0, interpolate=True)
+        opacity=None, depth=-7.0, interpolate=True)
     choiceB = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, -0.05), draggable=False,      letterHeight=0.05,
@@ -595,15 +602,15 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          flipHoriz=False, flipVert=False, languageStyle='LTR',
          editable=False,
          name='choiceB',
-         depth=-7, autoLog=True,
+         depth=-8, autoLog=True,
     )
     boxC = visual.Rect(
         win=win, name='boxC',
-        width=(1.9, 0.12)[0], height=(1.9, 0.12)[1],
+        width=(1, 0.12)[0], height=(1, 0.12)[1],
         ori=0.0, pos=(0, -0.2), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
-        opacity=None, depth=-8.0, interpolate=True)
+        opacity=None, depth=-9.0, interpolate=True)
     choiceC = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, -0.20), draggable=False,      letterHeight=0.05,
@@ -618,15 +625,15 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          flipHoriz=False, flipVert=False, languageStyle='LTR',
          editable=False,
          name='choiceC',
-         depth=-9, autoLog=True,
+         depth=-10, autoLog=True,
     )
     boxD = visual.Rect(
         win=win, name='boxD',
-        width=(1.9, 0.12)[0], height=(1.9, 0.12)[1],
+        width=(1, 0.12)[0], height=(1, 0.12)[1],
         ori=0.0, pos=(0, -0.35), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
-        opacity=None, depth=-10.0, interpolate=True)
+        opacity=None, depth=-11.0, interpolate=True)
     choiceD = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, -0.35), draggable=False,      letterHeight=0.05,
@@ -641,7 +648,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          flipHoriz=False, flipVert=False, languageStyle='LTR',
          editable=False,
          name='choiceD',
-         depth=-11, autoLog=True,
+         depth=-12, autoLog=True,
     )
     mouse_2 = event.Mouse(win=win)
     x, y = [None, None]
@@ -649,10 +656,10 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "QuizB" ---
     nextQuizB = visual.ButtonStim(win, 
-        text='NEXT', font='Times New Roman',
+        text='Next >>', font='Arial',
         pos=(0.8, -0.75),
         letterHeight=0.05,
-        size=(0.15, 0.15), 
+        size=(0.18, 0.15),
         ori=0.0
         ,borderWidth=0.0,
         fillColor=[1.0000, 1.0000, 1.0000], borderColor=None,
@@ -662,13 +669,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         padding=None,
         anchor='center',
         name='nextQuizB',
-        depth=-2
+        depth=-3
     )
     nextQuizB.buttonClock = core.Clock()
     questionBText = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, 0.35), draggable=False,      letterHeight=0.05,
-         size=(0.5, 0.5), borderWidth=2.0,
+         size=(0.6, 0.5), borderWidth=2.0,
          color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb',
          opacity=None,
          bold=False, italic=False,
@@ -679,15 +686,15 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          flipHoriz=False, flipVert=False, languageStyle='LTR',
          editable=False,
          name='questionBText',
-         depth=-3, autoLog=True,
+         depth=-4, autoLog=True,
     )
     boxA_2 = visual.Rect(
         win=win, name='boxA_2',
-        width=(1.9, 0.12)[0], height=(1.9, 0.12)[1],
+        width=(1, 0.12)[0], height=(1, 0.12)[1],
         ori=0.0, pos=(0, 0.1), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
-        opacity=None, depth=-4.0, interpolate=True)
+        opacity=None, depth=-5.0, interpolate=True)
     choiceA_2 = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, 0.1), draggable=False,      letterHeight=0.05,
@@ -702,15 +709,15 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          flipHoriz=False, flipVert=False, languageStyle='LTR',
          editable=False,
          name='choiceA_2',
-         depth=-5, autoLog=True,
+         depth=-6, autoLog=True,
     )
     boxB_2 = visual.Rect(
         win=win, name='boxB_2',
-        width=(1.9, 0.12)[0], height=(1.9, 0.12)[1],
+        width=(1, 0.12)[0], height=(1, 0.12)[1],
         ori=0.0, pos=(0, -0.05), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
-        opacity=None, depth=-6.0, interpolate=True)
+        opacity=None, depth=-7.0, interpolate=True)
     choiceB_2 = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, -0.05), draggable=False,      letterHeight=0.05,
@@ -725,15 +732,15 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          flipHoriz=False, flipVert=False, languageStyle='LTR',
          editable=False,
          name='choiceB_2',
-         depth=-7, autoLog=True,
+         depth=-8, autoLog=True,
     )
     boxC_2 = visual.Rect(
         win=win, name='boxC_2',
-        width=(1.9, 0.12)[0], height=(1.9, 0.12)[1],
+        width=(1, 0.12)[0], height=(1, 0.12)[1],
         ori=0.0, pos=(0, -0.2), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
-        opacity=None, depth=-8.0, interpolate=True)
+        opacity=None, depth=-9.0, interpolate=True)
     choiceC_2 = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, -0.20), draggable=False,      letterHeight=0.05,
@@ -748,15 +755,15 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          flipHoriz=False, flipVert=False, languageStyle='LTR',
          editable=False,
          name='choiceC_2',
-         depth=-9, autoLog=True,
+         depth=-10, autoLog=True,
     )
     boxD_2 = visual.Rect(
         win=win, name='boxD_2',
-        width=(1.9, 0.12)[0], height=(1.9, 0.12)[1],
+        width=(1, 0.12)[0], height=(1, 0.12)[1],
         ori=0.0, pos=(0, -0.35), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
-        opacity=None, depth=-10.0, interpolate=True)
+        opacity=None, depth=-11.0, interpolate=True)
     choiceD_2 = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, -0.35), draggable=False,      letterHeight=0.05,
@@ -771,7 +778,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          flipHoriz=False, flipVert=False, languageStyle='LTR',
          editable=False,
          name='choiceD_2',
-         depth=-11, autoLog=True,
+         depth=-12, autoLog=True,
     )
     mouse_3 = event.Mouse(win=win)
     x, y = [None, None]
@@ -779,10 +786,10 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "QuizC" ---
     nextQuizC = visual.ButtonStim(win, 
-        text='NEXT', font='Times New Roman',
+        text='Next >>', font='Arial',
         pos=(0.8, -0.75),
         letterHeight=0.05,
-        size=(0.15, 0.15), 
+        size=(0.18, 0.15),
         ori=0.0
         ,borderWidth=0.0,
         fillColor=[1.0000, 1.0000, 1.0000], borderColor=None,
@@ -792,13 +799,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         padding=None,
         anchor='center',
         name='nextQuizC',
-        depth=-2
+        depth=-3
     )
     nextQuizC.buttonClock = core.Clock()
     questionCText = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, 0.35), draggable=False,      letterHeight=0.05,
-         size=(0.5, 0.5), borderWidth=2.0,
+         size=(0.6, 0.5), borderWidth=2.0,
          color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb',
          opacity=None,
          bold=False, italic=False,
@@ -809,15 +816,15 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          flipHoriz=False, flipVert=False, languageStyle='LTR',
          editable=False,
          name='questionCText',
-         depth=-3, autoLog=True,
+         depth=-4, autoLog=True,
     )
     boxA_3 = visual.Rect(
         win=win, name='boxA_3',
-        width=(1.9, 0.12)[0], height=(1.9, 0.12)[1],
+        width=(1, 0.12)[0], height=(1, 0.12)[1],
         ori=0.0, pos=(0, 0.1), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
-        opacity=None, depth=-4.0, interpolate=True)
+        opacity=None, depth=-5.0, interpolate=True)
     choiceA_3 = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, 0.1), draggable=False,      letterHeight=0.05,
@@ -832,15 +839,15 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          flipHoriz=False, flipVert=False, languageStyle='LTR',
          editable=False,
          name='choiceA_3',
-         depth=-5, autoLog=True,
+         depth=-6, autoLog=True,
     )
     boxB_3 = visual.Rect(
         win=win, name='boxB_3',
-        width=(1.9, 0.12)[0], height=(1.9, 0.12)[1],
+        width=(1, 0.12)[0], height=(1, 0.12)[1],
         ori=0.0, pos=(0, -0.05), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
-        opacity=None, depth=-6.0, interpolate=True)
+        opacity=None, depth=-7.0, interpolate=True)
     choiceB_3 = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, -0.05), draggable=False,      letterHeight=0.05,
@@ -855,15 +862,15 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          flipHoriz=False, flipVert=False, languageStyle='LTR',
          editable=False,
          name='choiceB_3',
-         depth=-7, autoLog=True,
+         depth=-8, autoLog=True,
     )
     boxC_3 = visual.Rect(
         win=win, name='boxC_3',
-        width=(1.9, 0.12)[0], height=(1.9, 0.12)[1],
+        width=(1, 0.12)[0], height=(1, 0.12)[1],
         ori=0.0, pos=(0, -0.2), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
-        opacity=None, depth=-8.0, interpolate=True)
+        opacity=None, depth=-9.0, interpolate=True)
     choiceC_3 = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, -0.20), draggable=False,      letterHeight=0.05,
@@ -878,15 +885,15 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          flipHoriz=False, flipVert=False, languageStyle='LTR',
          editable=False,
          name='choiceC_3',
-         depth=-9, autoLog=True,
+         depth=-10, autoLog=True,
     )
     boxD_3 = visual.Rect(
         win=win, name='boxD_3',
-        width=(1.9, 0.12)[0], height=(1.9, 0.12)[1],
+        width=(1, 0.12)[0], height=(1, 0.12)[1],
         ori=0.0, pos=(0, -0.35), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
-        opacity=None, depth=-10.0, interpolate=True)
+        opacity=None, depth=-11.0, interpolate=True)
     choiceD_3 = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, -0.35), draggable=False,      letterHeight=0.05,
@@ -901,7 +908,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          flipHoriz=False, flipVert=False, languageStyle='LTR',
          editable=False,
          name='choiceD_3',
-         depth=-11, autoLog=True,
+         depth=-12, autoLog=True,
     )
     mouse_4 = event.Mouse(win=win)
     x, y = [None, None]
@@ -909,7 +916,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "consent" ---
     consentText = visual.TextBox2(
-         win, text='PARTICIPANT INFORMATION AND CONSENT\n\nWho Can Take Part\n- You must be 18 years or older.\n- You must not have a vision or hearing impairment that would affect your participation.\n- You must be able to follow a lecture in English\n- You must not have been enrolled one of the competencies listed here:\n   - AIC - 505 Generative AI\n   - SEN - 210 DesktopGUI\n   - TBC\n\nHow Long It Takes\n- The whole session takes about 30 to 45 minutes.\n- Please follow the instructions on the screen.\n\nYour Rights\n- Taking part is voluntary.\n- You can stop and leave at any time. You do not have to give a reason.\n- If you leave, your data will not be stored or used.\n\nPrivacy\n- Your name will not be written in your data. You will only have a participant number.\n- Your data will be stored securely.\n- Results will only be reported for the whole group. No one will be identified.\n\nCONSENT\n- I have read this information.\n- I understand that I can stop at any time.\n- I agree to take part in this study.\n\nYou can ask the experimenter any question before you start.\n\nIf you agree, please continue to the next step by clicking the "NEXT" button.', placeholder='Type here...', font='Times New Roman',
+         win, text='PARTICIPANT INFORMATION AND CONSENT\n\nWho Can Take Part\n- You must be 18 years or older.\n- You must not have a vision or hearing impairment that would affect your participation.\n- You must be able to follow a lecture in English\n- You must not have been enrolled one of the competencies listed here:\n   - AIC - 505 Generative AI\n   - SEN - 210 DesktopGUI\n   - TBC\n\nHow Long It Takes\n- The whole session takes about 30 to 45 minutes.\n- Please follow the instructions on the screen.\n\nYour Rights\n- Taking part is voluntary.\n- You can stop and leave at any time. You do not have to give a reason.\n- If you leave, your data will not be stored or used.\n\nPrivacy\n- Your name will not be written in your data. You will only have a participant number.\n- Your data will be stored securely.\n- Results will only be reported for the whole group. No one will be identified.\n\nCONSENT\n- I have read this information.\n- I understand that I can stop at any time.\n- I agree to take part in this study.\n\nYou can ask the experimenter any question before you start.\n\nIf you agree, please continue to the next step by clicking the "NEXT" button.', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, 0), draggable=False, units='height',     letterHeight=0.03,
          size=(1.5, 0.75), borderWidth=0.0,
          color="'#000000'", colorSpace='rgb',
@@ -922,16 +929,16 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          flipHoriz=False, flipVert=False, languageStyle='LTR',
          editable=False,
          name='consentText',
-         depth=0, autoLog=True,
+         depth=-1, autoLog=True,
     )
     mouse = event.Mouse(win=win)
     x, y = [None, None]
     mouse.mouseClock = core.Clock()
     consentNextButton = visual.ButtonStim(win, 
-        text='NEXT', font='Times New Roman',
+        text='Next >>', font='Arial',
         pos=(0.8, -0.75),
         letterHeight=0.05,
-        size=(0.15, 0.15), 
+        size=(0.18, 0.15),
         ori=0.0
         ,borderWidth=0.0,
         fillColor=[1.0000, 1.0000, 1.0000], borderColor=None,
@@ -941,13 +948,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         padding=None,
         anchor='center',
         name='consentNextButton',
-        depth=-3
+        depth=-4
     )
     consentNextButton.buttonClock = core.Clock()
     
     # --- Initialize components for Routine "instructions" ---
     instruction_header = visual.TextBox2(
-         win, text='INSTRUCTIONS', placeholder='Type here...', font='Times New Roman',
+         win, text='INSTRUCTIONS', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, 0.65), draggable=False,      letterHeight=0.15,
          size=(1.85, 0.5), borderWidth=2.0,
          color="'#000000'", colorSpace='rgb',
@@ -960,10 +967,10 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          flipHoriz=False, flipVert=False, languageStyle='LTR',
          editable=False,
          name='instruction_header',
-         depth=0, autoLog=True,
+         depth=-1, autoLog=True,
     )
     instruction_text = visual.TextBox2(
-         win, text='In this study, you will:\n\n1. Watch a short educational video\n2. Answer a series of questions about what you watched\n3. Answer a few questions about your experience\n4. Fill in a short form about your age, gender, and education.\n\n', placeholder='Type here...', font='Times New Roman',
+         win, text='In this study, you will:\n\n1. Watch a short educational video.\n2. Answer a series of questions about what you watched.\n3. Answer a few questions about your experience.\n4. Fill in a short form about your age, gender, and education.\n\n', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, -0.05), draggable=False,      letterHeight=0.1,
          size=(1.85, 0.5), borderWidth=2.0,
          color="'#000000'", colorSpace='rgb',
@@ -976,14 +983,14 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          flipHoriz=False, flipVert=False, languageStyle='LTR',
          editable=False,
          name='instruction_text',
-         depth=-1, autoLog=True,
+         depth=-2, autoLog=True,
     )
     instruct_resp = keyboard.Keyboard(deviceName='instruct_resp')
     nextButton_instructions = visual.ButtonStim(win, 
-        text='NEXT', font='Times New Roman',
+        text='Next >>', font='Arial',
         pos=(0.8, -0.75),
         letterHeight=0.05,
-        size=(0.15, 0.15), 
+        size=(0.18, 0.15),
         ori=0.0
         ,borderWidth=0.0,
         fillColor=[1.0000, 1.0000, 1.0000], borderColor=None,
@@ -993,13 +1000,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         padding=None,
         anchor='center',
         name='nextButton_instructions',
-        depth=-3
+        depth=-4
     )
     nextButton_instructions.buttonClock = core.Clock()
     
     # --- Initialize components for Routine "warning" ---
     warning_header = visual.TextBox2(
-         win, text='IMPORTANT', placeholder='Type here...', font='Times New Roman',
+         win, text='IMPORTANT', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, 0.65), draggable=False,      letterHeight=0.15,
          size=(1.85, 0.5), borderWidth=2.0,
          color="'#000000'", colorSpace='rgb',
@@ -1012,10 +1019,10 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          flipHoriz=False, flipVert=False, languageStyle='LTR',
          editable=False,
          name='warning_header',
-         depth=0, autoLog=True,
+         depth=-1, autoLog=True,
     )
     warning_text = visual.TextBox2(
-         win, text='- You will watch one video in full. \n\n- Please pay close attention, as you will be tested on the content \n  afterward.\n\n- The video and quiz cannot be repeated once completed.\n\n', placeholder='Type here...', font='Times New Roman',
+         win, text='- You will watch one video in full. \n\n- Please pay close attention, as you will be tested on the content \n  afterward.\n\n- The video and quiz cannot be repeated once completed.\n\n', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, -0.05), draggable=False,      letterHeight=0.1,
          size=(1.85, 0.5), borderWidth=2.0,
          color="'#000000'", colorSpace='rgb',
@@ -1028,14 +1035,14 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          flipHoriz=False, flipVert=False, languageStyle='LTR',
          editable=False,
          name='warning_text',
-         depth=-1, autoLog=True,
+         depth=-2, autoLog=True,
     )
     warning_resp = keyboard.Keyboard(deviceName='warning_resp')
     nextButton_warning = visual.ButtonStim(win, 
-        text='NEXT', font='Times New Roman',
+        text='Next >>', font='Arial',
         pos=(0.8, -0.75),
         letterHeight=0.05,
-        size=(0.15, 0.15), 
+        size=(0.18, 0.15),
         ori=0.0
         ,borderWidth=0.0,
         fillColor=[1.0000, 1.0000, 1.0000], borderColor=None,
@@ -1045,13 +1052,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         padding=None,
         anchor='center',
         name='nextButton_warning',
-        depth=-3
+        depth=-4
     )
     nextButton_warning.buttonClock = core.Clock()
     
     # --- Initialize components for Routine "quizinstruction" ---
     textbox = visual.TextBox2(
-         win, text='Thank you for watching the video.\n\nYou will now answer some questions about what you just watched.\n\nPlease answer based on your own understanding.\n\nBefore the main questions, you will first complete a short sample \nquiz to help you get familiar with how the questions work.\n\n', placeholder='Type here...', font='Times New Roman',
+         win, text='Thank you for watching the video.\n\nYou will now answer some questions about what you just watched.\n\nPlease answer based on your own understanding.\n\nBefore the main questions, you will first complete a short sample \nquiz to help you get familiar with how the questions work.\n\n', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.1,
          size=(1.85, 0.5), borderWidth=2.0,
          color="'#000000'", colorSpace='rgb',
@@ -1064,14 +1071,14 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          flipHoriz=False, flipVert=False, languageStyle='LTR',
          editable=False,
          name='textbox',
-         depth=0, autoLog=True,
+         depth=-1, autoLog=True,
     )
     quz_instruction_text = keyboard.Keyboard(deviceName='quz_instruction_text')
     nextButton_quizInstruction = visual.ButtonStim(win, 
-        text='NEXT', font='Times New Roman',
+        text='Next >>', font='Arial',
         pos=(0.8, -0.75),
         letterHeight=0.05,
-        size=(0.15, 0.15), 
+        size=(0.18, 0.15),
         ori=0.0
         ,borderWidth=0.0,
         fillColor=[1.0000, 1.0000, 1.0000], borderColor=None,
@@ -1081,7 +1088,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         padding=None,
         anchor='center',
         name='nextButton_quizInstruction',
-        depth=-2
+        depth=-3
     )
     nextButton_quizInstruction.buttonClock = core.Clock()
     
@@ -1089,7 +1096,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "quizending" ---
     textbox_2 = visual.TextBox2(
-         win, text="You have completed the quiz.\n\nJust a few more short questions about your experience, and then \nyou'll be finished.\n\n", placeholder='Type here...', font='Times New Roman',
+         win, text="You have completed the quiz.\n\nJust a few more short questions about your experience, and then \nyou'll be finished.\n\n", placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.1,
          size=(1.85, 0.5), borderWidth=2.0,
          color="'#000000'", colorSpace='rgb',
@@ -1102,14 +1109,14 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          flipHoriz=False, flipVert=False, languageStyle='LTR',
          editable=False,
          name='textbox_2',
-         depth=0, autoLog=True,
+         depth=-1, autoLog=True,
     )
     key_resp_quizending = keyboard.Keyboard(deviceName='key_resp_quizending')
     nextButton_2 = visual.ButtonStim(win, 
-        text='NEXT', font='Times New Roman',
+        text='Next >>', font='Arial',
         pos=(0.8, -0.75),
         letterHeight=0.05,
-        size=(0.15, 0.15), 
+        size=(0.18, 0.15),
         ori=0.0
         ,borderWidth=0.0,
         fillColor=[1.0000, 1.0000, 1.0000], borderColor=None,
@@ -1119,30 +1126,30 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         padding=None,
         anchor='center',
         name='nextButton_2',
-        depth=-2
+        depth=-3
     )
     nextButton_2.buttonClock = core.Clock()
     
     # --- Initialize components for Routine "likert" ---
     likertText = visual.TextStim(win=win, name='likertText',
         text='',
-        font='Times New Roman',
+        font='Arial',
         pos=(0, 0.34), draggable=False, height=0.1, wrapWidth=1.5, ori=0.0, 
         color="'#000000'", colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
-        depth=0.0);
+        depth=-1.0);
     likert_slider = visual.Slider(win=win, name='likert_slider',
-        startValue=4, size=(1.74, 0.1), pos=(0, 0.14), units=win.units,
+        startValue=4, size=(1.7, 0.1), pos=(0, 0.14), units=win.units,
         labels=('Strongly  disagree', 'Disagree', 'Somewhat  disagree', 'Neither  agree nor disagree', 'Somewhat  agree', 'Agree', 'Strongly  agree'), ticks=(1, 2, 3, 4, 5, 6, 7), granularity=1.0,
         style='rating', styleTweaks=(), opacity=None,
-        labelColor="'#000000'", markerColor='Red', lineColor='White', colorSpace='rgb',
-        font='Times New Roman', labelHeight=0.093,
-        flip=False, ori=0.0, depth=-1, readOnly=False)
+        labelColor="'#000000'", markerColor=[0.3569, 0.6941, 0.8039], lineColor='White', colorSpace='rgb',
+        font='Arial', labelHeight=0.084,
+        flip=False, ori=0.0, depth=-2, readOnly=False)
     nextButton = visual.ButtonStim(win, 
-        text='NEXT', font='Times New Roman',
+        text='Next >>', font='Arial',
         pos=(0.8, -0.75),
         letterHeight=0.05,
-        size=(0.15, 0.15), 
+        size=(0.18, 0.15),
         ori=0.0
         ,borderWidth=0.0,
         fillColor=[1.0000, 1.0000, 1.0000], borderColor=None,
@@ -1152,7 +1159,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         padding=None,
         anchor='center',
         name='nextButton',
-        depth=-2
+        depth=-3
     )
     nextButton.buttonClock = core.Clock()
     # Run 'Begin Experiment' code from code_7
@@ -1176,15 +1183,15 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          flipHoriz=False, flipVert=False, languageStyle='LTR',
          editable=False,
          name='instruction_slider',
-         depth=-4, autoLog=True,
+         depth=-5, autoLog=True,
     )
     
     # --- Initialize components for Routine "demographicQuiz" ---
     nextDemo = visual.ButtonStim(win, 
-        text='NEXT', font='Times New Roman',
+        text='Next >>', font='Arial',
         pos=(0.8, -0.75),
         letterHeight=0.05,
-        size=(0.15, 0.15), 
+        size=(0.18, 0.15),
         ori=0.0
         ,borderWidth=0.0,
         fillColor=[1.0000, 1.0000, 1.0000], borderColor=None,
@@ -1194,7 +1201,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         padding=None,
         anchor='center',
         name='nextDemo',
-        depth=-3
+        depth=-4
     )
     nextDemo.buttonClock = core.Clock()
     questionDemo = visual.TextBox2(
@@ -1211,15 +1218,15 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          flipHoriz=False, flipVert=False, languageStyle='LTR',
          editable=False,
          name='questionDemo',
-         depth=-4, autoLog=True,
+         depth=-5, autoLog=True,
     )
     box1 = visual.Rect(
         win=win, name='box1',
-        width=(1.9, 0.12)[0], height=(1.9, 0.12)[1],
+        width=(1, 0.12)[0], height=(1, 0.12)[1],
         ori=0.0, pos=(0, 0.1), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
-        opacity=None, depth=-5.0, interpolate=True)
+        opacity=None, depth=-6.0, interpolate=True)
     choiceA_demo = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, 0.1), draggable=False,      letterHeight=0.05,
@@ -1234,15 +1241,15 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          flipHoriz=False, flipVert=False, languageStyle='LTR',
          editable=False,
          name='choiceA_demo',
-         depth=-6, autoLog=True,
+         depth=-7, autoLog=True,
     )
     box2 = visual.Rect(
         win=win, name='box2',
-        width=(1.9, 0.12)[0], height=(1.9, 0.12)[1],
+        width=(1, 0.12)[0], height=(1, 0.12)[1],
         ori=0.0, pos=(0, -0.05), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
-        opacity=None, depth=-7.0, interpolate=True)
+        opacity=None, depth=-8.0, interpolate=True)
     choiceB_demo = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, -0.05), draggable=False,      letterHeight=0.05,
@@ -1257,15 +1264,15 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          flipHoriz=False, flipVert=False, languageStyle='LTR',
          editable=False,
          name='choiceB_demo',
-         depth=-8, autoLog=True,
+         depth=-9, autoLog=True,
     )
     box3 = visual.Rect(
         win=win, name='box3',
-        width=(1.9, 0.12)[0], height=(1.9, 0.12)[1],
+        width=(1, 0.12)[0], height=(1, 0.12)[1],
         ori=0.0, pos=(0, -0.2), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
-        opacity=None, depth=-9.0, interpolate=True)
+        opacity=None, depth=-10.0, interpolate=True)
     choiceC_demo = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, -0.20), draggable=False,      letterHeight=0.05,
@@ -1280,15 +1287,15 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          flipHoriz=False, flipVert=False, languageStyle='LTR',
          editable=False,
          name='choiceC_demo',
-         depth=-10, autoLog=True,
+         depth=-11, autoLog=True,
     )
     box4 = visual.Rect(
         win=win, name='box4',
-        width=(1.9, 0.12)[0], height=(1.9, 0.12)[1],
+        width=(1, 0.12)[0], height=(1, 0.12)[1],
         ori=0.0, pos=(0, -0.35), draggable=False, anchor='center',
         lineWidth=1.0,
         colorSpace='rgb', lineColor='white', fillColor='white',
-        opacity=None, depth=-11.0, interpolate=True)
+        opacity=None, depth=-12.0, interpolate=True)
     choiceD_demo = visual.TextBox2(
          win, text='', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, -0.35), draggable=False,      letterHeight=0.05,
@@ -1303,7 +1310,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          flipHoriz=False, flipVert=False, languageStyle='LTR',
          editable=False,
          name='choiceD_demo',
-         depth=-12, autoLog=True,
+         depth=-13, autoLog=True,
     )
     mouse_5 = event.Mouse(win=win)
     x, y = [None, None]
@@ -1311,7 +1318,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "end" ---
     ending_text = visual.TextBox2(
-         win, text='Thank you for participating in this study!\n\nYour responses have been recorded successfully.', placeholder='Type here...', font='Times New Roman',
+         win, text='Thank you for participating in this study!\n\nYour responses have been recorded successfully.', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.1,
          size=(1.8, 0.5), borderWidth=2.0,
          color="'#000000'", colorSpace='rgb',
@@ -1324,7 +1331,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          flipHoriz=False, flipVert=False, languageStyle='LTR',
          editable=False,
          name='ending_text',
-         depth=0, autoLog=True,
+         depth=-1, autoLog=True,
     )
     
     # create some handy timers
@@ -1364,6 +1371,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     videoAssignment.status = NOT_STARTED
     continueRoutine = True
     # update component parameters for each repeat
+    # Run 'Begin Routine' code from progress_videoAssignment
+    progressStep = min(progressStep + 1, progressTotal)
+    progressWidth = 1.8 * progressStep / progressTotal
+    progressBar.setSize((progressWidth, 0.025))
+    progressBar.setPos((-0.9 + progressWidth / 2, 0.94))
     # store start times for videoAssignment
     videoAssignment.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
     videoAssignment.tStart = globalClock.getTime(format='float')
@@ -1449,6 +1461,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     video.status = NOT_STARTED
     continueRoutine = True
     # update component parameters for each repeat
+    # Run 'Begin Routine' code from progress_video
+    progressStep = min(progressStep + 1, progressTotal)
+    progressWidth = 1.8 * progressStep / progressTotal
+    progressBar.setSize((progressWidth, 0.025))
+    progressBar.setPos((-0.9 + progressWidth / 2, 0.94))
     movie.setMovie(video_to_play)
     # reset nextVideo to account for continued clicks & clear times on/off
     nextVideo.reset()
@@ -1633,6 +1650,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         QuizA.status = NOT_STARTED
         continueRoutine = True
         # update component parameters for each repeat
+        # Run 'Begin Routine' code from progress_QuizA
+        progressStep = min(progressStep + 1, progressTotal)
+        progressWidth = 1.8 * progressStep / progressTotal
+        progressBar.setSize((progressWidth, 0.025))
+        progressBar.setPos((-0.9 + progressWidth / 2, 0.94))
         # Run 'Begin Routine' code from code_11
         if video_to_play not in [
             "3_with_jump.mp4",
@@ -1649,6 +1671,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         boxD.fillColor = 'white'
         
         nextQuizA.fillColor = 'white'
+        nextQuizA.opacity = 0.4
         # reset nextQuizA to account for continued clicks & clear times on/off
         nextQuizA.reset()
         questionAText.reset()
@@ -1738,6 +1761,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             
             
             mouseWasPressed = mouseDown
+            nextQuizA.opacity = 0.4 if selectedAnswer is None else 1.0
             # Run 'Each Frame' code from cq
             # Ctrl + Q to quit
             keys = event.getKeys(modifiers=True)
@@ -2101,6 +2125,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         QuizB.status = NOT_STARTED
         continueRoutine = True
         # update component parameters for each repeat
+        # Run 'Begin Routine' code from progress_QuizB
+        progressStep = min(progressStep + 1, progressTotal)
+        progressWidth = 1.8 * progressStep / progressTotal
+        progressBar.setSize((progressWidth, 0.025))
+        progressBar.setPos((-0.9 + progressWidth / 2, 0.94))
         # Run 'Begin Routine' code from code_12
         if video_to_play not in [
             "Possessed_cat.mp4",
@@ -2117,6 +2146,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         boxD_2.fillColor = 'white'
         
         nextQuizB.fillColor = 'white'
+        nextQuizB.opacity = 0.4
         # reset nextQuizB to account for continued clicks & clear times on/off
         nextQuizB.reset()
         questionBText.reset()
@@ -2205,6 +2235,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                         continueRoutine = False
             
             mouseWasPressed = mouseDown
+            nextQuizB.opacity = 0.4 if selectedAnswer is None else 1.0
             # Run 'Each Frame' code from cq_2
             # Ctrl + Q to quit
             keys = event.getKeys(modifiers=True)
@@ -2239,9 +2270,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                     elif len(nextQuizB.timesOff):
                         # if click is continuing from last frame, update time of clicked until
                         nextQuizB.timesOff[-1] = nextQuizB.buttonClock.getTime()
-                    if not nextQuizB.wasClicked:
-                        # end routine when nextQuizB is clicked
-                        continueRoutine = False
                     if not nextQuizB.wasClicked:
                         # run callback code when nextQuizB is clicked
                         pass
@@ -2569,6 +2597,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         QuizC.status = NOT_STARTED
         continueRoutine = True
         # update component parameters for each repeat
+        # Run 'Begin Routine' code from progress_QuizC
+        progressStep = min(progressStep + 1, progressTotal)
+        progressWidth = 1.8 * progressStep / progressTotal
+        progressBar.setSize((progressWidth, 0.025))
+        progressBar.setPos((-0.9 + progressWidth / 2, 0.94))
         # Run 'Begin Routine' code from code_13
         if video_to_play not in [
             "Creepy and scary cat.mp4",
@@ -2585,6 +2618,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         boxD_3.fillColor = 'white'
         
         nextQuizC.fillColor = 'white'
+        nextQuizC.opacity = 0.4
         # reset nextQuizC to account for continued clicks & clear times on/off
         nextQuizC.reset()
         questionCText.reset()
@@ -2673,6 +2707,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                         continueRoutine = False
             
             mouseWasPressed = mouseDown
+            nextQuizC.opacity = 0.4 if selectedAnswer is None else 1.0
             # Run 'Each Frame' code from cq_3
             # Ctrl + Q to quit
             keys = event.getKeys(modifiers=True)
@@ -2707,9 +2742,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                     elif len(nextQuizC.timesOff):
                         # if click is continuing from last frame, update time of clicked until
                         nextQuizC.timesOff[-1] = nextQuizC.buttonClock.getTime()
-                    if not nextQuizC.wasClicked:
-                        # end routine when nextQuizC is clicked
-                        continueRoutine = False
                     if not nextQuizC.wasClicked:
                         # run callback code when nextQuizC is clicked
                         pass
@@ -3003,6 +3035,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     consent.status = NOT_STARTED
     continueRoutine = True
     # update component parameters for each repeat
+    # Run 'Begin Routine' code from progress_consent
+    progressStep = min(progressStep + 1, progressTotal)
+    progressWidth = 1.8 * progressStep / progressTotal
+    progressBar.setSize((progressWidth, 0.025))
+    progressBar.setPos((-0.9 + progressWidth / 2, 0.94))
     consentText.reset()
     # setup some python lists for storing info about the mouse
     mouse.x = []
@@ -3196,6 +3233,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     instructions.status = NOT_STARTED
     continueRoutine = True
     # update component parameters for each repeat
+    # Run 'Begin Routine' code from progress_instructions
+    progressStep = min(progressStep + 1, progressTotal)
+    progressWidth = 1.8 * progressStep / progressTotal
+    progressBar.setSize((progressWidth, 0.025))
+    progressBar.setPos((-0.9 + progressWidth / 2, 0.94))
     instruction_header.reset()
     instruction_text.reset()
     # create starting attributes for instruct_resp
@@ -3391,6 +3433,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     warning.status = NOT_STARTED
     continueRoutine = True
     # update component parameters for each repeat
+    # Run 'Begin Routine' code from progress_warning
+    progressStep = min(progressStep + 1, progressTotal)
+    progressWidth = 1.8 * progressStep / progressTotal
+    progressBar.setSize((progressWidth, 0.025))
+    progressBar.setPos((-0.9 + progressWidth / 2, 0.94))
     warning_header.reset()
     warning_text.reset()
     # create starting attributes for warning_resp
@@ -3587,6 +3634,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     quizinstruction.status = NOT_STARTED
     continueRoutine = True
     # update component parameters for each repeat
+    # Run 'Begin Routine' code from progress_quizinstruction
+    progressStep = min(progressStep + 1, progressTotal)
+    progressWidth = 1.8 * progressStep / progressTotal
+    progressBar.setSize((progressWidth, 0.025))
+    progressBar.setPos((-0.9 + progressWidth / 2, 0.94))
     textbox.reset()
     # create starting attributes for quz_instruction_text
     quz_instruction_text.keys = []
@@ -3763,6 +3815,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     sampleQuiz.status = NOT_STARTED
     continueRoutine = True
     # update component parameters for each repeat
+    # Run 'Begin Routine' code from progress_sampleQuiz
+    progressStep = min(progressStep + 1, progressTotal)
+    progressWidth = 1.8 * progressStep / progressTotal
+    progressBar.setSize((progressWidth, 0.025))
+    progressBar.setPos((-0.9 + progressWidth / 2, 0.94))
     # store start times for sampleQuiz
     sampleQuiz.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
     sampleQuiz.tStart = globalClock.getTime(format='float')
@@ -3841,6 +3898,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     quizending.status = NOT_STARTED
     continueRoutine = True
     # update component parameters for each repeat
+    # Run 'Begin Routine' code from progress_quizending
+    progressStep = min(progressStep + 1, progressTotal)
+    progressWidth = 1.8 * progressStep / progressTotal
+    progressBar.setSize((progressWidth, 0.025))
+    progressBar.setPos((-0.9 + progressWidth / 2, 0.94))
     textbox_2.reset()
     # create starting attributes for key_resp_quizending
     key_resp_quizending.keys = []
@@ -4044,10 +4106,17 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         likert.status = NOT_STARTED
         continueRoutine = True
         # update component parameters for each repeat
+        # Run 'Begin Routine' code from progress_likert
+        progressStep = min(progressStep + 1, progressTotal)
+        progressWidth = 1.8 * progressStep / progressTotal
+        progressBar.setSize((progressWidth, 0.025))
+        progressBar.setPos((-0.9 + progressWidth / 2, 0.94))
         likertText.setText(itemText)
         likert_slider.reset()
         # reset nextButton to account for continued clicks & clear times on/off
         nextButton.reset()
+        # Run 'Begin Routine' code from code_7
+        nextButton.opacity = 0.4
         instruction_slider.reset()
         # store start times for likert
         likert.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
@@ -4152,6 +4221,10 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                         pass
             # take note of whether nextButton was clicked, so that next frame we know if clicks are new
             nextButton.wasClicked = nextButton.isClicked and nextButton.status == STARTED
+            # Run 'Each Frame' code from code_7
+            nextButton.opacity = 0.4 if likert_slider.getRT() is None else 1.0
+            if nextButton.isClicked and likert_slider.getRT() is None:
+                continueRoutine = True
             
             # *instruction_slider* updates
             
@@ -4285,6 +4358,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         demographicQuiz.status = NOT_STARTED
         continueRoutine = True
         # update component parameters for each repeat
+        # Run 'Begin Routine' code from progress_demographicQuiz
+        progressStep = min(progressStep + 1, progressTotal)
+        progressWidth = 1.8 * progressStep / progressTotal
+        progressBar.setSize((progressWidth, 0.025))
+        progressBar.setPos((-0.9 + progressWidth / 2, 0.94))
         # Run 'Begin Routine' code from code_14
         selectedAnswer = None
         mouseWasPressed = False
@@ -4295,6 +4373,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         box4.fillColor = 'white'
         
         nextDemo.fillColor = 'white'
+        nextDemo.opacity = 0.4
         # reset nextDemo to account for continued clicks & clear times on/off
         nextDemo.reset()
         questionDemo.reset()
@@ -4384,6 +4463,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
             
             
             mouseWasPressed = mouseDown
+            nextDemo.opacity = 0.4 if selectedAnswer is None else 1.0
             # Run 'Each Frame' code from cq5
             # Ctrl + Q to quit
             keys = event.getKeys(modifiers=True)
@@ -4707,6 +4787,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     end.status = NOT_STARTED
     continueRoutine = True
     # update component parameters for each repeat
+    # Run 'Begin Routine' code from progress_end
+    progressStep = progressTotal
+    progressWidth = 1.8 * progressStep / progressTotal
+    progressBar.setSize((progressWidth, 0.025))
+    progressBar.setPos((-0.9 + progressWidth / 2, 0.94))
     ending_text.reset()
     # store start times for end
     end.tStartRefresh = win.getFutureFlipTime(clock=globalClock)

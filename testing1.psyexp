@@ -31,7 +31,7 @@
     <Param val="avg" valType="str" updates="None" name="blendMode"/>
     <Param val="float" valType="str" updates="None" name="clockFormat"/>
     <Param val="{'thisRow.t': 'priority.CRITICAL', 'expName': 'priority.LOW'}" valType="dict" updates="None" name="colPriority"/>
-    <Param val="-0.0667, -0.0667, -0.0667" valType="color" updates="None" name="color"/>
+    <Param val="0.3255, 0.3255, 0.3255" valType="color" updates="None" name="color"/>
     <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
     <Param val="warning" valType="code" updates="None" name="consoleLoggingLevel"/>
     <Param val="default" valType="str" updates="None" name="ecSampleRate"/>
@@ -130,7 +130,7 @@
         <Param val="None" valType="color" updates="constant" name="fillColor"/>
         <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
         <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="Times New Roman" valType="str" updates="constant" name="font"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
         <Param val="False" valType="bool" updates="constant" name="italic"/>
         <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
         <Param val="0.1" valType="num" updates="constant" name="letterHeight"/>
@@ -177,6 +177,23 @@
       </KeyboardComponent>
     </Routine>
     <Routine name="warning">
+      <CodeComponent name="progress_warning" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="psychoJS._progressStep = Math.min(psychoJS._progressStep + 1, psychoJS._progressTotal);&#10;const progressWidth = 1.8 * psychoJS._progressStep / psychoJS._progressTotal;&#10;psychoJS._progressBar.setSize([progressWidth, 0.025]);&#10;psychoJS._progressBar.setPos([-0.9 + progressWidth / 2, 0.94]);" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="progressStep = min(progressStep + 1, progressTotal)&#10;progressWidth = 1.8 * progressStep / progressTotal&#10;progressBar.setSize((progressWidth, 0.025))&#10;progressBar.setPos((-0.9 + progressWidth / 2, 0.94))" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="progress_warning" valType="code" updates="None" name="name"/>
+      </CodeComponent>
       <RoutineSettingsComponent name="warning" plugin="None">
         <Param val="none" valType="str" updates="None" name="backgroundFit"/>
         <Param val="" valType="str" updates="None" name="backgroundImg"/>
@@ -210,7 +227,7 @@
         <Param val="None" valType="color" updates="constant" name="fillColor"/>
         <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
         <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="Times New Roman" valType="str" updates="constant" name="font"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
         <Param val="False" valType="bool" updates="constant" name="italic"/>
         <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
         <Param val="0.15" valType="num" updates="constant" name="letterHeight"/>
@@ -252,7 +269,7 @@
         <Param val="None" valType="color" updates="constant" name="fillColor"/>
         <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
         <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="Times New Roman" valType="str" updates="constant" name="font"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
         <Param val="False" valType="bool" updates="constant" name="italic"/>
         <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
         <Param val="0.1" valType="num" updates="constant" name="letterHeight"/>
@@ -309,7 +326,7 @@
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
         <Param val="1.0000, 1.0000, 1.0000" valType="color" updates="constant" name="fillColor"/>
-        <Param val="Times New Roman" valType="str" updates="constant" name="font"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
         <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
         <Param val="False" valType="bool" updates="constant" name="italic"/>
         <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
@@ -321,14 +338,14 @@
         <Param val="(0.8, -0.75)" valType="list" updates="constant" name="pos"/>
         <Param val="none" valType="str" updates="None" name="save"/>
         <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="(0.15, 0.15)" valType="list" updates="constant" name="size"/>
+        <Param val="(0.18, 0.15)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="NEXT" valType="str" updates="constant" name="text"/>
+        <Param val="Next &gt;&gt;" valType="str" updates="constant" name="text"/>
         <Param val="button onset" valType="str" updates="constant" name="timeRelativeTo"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
@@ -352,6 +369,23 @@
       </CodeComponent>
     </Routine>
     <Routine name="video">
+      <CodeComponent name="progress_video" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="psychoJS._progressStep = Math.min(psychoJS._progressStep + 1, psychoJS._progressTotal);&#10;const progressWidth = 1.8 * psychoJS._progressStep / psychoJS._progressTotal;&#10;psychoJS._progressBar.setSize([progressWidth, 0.025]);&#10;psychoJS._progressBar.setPos([-0.9 + progressWidth / 2, 0.94]);" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="progressStep = min(progressStep + 1, progressTotal)&#10;progressWidth = 1.8 * progressStep / progressTotal&#10;progressBar.setSize((progressWidth, 0.025))&#10;progressBar.setPos((-0.9 + progressWidth / 2, 0.94))" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="progress_video" valType="code" updates="None" name="name"/>
+      </CodeComponent>
       <RoutineSettingsComponent name="video" plugin="None">
         <Param val="none" valType="str" updates="None" name="backgroundFit"/>
         <Param val="" valType="str" updates="None" name="backgroundImg"/>
@@ -424,7 +458,7 @@
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
         <Param val="1.0000, 1.0000, 1.0000" valType="color" updates="constant" name="fillColor"/>
-        <Param val="Times New Roman" valType="str" updates="constant" name="font"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
         <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
         <Param val="False" valType="bool" updates="constant" name="italic"/>
         <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
@@ -436,20 +470,37 @@
         <Param val="(0.8, -0.75)" valType="list" updates="constant" name="pos"/>
         <Param val="none" valType="str" updates="None" name="save"/>
         <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="(0.15, 0.15)" valType="list" updates="constant" name="size"/>
+        <Param val="(0.18, 0.15)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="NEXT" valType="str" updates="constant" name="text"/>
+        <Param val="Next &gt;&gt;" valType="str" updates="constant" name="text"/>
         <Param val="button onset" valType="str" updates="constant" name="timeRelativeTo"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
       </ButtonComponent>
     </Routine>
     <Routine name="likert">
+      <CodeComponent name="progress_likert" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="psychoJS._progressStep = Math.min(psychoJS._progressStep + 1, psychoJS._progressTotal);&#10;const progressWidth = 1.8 * psychoJS._progressStep / psychoJS._progressTotal;&#10;psychoJS._progressBar.setSize([progressWidth, 0.025]);&#10;psychoJS._progressBar.setPos([-0.9 + progressWidth / 2, 0.94]);" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="progressStep = min(progressStep + 1, progressTotal)&#10;progressWidth = 1.8 * progressStep / progressTotal&#10;progressBar.setSize((progressWidth, 0.025))&#10;progressBar.setPos((-0.9 + progressWidth / 2, 0.94))" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="progress_likert" valType="code" updates="None" name="name"/>
+      </CodeComponent>
       <RoutineSettingsComponent name="likert" plugin="None">
         <Param val="none" valType="str" updates="None" name="backgroundFit"/>
         <Param val="" valType="str" updates="None" name="backgroundImg"/>
@@ -474,7 +525,7 @@
         <Param val="False" valType="code" updates="constant" name="draggable"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
         <Param val="None" valType="str" updates="constant" name="flip"/>
-        <Param val="Times New Roman" valType="str" updates="constant" name="font"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
         <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
         <Param val="0.1" valType="num" updates="constant" name="letterHeight"/>
         <Param val="likertText" valType="code" updates="None" name="name"/>
@@ -500,21 +551,21 @@
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="Red" valType="color" updates="constant" name="fillColor"/>
+        <Param val="0.3569, 0.6941, 0.8039" valType="color" updates="constant" name="fillColor"/>
         <Param val="False" valType="bool" updates="constant" name="flip"/>
-        <Param val="Times New Roman" valType="str" updates="constant" name="font"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
         <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
         <Param val="1" valType="num" updates="constant" name="granularity"/>
         <Param val="4" valType="code" updates="None" name="initVal"/>
         <Param val="('Strongly  disagree', 'Disagree', 'Somewhat  disagree', 'Neither  agree nor disagree', 'Somewhat  agree', 'Agree', 'Strongly  agree')" valType="list" updates="constant" name="labels"/>
-        <Param val="0.093" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="0.084" valType="num" updates="constant" name="letterHeight"/>
         <Param val="likert_slider" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
         <Param val="(0, 0.14)" valType="list" updates="constant" name="pos"/>
         <Param val="False" valType="bool" updates="constant" name="readOnly"/>
         <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="(1.74, 0.1)" valType="list" updates="constant" name="size"/>
+        <Param val="(1.7, 0.1)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -542,7 +593,7 @@
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
         <Param val="1.0000, 1.0000, 1.0000" valType="color" updates="constant" name="fillColor"/>
-        <Param val="Times New Roman" valType="str" updates="constant" name="font"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
         <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
         <Param val="False" valType="bool" updates="constant" name="italic"/>
         <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
@@ -554,14 +605,14 @@
         <Param val="(0.8, -0.75)" valType="list" updates="constant" name="pos"/>
         <Param val="none" valType="str" updates="None" name="save"/>
         <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="(0.15, 0.15)" valType="list" updates="constant" name="size"/>
+        <Param val="(0.18, 0.15)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="NEXT" valType="str" updates="constant" name="text"/>
+        <Param val="Next &gt;&gt;" valType="str" updates="constant" name="text"/>
         <Param val="button onset" valType="str" updates="constant" name="timeRelativeTo"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
@@ -572,10 +623,10 @@
         <Param val="# Ctrl + Q to quit&amp;#10;keys = event.getKeys(modifiers=True)&amp;#10;&amp;#10;for key, modifiers in keys:&amp;#10;    if key.lower() == 'q' and modifiers.get('ctrl', False):&amp;#10;        core.quit()" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="/* Syntax Error: Fix Python code */" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="nextButton.opacity = 0.4" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
-        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="nextButton.opacity = 0.4 if likert_slider.getRT() is None else 1.0&#10;if nextButton.isClicked and likert_slider.getRT() is None:&amp;#10;    continueRoutine = True" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="nextButton.opacity = ((likert_slider.getRT() == null) ? 0.4 : 1.0);&#10;if (nextButton.isClicked &amp;&amp; (likert_slider.getRT() == null)) {&amp;#10;    continueRoutine = true;&amp;#10;}" valType="extendedCode" updates="constant" name="Each JS Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
@@ -627,6 +678,23 @@
       </TextboxComponent>
     </Routine>
     <Routine name="quizending">
+      <CodeComponent name="progress_quizending" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="psychoJS._progressStep = Math.min(psychoJS._progressStep + 1, psychoJS._progressTotal);&#10;const progressWidth = 1.8 * psychoJS._progressStep / psychoJS._progressTotal;&#10;psychoJS._progressBar.setSize([progressWidth, 0.025]);&#10;psychoJS._progressBar.setPos([-0.9 + progressWidth / 2, 0.94]);" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="progressStep = min(progressStep + 1, progressTotal)&#10;progressWidth = 1.8 * progressStep / progressTotal&#10;progressBar.setSize((progressWidth, 0.025))&#10;progressBar.setPos((-0.9 + progressWidth / 2, 0.94))" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="progress_quizending" valType="code" updates="None" name="name"/>
+      </CodeComponent>
       <RoutineSettingsComponent name="quizending" plugin="None">
         <Param val="none" valType="str" updates="None" name="backgroundFit"/>
         <Param val="" valType="str" updates="None" name="backgroundImg"/>
@@ -660,7 +728,7 @@
         <Param val="None" valType="color" updates="constant" name="fillColor"/>
         <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
         <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="Times New Roman" valType="str" updates="constant" name="font"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
         <Param val="False" valType="bool" updates="constant" name="italic"/>
         <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
         <Param val="0.1" valType="num" updates="constant" name="letterHeight"/>
@@ -717,7 +785,7 @@
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
         <Param val="1.0000, 1.0000, 1.0000" valType="color" updates="constant" name="fillColor"/>
-        <Param val="Times New Roman" valType="str" updates="constant" name="font"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
         <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
         <Param val="False" valType="bool" updates="constant" name="italic"/>
         <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
@@ -729,14 +797,14 @@
         <Param val="(0.8, -0.75)" valType="list" updates="constant" name="pos"/>
         <Param val="none" valType="str" updates="None" name="save"/>
         <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="(0.15, 0.15)" valType="list" updates="constant" name="size"/>
+        <Param val="(0.18, 0.15)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="NEXT" valType="str" updates="constant" name="text"/>
+        <Param val="Next &gt;&gt;" valType="str" updates="constant" name="text"/>
         <Param val="button onset" valType="str" updates="constant" name="timeRelativeTo"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
@@ -760,6 +828,23 @@
       </CodeComponent>
     </Routine>
     <Routine name="end">
+      <CodeComponent name="progress_end" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="psychoJS._progressStep = psychoJS._progressTotal;&#10;const progressWidth = 1.8 * psychoJS._progressStep / psychoJS._progressTotal;&#10;psychoJS._progressBar.setSize([progressWidth, 0.025]);&#10;psychoJS._progressBar.setPos([-0.9 + progressWidth / 2, 0.94]);" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="progressStep = progressTotal&#10;progressWidth = 1.8 * progressStep / progressTotal&#10;progressBar.setSize((progressWidth, 0.025))&#10;progressBar.setPos((-0.9 + progressWidth / 2, 0.94))" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="progress_end" valType="code" updates="None" name="name"/>
+      </CodeComponent>
       <RoutineSettingsComponent name="end" plugin="None">
         <Param val="none" valType="str" updates="None" name="backgroundFit"/>
         <Param val="" valType="str" updates="None" name="backgroundImg"/>
@@ -793,7 +878,7 @@
         <Param val="None" valType="color" updates="constant" name="fillColor"/>
         <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
         <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="Times New Roman" valType="str" updates="constant" name="font"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
         <Param val="False" valType="bool" updates="constant" name="italic"/>
         <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
         <Param val="0.1" valType="num" updates="constant" name="letterHeight"/>
@@ -837,6 +922,23 @@
       </CodeComponent>
     </Routine>
     <Routine name="quizinstruction">
+      <CodeComponent name="progress_quizinstruction" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="psychoJS._progressStep = Math.min(psychoJS._progressStep + 1, psychoJS._progressTotal);&#10;const progressWidth = 1.8 * psychoJS._progressStep / psychoJS._progressTotal;&#10;psychoJS._progressBar.setSize([progressWidth, 0.025]);&#10;psychoJS._progressBar.setPos([-0.9 + progressWidth / 2, 0.94]);" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="progressStep = min(progressStep + 1, progressTotal)&#10;progressWidth = 1.8 * progressStep / progressTotal&#10;progressBar.setSize((progressWidth, 0.025))&#10;progressBar.setPos((-0.9 + progressWidth / 2, 0.94))" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="progress_quizinstruction" valType="code" updates="None" name="name"/>
+      </CodeComponent>
       <RoutineSettingsComponent name="quizinstruction" plugin="None">
         <Param val="none" valType="str" updates="None" name="backgroundFit"/>
         <Param val="" valType="str" updates="None" name="backgroundImg"/>
@@ -870,7 +972,7 @@
         <Param val="None" valType="color" updates="constant" name="fillColor"/>
         <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
         <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="Times New Roman" valType="str" updates="constant" name="font"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
         <Param val="False" valType="bool" updates="constant" name="italic"/>
         <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
         <Param val="0.1" valType="num" updates="constant" name="letterHeight"/>
@@ -927,7 +1029,7 @@
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
         <Param val="1.0000, 1.0000, 1.0000" valType="color" updates="constant" name="fillColor"/>
-        <Param val="Times New Roman" valType="str" updates="constant" name="font"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
         <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
         <Param val="False" valType="bool" updates="constant" name="italic"/>
         <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
@@ -939,14 +1041,14 @@
         <Param val="(0.8, -0.75)" valType="list" updates="constant" name="pos"/>
         <Param val="none" valType="str" updates="None" name="save"/>
         <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="(0.15, 0.15)" valType="list" updates="constant" name="size"/>
+        <Param val="(0.18, 0.15)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="NEXT" valType="str" updates="constant" name="text"/>
+        <Param val="Next &gt;&gt;" valType="str" updates="constant" name="text"/>
         <Param val="button onset" valType="str" updates="constant" name="timeRelativeTo"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
@@ -970,6 +1072,23 @@
       </CodeComponent>
     </Routine>
     <Routine name="instructions">
+      <CodeComponent name="progress_instructions" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="psychoJS._progressStep = Math.min(psychoJS._progressStep + 1, psychoJS._progressTotal);&#10;const progressWidth = 1.8 * psychoJS._progressStep / psychoJS._progressTotal;&#10;psychoJS._progressBar.setSize([progressWidth, 0.025]);&#10;psychoJS._progressBar.setPos([-0.9 + progressWidth / 2, 0.94]);" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="progressStep = min(progressStep + 1, progressTotal)&#10;progressWidth = 1.8 * progressStep / progressTotal&#10;progressBar.setSize((progressWidth, 0.025))&#10;progressBar.setPos((-0.9 + progressWidth / 2, 0.94))" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="progress_instructions" valType="code" updates="None" name="name"/>
+      </CodeComponent>
       <RoutineSettingsComponent name="instructions" plugin="None">
         <Param val="none" valType="str" updates="None" name="backgroundFit"/>
         <Param val="" valType="str" updates="None" name="backgroundImg"/>
@@ -1003,7 +1122,7 @@
         <Param val="None" valType="color" updates="constant" name="fillColor"/>
         <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
         <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="Times New Roman" valType="str" updates="constant" name="font"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
         <Param val="False" valType="bool" updates="constant" name="italic"/>
         <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
         <Param val="0.15" valType="num" updates="constant" name="letterHeight"/>
@@ -1045,7 +1164,7 @@
         <Param val="None" valType="color" updates="constant" name="fillColor"/>
         <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
         <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="Times New Roman" valType="str" updates="constant" name="font"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
         <Param val="False" valType="bool" updates="constant" name="italic"/>
         <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
         <Param val="0.1" valType="num" updates="constant" name="letterHeight"/>
@@ -1066,7 +1185,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="In this study, you will:&amp;#10;&amp;#10;1. Watch a short educational video&amp;#10;2. Answer a series of questions about what you watched&amp;#10;3. Answer a few questions about your experience&amp;#10;4. Fill in a short form about your age, gender, and education.&amp;#10;&amp;#10;" valType="str" updates="constant" name="text"/>
+        <Param val="In this study, you will:&amp;#10;&amp;#10;1. Watch a short educational video.&amp;#10;2. Answer a series of questions about what you watched.&amp;#10;3. Answer a few questions about your experience.&amp;#10;4. Fill in a short form about your age, gender, and education.&amp;#10;&amp;#10;" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
       </TextboxComponent>
@@ -1102,7 +1221,7 @@
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
         <Param val="1.0000, 1.0000, 1.0000" valType="color" updates="constant" name="fillColor"/>
-        <Param val="Times New Roman" valType="str" updates="constant" name="font"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
         <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
         <Param val="False" valType="bool" updates="constant" name="italic"/>
         <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
@@ -1114,14 +1233,14 @@
         <Param val="(0.8, -0.75)" valType="list" updates="constant" name="pos"/>
         <Param val="none" valType="str" updates="None" name="save"/>
         <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="(0.15, 0.15)" valType="list" updates="constant" name="size"/>
+        <Param val="(0.18, 0.15)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="NEXT" valType="str" updates="constant" name="text"/>
+        <Param val="Next &gt;&gt;" valType="str" updates="constant" name="text"/>
         <Param val="button onset" valType="str" updates="constant" name="timeRelativeTo"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
@@ -1145,6 +1264,23 @@
       </CodeComponent>
     </Routine>
     <Routine name="consent">
+      <CodeComponent name="progress_consent" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="psychoJS._progressStep = Math.min(psychoJS._progressStep + 1, psychoJS._progressTotal);&#10;const progressWidth = 1.8 * psychoJS._progressStep / psychoJS._progressTotal;&#10;psychoJS._progressBar.setSize([progressWidth, 0.025]);&#10;psychoJS._progressBar.setPos([-0.9 + progressWidth / 2, 0.94]);" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="progressStep = min(progressStep + 1, progressTotal)&#10;progressWidth = 1.8 * progressStep / progressTotal&#10;progressBar.setSize((progressWidth, 0.025))&#10;progressBar.setPos((-0.9 + progressWidth / 2, 0.94))" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="progress_consent" valType="code" updates="None" name="name"/>
+      </CodeComponent>
       <RoutineSettingsComponent name="consent" plugin="None">
         <Param val="none" valType="str" updates="None" name="backgroundFit"/>
         <Param val="" valType="str" updates="None" name="backgroundImg"/>
@@ -1178,7 +1314,7 @@
         <Param val="None" valType="color" updates="constant" name="fillColor"/>
         <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
         <Param val="False" valType="bool" updates="constant" name="flipVert"/>
-        <Param val="Times New Roman" valType="str" updates="constant" name="font"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
         <Param val="False" valType="bool" updates="constant" name="italic"/>
         <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
         <Param val="0.03" valType="num" updates="constant" name="letterHeight"/>
@@ -1252,7 +1388,7 @@
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
         <Param val="1.0000, 1.0000, 1.0000" valType="color" updates="constant" name="fillColor"/>
-        <Param val="Times New Roman" valType="str" updates="constant" name="font"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
         <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
         <Param val="False" valType="bool" updates="constant" name="italic"/>
         <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
@@ -1264,20 +1400,37 @@
         <Param val="(0.8, -0.75)" valType="list" updates="constant" name="pos"/>
         <Param val="none" valType="str" updates="None" name="save"/>
         <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="(0.15, 0.15)" valType="list" updates="constant" name="size"/>
+        <Param val="(0.18, 0.15)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="NEXT" valType="str" updates="constant" name="text"/>
+        <Param val="Next &gt;&gt;" valType="str" updates="constant" name="text"/>
         <Param val="button onset" valType="str" updates="constant" name="timeRelativeTo"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
       </ButtonComponent>
     </Routine>
     <Routine name="sampleQuiz">
+      <CodeComponent name="progress_sampleQuiz" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="psychoJS._progressStep = Math.min(psychoJS._progressStep + 1, psychoJS._progressTotal);&#10;const progressWidth = 1.8 * psychoJS._progressStep / psychoJS._progressTotal;&#10;psychoJS._progressBar.setSize([progressWidth, 0.025]);&#10;psychoJS._progressBar.setPos([-0.9 + progressWidth / 2, 0.94]);" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="progressStep = min(progressStep + 1, progressTotal)&#10;progressWidth = 1.8 * progressStep / progressTotal&#10;progressBar.setSize((progressWidth, 0.025))&#10;progressBar.setPos((-0.9 + progressWidth / 2, 0.94))" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="progress_sampleQuiz" valType="code" updates="None" name="name"/>
+      </CodeComponent>
       <RoutineSettingsComponent name="sampleQuiz" plugin="None">
         <Param val="none" valType="str" updates="None" name="backgroundFit"/>
         <Param val="" valType="str" updates="None" name="backgroundImg"/>
@@ -1324,7 +1477,7 @@
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
         <Param val="1.0000, 1.0000, 1.0000" valType="color" updates="constant" name="fillColor"/>
-        <Param val="Times New Roman" valType="str" updates="constant" name="font"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
         <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
         <Param val="False" valType="bool" updates="constant" name="italic"/>
         <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
@@ -1336,21 +1489,21 @@
         <Param val="(0.8, -0.75)" valType="list" updates="constant" name="pos"/>
         <Param val="none" valType="str" updates="None" name="save"/>
         <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="(0.15, 0.15)" valType="list" updates="constant" name="size"/>
+        <Param val="(0.18, 0.15)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="NEXT" valType="str" updates="constant" name="text"/>
+        <Param val="Next &gt;&gt;" valType="str" updates="constant" name="text"/>
         <Param val="button onset" valType="str" updates="constant" name="timeRelativeTo"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
       </ButtonComponent>
       <FormComponent name="form" plugin="None">
         <Param val="rows" valType="str" updates="constant" name="Data Format"/>
-        <Param val="Noto Sans" valType="str" updates="constant" name="Font"/>
+        <Param val="Arial" valType="str" updates="constant" name="Font"/>
         <Param val="0.1" valType="num" updates="constant" name="Item Padding"/>
         <Param val="demoForm.xlsx" valType="file" updates="constant" name="Items"/>
         <Param val="False" valType="bool" updates="constant" name="Randomize"/>
@@ -1397,6 +1550,23 @@
       </CodeComponent>
     </Routine>
     <Routine name="videoAssignment">
+      <CodeComponent name="progress_videoAssignment" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="progressStep = 0&#10;progressTotal = 21&#10;progressBackground = visual.Rect(win=win, width=1.8, height=0.025, pos=(0, 0.94), units=&#x27;norm&#x27;, fillColor=&#x27;white&#x27;, lineColor=&#x27;white&#x27;, opacity=0.45, depth=-100)&#10;progressBar = visual.Rect(win=win, width=0.01, height=0.025, pos=(-0.895, 0.94), units=&#x27;norm&#x27;, fillColor=&#x27;lightblue&#x27;, lineColor=&#x27;lightblue&#x27;, depth=-101)&#10;progressBackground.setAutoDraw(True)&#10;progressBar.setAutoDraw(True)" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="psychoJS._progressStep = 0;&#10;psychoJS._progressTotal = 21;&#10;psychoJS._progressBackground = new visual.Rect({win: psychoJS.window, name: &#x27;progressBackground&#x27;, width: 1.8, height: 0.025, pos: [0, 0.94], units: &#x27;norm&#x27;, fillColor: new util.Color(&#x27;white&#x27;), lineColor: new util.Color(&#x27;white&#x27;), opacity: 0.45, depth: -100});&#10;psychoJS._progressBar = new visual.Rect({win: psychoJS.window, name: &#x27;progressBar&#x27;, width: 0.01, height: 0.025, pos: [-0.895, 0.94], units: &#x27;norm&#x27;, fillColor: new util.Color(&#x27;lightblue&#x27;), lineColor: new util.Color(&#x27;lightblue&#x27;), depth: -101});&#10;psychoJS._progressBackground.setAutoDraw(true);&#10;psychoJS._progressBar.setAutoDraw(true);" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="psychoJS._progressStep = Math.min(psychoJS._progressStep + 1, psychoJS._progressTotal);&#10;const progressWidth = 1.8 * psychoJS._progressStep / psychoJS._progressTotal;&#10;psychoJS._progressBar.setSize([progressWidth, 0.025]);&#10;psychoJS._progressBar.setPos([-0.9 + progressWidth / 2, 0.94]);" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="progressStep = min(progressStep + 1, progressTotal)&#10;progressWidth = 1.8 * progressStep / progressTotal&#10;progressBar.setSize((progressWidth, 0.025))&#10;progressBar.setPos((-0.9 + progressWidth / 2, 0.94))" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="progress_videoAssignment" valType="code" updates="None" name="name"/>
+      </CodeComponent>
       <RoutineSettingsComponent name="videoAssignment" plugin="None">
         <Param val="none" valType="str" updates="None" name="backgroundFit"/>
         <Param val="" valType="str" updates="None" name="backgroundImg"/>
@@ -1449,6 +1619,23 @@
       </CodeComponent>
     </Routine>
     <Routine name="QuizA">
+      <CodeComponent name="progress_QuizA" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="psychoJS._progressStep = Math.min(psychoJS._progressStep + 1, psychoJS._progressTotal);&#10;const progressWidth = 1.8 * psychoJS._progressStep / psychoJS._progressTotal;&#10;psychoJS._progressBar.setSize([progressWidth, 0.025]);&#10;psychoJS._progressBar.setPos([-0.9 + progressWidth / 2, 0.94]);" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="progressStep = min(progressStep + 1, progressTotal)&#10;progressWidth = 1.8 * progressStep / progressTotal&#10;progressBar.setSize((progressWidth, 0.025))&#10;progressBar.setPos((-0.9 + progressWidth / 2, 0.94))" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="progress_QuizA" valType="code" updates="None" name="name"/>
+      </CodeComponent>
       <RoutineSettingsComponent name="QuizA" plugin="None">
         <Param val="none" valType="str" updates="None" name="backgroundFit"/>
         <Param val="" valType="str" updates="None" name="backgroundImg"/>
@@ -1470,11 +1657,11 @@
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
-        <Param val="var _pj;&amp;#10;function _pj_snippets(container) {&amp;#10;    function in_es6(left, right) {&amp;#10;        if (((right instanceof Array) || ((typeof right) === &quot;string&quot;))) {&amp;#10;            return (right.indexOf(left) &gt; (- 1));&amp;#10;        } else {&amp;#10;            if (((right instanceof Map) || (right instanceof Set) || (right instanceof WeakMap) || (right instanceof WeakSet))) {&amp;#10;                return right.has(left);&amp;#10;            } else {&amp;#10;                return (left in right);&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    container[&quot;in_es6&quot;] = in_es6;&amp;#10;    return container;&amp;#10;}&amp;#10;_pj = {};&amp;#10;_pj_snippets(_pj);&amp;#10;if ((! _pj.in_es6(video_to_play, [&quot;3_with_jump.mp4&quot;, &quot;Sigmachinesecat.mp4&quot;]))) {&amp;#10;    continueRoutine = false;&amp;#10;}&amp;#10;selectedAnswer = null;&amp;#10;mouseWasPressed = false;&amp;#10;boxA.fillColor = &quot;white&quot;;&amp;#10;boxB.fillColor = &quot;white&quot;;&amp;#10;boxC.fillColor = &quot;white&quot;;&amp;#10;boxD.fillColor = &quot;white&quot;;&amp;#10;nextQuizA.fillColor = &quot;white&quot;;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="if video_to_play not in [&amp;#10;    &quot;3_with_jump.mp4&quot;,&amp;#10;    &quot;Sigmachinesecat.mp4&quot;&amp;#10;]:&amp;#10;    continueRoutine = False&amp;#10;&amp;#10;selectedAnswer = None&amp;#10;mouseWasPressed = False&amp;#10;&amp;#10;boxA.fillColor = 'white'&amp;#10;boxB.fillColor = 'white'&amp;#10;boxC.fillColor = 'white'&amp;#10;boxD.fillColor = 'white'&amp;#10;&amp;#10;nextQuizA.fillColor = 'white'" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="var _pj;&amp;#10;function _pj_snippets(container) {&amp;#10;    function in_es6(left, right) {&amp;#10;        if (((right instanceof Array) || ((typeof right) === &quot;string&quot;))) {&amp;#10;            return (right.indexOf(left) &gt; (- 1));&amp;#10;        } else {&amp;#10;            if (((right instanceof Map) || (right instanceof Set) || (right instanceof WeakMap) || (right instanceof WeakSet))) {&amp;#10;                return right.has(left);&amp;#10;            } else {&amp;#10;                return (left in right);&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    container[&quot;in_es6&quot;] = in_es6;&amp;#10;    return container;&amp;#10;}&amp;#10;_pj = {};&amp;#10;_pj_snippets(_pj);&amp;#10;if ((! _pj.in_es6(video_to_play, [&quot;3_with_jump.mp4&quot;, &quot;Sigmachinesecat.mp4&quot;]))) {&amp;#10;    continueRoutine = false;&amp;#10;}&amp;#10;selectedAnswer = null;&amp;#10;mouseWasPressed = false;&amp;#10;boxA.fillColor = &quot;white&quot;;&amp;#10;boxB.fillColor = &quot;white&quot;;&amp;#10;boxC.fillColor = &quot;white&quot;;&amp;#10;boxD.fillColor = &quot;white&quot;;&amp;#10;nextQuizA.fillColor = &quot;white&quot;;&#10;nextQuizA.opacity = 0.4;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="if video_to_play not in [&amp;#10;    &quot;3_with_jump.mp4&quot;,&amp;#10;    &quot;Sigmachinesecat.mp4&quot;&amp;#10;]:&amp;#10;    continueRoutine = False&amp;#10;&amp;#10;selectedAnswer = None&amp;#10;mouseWasPressed = False&amp;#10;&amp;#10;boxA.fillColor = &#x27;white&#x27;&amp;#10;boxB.fillColor = &#x27;white&#x27;&amp;#10;boxC.fillColor = &#x27;white&#x27;&amp;#10;boxD.fillColor = &#x27;white&#x27;&amp;#10;&amp;#10;nextQuizA.fillColor = &#x27;white&#x27;&#10;nextQuizA.opacity = 0.4" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
-        <Param val="buttons = mouse_2.getPressed()&amp;#10;mouseDown = buttons[0]&amp;#10;&amp;#10;# Respond only once per mouse click&amp;#10;if mouseDown and not mouseWasPressed:&amp;#10;&amp;#10;    if mouse_2.isPressedIn(boxA):&amp;#10;        selectedAnswer = 'A'&amp;#10;&amp;#10;    elif mouse_2.isPressedIn(boxB):&amp;#10;        selectedAnswer = 'B'&amp;#10;&amp;#10;    elif mouse_2.isPressedIn(boxC):&amp;#10;        selectedAnswer = 'C'&amp;#10;&amp;#10;    elif mouse_2.isPressedIn(boxD):&amp;#10;        selectedAnswer = 'D'&amp;#10;&amp;#10;    # Reset all answer colors&amp;#10;    boxA.fillColor = 'white'&amp;#10;    boxB.fillColor = 'white'&amp;#10;    boxC.fillColor = 'white'&amp;#10;    boxD.fillColor = 'white'&amp;#10;&amp;#10;    # Highlight the selected answer&amp;#10;    if selectedAnswer == 'A':&amp;#10;        boxA.fillColor = 'lightblue'&amp;#10;    elif selectedAnswer == 'B':&amp;#10;        boxB.fillColor = 'lightblue'&amp;#10;    elif selectedAnswer == 'C':&amp;#10;        boxC.fillColor = 'lightblue'&amp;#10;    elif selectedAnswer == 'D':&amp;#10;        boxD.fillColor = 'lightblue'&amp;#10;        &amp;#10;    # Proceed only if an answer has been selected&amp;#10;    if mouse_2.isPressedIn(nextQuizA):&amp;#10;        if selectedAnswer is not None:&amp;#10;            continueRoutine = False&amp;#10;&amp;#10;&amp;#10;mouseWasPressed = mouseDown" valType="extendedCode" updates="constant" name="Each Frame"/>
-        <Param val="buttons = mouse_2.getPressed();&amp;#10;mouseDown = buttons[0];&amp;#10;if ((mouseDown &amp;&amp; (! mouseWasPressed))) {&amp;#10;    if (mouse_2.isPressedIn(boxA)) {&amp;#10;        selectedAnswer = &quot;A&quot;;&amp;#10;    } else {&amp;#10;        if (mouse_2.isPressedIn(boxB)) {&amp;#10;            selectedAnswer = &quot;B&quot;;&amp;#10;        } else {&amp;#10;            if (mouse_2.isPressedIn(boxC)) {&amp;#10;                selectedAnswer = &quot;C&quot;;&amp;#10;            } else {&amp;#10;                if (mouse_2.isPressedIn(boxD)) {&amp;#10;                    selectedAnswer = &quot;D&quot;;&amp;#10;                }&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    boxA.fillColor = &quot;white&quot;;&amp;#10;    boxB.fillColor = &quot;white&quot;;&amp;#10;    boxC.fillColor = &quot;white&quot;;&amp;#10;    boxD.fillColor = &quot;white&quot;;&amp;#10;    if ((selectedAnswer === &quot;A&quot;)) {&amp;#10;        boxA.fillColor = &quot;lightblue&quot;;&amp;#10;    } else {&amp;#10;        if ((selectedAnswer === &quot;B&quot;)) {&amp;#10;            boxB.fillColor = &quot;lightblue&quot;;&amp;#10;        } else {&amp;#10;            if ((selectedAnswer === &quot;C&quot;)) {&amp;#10;                boxC.fillColor = &quot;lightblue&quot;;&amp;#10;            } else {&amp;#10;                if ((selectedAnswer === &quot;D&quot;)) {&amp;#10;                    boxD.fillColor = &quot;lightblue&quot;;&amp;#10;                }&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    if (mouse_2.isPressedIn(nextQuizA)) {&amp;#10;        if ((selectedAnswer !== null)) {&amp;#10;            continueRoutine = false;&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;mouseWasPressed = mouseDown;&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="buttons = mouse_2.getPressed()&amp;#10;mouseDown = buttons[0]&amp;#10;&amp;#10;# Respond only once per mouse click&amp;#10;if mouseDown and not mouseWasPressed:&amp;#10;&amp;#10;    if mouse_2.isPressedIn(boxA):&amp;#10;        selectedAnswer = &#x27;A&#x27;&amp;#10;&amp;#10;    elif mouse_2.isPressedIn(boxB):&amp;#10;        selectedAnswer = &#x27;B&#x27;&amp;#10;&amp;#10;    elif mouse_2.isPressedIn(boxC):&amp;#10;        selectedAnswer = &#x27;C&#x27;&amp;#10;&amp;#10;    elif mouse_2.isPressedIn(boxD):&amp;#10;        selectedAnswer = &#x27;D&#x27;&amp;#10;&amp;#10;    # Reset all answer colors&amp;#10;    boxA.fillColor = &#x27;white&#x27;&amp;#10;    boxB.fillColor = &#x27;white&#x27;&amp;#10;    boxC.fillColor = &#x27;white&#x27;&amp;#10;    boxD.fillColor = &#x27;white&#x27;&amp;#10;&amp;#10;    # Highlight the selected answer&amp;#10;    if selectedAnswer == &#x27;A&#x27;:&amp;#10;        boxA.fillColor = &#x27;lightblue&#x27;&amp;#10;    elif selectedAnswer == &#x27;B&#x27;:&amp;#10;        boxB.fillColor = &#x27;lightblue&#x27;&amp;#10;    elif selectedAnswer == &#x27;C&#x27;:&amp;#10;        boxC.fillColor = &#x27;lightblue&#x27;&amp;#10;    elif selectedAnswer == &#x27;D&#x27;:&amp;#10;        boxD.fillColor = &#x27;lightblue&#x27;&amp;#10;        &amp;#10;    # Proceed only if an answer has been selected&amp;#10;    if mouse_2.isPressedIn(nextQuizA):&amp;#10;        if selectedAnswer is not None:&amp;#10;            continueRoutine = False&amp;#10;&amp;#10;&amp;#10;mouseWasPressed = mouseDown&#10;nextQuizA.opacity = 0.4 if selectedAnswer is None else 1.0" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="buttons = mouse_2.getPressed();&amp;#10;mouseDown = buttons[0];&amp;#10;if ((mouseDown &amp;&amp; (! mouseWasPressed))) {&amp;#10;    if (mouse_2.isPressedIn(boxA)) {&amp;#10;        selectedAnswer = &quot;A&quot;;&amp;#10;    } else {&amp;#10;        if (mouse_2.isPressedIn(boxB)) {&amp;#10;            selectedAnswer = &quot;B&quot;;&amp;#10;        } else {&amp;#10;            if (mouse_2.isPressedIn(boxC)) {&amp;#10;                selectedAnswer = &quot;C&quot;;&amp;#10;            } else {&amp;#10;                if (mouse_2.isPressedIn(boxD)) {&amp;#10;                    selectedAnswer = &quot;D&quot;;&amp;#10;                }&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    boxA.fillColor = &quot;white&quot;;&amp;#10;    boxB.fillColor = &quot;white&quot;;&amp;#10;    boxC.fillColor = &quot;white&quot;;&amp;#10;    boxD.fillColor = &quot;white&quot;;&amp;#10;    if ((selectedAnswer === &quot;A&quot;)) {&amp;#10;        boxA.fillColor = &quot;lightblue&quot;;&amp;#10;    } else {&amp;#10;        if ((selectedAnswer === &quot;B&quot;)) {&amp;#10;            boxB.fillColor = &quot;lightblue&quot;;&amp;#10;        } else {&amp;#10;            if ((selectedAnswer === &quot;C&quot;)) {&amp;#10;                boxC.fillColor = &quot;lightblue&quot;;&amp;#10;            } else {&amp;#10;                if ((selectedAnswer === &quot;D&quot;)) {&amp;#10;                    boxD.fillColor = &quot;lightblue&quot;;&amp;#10;                }&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    if (mouse_2.isPressedIn(nextQuizA)) {&amp;#10;        if ((selectedAnswer !== null)) {&amp;#10;            continueRoutine = false;&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;mouseWasPressed = mouseDown;&#10;nextQuizA.opacity = ((selectedAnswer === null) ? 0.4 : 1.0);&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
@@ -1511,7 +1698,7 @@
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
         <Param val="1.0000, 1.0000, 1.0000" valType="color" updates="constant" name="fillColor"/>
-        <Param val="Times New Roman" valType="str" updates="constant" name="font"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
         <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
         <Param val="False" valType="bool" updates="constant" name="italic"/>
         <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
@@ -1523,14 +1710,14 @@
         <Param val="(0.8, -0.75)" valType="list" updates="constant" name="pos"/>
         <Param val="none" valType="str" updates="None" name="save"/>
         <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="(0.15, 0.15)" valType="list" updates="constant" name="size"/>
+        <Param val="(0.18, 0.15)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="NEXT" valType="str" updates="constant" name="text"/>
+        <Param val="Next &gt;&gt;" valType="str" updates="constant" name="text"/>
         <Param val="button onset" valType="str" updates="constant" name="timeRelativeTo"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
@@ -1565,7 +1752,7 @@
         <Param val="Type here..." valType="str" updates="constant" name="placeholder"/>
         <Param val="(0, 0.35)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
+        <Param val="(0.6, 0.5)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="list" updates="constant" name="speechPoint"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
@@ -1595,7 +1782,7 @@
         <Param val="(0, 0.1)" valType="list" updates="constant" name="pos"/>
         <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
-        <Param val="(1.9, 0.12)" valType="list" updates="constant" name="size"/>
+        <Param val="(1, 0.12)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -1666,7 +1853,7 @@
         <Param val="(0, -0.05)" valType="list" updates="constant" name="pos"/>
         <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
-        <Param val="(1.9, 0.12)" valType="list" updates="constant" name="size"/>
+        <Param val="(1, 0.12)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -1737,7 +1924,7 @@
         <Param val="(0, -0.2)" valType="list" updates="constant" name="pos"/>
         <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
-        <Param val="(1.9, 0.12)" valType="list" updates="constant" name="size"/>
+        <Param val="(1, 0.12)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -1808,7 +1995,7 @@
         <Param val="(0, -0.35)" valType="list" updates="constant" name="pos"/>
         <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
-        <Param val="(1.9, 0.12)" valType="list" updates="constant" name="size"/>
+        <Param val="(1, 0.12)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -1900,6 +2087,23 @@
       </CodeComponent>
     </Routine>
     <Routine name="QuizB">
+      <CodeComponent name="progress_QuizB" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="psychoJS._progressStep = Math.min(psychoJS._progressStep + 1, psychoJS._progressTotal);&#10;const progressWidth = 1.8 * psychoJS._progressStep / psychoJS._progressTotal;&#10;psychoJS._progressBar.setSize([progressWidth, 0.025]);&#10;psychoJS._progressBar.setPos([-0.9 + progressWidth / 2, 0.94]);" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="progressStep = min(progressStep + 1, progressTotal)&#10;progressWidth = 1.8 * progressStep / progressTotal&#10;progressBar.setSize((progressWidth, 0.025))&#10;progressBar.setPos((-0.9 + progressWidth / 2, 0.94))" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="progress_QuizB" valType="code" updates="None" name="name"/>
+      </CodeComponent>
       <RoutineSettingsComponent name="QuizB" plugin="None">
         <Param val="none" valType="str" updates="None" name="backgroundFit"/>
         <Param val="" valType="str" updates="None" name="backgroundImg"/>
@@ -1921,11 +2125,11 @@
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
-        <Param val="var _pj;&amp;#10;function _pj_snippets(container) {&amp;#10;    function in_es6(left, right) {&amp;#10;        if (((right instanceof Array) || ((typeof right) === &quot;string&quot;))) {&amp;#10;            return (right.indexOf(left) &gt; (- 1));&amp;#10;        } else {&amp;#10;            if (((right instanceof Map) || (right instanceof Set) || (right instanceof WeakMap) || (right instanceof WeakSet))) {&amp;#10;                return right.has(left);&amp;#10;            } else {&amp;#10;                return (left in right);&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    container[&quot;in_es6&quot;] = in_es6;&amp;#10;    return container;&amp;#10;}&amp;#10;_pj = {};&amp;#10;_pj_snippets(_pj);&amp;#10;if ((! _pj.in_es6(video_to_play, [&quot;Possessed_cat.mp4&quot;, &quot;Jack_jet.mp4&quot;]))) {&amp;#10;    continueRoutine = false;&amp;#10;}&amp;#10;selectedAnswer = null;&amp;#10;mouseWasPressed = false;&amp;#10;boxA_2.fillColor = &quot;white&quot;;&amp;#10;boxB_2.fillColor = &quot;white&quot;;&amp;#10;boxC_2.fillColor = &quot;white&quot;;&amp;#10;boxD_2.fillColor = &quot;white&quot;;&amp;#10;nextQuizB.fillColor = &quot;white&quot;;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="if video_to_play not in [&amp;#10;    &quot;Possessed_cat.mp4&quot;,&amp;#10;    &quot;Jack_jet.mp4&quot;&amp;#10;]:&amp;#10;    continueRoutine = False&amp;#10;    &amp;#10;selectedAnswer = None&amp;#10;mouseWasPressed = False&amp;#10;&amp;#10;boxA_2.fillColor = 'white'&amp;#10;boxB_2.fillColor = 'white'&amp;#10;boxC_2.fillColor = 'white'&amp;#10;boxD_2.fillColor = 'white'&amp;#10;&amp;#10;nextQuizB.fillColor = 'white'" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="var _pj;&amp;#10;function _pj_snippets(container) {&amp;#10;    function in_es6(left, right) {&amp;#10;        if (((right instanceof Array) || ((typeof right) === &quot;string&quot;))) {&amp;#10;            return (right.indexOf(left) &gt; (- 1));&amp;#10;        } else {&amp;#10;            if (((right instanceof Map) || (right instanceof Set) || (right instanceof WeakMap) || (right instanceof WeakSet))) {&amp;#10;                return right.has(left);&amp;#10;            } else {&amp;#10;                return (left in right);&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    container[&quot;in_es6&quot;] = in_es6;&amp;#10;    return container;&amp;#10;}&amp;#10;_pj = {};&amp;#10;_pj_snippets(_pj);&amp;#10;if ((! _pj.in_es6(video_to_play, [&quot;Possessed_cat.mp4&quot;, &quot;Jack_jet.mp4&quot;]))) {&amp;#10;    continueRoutine = false;&amp;#10;}&amp;#10;selectedAnswer = null;&amp;#10;mouseWasPressed = false;&amp;#10;boxA_2.fillColor = &quot;white&quot;;&amp;#10;boxB_2.fillColor = &quot;white&quot;;&amp;#10;boxC_2.fillColor = &quot;white&quot;;&amp;#10;boxD_2.fillColor = &quot;white&quot;;&amp;#10;nextQuizB.fillColor = &quot;white&quot;;&#10;nextQuizB.opacity = 0.4;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="if video_to_play not in [&amp;#10;    &quot;Possessed_cat.mp4&quot;,&amp;#10;    &quot;Jack_jet.mp4&quot;&amp;#10;]:&amp;#10;    continueRoutine = False&amp;#10;    &amp;#10;selectedAnswer = None&amp;#10;mouseWasPressed = False&amp;#10;&amp;#10;boxA_2.fillColor = &#x27;white&#x27;&amp;#10;boxB_2.fillColor = &#x27;white&#x27;&amp;#10;boxC_2.fillColor = &#x27;white&#x27;&amp;#10;boxD_2.fillColor = &#x27;white&#x27;&amp;#10;&amp;#10;nextQuizB.fillColor = &#x27;white&#x27;&#10;nextQuizB.opacity = 0.4" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
-        <Param val="buttons = mouse_3.getPressed()&amp;#10;mouseDown = buttons[0]&amp;#10;&amp;#10;# Respond only once per mouse click&amp;#10;if mouseDown and not mouseWasPressed:&amp;#10;&amp;#10;    if mouse_3.isPressedIn(boxA_2):&amp;#10;        selectedAnswer = 'A'&amp;#10;&amp;#10;    elif mouse_3.isPressedIn(boxB_2):&amp;#10;        selectedAnswer = 'B'&amp;#10;&amp;#10;    elif mouse_3.isPressedIn(boxC_2):&amp;#10;        selectedAnswer = 'C'&amp;#10;&amp;#10;    elif mouse_3.isPressedIn(boxD_2):&amp;#10;        selectedAnswer = 'D'&amp;#10;&amp;#10;    # Reset all answer colors&amp;#10;    boxA_2.fillColor = 'white'&amp;#10;    boxB_2.fillColor = 'white'&amp;#10;    boxC_2.fillColor = 'white'&amp;#10;    boxD_2.fillColor = 'white'&amp;#10;&amp;#10;    # Highlight the selected answer&amp;#10;    if selectedAnswer == 'A':&amp;#10;        boxA_2.fillColor = 'lightblue'&amp;#10;    elif selectedAnswer == 'B':&amp;#10;        boxB_2.fillColor = 'lightblue'&amp;#10;    elif selectedAnswer == 'C':&amp;#10;        boxC_2.fillColor = 'lightblue'&amp;#10;    elif selectedAnswer == 'D':&amp;#10;        boxD_2.fillColor = 'lightblue'&amp;#10;&amp;#10;    # Proceed only if an answer has been selected&amp;#10;    if mouse_3.isPressedIn(nextQuizB):&amp;#10;        if selectedAnswer is not None:&amp;#10;            continueRoutine = False&amp;#10;&amp;#10;mouseWasPressed = mouseDown" valType="extendedCode" updates="constant" name="Each Frame"/>
-        <Param val="buttons = mouse_3.getPressed();&amp;#10;mouseDown = buttons[0];&amp;#10;if ((mouseDown &amp;&amp; (! mouseWasPressed))) {&amp;#10;    if (mouse_3.isPressedIn(boxA_2)) {&amp;#10;        selectedAnswer = &quot;A&quot;;&amp;#10;    } else {&amp;#10;        if (mouse_3.isPressedIn(boxB_2)) {&amp;#10;            selectedAnswer = &quot;B&quot;;&amp;#10;        } else {&amp;#10;            if (mouse_3.isPressedIn(boxC_2)) {&amp;#10;                selectedAnswer = &quot;C&quot;;&amp;#10;            } else {&amp;#10;                if (mouse_3.isPressedIn(boxD_2)) {&amp;#10;                    selectedAnswer = &quot;D&quot;;&amp;#10;                }&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    boxA_2.fillColor = &quot;white&quot;;&amp;#10;    boxB_2.fillColor = &quot;white&quot;;&amp;#10;    boxC_2.fillColor = &quot;white&quot;;&amp;#10;    boxD_2.fillColor = &quot;white&quot;;&amp;#10;    if ((selectedAnswer === &quot;A&quot;)) {&amp;#10;        boxA_2.fillColor = &quot;lightblue&quot;;&amp;#10;    } else {&amp;#10;        if ((selectedAnswer === &quot;B&quot;)) {&amp;#10;            boxB_2.fillColor = &quot;lightblue&quot;;&amp;#10;        } else {&amp;#10;            if ((selectedAnswer === &quot;C&quot;)) {&amp;#10;                boxC_2.fillColor = &quot;lightblue&quot;;&amp;#10;            } else {&amp;#10;                if ((selectedAnswer === &quot;D&quot;)) {&amp;#10;                    boxD_2.fillColor = &quot;lightblue&quot;;&amp;#10;                }&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    if (mouse_3.isPressedIn(nextQuizB)) {&amp;#10;        if ((selectedAnswer !== null)) {&amp;#10;            continueRoutine = false;&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;mouseWasPressed = mouseDown;&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="buttons = mouse_3.getPressed()&amp;#10;mouseDown = buttons[0]&amp;#10;&amp;#10;# Respond only once per mouse click&amp;#10;if mouseDown and not mouseWasPressed:&amp;#10;&amp;#10;    if mouse_3.isPressedIn(boxA_2):&amp;#10;        selectedAnswer = &#x27;A&#x27;&amp;#10;&amp;#10;    elif mouse_3.isPressedIn(boxB_2):&amp;#10;        selectedAnswer = &#x27;B&#x27;&amp;#10;&amp;#10;    elif mouse_3.isPressedIn(boxC_2):&amp;#10;        selectedAnswer = &#x27;C&#x27;&amp;#10;&amp;#10;    elif mouse_3.isPressedIn(boxD_2):&amp;#10;        selectedAnswer = &#x27;D&#x27;&amp;#10;&amp;#10;    # Reset all answer colors&amp;#10;    boxA_2.fillColor = &#x27;white&#x27;&amp;#10;    boxB_2.fillColor = &#x27;white&#x27;&amp;#10;    boxC_2.fillColor = &#x27;white&#x27;&amp;#10;    boxD_2.fillColor = &#x27;white&#x27;&amp;#10;&amp;#10;    # Highlight the selected answer&amp;#10;    if selectedAnswer == &#x27;A&#x27;:&amp;#10;        boxA_2.fillColor = &#x27;lightblue&#x27;&amp;#10;    elif selectedAnswer == &#x27;B&#x27;:&amp;#10;        boxB_2.fillColor = &#x27;lightblue&#x27;&amp;#10;    elif selectedAnswer == &#x27;C&#x27;:&amp;#10;        boxC_2.fillColor = &#x27;lightblue&#x27;&amp;#10;    elif selectedAnswer == &#x27;D&#x27;:&amp;#10;        boxD_2.fillColor = &#x27;lightblue&#x27;&amp;#10;&amp;#10;    # Proceed only if an answer has been selected&amp;#10;    if mouse_3.isPressedIn(nextQuizB):&amp;#10;        if selectedAnswer is not None:&amp;#10;            continueRoutine = False&amp;#10;&amp;#10;mouseWasPressed = mouseDown&#10;nextQuizB.opacity = 0.4 if selectedAnswer is None else 1.0" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="buttons = mouse_3.getPressed();&amp;#10;mouseDown = buttons[0];&amp;#10;if ((mouseDown &amp;&amp; (! mouseWasPressed))) {&amp;#10;    if (mouse_3.isPressedIn(boxA_2)) {&amp;#10;        selectedAnswer = &quot;A&quot;;&amp;#10;    } else {&amp;#10;        if (mouse_3.isPressedIn(boxB_2)) {&amp;#10;            selectedAnswer = &quot;B&quot;;&amp;#10;        } else {&amp;#10;            if (mouse_3.isPressedIn(boxC_2)) {&amp;#10;                selectedAnswer = &quot;C&quot;;&amp;#10;            } else {&amp;#10;                if (mouse_3.isPressedIn(boxD_2)) {&amp;#10;                    selectedAnswer = &quot;D&quot;;&amp;#10;                }&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    boxA_2.fillColor = &quot;white&quot;;&amp;#10;    boxB_2.fillColor = &quot;white&quot;;&amp;#10;    boxC_2.fillColor = &quot;white&quot;;&amp;#10;    boxD_2.fillColor = &quot;white&quot;;&amp;#10;    if ((selectedAnswer === &quot;A&quot;)) {&amp;#10;        boxA_2.fillColor = &quot;lightblue&quot;;&amp;#10;    } else {&amp;#10;        if ((selectedAnswer === &quot;B&quot;)) {&amp;#10;            boxB_2.fillColor = &quot;lightblue&quot;;&amp;#10;        } else {&amp;#10;            if ((selectedAnswer === &quot;C&quot;)) {&amp;#10;                boxC_2.fillColor = &quot;lightblue&quot;;&amp;#10;            } else {&amp;#10;                if ((selectedAnswer === &quot;D&quot;)) {&amp;#10;                    boxD_2.fillColor = &quot;lightblue&quot;;&amp;#10;                }&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    if (mouse_3.isPressedIn(nextQuizB)) {&amp;#10;        if ((selectedAnswer !== null)) {&amp;#10;            continueRoutine = false;&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;mouseWasPressed = mouseDown;&#10;nextQuizB.opacity = ((selectedAnswer === null) ? 0.4 : 1.0);&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
@@ -1962,8 +2166,8 @@
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
         <Param val="1.0000, 1.0000, 1.0000" valType="color" updates="constant" name="fillColor"/>
-        <Param val="Times New Roman" valType="str" updates="constant" name="font"/>
-        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
         <Param val="False" valType="bool" updates="constant" name="italic"/>
         <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
         <Param val="nextQuizB" valType="code" updates="None" name="name"/>
@@ -1974,14 +2178,14 @@
         <Param val="(0.8, -0.75)" valType="list" updates="constant" name="pos"/>
         <Param val="none" valType="str" updates="None" name="save"/>
         <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="(0.15, 0.15)" valType="list" updates="constant" name="size"/>
+        <Param val="(0.18, 0.15)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="NEXT" valType="str" updates="constant" name="text"/>
+        <Param val="Next &gt;&gt;" valType="str" updates="constant" name="text"/>
         <Param val="button onset" valType="str" updates="constant" name="timeRelativeTo"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
@@ -2016,7 +2220,7 @@
         <Param val="Type here..." valType="str" updates="constant" name="placeholder"/>
         <Param val="(0, 0.35)" valType="list" updates="constant" name="pos"/>
         <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
+        <Param val="(0.6, 0.5)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="list" updates="constant" name="speechPoint"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
@@ -2046,7 +2250,7 @@
         <Param val="(0, 0.1)" valType="list" updates="constant" name="pos"/>
         <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
-        <Param val="(1.9, 0.12)" valType="list" updates="constant" name="size"/>
+        <Param val="(1, 0.12)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -2117,7 +2321,7 @@
         <Param val="(0, -0.05)" valType="list" updates="constant" name="pos"/>
         <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
-        <Param val="(1.9, 0.12)" valType="list" updates="constant" name="size"/>
+        <Param val="(1, 0.12)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -2188,7 +2392,7 @@
         <Param val="(0, -0.2)" valType="list" updates="constant" name="pos"/>
         <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
-        <Param val="(1.9, 0.12)" valType="list" updates="constant" name="size"/>
+        <Param val="(1, 0.12)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -2259,7 +2463,7 @@
         <Param val="(0, -0.35)" valType="list" updates="constant" name="pos"/>
         <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
-        <Param val="(1.9, 0.12)" valType="list" updates="constant" name="size"/>
+        <Param val="(1, 0.12)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -2351,6 +2555,23 @@
       </CodeComponent>
     </Routine>
     <Routine name="QuizC">
+      <CodeComponent name="progress_QuizC" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="psychoJS._progressStep = Math.min(psychoJS._progressStep + 1, psychoJS._progressTotal);&#10;const progressWidth = 1.8 * psychoJS._progressStep / psychoJS._progressTotal;&#10;psychoJS._progressBar.setSize([progressWidth, 0.025]);&#10;psychoJS._progressBar.setPos([-0.9 + progressWidth / 2, 0.94]);" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="progressStep = min(progressStep + 1, progressTotal)&#10;progressWidth = 1.8 * progressStep / progressTotal&#10;progressBar.setSize((progressWidth, 0.025))&#10;progressBar.setPos((-0.9 + progressWidth / 2, 0.94))" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="progress_QuizC" valType="code" updates="None" name="name"/>
+      </CodeComponent>
       <RoutineSettingsComponent name="QuizC" plugin="None">
         <Param val="none" valType="str" updates="None" name="backgroundFit"/>
         <Param val="" valType="str" updates="None" name="backgroundImg"/>
@@ -2372,11 +2593,11 @@
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
-        <Param val="var _pj;&amp;#10;function _pj_snippets(container) {&amp;#10;    function in_es6(left, right) {&amp;#10;        if (((right instanceof Array) || ((typeof right) === &quot;string&quot;))) {&amp;#10;            return (right.indexOf(left) &gt; (- 1));&amp;#10;        } else {&amp;#10;            if (((right instanceof Map) || (right instanceof Set) || (right instanceof WeakMap) || (right instanceof WeakSet))) {&amp;#10;                return right.has(left);&amp;#10;            } else {&amp;#10;                return (left in right);&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    container[&quot;in_es6&quot;] = in_es6;&amp;#10;    return container;&amp;#10;}&amp;#10;_pj = {};&amp;#10;_pj_snippets(_pj);&amp;#10;if ((! _pj.in_es6(video_to_play, [&quot;Creepy and scary cat.mp4&quot;, &quot;cattransition.mp4&quot;]))) {&amp;#10;    continueRoutine = false;&amp;#10;}&amp;#10;selectedAnswer = null;&amp;#10;mouseWasPressed = false;&amp;#10;boxA_3.fillColor = &quot;white&quot;;&amp;#10;boxB_3.fillColor = &quot;white&quot;;&amp;#10;boxC_3.fillColor = &quot;white&quot;;&amp;#10;boxD_3.fillColor = &quot;white&quot;;&amp;#10;nextQuizC.fillColor = &quot;white&quot;;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="if video_to_play not in [&amp;#10;    &quot;Creepy and scary cat.mp4&quot;,&amp;#10;    &quot;cattransition.mp4&quot;&amp;#10;]:&amp;#10;    continueRoutine = False&amp;#10;    &amp;#10;selectedAnswer = None&amp;#10;mouseWasPressed = False&amp;#10;&amp;#10;boxA_3.fillColor = 'white'&amp;#10;boxB_3.fillColor = 'white'&amp;#10;boxC_3.fillColor = 'white'&amp;#10;boxD_3.fillColor = 'white'&amp;#10;&amp;#10;nextQuizC.fillColor = 'white'" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="var _pj;&amp;#10;function _pj_snippets(container) {&amp;#10;    function in_es6(left, right) {&amp;#10;        if (((right instanceof Array) || ((typeof right) === &quot;string&quot;))) {&amp;#10;            return (right.indexOf(left) &gt; (- 1));&amp;#10;        } else {&amp;#10;            if (((right instanceof Map) || (right instanceof Set) || (right instanceof WeakMap) || (right instanceof WeakSet))) {&amp;#10;                return right.has(left);&amp;#10;            } else {&amp;#10;                return (left in right);&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    container[&quot;in_es6&quot;] = in_es6;&amp;#10;    return container;&amp;#10;}&amp;#10;_pj = {};&amp;#10;_pj_snippets(_pj);&amp;#10;if ((! _pj.in_es6(video_to_play, [&quot;Creepy and scary cat.mp4&quot;, &quot;cattransition.mp4&quot;]))) {&amp;#10;    continueRoutine = false;&amp;#10;}&amp;#10;selectedAnswer = null;&amp;#10;mouseWasPressed = false;&amp;#10;boxA_3.fillColor = &quot;white&quot;;&amp;#10;boxB_3.fillColor = &quot;white&quot;;&amp;#10;boxC_3.fillColor = &quot;white&quot;;&amp;#10;boxD_3.fillColor = &quot;white&quot;;&amp;#10;nextQuizC.fillColor = &quot;white&quot;;&#10;nextQuizC.opacity = 0.4;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="if video_to_play not in [&amp;#10;    &quot;Creepy and scary cat.mp4&quot;,&amp;#10;    &quot;cattransition.mp4&quot;&amp;#10;]:&amp;#10;    continueRoutine = False&amp;#10;    &amp;#10;selectedAnswer = None&amp;#10;mouseWasPressed = False&amp;#10;&amp;#10;boxA_3.fillColor = &#x27;white&#x27;&amp;#10;boxB_3.fillColor = &#x27;white&#x27;&amp;#10;boxC_3.fillColor = &#x27;white&#x27;&amp;#10;boxD_3.fillColor = &#x27;white&#x27;&amp;#10;&amp;#10;nextQuizC.fillColor = &#x27;white&#x27;&#10;nextQuizC.opacity = 0.4" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
-        <Param val="buttons = mouse_4.getPressed()&amp;#10;mouseDown = buttons[0]&amp;#10;&amp;#10;# Respond only once per mouse click&amp;#10;if mouseDown and not mouseWasPressed:&amp;#10;&amp;#10;    if mouse_4.isPressedIn(boxA_3):&amp;#10;        selectedAnswer = 'A'&amp;#10;&amp;#10;    elif mouse_4.isPressedIn(boxB_3):&amp;#10;        selectedAnswer = 'B'&amp;#10;&amp;#10;    elif mouse_4.isPressedIn(boxC_3):&amp;#10;        selectedAnswer = 'C'&amp;#10;&amp;#10;    elif mouse_4.isPressedIn(boxD_3):&amp;#10;        selectedAnswer = 'D'&amp;#10;&amp;#10;    # Reset all answer colors&amp;#10;    boxA_3.fillColor = 'white'&amp;#10;    boxB_3.fillColor = 'white'&amp;#10;    boxC_3.fillColor = 'white'&amp;#10;    boxD_3.fillColor = 'white'&amp;#10;&amp;#10;    # Highlight the selected answer&amp;#10;    if selectedAnswer == 'A':&amp;#10;        boxA_3.fillColor = 'lightblue'&amp;#10;    elif selectedAnswer == 'B':&amp;#10;        boxB_3.fillColor = 'lightblue'&amp;#10;    elif selectedAnswer == 'C':&amp;#10;        boxC_3.fillColor = 'lightblue'&amp;#10;    elif selectedAnswer == 'D':&amp;#10;        boxD_3.fillColor = 'lightblue'&amp;#10;&amp;#10;    # Proceed only if an answer has been selected&amp;#10;    if mouse_4.isPressedIn(nextQuizC):&amp;#10;        if selectedAnswer is not None:&amp;#10;            continueRoutine = False&amp;#10;&amp;#10;mouseWasPressed = mouseDown" valType="extendedCode" updates="constant" name="Each Frame"/>
-        <Param val="buttons = mouse_4.getPressed();&amp;#10;mouseDown = buttons[0];&amp;#10;if ((mouseDown &amp;&amp; (! mouseWasPressed))) {&amp;#10;    if (mouse_4.isPressedIn(boxA_3)) {&amp;#10;        selectedAnswer = &quot;A&quot;;&amp;#10;    } else {&amp;#10;        if (mouse_4.isPressedIn(boxB_3)) {&amp;#10;            selectedAnswer = &quot;B&quot;;&amp;#10;        } else {&amp;#10;            if (mouse_4.isPressedIn(boxC_3)) {&amp;#10;                selectedAnswer = &quot;C&quot;;&amp;#10;            } else {&amp;#10;                if (mouse_4.isPressedIn(boxD_3)) {&amp;#10;                    selectedAnswer = &quot;D&quot;;&amp;#10;                }&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    boxA_3.fillColor = &quot;white&quot;;&amp;#10;    boxB_3.fillColor = &quot;white&quot;;&amp;#10;    boxC_3.fillColor = &quot;white&quot;;&amp;#10;    boxD_3.fillColor = &quot;white&quot;;&amp;#10;    if ((selectedAnswer === &quot;A&quot;)) {&amp;#10;        boxA_3.fillColor = &quot;lightblue&quot;;&amp;#10;    } else {&amp;#10;        if ((selectedAnswer === &quot;B&quot;)) {&amp;#10;            boxB_3.fillColor = &quot;lightblue&quot;;&amp;#10;        } else {&amp;#10;            if ((selectedAnswer === &quot;C&quot;)) {&amp;#10;                boxC_3.fillColor = &quot;lightblue&quot;;&amp;#10;            } else {&amp;#10;                if ((selectedAnswer === &quot;D&quot;)) {&amp;#10;                    boxD_3.fillColor = &quot;lightblue&quot;;&amp;#10;                }&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    if (mouse_4.isPressedIn(nextQuizC)) {&amp;#10;        if ((selectedAnswer !== null)) {&amp;#10;            continueRoutine = false;&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;mouseWasPressed = mouseDown;&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="buttons = mouse_4.getPressed()&amp;#10;mouseDown = buttons[0]&amp;#10;&amp;#10;# Respond only once per mouse click&amp;#10;if mouseDown and not mouseWasPressed:&amp;#10;&amp;#10;    if mouse_4.isPressedIn(boxA_3):&amp;#10;        selectedAnswer = &#x27;A&#x27;&amp;#10;&amp;#10;    elif mouse_4.isPressedIn(boxB_3):&amp;#10;        selectedAnswer = &#x27;B&#x27;&amp;#10;&amp;#10;    elif mouse_4.isPressedIn(boxC_3):&amp;#10;        selectedAnswer = &#x27;C&#x27;&amp;#10;&amp;#10;    elif mouse_4.isPressedIn(boxD_3):&amp;#10;        selectedAnswer = &#x27;D&#x27;&amp;#10;&amp;#10;    # Reset all answer colors&amp;#10;    boxA_3.fillColor = &#x27;white&#x27;&amp;#10;    boxB_3.fillColor = &#x27;white&#x27;&amp;#10;    boxC_3.fillColor = &#x27;white&#x27;&amp;#10;    boxD_3.fillColor = &#x27;white&#x27;&amp;#10;&amp;#10;    # Highlight the selected answer&amp;#10;    if selectedAnswer == &#x27;A&#x27;:&amp;#10;        boxA_3.fillColor = &#x27;lightblue&#x27;&amp;#10;    elif selectedAnswer == &#x27;B&#x27;:&amp;#10;        boxB_3.fillColor = &#x27;lightblue&#x27;&amp;#10;    elif selectedAnswer == &#x27;C&#x27;:&amp;#10;        boxC_3.fillColor = &#x27;lightblue&#x27;&amp;#10;    elif selectedAnswer == &#x27;D&#x27;:&amp;#10;        boxD_3.fillColor = &#x27;lightblue&#x27;&amp;#10;&amp;#10;    # Proceed only if an answer has been selected&amp;#10;    if mouse_4.isPressedIn(nextQuizC):&amp;#10;        if selectedAnswer is not None:&amp;#10;            continueRoutine = False&amp;#10;&amp;#10;mouseWasPressed = mouseDown&#10;nextQuizC.opacity = 0.4 if selectedAnswer is None else 1.0" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="buttons = mouse_4.getPressed();&amp;#10;mouseDown = buttons[0];&amp;#10;if ((mouseDown &amp;&amp; (! mouseWasPressed))) {&amp;#10;    if (mouse_4.isPressedIn(boxA_3)) {&amp;#10;        selectedAnswer = &quot;A&quot;;&amp;#10;    } else {&amp;#10;        if (mouse_4.isPressedIn(boxB_3)) {&amp;#10;            selectedAnswer = &quot;B&quot;;&amp;#10;        } else {&amp;#10;            if (mouse_4.isPressedIn(boxC_3)) {&amp;#10;                selectedAnswer = &quot;C&quot;;&amp;#10;            } else {&amp;#10;                if (mouse_4.isPressedIn(boxD_3)) {&amp;#10;                    selectedAnswer = &quot;D&quot;;&amp;#10;                }&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    boxA_3.fillColor = &quot;white&quot;;&amp;#10;    boxB_3.fillColor = &quot;white&quot;;&amp;#10;    boxC_3.fillColor = &quot;white&quot;;&amp;#10;    boxD_3.fillColor = &quot;white&quot;;&amp;#10;    if ((selectedAnswer === &quot;A&quot;)) {&amp;#10;        boxA_3.fillColor = &quot;lightblue&quot;;&amp;#10;    } else {&amp;#10;        if ((selectedAnswer === &quot;B&quot;)) {&amp;#10;            boxB_3.fillColor = &quot;lightblue&quot;;&amp;#10;        } else {&amp;#10;            if ((selectedAnswer === &quot;C&quot;)) {&amp;#10;                boxC_3.fillColor = &quot;lightblue&quot;;&amp;#10;            } else {&amp;#10;                if ((selectedAnswer === &quot;D&quot;)) {&amp;#10;                    boxD_3.fillColor = &quot;lightblue&quot;;&amp;#10;                }&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    if (mouse_4.isPressedIn(nextQuizC)) {&amp;#10;        if ((selectedAnswer !== null)) {&amp;#10;            continueRoutine = false;&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;mouseWasPressed = mouseDown;&#10;nextQuizC.opacity = ((selectedAnswer === null) ? 0.4 : 1.0);&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
@@ -2413,8 +2634,8 @@
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
         <Param val="1.0000, 1.0000, 1.0000" valType="color" updates="constant" name="fillColor"/>
-        <Param val="Times New Roman" valType="str" updates="constant" name="font"/>
-        <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
+        <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
         <Param val="False" valType="bool" updates="constant" name="italic"/>
         <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
         <Param val="nextQuizC" valType="code" updates="None" name="name"/>
@@ -2425,14 +2646,14 @@
         <Param val="(0.8, -0.75)" valType="list" updates="constant" name="pos"/>
         <Param val="none" valType="str" updates="None" name="save"/>
         <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="(0.15, 0.15)" valType="list" updates="constant" name="size"/>
+        <Param val="(0.18, 0.15)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="NEXT" valType="str" updates="constant" name="text"/>
+        <Param val="Next &gt;&gt;" valType="str" updates="constant" name="text"/>
         <Param val="button onset" valType="str" updates="constant" name="timeRelativeTo"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
@@ -2467,7 +2688,7 @@
         <Param val="Type here..." valType="str" updates="constant" name="placeholder"/>
         <Param val="(0, 0.35)" valType="list" updates="constant" name="pos"/>
         <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="(0.5, 0.5)" valType="list" updates="constant" name="size"/>
+        <Param val="(0.6, 0.5)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="list" updates="constant" name="speechPoint"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
@@ -2497,7 +2718,7 @@
         <Param val="(0, 0.1)" valType="list" updates="constant" name="pos"/>
         <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
-        <Param val="(1.9, 0.12)" valType="list" updates="constant" name="size"/>
+        <Param val="(1, 0.12)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -2568,7 +2789,7 @@
         <Param val="(0, -0.05)" valType="list" updates="constant" name="pos"/>
         <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
-        <Param val="(1.9, 0.12)" valType="list" updates="constant" name="size"/>
+        <Param val="(1, 0.12)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -2639,7 +2860,7 @@
         <Param val="(0, -0.2)" valType="list" updates="constant" name="pos"/>
         <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
-        <Param val="(1.9, 0.12)" valType="list" updates="constant" name="size"/>
+        <Param val="(1, 0.12)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -2710,7 +2931,7 @@
         <Param val="(0, -0.35)" valType="list" updates="constant" name="pos"/>
         <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
-        <Param val="(1.9, 0.12)" valType="list" updates="constant" name="size"/>
+        <Param val="(1, 0.12)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -2802,6 +3023,23 @@
       </CodeComponent>
     </Routine>
     <Routine name="demographicQuiz">
+      <CodeComponent name="progress_demographicQuiz" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="psychoJS._progressStep = Math.min(psychoJS._progressStep + 1, psychoJS._progressTotal);&#10;const progressWidth = 1.8 * psychoJS._progressStep / psychoJS._progressTotal;&#10;psychoJS._progressBar.setSize([progressWidth, 0.025]);&#10;psychoJS._progressBar.setPos([-0.9 + progressWidth / 2, 0.94]);" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="progressStep = min(progressStep + 1, progressTotal)&#10;progressWidth = 1.8 * progressStep / progressTotal&#10;progressBar.setSize((progressWidth, 0.025))&#10;progressBar.setPos((-0.9 + progressWidth / 2, 0.94))" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="progress_demographicQuiz" valType="code" updates="None" name="name"/>
+      </CodeComponent>
       <RoutineSettingsComponent name="demographicQuiz" plugin="None">
         <Param val="none" valType="str" updates="None" name="backgroundFit"/>
         <Param val="" valType="str" updates="None" name="backgroundImg"/>
@@ -2840,11 +3078,11 @@
         <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
-        <Param val="selectedAnswer = null;&amp;#10;mouseWasPressed = false;&amp;#10;box1.fillColor = &quot;white&quot;;&amp;#10;box2.fillColor = &quot;white&quot;;&amp;#10;box3.fillColor = &quot;white&quot;;&amp;#10;box4.fillColor = &quot;white&quot;;&amp;#10;nextDemo.fillColor = &quot;white&quot;;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="selectedAnswer = None&amp;#10;mouseWasPressed = False&amp;#10;&amp;#10;box1.fillColor = 'white'&amp;#10;box2.fillColor = 'white'&amp;#10;box3.fillColor = 'white'&amp;#10;box4.fillColor = 'white'&amp;#10;&amp;#10;nextDemo.fillColor = 'white'" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="selectedAnswer = null;&amp;#10;mouseWasPressed = false;&amp;#10;box1.fillColor = &quot;white&quot;;&amp;#10;box2.fillColor = &quot;white&quot;;&amp;#10;box3.fillColor = &quot;white&quot;;&amp;#10;box4.fillColor = &quot;white&quot;;&amp;#10;nextDemo.fillColor = &quot;white&quot;;&#10;nextDemo.opacity = 0.4;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="selectedAnswer = None&amp;#10;mouseWasPressed = False&amp;#10;&amp;#10;box1.fillColor = &#x27;white&#x27;&amp;#10;box2.fillColor = &#x27;white&#x27;&amp;#10;box3.fillColor = &#x27;white&#x27;&amp;#10;box4.fillColor = &#x27;white&#x27;&amp;#10;&amp;#10;nextDemo.fillColor = &#x27;white&#x27;&#10;nextDemo.opacity = 0.4" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
-        <Param val="buttons = mouse_5.getPressed()&amp;#10;mouseDown = buttons[0]&amp;#10;&amp;#10;# Respond only once per mouse click&amp;#10;if mouseDown and not mouseWasPressed:&amp;#10;&amp;#10;    if mouse_5.isPressedIn(box1):&amp;#10;        selectedAnswer = 'A'&amp;#10;&amp;#10;    elif mouse_5.isPressedIn(box2):&amp;#10;        selectedAnswer = 'B'&amp;#10;&amp;#10;    elif mouse_5.isPressedIn(box3):&amp;#10;        selectedAnswer = 'C'&amp;#10;&amp;#10;    elif mouse_5.isPressedIn(box4):&amp;#10;        selectedAnswer = 'D'&amp;#10;&amp;#10;    # Reset all answer colors&amp;#10;    box1.fillColor = 'white'&amp;#10;    box2.fillColor = 'white'&amp;#10;    box3.fillColor = 'white'&amp;#10;    box4.fillColor = 'white'&amp;#10;&amp;#10;    # Highlight the selected answer&amp;#10;    if selectedAnswer == 'A':&amp;#10;        box1.fillColor = 'lightblue'&amp;#10;    elif selectedAnswer == 'B':&amp;#10;        box2.fillColor = 'lightblue'&amp;#10;    elif selectedAnswer == 'C':&amp;#10;        box3.fillColor = 'lightblue'&amp;#10;    elif selectedAnswer == 'D':&amp;#10;        box4.fillColor = 'lightblue'&amp;#10;        &amp;#10;    # Proceed only if an answer has been selected&amp;#10;    if mouse_5.isPressedIn(nextDemo):&amp;#10;        if selectedAnswer is not None:&amp;#10;            continueRoutine = False&amp;#10;&amp;#10;&amp;#10;mouseWasPressed = mouseDown" valType="extendedCode" updates="constant" name="Each Frame"/>
-        <Param val="buttons = mouse_5.getPressed();&amp;#10;mouseDown = buttons[0];&amp;#10;if ((mouseDown &amp;&amp; (! mouseWasPressed))) {&amp;#10;    if (mouse_5.isPressedIn(box1)) {&amp;#10;        selectedAnswer = &quot;A&quot;;&amp;#10;    } else {&amp;#10;        if (mouse_5.isPressedIn(box2)) {&amp;#10;            selectedAnswer = &quot;B&quot;;&amp;#10;        } else {&amp;#10;            if (mouse_5.isPressedIn(box3)) {&amp;#10;                selectedAnswer = &quot;C&quot;;&amp;#10;            } else {&amp;#10;                if (mouse_5.isPressedIn(box4)) {&amp;#10;                    selectedAnswer = &quot;D&quot;;&amp;#10;                }&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    box1.fillColor = &quot;white&quot;;&amp;#10;    box2.fillColor = &quot;white&quot;;&amp;#10;    box3.fillColor = &quot;white&quot;;&amp;#10;    box4.fillColor = &quot;white&quot;;&amp;#10;    if ((selectedAnswer === &quot;A&quot;)) {&amp;#10;        box1.fillColor = &quot;lightblue&quot;;&amp;#10;    } else {&amp;#10;        if ((selectedAnswer === &quot;B&quot;)) {&amp;#10;            box2.fillColor = &quot;lightblue&quot;;&amp;#10;        } else {&amp;#10;            if ((selectedAnswer === &quot;C&quot;)) {&amp;#10;                box3.fillColor = &quot;lightblue&quot;;&amp;#10;            } else {&amp;#10;                if ((selectedAnswer === &quot;D&quot;)) {&amp;#10;                    box4.fillColor = &quot;lightblue&quot;;&amp;#10;                }&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    if (mouse_5.isPressedIn(nextDemo)) {&amp;#10;        if ((selectedAnswer !== null)) {&amp;#10;            continueRoutine = false;&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;mouseWasPressed = mouseDown;&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="buttons = mouse_5.getPressed()&amp;#10;mouseDown = buttons[0]&amp;#10;&amp;#10;# Respond only once per mouse click&amp;#10;if mouseDown and not mouseWasPressed:&amp;#10;&amp;#10;    if mouse_5.isPressedIn(box1):&amp;#10;        selectedAnswer = &#x27;A&#x27;&amp;#10;&amp;#10;    elif mouse_5.isPressedIn(box2):&amp;#10;        selectedAnswer = &#x27;B&#x27;&amp;#10;&amp;#10;    elif mouse_5.isPressedIn(box3):&amp;#10;        selectedAnswer = &#x27;C&#x27;&amp;#10;&amp;#10;    elif mouse_5.isPressedIn(box4):&amp;#10;        selectedAnswer = &#x27;D&#x27;&amp;#10;&amp;#10;    # Reset all answer colors&amp;#10;    box1.fillColor = &#x27;white&#x27;&amp;#10;    box2.fillColor = &#x27;white&#x27;&amp;#10;    box3.fillColor = &#x27;white&#x27;&amp;#10;    box4.fillColor = &#x27;white&#x27;&amp;#10;&amp;#10;    # Highlight the selected answer&amp;#10;    if selectedAnswer == &#x27;A&#x27;:&amp;#10;        box1.fillColor = &#x27;lightblue&#x27;&amp;#10;    elif selectedAnswer == &#x27;B&#x27;:&amp;#10;        box2.fillColor = &#x27;lightblue&#x27;&amp;#10;    elif selectedAnswer == &#x27;C&#x27;:&amp;#10;        box3.fillColor = &#x27;lightblue&#x27;&amp;#10;    elif selectedAnswer == &#x27;D&#x27;:&amp;#10;        box4.fillColor = &#x27;lightblue&#x27;&amp;#10;        &amp;#10;    # Proceed only if an answer has been selected&amp;#10;    if mouse_5.isPressedIn(nextDemo):&amp;#10;        if selectedAnswer is not None:&amp;#10;            continueRoutine = False&amp;#10;&amp;#10;&amp;#10;mouseWasPressed = mouseDown&#10;nextDemo.opacity = 0.4 if selectedAnswer is None else 1.0" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="buttons = mouse_5.getPressed();&amp;#10;mouseDown = buttons[0];&amp;#10;if ((mouseDown &amp;&amp; (! mouseWasPressed))) {&amp;#10;    if (mouse_5.isPressedIn(box1)) {&amp;#10;        selectedAnswer = &quot;A&quot;;&amp;#10;    } else {&amp;#10;        if (mouse_5.isPressedIn(box2)) {&amp;#10;            selectedAnswer = &quot;B&quot;;&amp;#10;        } else {&amp;#10;            if (mouse_5.isPressedIn(box3)) {&amp;#10;                selectedAnswer = &quot;C&quot;;&amp;#10;            } else {&amp;#10;                if (mouse_5.isPressedIn(box4)) {&amp;#10;                    selectedAnswer = &quot;D&quot;;&amp;#10;                }&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    box1.fillColor = &quot;white&quot;;&amp;#10;    box2.fillColor = &quot;white&quot;;&amp;#10;    box3.fillColor = &quot;white&quot;;&amp;#10;    box4.fillColor = &quot;white&quot;;&amp;#10;    if ((selectedAnswer === &quot;A&quot;)) {&amp;#10;        box1.fillColor = &quot;lightblue&quot;;&amp;#10;    } else {&amp;#10;        if ((selectedAnswer === &quot;B&quot;)) {&amp;#10;            box2.fillColor = &quot;lightblue&quot;;&amp;#10;        } else {&amp;#10;            if ((selectedAnswer === &quot;C&quot;)) {&amp;#10;                box3.fillColor = &quot;lightblue&quot;;&amp;#10;            } else {&amp;#10;                if ((selectedAnswer === &quot;D&quot;)) {&amp;#10;                    box4.fillColor = &quot;lightblue&quot;;&amp;#10;                }&amp;#10;            }&amp;#10;        }&amp;#10;    }&amp;#10;    if (mouse_5.isPressedIn(nextDemo)) {&amp;#10;        if ((selectedAnswer !== null)) {&amp;#10;            continueRoutine = false;&amp;#10;        }&amp;#10;    }&amp;#10;}&amp;#10;mouseWasPressed = mouseDown;&#10;nextDemo.opacity = ((selectedAnswer === null) ? 0.4 : 1.0);&amp;#10;" valType="extendedCode" updates="constant" name="Each JS Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
@@ -2881,7 +3119,7 @@
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
         <Param val="1.0000, 1.0000, 1.0000" valType="color" updates="constant" name="fillColor"/>
-        <Param val="Times New Roman" valType="str" updates="constant" name="font"/>
+        <Param val="Arial" valType="str" updates="constant" name="font"/>
         <Param val="False" valType="bool" updates="constant" name="forceEndRoutine"/>
         <Param val="False" valType="bool" updates="constant" name="italic"/>
         <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
@@ -2893,14 +3131,14 @@
         <Param val="(0.8, -0.75)" valType="list" updates="constant" name="pos"/>
         <Param val="none" valType="str" updates="None" name="save"/>
         <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="(0.15, 0.15)" valType="list" updates="constant" name="size"/>
+        <Param val="(0.18, 0.15)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0" valType="code" updates="None" name="startVal"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="NEXT" valType="str" updates="constant" name="text"/>
+        <Param val="Next &gt;&gt;" valType="str" updates="constant" name="text"/>
         <Param val="button onset" valType="str" updates="constant" name="timeRelativeTo"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="code" updates="None" name="validator"/>
@@ -2965,7 +3203,7 @@
         <Param val="(0, 0.1)" valType="list" updates="constant" name="pos"/>
         <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
-        <Param val="(1.9, 0.12)" valType="list" updates="constant" name="size"/>
+        <Param val="(1, 0.12)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -3036,7 +3274,7 @@
         <Param val="(0, -0.05)" valType="list" updates="constant" name="pos"/>
         <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
-        <Param val="(1.9, 0.12)" valType="list" updates="constant" name="size"/>
+        <Param val="(1, 0.12)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -3107,7 +3345,7 @@
         <Param val="(0, -0.2)" valType="list" updates="constant" name="pos"/>
         <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
-        <Param val="(1.9, 0.12)" valType="list" updates="constant" name="size"/>
+        <Param val="(1, 0.12)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>
@@ -3178,7 +3416,7 @@
         <Param val="(0, -0.35)" valType="list" updates="constant" name="pos"/>
         <Param val="False" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
-        <Param val="(1.9, 0.12)" valType="list" updates="constant" name="size"/>
+        <Param val="(1, 0.12)" valType="list" updates="constant" name="size"/>
         <Param val="" valType="code" updates="None" name="startEstim"/>
         <Param val="time (s)" valType="str" updates="None" name="startType"/>
         <Param val="0.0" valType="code" updates="None" name="startVal"/>

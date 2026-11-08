@@ -160,15 +160,21 @@ var ending_text;
 var globalClock;
 var routineTimer;
 async function experimentInit() {
+  psychoJS._progressStep = 0;
+  psychoJS._progressTotal = 15;
+  psychoJS._progressBackground = new visual.Rect({win: psychoJS.window, name: 'progressBackground', width: 1.8, height: 0.025, pos: [0, 0.94], units: 'norm', fillColor: new util.Color('white'), lineColor: new util.Color('white'), opacity: 0.45, depth: -100});
+  psychoJS._progressBar = new visual.Rect({win: psychoJS.window, name: 'progressBar', width: 0.01, height: 0.025, pos: [-0.895, 0.94], units: 'norm', fillColor: new util.Color('lightblue'), lineColor: new util.Color('lightblue'), depth: -101});
+  psychoJS._progressBackground.setAutoDraw(true);
+  psychoJS._progressBar.setAutoDraw(true);
   // Initialize components for Routine "demographic"
   demographicClock = new util.Clock();
   demoNext = new visual.ButtonStim({
     win: psychoJS.window,
     name: 'demoNext',
-    text: 'Next>>',
-    font: 'Times New Roman',
+    text: 'Next >>',
+    font: 'Arial',
     pos: [0.8, (- 0.75)],
-    size: [0.15, 0.15],
+    size: [0.18, 0.15],
     padding: null,
     anchor: 'center',
     ori: 0.0,
@@ -190,7 +196,7 @@ async function experimentInit() {
     win : psychoJS.window, name:'form',
     items : 'demoForm.xlsx',
     textHeight : 0.03,
-    font : 'Noto Sans',
+    font : 'Arial',
     randomize : false,
     size : [1.6, 0.7],
     pos : [0, 0],
@@ -205,7 +211,7 @@ async function experimentInit() {
     name: 'consentText',
     text: 'PARTICIPANT INFORMATION AND CONSENT\n\nWho Can Take Part\n- You must be 18 years or older.\n- You must not have a vision or hearing impairment that would affect your participation.\n- You must be able to follow a lecture in English\n- You must not have been enrolled one of the competencies listed here:\n   - AIC - 505 Generative AI\n   - SEN - 210 DesktopGUI\n   - TBC\n\nHow Long It Takes\n- The whole session takes about 30 to 45 minutes.\n- Please follow the instructions on the screen.\n\nYour Rights\n- Taking part is voluntary.\n- You can stop and leave at any time. You do not have to give a reason.\n- If you leave, your data will not be stored or used.\n\nPrivacy\n- Your name will not be written in your data. You will only have a participant number.\n- Your data will be stored securely.\n- Results will only be reported for the whole group. No one will be identified.\n\nCONSENT\n- I have read this information.\n- I understand that I can stop at any time.\n- I agree to take part in this study.\n\nYou can ask the experimenter any question before you start.\n\nIf you agree, please continue to the next step by clicking the "NEXT" button.',
     placeholder: 'Type here...',
-    font: 'Times New Roman',
+    font: 'Arial',
     pos: [0, 0], 
     draggable: false,
     letterHeight: 0.03,
@@ -233,10 +239,10 @@ async function experimentInit() {
   consentNextButton = new visual.ButtonStim({
     win: psychoJS.window,
     name: 'consentNextButton',
-    text: 'Next>>',
-    font: 'Times New Roman',
+    text: 'Next >>',
+    font: 'Arial',
     pos: [0.8, (- 0.75)],
-    size: [0.15, 0.15],
+    size: [0.18, 0.15],
     padding: null,
     anchor: 'center',
     ori: 0.0,
@@ -261,7 +267,7 @@ async function experimentInit() {
     name: 'instruction_header',
     text: 'Instructions',
     placeholder: 'Type here...',
-    font: 'Times New Roman',
+    font: 'Arial',
     pos: [0, 0.65], 
     draggable: false,
     letterHeight: 0.15,
@@ -287,7 +293,7 @@ async function experimentInit() {
     name: 'instruction_text',
     text: 'In this study, you will:\n\n1. Watch a short educational video\n2. Answer a series of questions about what you watched\n3. Answer a few questions about your experience\n4. Fill in a short form about your age, gender, and education.\n\n',
     placeholder: 'Type here...',
-    font: 'Times New Roman',
+    font: 'Arial',
     pos: [0, (- 0.05)], 
     draggable: false,
     letterHeight: 0.1,
@@ -313,10 +319,10 @@ async function experimentInit() {
   nextButton_instructions = new visual.ButtonStim({
     win: psychoJS.window,
     name: 'nextButton_instructions',
-    text: 'Next>>',
-    font: 'Times New Roman',
+    text: 'Next >>',
+    font: 'Arial',
     pos: [0.8, (- 0.75)],
-    size: [0.15, 0.15],
+    size: [0.18, 0.15],
     padding: null,
     anchor: 'center',
     ori: 0.0,
@@ -341,7 +347,7 @@ async function experimentInit() {
     name: 'warning_header',
     text: 'IMPORTANT',
     placeholder: 'Type here...',
-    font: 'Times New Roman',
+    font: 'Arial',
     pos: [0, 0.65], 
     draggable: false,
     letterHeight: 0.15,
@@ -367,7 +373,7 @@ async function experimentInit() {
     name: 'warning_text',
     text: '- You will watch one video in full. \n- Please pay close attention, as you will be tested on the content \n  afterward.\n- The video and quiz cannot be repeated once completed.\n\n',
     placeholder: 'Type here...',
-    font: 'Times New Roman',
+    font: 'Arial',
     pos: [0, (- 0.15)], 
     draggable: false,
     letterHeight: 0.1,
@@ -393,10 +399,10 @@ async function experimentInit() {
   nextButton_warning = new visual.ButtonStim({
     win: psychoJS.window,
     name: 'nextButton_warning',
-    text: 'Next>>',
-    font: 'Times New Roman',
+    text: 'Next >>',
+    font: 'Arial',
     pos: [0.8, (- 0.75)],
-    size: [0.15, 0.15],
+    size: [0.18, 0.15],
     padding: null,
     anchor: 'center',
     ori: 0.0,
@@ -423,7 +429,7 @@ async function experimentInit() {
     name: 'textbox',
     text: 'Thank you for watching the video.\n\nYou will now answer some questions about what you just watched.\n\nPlease answer based on your own understanding.\n\nBefore the main questions, you will first complete a short sample \nquiz to help you get familiar with how the questions work.\n\n',
     placeholder: 'Type here...',
-    font: 'Times New Roman',
+    font: 'Arial',
     pos: [0, 0], 
     draggable: false,
     letterHeight: 0.1,
@@ -449,10 +455,10 @@ async function experimentInit() {
   nextButton_quizInstruction = new visual.ButtonStim({
     win: psychoJS.window,
     name: 'nextButton_quizInstruction',
-    text: 'Next>>',
-    font: 'Times New Roman',
+    text: 'Next >>',
+    font: 'Arial',
     pos: [0.8, (- 0.75)],
-    size: [0.15, 0.15],
+    size: [0.18, 0.15],
     padding: null,
     anchor: 'center',
     ori: 0.0,
@@ -481,7 +487,7 @@ async function experimentInit() {
     name: 'textbox_2',
     text: "You have completed the quiz.\n\nJust a few more short questions about your experience, and then \nyou'll be finished.\n\n",
     placeholder: 'Type here...',
-    font: 'Times New Roman',
+    font: 'Arial',
     pos: [0, 0], 
     draggable: false,
     letterHeight: 0.1,
@@ -507,10 +513,10 @@ async function experimentInit() {
   nextButton_2 = new visual.ButtonStim({
     win: psychoJS.window,
     name: 'nextButton_2',
-    text: 'Next>>',
-    font: 'Times New Roman',
+    text: 'Next >>',
+    font: 'Arial',
     pos: [0.8, (- 0.75)],
-    size: [0.15, 0.15],
+    size: [0.18, 0.15],
     padding: null,
     anchor: 'center',
     ori: 0.0,
@@ -534,7 +540,7 @@ async function experimentInit() {
     win: psychoJS.window,
     name: 'likertText',
     text: '',
-    font: 'Times New Roman',
+    font: 'Arial',
     units: undefined, 
     pos: [0, 0], draggable: false, height: 0.1,  wrapWidth: undefined, ori: 0.0,
     languageStyle: 'LTR',
@@ -549,17 +555,17 @@ async function experimentInit() {
     labels: ["Strongly disagree", "Disagree", "Somewhat disagree", "Neither agree nor disagree", "Somewhat agree", "Agree", "Strongly agree"], fontSize: 0.036, ticks: [1, 2, 3, 4, 5, 6, 7],
     granularity: 1.0, style: ["RATING"],
     color: new util.Color("'#000000'"), markerColor: new util.Color('Red'), lineColor: new util.Color('White'), 
-    opacity: undefined, fontFamily: 'Noto Sans', bold: true, italic: false, depth: -1, 
+    opacity: undefined, fontFamily: 'Arial', bold: true, italic: false, depth: -1,
     flip: false,
   });
   
   nextButton = new visual.ButtonStim({
     win: psychoJS.window,
     name: 'nextButton',
-    text: 'Next>>',
-    font: 'Times New Roman',
+    text: 'Next >>',
+    font: 'Arial',
     pos: [0.8, (- 0.75)],
-    size: [0.15, 0.15],
+    size: [0.18, 0.15],
     padding: null,
     anchor: 'center',
     ori: 0.0,
@@ -586,7 +592,7 @@ async function experimentInit() {
     name: 'ending_text',
     text: 'Thank you for participating in this study!\n\nYour responses have been recorded successfully.',
     placeholder: 'Type here...',
-    font: 'Times New Roman',
+    font: 'Arial',
     pos: [0, 0], 
     draggable: false,
     letterHeight: 0.1,
@@ -627,6 +633,11 @@ function demographicRoutineBegin(snapshot) {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
     
     //--- Prepare to start Routine 'demographic' ---
+    psychoJS._progressStep = Math.min(psychoJS._progressStep + 1, psychoJS._progressTotal);
+    const progressWidth = 1.8 * psychoJS._progressStep / psychoJS._progressTotal;
+    psychoJS._progressBar.setSize([progressWidth, 0.025]);
+    psychoJS._progressBar.setPos([-0.9 + progressWidth / 2, 0.94]);
+
     t = 0;
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
@@ -779,6 +790,11 @@ function consentRoutineBegin(snapshot) {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
     
     //--- Prepare to start Routine 'consent' ---
+    psychoJS._progressStep = Math.min(psychoJS._progressStep + 1, psychoJS._progressTotal);
+    const progressWidth = 1.8 * psychoJS._progressStep / psychoJS._progressTotal;
+    psychoJS._progressBar.setSize([progressWidth, 0.025]);
+    psychoJS._progressBar.setPos([-0.9 + progressWidth / 2, 0.94]);
+
     t = 0;
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
@@ -978,6 +994,11 @@ function instructionsRoutineBegin(snapshot) {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
     
     //--- Prepare to start Routine 'instructions' ---
+    psychoJS._progressStep = Math.min(psychoJS._progressStep + 1, psychoJS._progressTotal);
+    const progressWidth = 1.8 * psychoJS._progressStep / psychoJS._progressTotal;
+    psychoJS._progressBar.setSize([progressWidth, 0.025]);
+    psychoJS._progressBar.setPos([-0.9 + progressWidth / 2, 0.94]);
+
     t = 0;
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
@@ -1187,6 +1208,11 @@ function warningRoutineBegin(snapshot) {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
     
     //--- Prepare to start Routine 'warning' ---
+    psychoJS._progressStep = Math.min(psychoJS._progressStep + 1, psychoJS._progressTotal);
+    const progressWidth = 1.8 * psychoJS._progressStep / psychoJS._progressTotal;
+    psychoJS._progressBar.setSize([progressWidth, 0.025]);
+    psychoJS._progressBar.setPos([-0.9 + progressWidth / 2, 0.94]);
+
     t = 0;
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
@@ -1395,6 +1421,11 @@ function videoRoutineBegin(snapshot) {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
     
     //--- Prepare to start Routine 'video' ---
+    psychoJS._progressStep = Math.min(psychoJS._progressStep + 1, psychoJS._progressTotal);
+    const progressWidth = 1.8 * psychoJS._progressStep / psychoJS._progressTotal;
+    psychoJS._progressBar.setSize([progressWidth, 0.025]);
+    psychoJS._progressBar.setPos([-0.9 + progressWidth / 2, 0.94]);
+
     t = 0;
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
@@ -1480,6 +1511,11 @@ function quizinstructionRoutineBegin(snapshot) {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
     
     //--- Prepare to start Routine 'quizinstruction' ---
+    psychoJS._progressStep = Math.min(psychoJS._progressStep + 1, psychoJS._progressTotal);
+    const progressWidth = 1.8 * psychoJS._progressStep / psychoJS._progressTotal;
+    psychoJS._progressBar.setSize([progressWidth, 0.025]);
+    psychoJS._progressBar.setPos([-0.9 + progressWidth / 2, 0.94]);
+
     t = 0;
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
@@ -1672,6 +1708,11 @@ function sampleQuizRoutineBegin(snapshot) {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
     
     //--- Prepare to start Routine 'sampleQuiz' ---
+    psychoJS._progressStep = Math.min(psychoJS._progressStep + 1, psychoJS._progressTotal);
+    const progressWidth = 1.8 * psychoJS._progressStep / psychoJS._progressTotal;
+    psychoJS._progressBar.setSize([progressWidth, 0.025]);
+    psychoJS._progressBar.setPos([-0.9 + progressWidth / 2, 0.94]);
+
     t = 0;
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
@@ -1754,6 +1795,11 @@ function quizRoutineBegin(snapshot) {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
     
     //--- Prepare to start Routine 'quiz' ---
+    psychoJS._progressStep = Math.min(psychoJS._progressStep + 1, psychoJS._progressTotal);
+    const progressWidth = 1.8 * psychoJS._progressStep / psychoJS._progressTotal;
+    psychoJS._progressBar.setSize([progressWidth, 0.025]);
+    psychoJS._progressBar.setPos([-0.9 + progressWidth / 2, 0.94]);
+
     t = 0;
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
@@ -1839,6 +1885,11 @@ function quizendingRoutineBegin(snapshot) {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
     
     //--- Prepare to start Routine 'quizending' ---
+    psychoJS._progressStep = Math.min(psychoJS._progressStep + 1, psychoJS._progressTotal);
+    const progressWidth = 1.8 * psychoJS._progressStep / psychoJS._progressTotal;
+    psychoJS._progressBar.setSize([progressWidth, 0.025]);
+    psychoJS._progressBar.setPos([-0.9 + progressWidth / 2, 0.94]);
+
     t = 0;
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
@@ -2093,6 +2144,11 @@ function likertRoutineBegin(snapshot) {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
     
     //--- Prepare to start Routine 'likert' ---
+    psychoJS._progressStep = Math.min(psychoJS._progressStep + 1, psychoJS._progressTotal);
+    const progressWidth = 1.8 * psychoJS._progressStep / psychoJS._progressTotal;
+    psychoJS._progressBar.setSize([progressWidth, 0.025]);
+    psychoJS._progressBar.setPos([-0.9 + progressWidth / 2, 0.94]);
+
     t = 0;
     frameN = -1;
     continueRoutine = true; // until we're told otherwise
@@ -2106,6 +2162,7 @@ function likertRoutineBegin(snapshot) {
     likert_slider.reset()
     // reset nextButton to account for continued clicks & clear times on/off
     nextButton.reset()
+    nextButton.opacity = 0.4
     psychoJS.experiment.addData('likert.started', globalClock.getTime());
     likertMaxDuration = null
     // keep track of which components have finished
@@ -2204,6 +2261,10 @@ function likertRoutineEachFrame() {
       // if nextButton is clicked next frame, it is a new click
       nextButton.wasClicked = false;
     }
+    nextButton.opacity = ((likert_slider.getRT() == null) ? 0.4 : 1.0);
+    if (nextButton.isClicked && likert_slider.getRT() == null) {
+      continueRoutine = true;
+    }
     // check if the Routine should terminate
     if (!continueRoutine) {  // a component has requested a forced-end of Routine
       routineForceEnded = true;
@@ -2261,6 +2322,11 @@ function endRoutineBegin(snapshot) {
     TrialHandler.fromSnapshot(snapshot); // ensure that .thisN vals are up to date
     
     //--- Prepare to start Routine 'end' ---
+    psychoJS._progressStep = psychoJS._progressTotal;
+    const progressWidth = 1.8 * psychoJS._progressStep / psychoJS._progressTotal;
+    psychoJS._progressBar.setSize([progressWidth, 0.025]);
+    psychoJS._progressBar.setPos([-0.9 + progressWidth / 2, 0.94]);
+
     t = 0;
     frameN = -1;
     continueRoutine = true; // until we're told otherwise

@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2025.1.1),
@@ -408,7 +408,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "consent" ---
     consentText = visual.TextBox2(
-         win, text='Participant Information and Consent\n\nPURPOSE OF THE STUDY\n- This study looks at how people learn from recorded lectures.\n- You will watch short lecture videos and answer questions about them.\n- The study is run by [researcher names] at [university/department].\n\nWHAT YOU WILL DO\n- Watch [number] lecture video segments on the screen.\n- Answer questions about what you understood.\n- Answer questions about what you thought of the lecture.\n- Fill in a short form about your age, gender, and education.\n\nHOW LONG IT TAKES\n- The whole session takes about 30 to 45 minutes.\n- Please do not pause, skip, or rewind the videos.\n- Please follow the instructions on the screen.\n\nPAYMENT\n- You will receive [amount] baht after you finish the session.\n- Payment is made by [cash / method decided by the school].\n\nYOUR RIGHTS\n- Taking part is voluntary.\n- You can stop and leave at any time. You do not have to give a reason.\n- If you leave, your data will not be stored or used.\n- There is no risk beyond what you meet in everyday life.\n\nPRIVACY\n- Your name will not be written in your data. You will only have a participant number.\n- Your signed consent form will be kept locked in a separate place.\n- Your data will be stored securely for [number] years.\n- Results will only be reported for the whole group. No one will be identified.\n\nWHO CAN TAKE PART\n- You must be 18 years or older.\n- You must have normal vision, or vision corrected with glasses or lenses.\n- You must have normal hearing.\n- You must be able to follow a lecture in English.\n\nQUESTIONS\n- You can ask the experimenter any question before you start.\n- For questions later, contact [name, email, phone].\n- If you have concerns about how the study was run, contact [ethics committee contact].\n\nCONSENT\n- I have read this information, or it was read to me.\n- I understand that I can stop at any time.\n- I agree to take part in this study.\n\nIf you agree, please tell the experimenter. You will sign the printed consent form before you begin.', placeholder='Type here...', font='Times New Roman',
+         win, text='Participant Information and Consent\n\nPURPOSE OF THE STUDY\n- This study looks at how people learn from recorded lectures.\n- You will watch short lecture videos and answer questions about them.\n- The study is run by [researcher names] at [university/department].\n\nWHAT YOU WILL DO\n- Watch [number] lecture video segments on the screen.\n- Answer questions about what you understood.\n- Answer questions about what you thought of the lecture.\n- Fill in a short form about your age, gender, and education.\n\nHOW LONG IT TAKES\n- The whole session takes about 30 to 45 minutes.\n- Please do not pause, skip, or rewind the videos.\n- Please follow the instructions on the screen.\n\nPAYMENT\n- You will receive [amount] baht after you finish the session.\n- Payment is made by [cash / method decided by the school].\n\nYOUR RIGHTS\n- Taking part is voluntary.\n- You can stop and leave at any time. You do not have to give a reason.\n- If you leave, your data will not be stored or used.\n- There is no risk beyond what you meet in everyday life.\n\nPRIVACY\n- Your name will not be written in your data. You will only have a participant number.\n- Your signed consent form will be kept locked in a separate place.\n- Your data will be stored securely for [number] years.\n- Results will only be reported for the whole group. No one will be identified.\n\nWHO CAN TAKE PART\n- You must be 18 years or older.\n- You must have normal vision, or vision corrected with glasses or lenses.\n- You must have normal hearing.\n- You must be able to follow a lecture in English.\n\nQUESTIONS\n- You can ask the experimenter any question before you start.\n- For questions later, contact [name, email, phone].\n- If you have concerns about how the study was run, contact [ethics committee contact].\n\nCONSENT\n- I have read this information, or it was read to me.\n- I understand that I can stop at any time.\n- I agree to take part in this study.\n\nIf you agree, please tell the experimenter. You will sign the printed consent form before you begin.', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(-0.65, 0.38), draggable=False, units='height',     letterHeight=0.03,
          size=(1.3, None), borderWidth=2.0,
          color="'#000000'", colorSpace='rgb',
@@ -444,7 +444,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "intro" ---
     intro_text = visual.TextBox2(
-         win, text="Welcome to this research study on educational video content.\n\n(This study will take approximately 30 minutes to complete.)\n\nYour responses will be kept confidential and used for research \npurposes only. No personally identifying information will be shared \nin any publication resulting from this research.\n\nBy continuing, you confirm that you agree to participate in this study.\n\nPress 'SPACE'  to continue.", placeholder='Type here...', font='Times New Roman',
+         win, text="Welcome to this research study on educational video content.\n\n(This study will take approximately 30 minutes to complete.)\n\nYour responses will be kept confidential and used for research \npurposes only. No personally identifying information will be shared \nin any publication resulting from this research.\n\nBy continuing, you confirm that you agree to participate in this study.\n\nPress 'SPACE'  to continue.", placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.1,
          size=(1.85, 0.5), borderWidth=2.0,
          color="'#000000'", colorSpace='rgb',
@@ -463,7 +463,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "instructions" ---
     instruction_header = visual.TextBox2(
-         win, text='Instructions', placeholder='Type here...', font='Times New Roman',
+         win, text='Instructions', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, 0.65), draggable=False,      letterHeight=0.15,
          size=(1.85, 0.5), borderWidth=2.0,
          color="'#000000'", colorSpace='rgb',
@@ -479,7 +479,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          depth=0, autoLog=True,
     )
     instruction_text = visual.TextBox2(
-         win, text="In this study, you will:\n\n1. Watch a short educational video\n2. Answer a series of questions about what you watched\n3. Answer a few questions about your experience\n\nPress 'SPACE' to continue.", placeholder='Type here...', font='Times New Roman',
+         win, text="In this study, you will:\n\n1. Watch a short educational video\n2. Answer a series of questions about what you watched\n3. Answer a few questions about your experience\n\nPress 'SPACE' to continue.", placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, -0.05), draggable=False,      letterHeight=0.1,
          size=(1.85, 0.5), borderWidth=2.0,
          color="'#000000'", colorSpace='rgb',
@@ -498,7 +498,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "warning" ---
     warning_header = visual.TextBox2(
-         win, text='IMPORTANT', placeholder='Type here...', font='Times New Roman',
+         win, text='IMPORTANT', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, 0.65), draggable=False,      letterHeight=0.15,
          size=(1.85, 0.5), borderWidth=2.0,
          color="'#000000'", colorSpace='rgb',
@@ -514,7 +514,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          depth=0, autoLog=True,
     )
     warning_text = visual.TextBox2(
-         win, text="- You will watch one video in full. Please do not skip, pause, or \n  rewind during playback.\n- Pay close attention, as you will be tested on the content \n  immediately afterward.\n- The video and quiz cannot be repeated once completed.\n- Please do not switch to other tabs, applications, or windows \n  during the video.\n\nPress 'SPACE' when you are ready to begin the video.", placeholder='Type here...', font='Times New Roman',
+         win, text="- You will watch one video in full. Please do not skip, pause, or \n  rewind during playback.\n- Pay close attention, as you will be tested on the content \n  immediately afterward.\n- The video and quiz cannot be repeated once completed.\n- Please do not switch to other tabs, applications, or windows \n  during the video.\n\nPress 'SPACE' when you are ready to begin the video.", placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, -0.15), draggable=False,      letterHeight=0.1,
          size=(1.85, 0.5), borderWidth=2.0,
          color="'#000000'", colorSpace='rgb',
@@ -535,7 +535,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "quizinstruction" ---
     textbox = visual.TextBox2(
-         win, text="Thank you for watching the video.\n\nYou will now answer some questions about what you just watched.\n\nPlease answer based on your own understanding.\n\nBefore the main questions, you will first complete a short sample \nquiz to help you get familiar with how the questions work.\n\nPress 'SPACE' to begin the questions.", placeholder='Type here...', font='Times New Roman',
+         win, text="Thank you for watching the video.\n\nYou will now answer some questions about what you just watched.\n\nPlease answer based on your own understanding.\n\nBefore the main questions, you will first complete a short sample \nquiz to help you get familiar with how the questions work.\n\nPress 'SPACE' to begin the questions.", placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.1,
          size=(1.85, 0.5), borderWidth=2.0,
          color="'#000000'", colorSpace='rgb',
@@ -556,7 +556,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "quizending" ---
     textbox_2 = visual.TextBox2(
-         win, text="You have completed the quiz.\n\nJust a few more short questions about your experience, and then \nyou'll be finished.\n\nPress 'SPACE' to continue.", placeholder='Type here...', font='Times New Roman',
+         win, text="You have completed the quiz.\n\nJust a few more short questions about your experience, and then \nyou'll be finished.\n\nPress 'SPACE' to continue.", placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.1,
          size=(1.85, 0.5), borderWidth=2.0,
          color="'#000000'", colorSpace='rgb',
@@ -576,7 +576,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # --- Initialize components for Routine "likert" ---
     likertText = visual.TextStim(win=win, name='likertText',
         text='',
-        font='Times New Roman',
+        font='Arial',
         pos=(0, 0), draggable=False, height=0.1, wrapWidth=None, ori=0.0, 
         color="'#000000'", colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
@@ -586,13 +586,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         labels=('Strongly disagree', 'Disagree', 'Somewhat disagree', 'Neither agree nor disagree', 'Somewhat agree', 'Agree', 'Strongly agree'), ticks=(1, 2, 3, 4, 5, 6, 7), granularity=1.0,
         style='rating', styleTweaks=(), opacity=None,
         labelColor="'#000000'", markerColor='Red', lineColor='White', colorSpace='rgb',
-        font='Noto Sans', labelHeight=0.036,
+        font='Arial', labelHeight=0.036,
         flip=False, ori=0.0, depth=-1, readOnly=False)
     nextButton = visual.ButtonStim(win, 
-        text='Next>>', font='Times New Roman',
+        text='Next >>', font='Arial',
         pos=(0.8, -0.75),
         letterHeight=0.05,
-        size=(0.15, 0.15), 
+        size=(0.18, 0.15),
         ori=0.0
         ,borderWidth=0.0,
         fillColor=[1.0000, 1.0000, 1.0000], borderColor=None,
@@ -608,7 +608,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "end" ---
     ending_text = visual.TextBox2(
-         win, text='Thank you for participating in this study!\n\nYour responses have been recorded successfully.', placeholder='Type here...', font='Times New Roman',
+         win, text='Thank you for participating in this study!\n\nYour responses have been recorded successfully.', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, 0), draggable=False,      letterHeight=0.1,
          size=(1.8, 0.5), borderWidth=2.0,
          color="'#000000'", colorSpace='rgb',
@@ -652,6 +652,12 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         format='%Y-%m-%d %Hh%M.%S.%f %z', fractionalSecondDigits=6
     )
     
+    progressStep = 0
+    progressTotal = 14
+    progressBackground = visual.Rect(win=win, width=1.8, height=0.025, pos=(0, 0.94), units='norm', fillColor='white', lineColor='white', opacity=0.45, depth=-100)
+    progressBar = visual.Rect(win=win, width=0.01, height=0.025, pos=(-0.895, 0.94), units='norm', fillColor='lightblue', lineColor='lightblue', depth=-101)
+    progressBackground.setAutoDraw(True)
+    progressBar.setAutoDraw(True)
     # --- Prepare to start Routine "consent" ---
     # create an object to store info about Routine consent
     consent = data.Routine(
@@ -697,6 +703,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     frameN = -1
     
     # --- Run Routine "consent" ---
+    progressStep = min(progressStep + 1, progressTotal)
+    progressWidth = 1.8 * progressStep / progressTotal
+    progressBar.setSize((progressWidth, 0.025))
+    progressBar.setPos((-0.9 + progressWidth / 2, 0.94))
+
     consent.forceEnded = routineForceEnded = not continueRoutine
     while continueRoutine:
         # get current time
@@ -895,6 +906,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     frameN = -1
     
     # --- Run Routine "intro" ---
+    progressStep = min(progressStep + 1, progressTotal)
+    progressWidth = 1.8 * progressStep / progressTotal
+    progressBar.setSize((progressWidth, 0.025))
+    progressBar.setPos((-0.9 + progressWidth / 2, 0.94))
+
     intro.forceEnded = routineForceEnded = not continueRoutine
     while continueRoutine:
         # get current time
@@ -1038,6 +1054,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     frameN = -1
     
     # --- Run Routine "instructions" ---
+    progressStep = min(progressStep + 1, progressTotal)
+    progressWidth = 1.8 * progressStep / progressTotal
+    progressBar.setSize((progressWidth, 0.025))
+    progressBar.setPos((-0.9 + progressWidth / 2, 0.94))
+
     instructions.forceEnded = routineForceEnded = not continueRoutine
     while continueRoutine:
         # get current time
@@ -1201,6 +1222,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     frameN = -1
     
     # --- Run Routine "warning" ---
+    progressStep = min(progressStep + 1, progressTotal)
+    progressWidth = 1.8 * progressStep / progressTotal
+    progressBar.setSize((progressWidth, 0.025))
+    progressBar.setPos((-0.9 + progressWidth / 2, 0.94))
+
     warning.forceEnded = routineForceEnded = not continueRoutine
     while continueRoutine:
         # get current time
@@ -1358,6 +1384,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     frameN = -1
     
     # --- Run Routine "video" ---
+    progressStep = min(progressStep + 1, progressTotal)
+    progressWidth = 1.8 * progressStep / progressTotal
+    progressBar.setSize((progressWidth, 0.025))
+    progressBar.setPos((-0.9 + progressWidth / 2, 0.94))
+
     video.forceEnded = routineForceEnded = not continueRoutine
     while continueRoutine:
         # get current time
@@ -1445,6 +1476,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     frameN = -1
     
     # --- Run Routine "quizinstruction" ---
+    progressStep = min(progressStep + 1, progressTotal)
+    progressWidth = 1.8 * progressStep / progressTotal
+    progressBar.setSize((progressWidth, 0.025))
+    progressBar.setPos((-0.9 + progressWidth / 2, 0.94))
+
     quizinstruction.forceEnded = routineForceEnded = not continueRoutine
     while continueRoutine:
         # get current time
@@ -1582,6 +1618,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     frameN = -1
     
     # --- Run Routine "quiz" ---
+    progressStep = min(progressStep + 1, progressTotal)
+    progressWidth = 1.8 * progressStep / progressTotal
+    progressBar.setSize((progressWidth, 0.025))
+    progressBar.setPos((-0.9 + progressWidth / 2, 0.94))
+
     quiz.forceEnded = routineForceEnded = not continueRoutine
     while continueRoutine:
         # get current time
@@ -1669,6 +1710,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     frameN = -1
     
     # --- Run Routine "quizending" ---
+    progressStep = min(progressStep + 1, progressTotal)
+    progressWidth = 1.8 * progressStep / progressTotal
+    progressBar.setSize((progressWidth, 0.025))
+    progressBar.setPos((-0.9 + progressWidth / 2, 0.94))
+
     quizending.forceEnded = routineForceEnded = not continueRoutine
     while continueRoutine:
         # get current time
@@ -1823,6 +1869,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         likert_slider.reset()
         # reset nextButton to account for continued clicks & clear times on/off
         nextButton.reset()
+        nextButton.opacity = 0.4
         # store start times for likert
         likert.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
         likert.tStart = globalClock.getTime(format='float')
@@ -1844,6 +1891,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         frameN = -1
         
         # --- Run Routine "likert" ---
+        progressStep = min(progressStep + 1, progressTotal)
+        progressWidth = 1.8 * progressStep / progressTotal
+        progressBar.setSize((progressWidth, 0.025))
+        progressBar.setPos((-0.9 + progressWidth / 2, 0.94))
+
         likert.forceEnded = routineForceEnded = not continueRoutine
         while continueRoutine:
             # if trial has changed, end Routine now
@@ -1932,7 +1984,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                         pass
             # take note of whether nextButton was clicked, so that next frame we know if clicks are new
             nextButton.wasClicked = nextButton.isClicked and nextButton.status == STARTED
-            
+
+            nextButton.opacity = 0.4 if likert_slider.getRT() is None else 1.0
+            if nextButton.isClicked and likert_slider.getRT() is None:
+                continueRoutine = True
+
             # check for quit (typically the Esc key)
             if defaultKeyboard.getKeys(keyList=["escape"]):
                 thisExp.status = FINISHED
@@ -2036,6 +2092,11 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     frameN = -1
     
     # --- Run Routine "end" ---
+    progressStep = progressTotal
+    progressWidth = 1.8 * progressStep / progressTotal
+    progressBar.setSize((progressWidth, 0.025))
+    progressBar.setPos((-0.9 + progressWidth / 2, 0.94))
+
     end.forceEnded = routineForceEnded = not continueRoutine
     while continueRoutine:
         # get current time
