@@ -1,0 +1,4 @@
+﻿questionID,question,A,B,C,D,correct,thisN,thisTrialN,thisRepN,sampleQuestionsTrials.thisRepN,sampleQuestionsTrials.thisTrialN,sampleQuestionsTrials.thisN,sampleQuestionsTrials.thisIndex,thisRow.t,notes,assigned_video,instructions.started,instructions.stopped,instruct_resp.keys,sampleVideo.started,samplevideo.started,sampleVideo.stopped,participant,session,date,expName,expVersion,psychopyVersion,frameRate,expStart,
+,,,,,,,,,,,,,,,,Creepy and scary cat.mp4,0.014588199992431328,1.8336793999769725,None,,,,771157,001,2026-11-14_14h20.45.053,testing1,,2025.1.1,92.73341000926156,2026-11-14 14h20.50.179016 +0700,
+,,,,,,,,,,,,,,,,,,,,1.8345212999847718,1.8686094000004232,2.8631271999911405,771157,001,2026-11-14_14h20.45.053,testing1,,2025.1.1,92.73341000926156,2026-11-14 14h20.50.179016 +0700,
+Q1,What is the answer for 2+2?,3,6,4,5,C,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,
