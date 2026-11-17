@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2025.1.1),
-    on November 15, 2026, at 13:56
+    on November 16, 2026, at 14:09
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -133,7 +133,7 @@ def setupData(expInfo, dataDir=None):
     thisExp = data.ExperimentHandler(
         name=expName, version=expVersion,
         extraInfo=expInfo, runtimeInfo=None,
-        originPath='C:\\SPPA\\CMKL\\Animation_Project\\Summer\\Experiment_Workflows\\Testing1\\testing1_lastrun.py',
+        originPath='C:\\Users\\LENOVO\\Documents\\psychopyexperiments\\testing1_lastrun.py',
         savePickle=True, saveWideText=True,
         dataFileName=dataDir + os.sep + filename, sortColumns='time'
     )
@@ -728,7 +728,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         win, name='movie',
         filename=None, movieLib='ffpyplayer',
         loop=False, volume=1.0, noAudio=False,
-        pos=(0, 0), size=(0.5, 0.5), units=win.units,
+        pos=(0, 0), size=(1.5, 1.5), units=win.units,
         ori=0.0, anchor='center',opacity=None, contrast=1.0,
         depth=-2
     )
@@ -749,9 +749,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         depth=-3
     )
     nextVideo.buttonClock = core.Clock()
-    
-    # --- Initialize components for Routine "instructionforRealQuestions" ---
-    rq_text = visual.TextBox2(
+    rq_text_2 = visual.TextBox2(
          win, text='You will now answer a few questions related to what you have watched.\n\nPlease click on "Next>>" button to start.', placeholder='Type here...', font='Arial',
          ori=0.0, pos=(0, -0.1), draggable=False,      letterHeight=0.08,
          size=(1.8, 0.5), borderWidth=2.0,
@@ -764,26 +762,9 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
          fillColor=None, borderColor=None,
          flipHoriz=False, flipVert=False, languageStyle='LTR',
          editable=False,
-         name='rq_text',
-         depth=0, autoLog=True,
+         name='rq_text_2',
+         depth=-4, autoLog=True,
     )
-    next_rq = visual.ButtonStim(win, 
-        text='Next >>', font='Arial',
-        pos=(0.8, -0.75),
-        letterHeight=0.05,
-        size=(0.18, 0.15), 
-        ori=0.0
-        ,borderWidth=0.0,
-        fillColor=[1.0000, 1.0000, 1.0000], borderColor=None,
-        color=[-1.0000, -1.0000, -1.0000], colorSpace='rgb',
-        opacity=None,
-        bold=True, italic=False,
-        padding=None,
-        anchor='center',
-        name='next_rq',
-        depth=-1
-    )
-    next_rq.buttonClock = core.Clock()
     
     # --- Initialize components for Routine "QuizA" ---
     nextQuizA = visual.ButtonStim(win, 
@@ -2507,7 +2488,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # create an object to store info about Routine video
     video = data.Routine(
         name='video',
-        components=[movie, nextVideo],
+        components=[movie, nextVideo, rq_text_2],
     )
     video.status = NOT_STARTED
     continueRoutine = True
@@ -2520,6 +2501,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     movie.setMovie(video_to_play)
     # reset nextVideo to account for continued clicks & clear times on/off
     nextVideo.reset()
+    rq_text_2.reset()
     # store start times for video
     video.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
     video.tStart = globalClock.getTime(format='float')
@@ -2560,7 +2542,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         # *movie* updates
         
         # if movie is starting this frame...
-        if movie.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        if movie.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
             # keep track of start time/frame for later
             movie.frameNStart = frameN  # exact frame index
             movie.tStart = t  # local t and not account for scr refresh
@@ -2582,6 +2564,8 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                 movie.status = FINISHED
                 movie.setAutoDraw(False)
                 movie.stop()
+        if movie.isFinished:  # force-end the Routine
+            continueRoutine = False
         # *nextVideo* updates
         
         # if nextVideo is starting this frame...
@@ -2617,6 +2601,24 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
                     pass
         # take note of whether nextVideo was clicked, so that next frame we know if clicks are new
         nextVideo.wasClicked = nextVideo.isClicked and nextVideo.status == STARTED
+        
+        # *rq_text_2* updates
+        
+        # if rq_text_2 is starting this frame...
+        if rq_text_2.status == NOT_STARTED and movie.isFinished:
+            # keep track of start time/frame for later
+            rq_text_2.frameNStart = frameN  # exact frame index
+            rq_text_2.tStart = t  # local t and not account for scr refresh
+            rq_text_2.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(rq_text_2, 'tStartRefresh')  # time at next scr refresh
+            # update status
+            rq_text_2.status = STARTED
+            rq_text_2.setAutoDraw(True)
+        
+        # if rq_text_2 is active this frame...
+        if rq_text_2.status == STARTED:
+            # update params
+            pass
         if thisExp.status == FINISHED or endExpNow:
             endExperiment(thisExp, win=win)
             return
@@ -2656,152 +2658,6 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     movie.stop()  # ensure movie has stopped at end of Routine
     thisExp.nextEntry()
     # the Routine "video" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset()
-    
-    # --- Prepare to start Routine "instructionforRealQuestions" ---
-    # create an object to store info about Routine instructionforRealQuestions
-    instructionforRealQuestions = data.Routine(
-        name='instructionforRealQuestions',
-        components=[rq_text, next_rq],
-    )
-    instructionforRealQuestions.status = NOT_STARTED
-    continueRoutine = True
-    # update component parameters for each repeat
-    rq_text.reset()
-    # reset next_rq to account for continued clicks & clear times on/off
-    next_rq.reset()
-    # Run 'Begin Routine' code from progress_rq
-    progressStep = min(progressStep + 1, progressTotal)
-    progressWidth = 1.8 * progressStep / progressTotal
-    progressBar.setSize((progressWidth, 0.025))
-    progressBar.setPos((-0.9 + progressWidth / 2, 0.94))
-    # store start times for instructionforRealQuestions
-    instructionforRealQuestions.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
-    instructionforRealQuestions.tStart = globalClock.getTime(format='float')
-    instructionforRealQuestions.status = STARTED
-    thisExp.addData('instructionforRealQuestions.started', instructionforRealQuestions.tStart)
-    instructionforRealQuestions.maxDuration = None
-    # keep track of which components have finished
-    instructionforRealQuestionsComponents = instructionforRealQuestions.components
-    for thisComponent in instructionforRealQuestions.components:
-        thisComponent.tStart = None
-        thisComponent.tStop = None
-        thisComponent.tStartRefresh = None
-        thisComponent.tStopRefresh = None
-        if hasattr(thisComponent, 'status'):
-            thisComponent.status = NOT_STARTED
-    # reset timers
-    t = 0
-    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    frameN = -1
-    
-    # --- Run Routine "instructionforRealQuestions" ---
-    instructionforRealQuestions.forceEnded = routineForceEnded = not continueRoutine
-    while continueRoutine:
-        # get current time
-        t = routineTimer.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
-        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-        # update/draw components on each frame
-        
-        # *rq_text* updates
-        
-        # if rq_text is starting this frame...
-        if rq_text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            rq_text.frameNStart = frameN  # exact frame index
-            rq_text.tStart = t  # local t and not account for scr refresh
-            rq_text.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(rq_text, 'tStartRefresh')  # time at next scr refresh
-            # update status
-            rq_text.status = STARTED
-            rq_text.setAutoDraw(True)
-        
-        # if rq_text is active this frame...
-        if rq_text.status == STARTED:
-            # update params
-            pass
-        # *next_rq* updates
-        
-        # if next_rq is starting this frame...
-        if next_rq.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
-            # keep track of start time/frame for later
-            next_rq.frameNStart = frameN  # exact frame index
-            next_rq.tStart = t  # local t and not account for scr refresh
-            next_rq.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(next_rq, 'tStartRefresh')  # time at next scr refresh
-            # update status
-            next_rq.status = STARTED
-            win.callOnFlip(next_rq.buttonClock.reset)
-            next_rq.setAutoDraw(True)
-        
-        # if next_rq is active this frame...
-        if next_rq.status == STARTED:
-            # update params
-            pass
-            # check whether next_rq has been pressed
-            if next_rq.isClicked:
-                if not next_rq.wasClicked:
-                    # if this is a new click, store time of first click and clicked until
-                    next_rq.timesOn.append(next_rq.buttonClock.getTime())
-                    next_rq.timesOff.append(next_rq.buttonClock.getTime())
-                elif len(next_rq.timesOff):
-                    # if click is continuing from last frame, update time of clicked until
-                    next_rq.timesOff[-1] = next_rq.buttonClock.getTime()
-                if not next_rq.wasClicked:
-                    # end routine when next_rq is clicked
-                    continueRoutine = False
-                if not next_rq.wasClicked:
-                    # run callback code when next_rq is clicked
-                    pass
-        # take note of whether next_rq was clicked, so that next frame we know if clicks are new
-        next_rq.wasClicked = next_rq.isClicked and next_rq.status == STARTED
-        # Run 'Each Frame' code from cq_rq
-        # Ctrl + Q to quit
-        keys = event.getKeys(modifiers=True)
-        
-        for key, modifiers in keys:
-            if key.lower() == 'q' and modifiers.get('ctrl', False):
-                core.quit()
-        if thisExp.status == FINISHED or endExpNow:
-            endExperiment(thisExp, win=win)
-            return
-        # pause experiment here if requested
-        if thisExp.status == PAUSED:
-            pauseExperiment(
-                thisExp=thisExp, 
-                win=win, 
-                timers=[routineTimer, globalClock], 
-                currentRoutine=instructionforRealQuestions,
-            )
-            # skip the frame we paused on
-            continue
-        
-        # check if all components have finished
-        if not continueRoutine:  # a component has requested a forced-end of Routine
-            instructionforRealQuestions.forceEnded = routineForceEnded = True
-            break
-        continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in instructionforRealQuestions.components:
-            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                continueRoutine = True
-                break  # at least one component has not yet finished
-        
-        # refresh the screen
-        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-            win.flip()
-    
-    # --- Ending Routine "instructionforRealQuestions" ---
-    for thisComponent in instructionforRealQuestions.components:
-        if hasattr(thisComponent, "setAutoDraw"):
-            thisComponent.setAutoDraw(False)
-    # store stop times for instructionforRealQuestions
-    instructionforRealQuestions.tStop = globalClock.getTime(format='float')
-    instructionforRealQuestions.tStopRefresh = tThisFlipGlobal
-    thisExp.addData('instructionforRealQuestions.stopped', instructionforRealQuestions.tStop)
-    thisExp.nextEntry()
-    # the Routine "instructionforRealQuestions" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
     # set up handler to look after randomisation of conditions etc
